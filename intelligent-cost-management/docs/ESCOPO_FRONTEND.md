@@ -22,8 +22,8 @@ A gestão de custos por colaborador é um caso de uso dessa proposta. Sua consol
 
 ## Demonstração funcional
 
-- Chatbot com perguntas digitadas ou sugeridas, respostas locais e indicação de fontes.
-- Respostas sobre as rotinas e restrições do mapeamento de RH; sem execução de automações pelo chat.
+- Botão **Chatbot — em breve**, desabilitado e reservado para a implementação futura.
+- Apresentação das rotinas e restrições do mapeamento de RH, sem interface de conversa.
 - 120 colaboradores fictícios em quatro departamentos.
 - Outubro de 2026 como referência do catálogo e dashboard.
 - Seis competências disponíveis na consulta local.
@@ -42,7 +42,7 @@ Esse complemento é uma apresentação de escopo, sem executar integrações ou 
 
 Os modelos locais são normalizados para a interface, e não uma declaração de compatibilidade integral com todos os campos das APIs externas. Nenhum endpoint externo é chamado nesta versão. O texto não apresenta o workflow documentado como se estivesse conectado ao navegador.
 
-O [chatbot demonstrativo](CHATBOT.md) usa regras locais para responder a perguntas simples sobre o escopo e calcular custos fictícios. Não é um modelo de linguagem nem uma conexão ao agente real. A consulta por seletores também continua disponível como exemplo de custos.
+O [chatbot permanece como etapa futura](CHATBOT.md). A interface mantém somente seu botão de acesso desabilitado, sem conversa, respostas locais ou adaptador de agente. A consulta por seletores continua disponível como exemplo de custos.
 
 Os status Atenção/Redução/Regular derivam da variação dos valores simulados e são uma convenção adicional do front-end. Não representam status contratual, avaliação de IA ou resultado financeiro comprovado. Encargos e outras parcelas fora da fórmula fornecida não são estimados.
 
