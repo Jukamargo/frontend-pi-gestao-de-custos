@@ -4,6 +4,8 @@ Referência: observações e diagrama enviados pelo responsável pelo projeto ne
 
 O mapeamento registra o escopo de negócio e os encaminhamentos propostos. Não comprova disponibilidade de APIs, contratação, integração em produção ou automação já implementada. Os rótulos “API” e “MANUAL” do diagrama não foram tratados como contratos técnicos validados.
 
+O objetivo da solução é automatizar essas rotinas e conectar as ferramentas principais a um chatbot para responder às dúvidas da equipe. A lista abaixo não define, por si só, quais sistemas serão conectados primeiro; essa prioridade e os meios técnicos precisam ser confirmados. O chatbot demonstrativo consulta este mapeamento como conteúdo local, preservando as restrições de cada serviço.
+
 ## Serviços e decisões
 
 | Serviço              | Escopo informado                                                                                      | Encaminhamento                                                                                            |

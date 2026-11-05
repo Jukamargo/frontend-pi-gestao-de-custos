@@ -1,10 +1,12 @@
 # Correspondência entre o contexto e a interface
 
-Referência de negócio: `CONTEXTO_GERAL_PROJETO.md`, fornecido pelo responsável pelo projeto. As afirmações sobre os componentes externos abaixo vêm desse documento, sem auditoria ou verificação de disponibilidade dos serviços.
+Referências de negócio: `CONTEXTO_GERAL_PROJETO.md`, o mapeamento de fornecedores e a orientação do responsável de centralizar o projeto na automação de rotinas e no chatbot. As afirmações sobre componentes externos vêm do material fornecido, sem verificação de disponibilidade dos serviços.
 
 ## Objetivo central
 
-Centralizar dados de RH e Financeiro para consultar o custo mensal de um colaborador. A consolidação considera salário base, benefícios fixos e despesas variáveis, cruzando o CPF e a competência. O foco da interface foi ajustado de um catálogo genérico de infraestrutura para essa visão por pessoa.
+Automatizar as rotinas mapeadas e conectar as ferramentas principais a um chatbot que responda às dúvidas da equipe. O escopo abrange consultas sobre RH, processos, benefícios, documentos e custos, conforme a disponibilidade e a priorização dos sistemas.
+
+A gestão de custos por colaborador é um caso de uso dessa proposta. Sua consolidação considera salário base, benefícios fixos e despesas variáveis, cruzando CPF e competência. Os cálculos e dados fictícios existentes foram preservados.
 
 ## O que pertence a cada etapa
 
@@ -20,6 +22,8 @@ Centralizar dados de RH e Financeiro para consultar o custo mensal de um colabor
 
 ## Demonstração funcional
 
+- Chatbot com perguntas digitadas ou sugeridas, respostas locais e indicação de fontes.
+- Respostas sobre as rotinas e restrições do mapeamento de RH; sem execução de automações pelo chat.
 - 120 colaboradores fictícios em quatro departamentos.
 - Outubro de 2026 como referência do catálogo e dashboard.
 - Seis competências disponíveis na consulta local.
@@ -38,7 +42,7 @@ Esse complemento é uma apresentação de escopo, sem executar integrações ou 
 
 Os modelos locais são normalizados para a interface, e não uma declaração de compatibilidade integral com todos os campos das APIs externas. Nenhum endpoint externo é chamado nesta versão. O texto não apresenta o workflow documentado como se estivesse conectado ao navegador.
 
-A consulta demonstra a regra de consolidação com seletores estruturados. O exemplo de pergunta em linguagem natural é ilustrativo; não há chat com resposta gerada ou simulação que se faça passar pelo agente real.
+O [chatbot demonstrativo](CHATBOT.md) usa regras locais para responder a perguntas simples sobre o escopo e calcular custos fictícios. Não é um modelo de linguagem nem uma conexão ao agente real. A consulta por seletores também continua disponível como exemplo de custos.
 
 Os status Atenção/Redução/Regular derivam da variação dos valores simulados e são uma convenção adicional do front-end. Não representam status contratual, avaliação de IA ou resultado financeiro comprovado. Encargos e outras parcelas fora da fórmula fornecida não são estimados.
 

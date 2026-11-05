@@ -1,14 +1,16 @@
 # Gestão de custos — Inovanet
 
-Front-end institucional e demonstrativo do projeto de **centralização de RH e Financeiro**, no contexto 2RPnet / Inovanet Tech. A finalidade principal é consultar o **custo mensal por colaborador**, reunindo salário base e benefícios fixos da Sólides com despesas variáveis e reembolsos do Omie.
+Front-end institucional e demonstrativo do projeto de **automação de rotinas e integração das ferramentas principais a um chatbot**, no contexto 2RPnet / Inovanet Tech. O objetivo é responder às dúvidas da equipe com informações dos sistemas e processos mapeados. A **gestão de custos por colaborador é um dos casos de uso**, com dados de RH e Financeiro.
 
 O escopo foi alinhado ao documento `CONTEXTO_GERAL_PROJETO.md` fornecido pelo responsável. Consulte o [mapeamento de escopo](docs/ESCOPO_FRONTEND.md) para distinguir o projeto de referência das funcionalidades executadas nesta interface.
 
 As observações posteriores sobre fornecedores e rotinas estão no [mapeamento do ecossistema de RH](docs/ECOSSISTEMA_RH.md) e na página **Tecnologias**. O registro distingue propostas de automação, restrições, processos em análise e atividades fora do escopo atual.
 
+O [chatbot demonstrativo](docs/CHATBOT.md), na rota `/demonstracao`, responde a perguntas simples com conteúdo local e indica suas fontes. Não há conexão ao agente ou às ferramentas externas nesta versão. A prioridade dos sistemas a conectar deve ser definida com a equipe.
+
 Os **120 cartões solicitados são tarefas exclusivamente de front-end para o [Kanban externo no GitHub](https://github.com/users/Jukamargo/projects/2)**, com título e descrição, e não registros do dashboard financeiro nem tarefas de backend ou infraestrutura. O backlog e a publicação estão documentados em [docs/kanban](docs/kanban/README.md). A base fictícia de colaboradores da aplicação é independente desse quadro de tarefas.
 
-## Fórmula e fontes
+## Caso de uso: custos por colaborador
 
 ```text
 Custo mensal consolidado = salário base + benefícios fixos + despesas variáveis
@@ -58,7 +60,8 @@ Os testes usam Google Chrome instalado no computador. Sem Chrome, instale-o ou c
 
 - Interface clara e uniforme entre páginas institucionais e aplicação, com azul sóbrio, tipografia legível, gráficos em tons discretos e valores com algarismos de largura fixa.
 - Modo claro e escuro pelo botão de sol/lua no cabeçalho, disponível também no celular. Segue o sistema na primeira visita e salva a escolha no navegador; alterações são sincronizadas entre abas. As cores compartilhadas ficam em `src/styles/theme.css`.
-- Apresentação do problema de dados fragmentados entre RH e Financeiro e da fórmula de consolidação por pessoa.
+- Apresentação do objetivo de automatizar rotinas, conectar as ferramentas principais e responder às dúvidas da equipe pelo chatbot.
+- Conversa demonstrativa com envio de perguntas, sugestões, indicação de fontes e opção de limpar o histórico. Respostas determinísticas sobre o escopo de RH e cálculos da base fictícia; perguntas sem conteúdo correspondente recebem uma indicação dos limites da demonstração.
 - Páginas independentes, menu mobile acessível, indicação da rota ativa, Escape, contenção de foco e bloqueio da rolagem de fundo.
 - **120 cards de colaboradores fictícios**, com título, descrição, departamento, custo mensal e tabela de composição.
 - Tabelas dos cards com salário base, benefícios fixos, despesas variáveis, referência, fontes e variação mensal.
@@ -67,7 +70,7 @@ Os testes usam Google Chrome instalado no computador. Sem Chrome, instale-o ou c
 - Dashboard com custo mensal consolidado, número de colaboradores, departamentos e alertas demonstrativos.
 - Evolução de seis meses, composição entre salários/benefícios/despesas e comparativo entre departamentos.
 - Detalhes por pessoa com benefícios discriminados, subtotal fixo, lançamentos variáveis com origem e valor, histórico e cadastro fictício.
-- **Consulta demonstrativa local por colaborador e competência**, com exemplo de pergunta em linguagem natural, cálculo e discriminação das fontes. A pergunta exibida não é enviada a um agente.
+- **Consulta demonstrativa local por colaborador e competência**, disponível pelo chatbot e por seletores, com cálculo e discriminação das fontes. As perguntas não são enviadas a um agente externo.
 - Arquitetura que distingue o que está documentado no projeto, o que funciona nesta interface e o que permanece no roadmap.
 - Formatação `pt-BR`, gráficos com descrição textual e tabelas com rolagem contida no mobile.
 
@@ -112,16 +115,16 @@ Essas regras não vêm do agente e não comprovam eficiência ou economia. O sta
 
 ## Rotas
 
-| Rota            | Conteúdo                                                         |
-| --------------- | ---------------------------------------------------------------- |
-| `/`             | Apresentação e prévia do custo por colaborador                   |
-| `/sobre`        | Fragmentação entre RH e Financeiro e objetivo do projeto         |
-| `/beneficios`   | Centralização, consulta por pessoa e rastreabilidade             |
-| `/demonstracao` | Consulta local, caso de referência, fluxo e placeholder do vídeo |
-| `/tecnologias`  | Fontes, sincronização, Gemini Enterprise e limites da interface  |
-| `/dashboard`    | Indicadores e gráficos consolidados                              |
-| `/custos`       | Catálogo de 120 colaboradores                                    |
-| `/custos/:id`   | Composição e lançamentos de uma pessoa                           |
+| Rota            | Conteúdo                                                           |
+| --------------- | ------------------------------------------------------------------ |
+| `/`             | Objetivo de automação, prévia do chatbot e caso de uso de custos   |
+| `/sobre`        | Integração das ferramentas e atendimento às dúvidas da equipe      |
+| `/beneficios`   | Conexões, automações, consulta por conversa e origem das respostas |
+| `/demonstracao` | Chatbot local, exemplo de custos, fluxo e placeholder do vídeo     |
+| `/tecnologias`  | Ferramentas, automações, chatbot e mapeamento dos serviços de RH   |
+| `/dashboard`    | Indicadores e gráficos consolidados                                |
+| `/custos`       | Catálogo de 120 colaboradores                                      |
+| `/custos/:id`   | Composição e lançamentos de uma pessoa                             |
 
 Na hospedagem estática, configure fallback de SPA para `index.html`, preservando os arquivos estáticos. Assim, atualizar uma rota interna não produz 404 do servidor.
 
@@ -134,6 +137,7 @@ src/
     ui/                      # Botões, títulos, badges e estado vazio
     cards/                   # Cards de colaboradores e indicadores
     charts/                  # Gráficos compartilhados
+    chat/                    # Conversa, prévia e mensagens do chatbot
     ConsolidationDemo.tsx    # Consulta local por pessoa e competência
     MarketingSections.tsx    # Seções institucionais
   data/
@@ -142,6 +146,7 @@ src/
   services/
     consolidationService.ts # Cruzamento por CPF e competência e soma dos custos
     costService.ts           # Consulta local, agregações, filtros e formatação
+    chatService.ts           # Respostas locais e adaptador substituível do chatbot
   types/cost.ts              # Contratos locais normalizados
   hooks/                     # Filtros e paginação na URL
   pages/                     # Páginas institucionais e aplicação
@@ -154,7 +159,7 @@ docs/ESCOPO_FRONTEND.md       # Correspondência com o contexto fornecido
 
 [Protótipo Figma fornecido](https://www.figma.com/design/Q6pYa2PRIZKpCFZ2L3BZuX/Untitled?node-id=0-1). O arquivo não pôde ser acessado durante a implementação; não se afirma fidelidade ao protótipo. Não foram encontrados logos oficiais.
 
-O visual mantém azul-marinho no destaque inicial, seções claras, fonte Inter e apresentação direta. O conteúdo enfatiza a gestão de custos, com informações sobre o agente concentradas nas áreas pertinentes.
+O visual mantém uma apresentação sóbria, com Inter e temas claro e escuro. O chatbot ocupa o destaque inicial; dashboard, catálogo e composição de custos aparecem como um caso de uso da solução.
 
 Os testes verificam o caso 101 de R$ 12.025,50, associação por CPF normalizado, isolamento por competência, integridade dos 120 cards, reconciliação dos gráficos, filtros, paginação e ausência de CPF completo na tela. Os fluxos são executados em **1440 × 1000**, **768 × 1024** e **390 × 844**. Capturas ficam em `artifacts/` e traces de falha em `test-results/`, pastas ignoradas pelo Git.
 
@@ -162,7 +167,7 @@ Os testes verificam o caso 101 de R$ 12.025,50, associação por CPF normalizado
 
 1. Validar a correspondência dos modelos locais com os contratos completos das APIs mock Sólides e Omie.
 2. Definir acesso do front-end às fontes e ao workflow: autenticação, autorização, CORS, tratamento de erros e estados de carregamento.
-3. Integrar os serviços existentes e o agente quando houver contrato de acesso apropriado para a interface.
+3. Priorizar as ferramentas principais e substituir o adaptador local do chatbot pela integração com o agente quando houver contrato de acesso apropriado.
 4. Acompanhar a liberação do dataset BigQuery prevista no roadmap e a evolução dos prompts/bases do projeto.
 5. Receber vídeo, logos oficiais e acesso ao Figma.
 
