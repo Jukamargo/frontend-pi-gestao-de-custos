@@ -1,0 +1,176 @@
+.ecosystem-section {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.ecosystem-heading {
+  max-width: 820px;
+  margin-bottom: 38px;
+}
+.ecosystem-heading h2 {
+  margin-bottom: 22px;
+}
+.ecosystem-heading p {
+  font-size: 15px;
+}
+.ecosystem-subheading {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+.ecosystem-flows {
+  margin: 0 0 48px;
+  padding: 0 26px;
+  list-style: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface-subtle);
+}
+.ecosystem-flows > li {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) 48px minmax(0, 1fr);
+  gap: 24px;
+  padding-block: 24px;
+  align-items: center;
+}
+.ecosystem-flows > li + li {
+  border-top: 1px solid var(--border);
+}
+.ecosystem-label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+.ecosystem-flows strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+.ecosystem-flows p {
+  font-size: 13px;
+  margin-top: 6px;
+}
+.ecosystem-arrow {
+  color: var(--accent);
+  justify-self: center;
+}
+.ecosystem-register {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.ecosystem-register-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 22px 26px;
+  background: var(--surface-subtle);
+}
+.ecosystem-register-heading h3 {
+  font-size: 16px;
+}
+.ecosystem-register-heading > span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.ecosystem-service {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 28px;
+  padding: 26px;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 100px;
+}
+.ecosystem-service h3 {
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+.ecosystem-service dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  margin: 0;
+}
+.ecosystem-service dt {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.ecosystem-service dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  overflow-wrap: anywhere;
+}
+.scope-state {
+  display: inline-flex;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--surface-subtle);
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.scope-state--proposed {
+  color: var(--accent);
+  background: var(--surface-accent);
+}
+.scope-state--restricted,
+.scope-state--analysis {
+  color: var(--warning);
+  background: var(--warning-surface);
+  border-color: var(--warning-border);
+}
+.ecosystem-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+.ecosystem-sources li {
+  font-size: 12px;
+  padding: 3px 8px;
+  background: var(--surface-muted);
+  border-radius: 4px;
+  color: var(--text-secondary);
+}
+@media (max-width: 1000px) {
+  .ecosystem-service {
+    grid-template-columns: 170px minmax(0, 1fr);
+    gap: 24px;
+  }
+  .ecosystem-service dl {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .ecosystem-flows {
+    padding-inline: 20px;
+  }
+  .ecosystem-flows > li {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .ecosystem-arrow {
+    transform: rotate(90deg);
+    justify-self: start;
+  }
+  .ecosystem-service {
+    grid-template-columns: 1fr;
+    padding: 22px 20px;
+    gap: 20px;
+  }
+  .ecosystem-register-heading {
+    padding: 22px 20px;
+  }
+}

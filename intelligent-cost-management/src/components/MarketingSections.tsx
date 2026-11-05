@@ -245,10 +245,15 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
             title="Fontes de dados e consolidação"
           >
             O projeto prevê a consulta aos dados de RH e Financeiro para
-            calcular o custo por colaborador. Esta versão apresenta o fluxo com
-            dados locais, sem conexão aos serviços externos.
+            calcular o custo por colaborador. O escopo também mapeia rotinas de
+            RH, benefícios e documentos. Esta versão utiliza dados locais, sem
+            conexão aos serviços externos.
           </SectionHeading>
-          {!full && (
+          {full ? (
+            <a className="text-link" href="#ecossistema-rh">
+              Ver mapeamento de RH <ArrowRight size={17} />
+            </a>
+          ) : (
             <Link className="text-link" to="/tecnologias">
               Conhecer a estrutura <ArrowUpRight size={17} />
             </Link>
@@ -307,9 +312,9 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
               <p>
                 Enriquecer as bases e os prompts de demonstração, conectar o
                 agente ao BigQuery quando o dataset for liberado e integrar a
-                apresentação web. GLPI, Grafana/Prometheus, Entra ID e
-                SharePoint pertencem ao ecossistema mapeado; não são integrações
-                ativas desta interface.
+                apresentação web. O mapeamento de RH abaixo detalha as
+                automações propostas para cadastros, comunicação e documentos,
+                incluindo as restrições de cada serviço.
               </p>
             </article>
           </div>
