@@ -4,7 +4,7 @@ Repositório: [Jukamargo/frontend-pi-gestao-de-custos](https://github.com/Jukama
 
 **120 issues exclusivas de front-end verificadas pela API**, com título, descrição, tabela de informações e critérios de aceite.
 
-Project: criação pendente da autorização específica de GitHub Projects. As issues já estão cadastradas.
+Project: [Gestão de custos — Front-end](https://github.com/users/Jukamargo/projects/2). Visualização Kanban e 120 itens confirmados pela API.
 
 Nenhuma issue foi encerrada automaticamente. Responsáveis e prazos permanecem sem atribuição; prioridades são propostas para revisão.
 

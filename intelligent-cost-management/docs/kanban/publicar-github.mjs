@@ -79,6 +79,7 @@ const headers = {
   'User-Agent': 'Gestao-de-custos-Kanban',
   'X-GitHub-Api-Version': '2026-03-10',
   'Content-Type': 'application/json',
+  'Cache-Control': 'no-cache',
 }
 async function request(path, method = 'GET', body) {
   let response
@@ -430,6 +431,7 @@ if (mode === '--project') {
   for (const [index, card] of backlog.cards.entries()) {
     const issue = state.issues[card.id]
     let itemId = itemMap.get(issue.id)
+    const restoredItem = !itemId
     if (!itemId) {
       const added = await graphql(
         'mutation($input:AddProjectV2ItemByIdInput!){addProjectV2ItemById(input:$input){item{id}}}',
@@ -438,7 +440,7 @@ if (mode === '--project') {
       itemId = added.addProjectV2ItemById.item.id
       await pause(1800)
     }
-    if (!state.items?.[card.id]) {
+    if (restoredItem || state.items?.[card.id] !== itemId) {
       const option = status.options.find(
         (option) => option.name === card.suggestedStatus,
       )
@@ -496,14 +498,46 @@ if (mode === '--verify') {
   }
   if (state.project) {
     const result = await graphql(
-      'query($id:ID!){node(id:$id){... on ProjectV2{url public items(first:1){totalCount} views(first:10){nodes{name layout}} repositories(first:10){nodes{nameWithOwner}}}}}',
+      `query VerificarKanban${Date.now()}($id:ID!){node(id:$id){... on ProjectV2{url public items(first:1){totalCount} views(first:10){nodes{name layout verticalGroupByFields(first:10){nodes{... on ProjectV2SingleSelectField{name options{name}}}}}} repositories(first:10){nodes{nameWithOwner}}}}}`,
       { id: state.project.id },
     )
+    const linkedIssues = []
+    let cursor = null
+    do {
+      const page = await graphql(
+        `query ConferirItens${Date.now()}($id:ID!,$after:String){node(id:$id){...on ProjectV2{items(first:100,after:$after){nodes{id content{...on Issue{id}}}pageInfo{hasNextPage endCursor}}}}}`,
+        { id: state.project.id, after: cursor },
+      )
+      linkedIssues.push(
+        ...page.node.items.nodes.map((item) => item.content?.id),
+      )
+      cursor = page.node.items.pageInfo.hasNextPage
+        ? page.node.items.pageInfo.endCursor
+        : null
+    } while (cursor)
+    const expectedIssues = backlog.cards.map((card) => state.issues[card.id].id)
+    const verifiedLinks = new Set(linkedIssues)
     console.log(JSON.stringify(result.node))
     state.verification.project = result.node
     if (
       result.node.items.totalCount !== 120 ||
-      !result.node.views.nodes.some((view) => view.layout === 'BOARD_LAYOUT')
+      linkedIssues.length !== 120 ||
+      verifiedLinks.size !== 120 ||
+      !expectedIssues.every((id) => verifiedLinks.has(id)) ||
+      !result.node.views.nodes.some(
+        (view) =>
+          view.layout === 'BOARD_LAYOUT' &&
+          view.verticalGroupByFields.nodes.some(
+            (field) =>
+              field.name === 'Status' &&
+              ['A fazer', 'Em andamento', 'A validar', 'Concluído'].every(
+                (name) => field.options.some((option) => option.name === name),
+              ),
+          ),
+      ) ||
+      !result.node.repositories.nodes.some(
+        (repo) => repo.nameWithOwner === repository,
+      )
     )
       throw new Error(
         'O Project ainda não confirmou 120 itens em uma visualização Kanban.',

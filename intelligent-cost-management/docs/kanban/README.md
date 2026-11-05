@@ -2,6 +2,16 @@
 
 Os **120 cartões solicitados são tarefas exclusivas do front-end no GitHub**, cada uma com título e descrição. Destino autorizado: [Jukamargo/frontend-pi-gestao-de-custos](https://github.com/Jukamargo/frontend-pi-gestao-de-custos). Não são cards de colaboradores nem tarefas de construção de backend, APIs, ETL ou infraestrutura.
 
+Quadro: **[Gestão de custos — Front-end](https://github.com/users/Jukamargo/projects/2)**.
+
+## Uso do quadro
+
+- Abra a visualização **Kanban**, organizada pelo campo Status.
+- Clique em um cartão para consultar a descrição e os critérios de aceite da issue.
+- Use as colunas **A fazer**, **Em andamento**, **A validar** e **Concluído** para registrar a situação real do trabalho.
+- Utilize os rótulos de área e prioridade para localizar as tarefas do front-end.
+- Atribua responsáveis e prazos conforme o acordo da equipe; eles não foram preenchidos automaticamente.
+
 O backlog contém 12 áreas com 10 tarefas cada:
 
 1. Arquitetura do front-end.
@@ -19,7 +29,7 @@ O backlog contém 12 áreas com 10 tarefas cada:
 
 Cada cartão possui título em português no infinitivo, descrição, tabela de informações e três critérios de aceite. Prioridades são propostas para revisão; responsáveis e prazos não foram inventados.
 
-As tarefas representam entregas e revisões da interface. Quando a função já existe no código, sua descrição deve ser usada para validar o aceite com a equipe, sem assumir automaticamente que a issue está concluída. Nenhuma issue é encerrada nem recebe responsável ou prazo automaticamente. A configuração prevista para o quadro usa as colunas **A fazer**, **Em andamento**, **A validar** e **Concluído**. Consulte o [relatório de publicação](publicacao.md) para conferir o que já foi confirmado pela API.
+As tarefas representam entregas e revisões da interface. Quando a função já existe no código, sua descrição deve ser usada para validar o aceite com a equipe, sem assumir automaticamente que a issue está concluída. Nenhuma issue é encerrada nem recebe responsável ou prazo automaticamente. Consulte o [relatório de publicação](publicacao.md) para conferir o que já foi confirmado pela API.
 
 ## Arquivos
 
