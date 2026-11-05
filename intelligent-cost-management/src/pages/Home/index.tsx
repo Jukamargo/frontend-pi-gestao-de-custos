@@ -24,23 +24,24 @@ export default function Home() {
           <div className="hero-content">
             <span className="hero-kicker">
               <span />
-              Gestão de custos operacionais
+              Centralização de RH e Financeiro
             </span>
             <h1>
-              Cada custo,
+              O custo de cada
               <br />
-              <span>no seu lugar.</span>
+              <span>colaborador.</span>
             </h1>
             <p>
-              Acompanhe os recursos da operação, compare períodos e entenda o
-              que mudou. Do total ao detalhe, sem perder o contexto.
+              Reúna salário, benefícios fixos e despesas variáveis em uma visão
+              mensal por pessoa. Um demonstrativo que conecta o cadastro do RH
+              aos lançamentos do Financeiro.
             </p>
             <div className="hero-buttons">
               <Button to="/dashboard" arrow>
                 Explorar dashboard
               </Button>
               <Link className="hero-secondary" to="/custos">
-                Ver catálogo de custos <ArrowUpRight size={17} />
+                Ver colaboradores <ArrowUpRight size={17} />
               </Link>
             </div>
             <div className="hero-footnote">
@@ -64,15 +65,15 @@ export default function Home() {
           <p>
             Uma base para
             <br />
-            <strong>entender a operação.</strong>
+            <strong>consolidar custos de pessoas.</strong>
           </p>
           <div>
             <strong>{summary.count}</strong>
-            <span>recursos no catálogo</span>
+            <span>colaboradores fictícios</span>
           </div>
           <div>
             <strong>{summary.categories.toString().padStart(2, '0')}</strong>
-            <span>categorias de custos</span>
+            <span>departamentos</span>
           </div>
           <div>
             <strong>
@@ -95,18 +96,19 @@ export default function Home() {
             <div>
               <span className="eyebrow">O custo, em detalhe</span>
               <h2>
-                Por trás do total,
-                <br />
-                existem recursos.
+                Salário, benefícios
+                <br />e despesas variáveis.
               </h2>
             </div>
             <div className="section-side-copy">
               <p>
-                Serviço, consumo, área responsável e variação mensal.
-                Informações que ajudam a entender cada lançamento.
+                Cada card apresenta o custo mensal de um colaborador. Os
+                detalhes mostram os benefícios da Sólides e os lançamentos
+                variáveis do Omie, com dados simulados.
               </p>
               <Link className="text-link" to="/custos">
-                Explorar os {summary.count} recursos <ArrowUpRight size={17} />
+                Explorar os {summary.count} colaboradores{' '}
+                <ArrowUpRight size={17} />
               </Link>
             </div>
           </div>
@@ -116,7 +118,8 @@ export default function Home() {
             ))}
           </div>
           <p className="catalog-caption">
-            Exemplos do catálogo · Valores mensais em reais · Dados simulados
+            Caso 101 reproduz o exemplo do contexto · Demais pessoas fictícias ·
+            Outubro de 2026
           </p>
         </div>
       </section>

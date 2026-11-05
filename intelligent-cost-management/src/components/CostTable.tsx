@@ -9,16 +9,16 @@ export function CostTable({ records }: { records: CostRecord[] }) {
       className="table-scroll"
       tabIndex={0}
       role="region"
-      aria-label="Tabela de recursos, role horizontalmente para ver todas as colunas"
+      aria-label="Tabela de colaboradores, role horizontalmente para ver todas as colunas"
     >
       <table className="cost-table">
         <caption className="sr-only">
-          Custos dos recursos demonstrativos
+          Custos dos colaboradores demonstrativos
         </caption>
         <thead>
           <tr>
-            <th scope="col">Recurso / serviço</th>
-            <th scope="col">Categoria</th>
+            <th scope="col">Colaborador</th>
+            <th scope="col">Departamento</th>
             <th scope="col">Custo mensal</th>
             <th scope="col">Variação</th>
             <th scope="col">Status</th>

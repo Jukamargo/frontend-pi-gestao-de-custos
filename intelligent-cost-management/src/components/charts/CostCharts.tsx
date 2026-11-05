@@ -209,8 +209,8 @@ export function ComparisonChart({
             <XAxis
               dataKey="name"
               tickFormatter={(name: string) =>
-                name === 'Infraestrutura'
-                  ? 'Infra.'
+                name === 'Financeiro'
+                  ? 'Financ.'
                   : name === 'Operações'
                     ? 'Oper.'
                     : name

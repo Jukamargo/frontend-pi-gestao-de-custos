@@ -787,6 +787,15 @@
 .detail-table td {
   color: #bdcee6;
 }
+.consolidation-total th,
+.consolidation-total td {
+  background: #172d47;
+  color: #cce1ff;
+  font-weight: 600;
+}
+.resource-section + .chart-container {
+  margin-top: 25px;
+}
 @media (min-width: 1600px) {
   .cost-grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));

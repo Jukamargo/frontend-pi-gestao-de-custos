@@ -20,19 +20,19 @@ export function CostFilters({
           id="cost-search"
           value={query.search}
           onChange={(e) => update('q', e.target.value)}
-          placeholder="Buscar por título, descrição ou ID..."
+          placeholder="Buscar por nome, cargo ou ID..."
         />
       </div>
       <div className="select-field">
         <label className="sr-only" htmlFor="category">
-          Categoria
+          Departamento
         </label>
         <select
           id="category"
           value={query.category}
           onChange={(e) => update('category', e.target.value)}
         >
-          <option value="">Todas as categorias</option>
+          <option value="">Todos os departamentos</option>
           {categories.map((item) => (
             <option key={item}>{item}</option>
           ))}
@@ -47,7 +47,7 @@ export function CostFilters({
           value={query.status}
           onChange={(e) => update('status', e.target.value)}
         >
-          <option value="">Todos os status</option>
+          <option value="">Todas as variações</option>
           {statuses.map((item) => (
             <option key={item}>{item}</option>
           ))}

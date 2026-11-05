@@ -36,7 +36,10 @@ export default function Dashboard() {
         <div>
           <span className="eyebrow">GESTÃO DE CUSTOS</span>
           <h1>Visão geral</h1>
-          <p>Uma perspectiva clara dos seus custos operacionais.</p>
+          <p>
+            Salários, benefícios fixos e despesas variáveis consolidados por
+            colaborador.
+          </p>
         </div>
         <span className="period-badge">
           <CalendarDays size={16} />
@@ -53,7 +56,7 @@ export default function Dashboard() {
       <div className="dashboard-toolbar">
         <div
           className="category-tabs"
-          aria-label="Filtrar dashboard por categoria"
+          aria-label="Filtrar dashboard por departamento"
         >
           <button
             className={!category ? 'active' : ''}
@@ -76,28 +79,28 @@ export default function Dashboard() {
       </div>
       <div className="metrics-grid">
         <MetricCard
-          title="Custo total analisado"
+          title="Custo mensal consolidado"
           value={currency(summary.total)}
           note={`${percentage(summary.variation)} em relação a setembro`}
           icon={Wallet}
           accent="metric-blue"
         />
         <MetricCard
-          title="Recursos monitorados"
+          title="Colaboradores monitorados"
           value={String(summary.count)}
           note="Registros no período selecionado"
           icon={Database}
         />
         <MetricCard
-          title="Categorias monitoradas"
+          title="Departamentos monitorados"
           value={String(summary.categories)}
-          note="Distribuição dos recursos analisados"
+          note="Distribuição dos colaboradores analisados"
           icon={Layers3}
         />
         <MetricCard
           title="Alertas identificados"
           value={String(summary.alerts)}
-          note="Recursos com aumento acima de 10%"
+          note="Colaboradores com aumento acima de 10%"
           icon={Bell}
           accent="metric-amber"
         />
@@ -125,17 +128,17 @@ export default function Dashboard() {
           </div>
         </ChartContainer>
         <ChartContainer
-          title="Distribuição por categoria"
-          subtitle="Participação no custo do período"
+          title="Composição do custo mensal"
+          subtitle="Salários, benefícios fixos e despesas variáveis"
         >
           <DistributionChart
-            data={summary.distribution.filter((item) => item.value > 0)}
+            data={summary.composition.filter((item) => item.value > 0)}
           />
         </ChartContainer>
       </div>
       <ChartContainer
         title="Comparativo de custos"
-        subtitle="Setembro × outubro de 2026, por categoria"
+        subtitle="Setembro × outubro de 2026, por departamento"
       >
         <ComparisonChart
           data={summary.distribution.filter((item) => item.value > 0)}
@@ -144,7 +147,7 @@ export default function Dashboard() {
       <section className="resource-section">
         <div className="resource-heading">
           <div>
-            <h2>Recursos de maior custo</h2>
+            <h2>Colaboradores com maiores custos</h2>
             <p>Os cinco maiores valores no recorte selecionado.</p>
           </div>
           <Link

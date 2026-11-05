@@ -16,6 +16,7 @@ import {
 import { Link } from 'react-router-dom'
 import { SectionHeading } from './ui/SectionHeading'
 import { Button } from './ui/Button'
+import { ConsolidationDemo } from './ConsolidationDemo'
 import {
   costService,
   compactCurrency,
@@ -31,26 +32,29 @@ export function AboutSection() {
         <div className="about-intro">
           <span className="eyebrow">Sobre o projeto</span>
           <h2>
-            O primeiro passo
-            <br />é enxergar o todo.
+            RH e Financeiro,
+            <br />
+            na mesma visão.
           </h2>
-          <span className="section-index">01 / Visão da operação</span>
+          <span className="section-index">
+            01 / Centralização de custos por pessoa
+          </span>
         </div>
         <div className="about-copy">
           <p className="lead-copy">
-            Cloud, licenças, infraestrutura, APIs e operações. Custos de
-            naturezas diferentes precisam de uma leitura em comum.
+            O cadastro está no RH. As viagens e os reembolsos estão no
+            Financeiro. O custo mensal de uma pessoa depende das duas fontes.
           </p>
           <p>
-            A plataforma Gestão de custos organiza os recursos por categoria e
-            período. Você acompanha a evolução dos valores e consulta as
-            informações de cada serviço sem precisar reconstruir a análise a
-            cada consulta.
+            O projeto Inovanet propõe centralizar os dados da Sólides e do Omie,
+            cruzando os registros pelo CPF do colaborador e pela competência. A
+            fórmula reúne salário base, benefícios fixos e despesas variáveis.
           </p>
           <p>
             Este projeto faz parte do contexto da 2RPnet / Inovanet Tech. A
-            versão atual utiliza dados simulados para apresentar a experiência
-            de navegação e análise.
+            interface atual utiliza bases locais fictícias. Os serviços mock, a
+            sincronização e o workflow Gemini Enterprise são descritos no
+            contexto técnico do projeto, sem conexão ativa por esta página.
           </p>
           <Link to="/sobre" className="text-link">
             Entender a proposta <ArrowUpRight size={17} />
@@ -65,34 +69,34 @@ const benefits = [
   {
     icon: Search,
     number: '01',
-    title: 'Entenda as variações',
-    text: 'Compare os valores mês a mês e identifique quais recursos merecem uma análise mais próxima.',
+    title: 'Centralize as informações',
+    text: 'Reúna os custos fixos do RH e os lançamentos variáveis do Financeiro em uma consulta por colaborador.',
     detail:
-      'O histórico de cada recurso permite consultar a evolução dos custos e comparar outubro com setembro.',
+      'Sólides fornece salário e benefícios. Omie concentra despesas e reembolsos originados em Onfly e Flash.',
   },
   {
     icon: Layers3,
     number: '02',
-    title: 'Encontre o que precisa',
-    text: 'Filtre por categoria e status ou busque diretamente por serviço, descrição e identificador.',
+    title: 'Consulte por pessoa e mês',
+    text: 'Encontre um colaborador e acompanhe a composição do custo na competência escolhida.',
     detail:
-      'Os filtros e a paginação ficam na URL. Você pode voltar para a mesma consulta pelo histórico do navegador.',
+      'A consulta demonstrativa permite selecionar pessoa e competência. O catálogo de outubro oferece busca por nome, cargo e ID, além de filtro por departamento.',
   },
   {
     icon: ChartNoAxesCombined,
     number: '03',
-    title: 'Tenha uma visão consolidada',
-    text: 'Veja a distribuição dos custos e acompanhe os mesmos registros no dashboard e no catálogo.',
+    title: 'Veja como o total se forma',
+    text: 'Separe salário, benefícios fixos, viagens, hospedagens e reembolsos antes de analisar o valor consolidado.',
     detail:
-      'Indicadores, gráficos e cards compartilham a mesma fonte de dados, com totais calculados a partir dos registros.',
+      'A fórmula do escopo é salário base + benefícios fixos + despesas variáveis. Não há estimativa adicional de encargos nesta demonstração.',
   },
   {
     icon: Gauge,
     number: '04',
-    title: 'Priorize a próxima análise',
-    text: 'Use os pontos de atenção para começar pelos recursos com maior crescimento no período.',
+    title: 'Preserve a origem dos valores',
+    text: 'Consulte os benefícios e os lançamentos que compõem o custo, com indicação da fonte e do período.',
     detail:
-      'O status Atenção sinaliza aumentos acima de 10% no cenário simulado. A avaliação da causa continua sendo uma decisão humana.',
+      'O cruzamento usa colaborador_cpf e competência. O CPF completo não é exibido na interface e todos os registros desta versão são fictícios.',
   },
 ]
 export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
@@ -105,8 +109,8 @@ export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
             eyebrow="Na rotina de gestão"
             title="O que você pode acompanhar."
           >
-            Uma consulta rápida para encontrar um recurso. Uma visão mais ampla
-            para entender o período.
+            Uma visão do custo mensal que começa no cadastro e termina nos
+            lançamentos que compõem o total.
           </SectionHeading>
           {!expanded && (
             <Link to="/beneficios" className="text-link">
@@ -141,24 +145,25 @@ export function AgentSection({ full = false }: { full?: boolean }) {
             <SectionHeading
               level={full ? 1 : 2}
               eyebrow="Demonstração"
-              title="Veja como a análise pode funcionar."
+              title="Da consulta à composição do custo."
             >
-              Um espaço para conhecer o fluxo proposto do agente de apoio à
-              análise de custos. O vídeo real será incluído quando estiver
-              disponível.
+              O contexto do projeto descreve o Agente de Gestão de Custos —
+              Inovanet, construído no Gemini Enterprise Workflow Builder. Ele
+              consulta dados de RH e cruza as despesas para responder sobre o
+              custo mensal de um colaborador.
             </SectionHeading>
             <div className="agent-points">
               <span>
                 <Check size={16} />
-                Organização das informações operacionais
+                Salário e benefícios fixos da Sólides
               </span>
               <span>
                 <Check size={16} />
-                Leitura das variações de custos
+                Despesas do Omie associadas ao CPF e à competência
               </span>
               <span>
                 <Check size={16} />
-                Resultados para avaliação da equipe
+                Demonstrativo consolidado para avaliação da equipe
               </span>
             </div>
             {!full && (
@@ -185,29 +190,30 @@ export function AgentSection({ full = false }: { full?: boolean }) {
             </span>
           </div>
         </div>
+        {full && <ConsolidationDemo />}
         {full && (
           <>
             <div className="agent-flow" aria-label="Fluxo conceitual do agente">
               {[
                 {
                   icon: FileInput,
-                  title: 'Entrada de dados',
-                  sub: 'Informações operacionais',
+                  title: 'Solicitação',
+                  sub: 'Pessoa e competência',
                 },
                 {
                   icon: Workflow,
-                  title: 'Processamento',
-                  sub: 'Organização dos registros',
+                  title: 'Consulta RH',
+                  sub: 'Sólides: salário e benefícios',
                 },
                 {
                   icon: Search,
-                  title: 'Análise',
-                  sub: 'Leitura das variações',
+                  title: 'Consulta Financeiro',
+                  sub: 'Omie: CPF e competência',
                 },
                 {
                   icon: ChartNoAxesCombined,
-                  title: 'Resultados',
-                  sub: 'Avaliação pela equipe',
+                  title: 'Consolidação',
+                  sub: 'Fixo + variável',
                 },
               ].map(({ icon: Icon, title, sub }, i) => (
                 <div className="flow-step" key={title}>
@@ -224,9 +230,10 @@ export function AgentSection({ full = false }: { full?: boolean }) {
             <div className="info-note">
               <Info size={20} />
               <p>
-                <strong>Sobre esta demonstração.</strong> O fluxo é conceitual.
-                A integração com um agente de IA está prevista para uma etapa
-                futura; não há processamento de dados reais neste ambiente.
+                <strong>Projeto e interface são etapas distintas.</strong> O
+                documento registra um workflow validado no projeto de
+                referência. Esta interface demonstra a regra com dados locais e
+                não se conecta ao Gemini Enterprise nem aos serviços externos.
               </p>
             </div>
           </>
@@ -244,10 +251,12 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
           <SectionHeading
             level={full ? 1 : 2}
             eyebrow="Por dentro da plataforma"
-            title="Uma estrutura simples de entender."
+            title="Das fontes ao custo consolidado."
           >
-            A interface e os dados simulados estão implementados. A conexão com
-            API e agente faz parte das próximas etapas.
+            Arquitetura descrita no contexto: APIs mock de RH e Financeiro,
+            sincronização para fontes de conhecimento e orquestração no Gemini
+            Enterprise. A interface web apresenta uma simulação local desse
+            fluxo.
           </SectionHeading>
           {!full && (
             <Link className="text-link" to="/tecnologias">
@@ -258,49 +267,59 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
         <div className="architecture">
           <div className="architecture-node">
             <Code2 size={23} strokeWidth={1.5} />
-            <small>01 / Interface</small>
-            <h3>Navegação e visualização</h3>
-            <p>React, TypeScript e Vite</p>
-            <span className="architecture-status">Disponível nesta versão</span>
+            <small>01 / Fontes</small>
+            <h3>Sólides + Omie</h3>
+            <p>APIs mock em FastAPI · serviços descritos no Render</p>
+            <span className="architecture-status">
+              Implementação documentada no projeto
+            </span>
           </div>
           <div className="architecture-node">
             <Database size={23} strokeWidth={1.5} />
-            <small>02 / Dados</small>
-            <h3>Uma fonte compartilhada</h3>
-            <p>Registros tipados e simulados</p>
-            <span className="architecture-status">Disponível nesta versão</span>
+            <small>02 / Sincronização</small>
+            <h3>ETL e fontes de conhecimento</h3>
+            <p>sync_apis_to_drive.py · CSVs de colaboradores e despesas</p>
+            <span className="architecture-status">
+              Pipeline descrito no contexto
+            </span>
           </div>
-          <div className="architecture-node planned">
+          <div className="architecture-node">
             <Workflow size={23} strokeWidth={1.5} />
-            <small>03 / Próxima etapa</small>
-            <h3>Integração com API e agente</h3>
-            <p>Contrato a ser definido</p>
-            <span className="architecture-status">Planejado</span>
+            <small>03 / Orquestração</small>
+            <h3>Gemini Enterprise</h3>
+            <p>Workflow Builder · consulta RH → Financeiro → consolidação</p>
+            <span className="architecture-status">
+              Workflow validado segundo o documento
+            </span>
           </div>
         </div>
         {full && (
           <div className="technology-details">
             <article>
-              <h3>Interface e navegação</h3>
+              <h3>Nesta interface</h3>
               <p>
-                React com TypeScript e React Router para páginas independentes.
-                Tailwind CSS e estilos compartilhados organizam a apresentação.
+                React, TypeScript, Vite e React Router. Os cálculos usam dados
+                locais tipados. Nenhum serviço externo ou agente é acionado pelo
+                navegador nesta versão.
               </p>
             </article>
             <article>
-              <h3>Gráficos e acessibilidade</h3>
+              <h3>Contratos e cruzamento</h3>
               <p>
-                Recharts apresenta os dados do catálogo, Lucide fornece os
-                ícones e a fonte Inter é hospedada localmente. A interface
-                respeita a preferência por movimento reduzido.
+                O contexto define GET /solides/colaboradores/{'{id}'} e GET
+                /omie/despesas, com CPF e competência AAAA-MM. O cruzamento
+                normaliza o CPF e considera somente as despesas da mesma pessoa
+                e período. As APIs mock usam OpenAPI 3.0.2.
               </p>
             </article>
             <article>
-              <h3>Próximas integrações</h3>
+              <h3>Próximas etapas do projeto</h3>
               <p>
-                A camada de serviços isola a origem dos registros. Backend,
-                provedor de IA e integrações corporativas ainda não foram
-                definidos ou implementados.
+                Enriquecer as bases e os prompts de demonstração, conectar o
+                agente ao BigQuery quando o dataset for liberado e integrar a
+                apresentação web. GLPI, Grafana/Prometheus, Entra ID e
+                SharePoint pertencem ao ecossistema mapeado; não são integrações
+                ativas desta interface.
               </p>
             </article>
           </div>
@@ -322,8 +341,8 @@ export function CallToAction() {
             Aprofunde nos detalhes.
           </h2>
           <p>
-            {summary.count} recursos e {summary.categories} categorias para
-            explorar com dados simulados.
+            {summary.count} colaboradores em {summary.categories} departamentos,
+            com custos fixos e variáveis simulados.
           </p>
         </div>
         <div className="cta-actions">

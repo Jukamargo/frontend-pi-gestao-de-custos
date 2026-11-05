@@ -21,7 +21,7 @@ export function DashboardPreview() {
       </div>
       <div className="preview-main">
         <div className="preview-total">
-          <span>Custo total analisado</span>
+          <span>Custo mensal consolidado</span>
           <strong>{currency(summary.total)}</strong>
           <span className="preview-change">
             <ArrowUpRight size={13} />
@@ -36,11 +36,11 @@ export function DashboardPreview() {
         <div className="preview-summary">
           <div>
             <strong>{summary.count}</strong>
-            <span>Recursos</span>
+            <span>Colaboradores</span>
           </div>
           <div>
             <strong>{summary.categories}</strong>
-            <span>Categorias</span>
+            <span>Departamentos</span>
           </div>
           <div>
             <strong>{summary.alerts}</strong>

@@ -24,9 +24,9 @@ export function filterCosts(records: CostRecord[], query: CostQuery) {
     .filter(
       (item) =>
         (!search ||
-          normalize(`${item.title} ${item.description} ${item.id}`).includes(
-            search,
-          )) &&
+          normalize(
+            `${item.title} ${item.description} ${item.id} ${item.collaboratorId}`,
+          ).includes(search)) &&
         (!query.category || item.category === query.category) &&
         (!query.status || item.status === query.status),
     )
@@ -48,6 +48,20 @@ export function summarizeCosts(records: CostRecord[]) {
     count: records.length,
     categories: new Set(records.map((item) => item.category)).size,
     alerts: records.filter((item) => item.status === 'Atenção').length,
+    composition: [
+      {
+        name: 'Salários',
+        value: records.reduce((sum, item) => sum + item.salaryBase, 0),
+      },
+      {
+        name: 'Benefícios fixos',
+        value: records.reduce((sum, item) => sum + item.benefitsTotal, 0),
+      },
+      {
+        name: 'Despesas variáveis',
+        value: records.reduce((sum, item) => sum + item.variableTotal, 0),
+      },
+    ],
     distribution: categories.map((name) => ({
       name,
       value: records
@@ -63,7 +77,8 @@ export function summarizeCosts(records: CostRecord[]) {
     })),
   }
 }
-// Substitua somente este adaptador quando o contrato da API estiver definido.
+// Adaptador local. Os contratos Sólides/Omie estão descritos no contexto do projeto;
+// esta interface ainda não consome os serviços externos nem o workflow Gemini.
 export const costService = {
   list: () => costs,
   getById: (id: string) => costs.find((item) => item.id === id),

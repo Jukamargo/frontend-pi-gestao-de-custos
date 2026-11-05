@@ -9,9 +9,9 @@ export function Footer() {
           <div>
             <Brand />
             <p>
-              Acompanhe os custos da operação.
+              Custos de pessoas, do RH ao Financeiro.
               <br />
-              Do panorama geral a cada recurso.
+              Do consolidado a cada lançamento.
             </p>
           </div>
           <div>

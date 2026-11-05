@@ -1,6 +1,39 @@
 import { expect, test } from '@playwright/test'
 import { costs } from '../src/data/costs'
 import { currency } from '../src/services/costService'
+import { employees, variableExpenses } from '../src/data/people'
+import { consolidateEmployee } from '../src/services/consolidationService'
+
+test('consultar colaborador e competência e conferir o caso de referência', async ({
+  page,
+}) => {
+  await page.goto('/demonstracao')
+  const result = page.locator('.equation-total')
+  await expect(result).toContainText(currency(12025.5))
+  await expect(page.locator('.consolidation-sources')).toContainText(
+    currency(1880),
+  )
+  await page.getByLabel('Competência', { exact: true }).selectOption('2026-09')
+  await expect(result).toContainText(
+    currency(
+      consolidateEmployee(employees[0], variableExpenses, '2026-09').total,
+    ),
+  )
+  await page.getByLabel('Colaborador', { exact: true }).selectOption('102')
+  await expect(result).toContainText(
+    currency(
+      consolidateEmployee(employees[1], variableExpenses, '2026-09').total,
+    ),
+  )
+  await page.goto('/custos/ICM-001')
+  await expect(page.locator('h1')).toHaveText('Ana Beatriz Souza')
+  await expect(page.locator('.consolidation-total')).toContainText(
+    currency(12025.5),
+  )
+  await expect(page.locator('main')).toContainText('OMIE-202610-001')
+  await expect(page.locator('main')).not.toContainText('12345678900')
+  await expect(page.locator('main')).not.toContainText('123.456.789-00')
+})
 
 test('todas as rotas funcionam sem erro de JavaScript ou overflow', async ({
   page,
@@ -45,35 +78,35 @@ test('catálogo permite busca, filtros, ordenação e navegação de páginas', 
   await expect(page.locator('.cost-card')).toHaveCount(12)
   await page.getByRole('button', { name: 'Próxima página' }).click()
   await expect(page).toHaveURL(/page=2/)
-  await page.getByLabel('Buscar custos', { exact: true }).fill('computacao')
-  await expect(page.locator('.cost-card')).toHaveCount(4)
+  await page.getByLabel('Buscar custos', { exact: true }).fill('ana beatriz')
+  await expect(page.locator('.cost-card')).toHaveCount(1)
   await expect(page).not.toHaveURL(/page=2/)
   await page
     .getByLabel('Buscar custos', { exact: true })
     .fill('nada-encontrado-xyz')
   await expect(
-    page.getByRole('heading', { name: 'Nenhum custo encontrado' }),
+    page.getByRole('heading', { name: 'Nenhum colaborador encontrado' }),
   ).toBeVisible()
   await page.getByRole('button', { name: 'Limpar filtros' }).last().click()
   await expect(page.getByLabel('Buscar custos', { exact: true })).toHaveValue(
     '',
   )
   await expect(page.locator('.cost-card')).toHaveCount(12)
-  await page.getByLabel('Categoria', { exact: true }).selectOption('Cloud')
-  await expect(page.getByRole('status')).toContainText('24')
+  await page.getByLabel('Departamento', { exact: true }).selectOption('TI')
+  await expect(page.getByRole('status')).toContainText('30')
   await page.getByLabel('Status', { exact: true }).selectOption('Atenção')
-  await expect(page.locator('.cost-card')).toHaveCount(6)
+  await expect(page.locator('.cost-card')).toHaveCount(12)
   await page.getByLabel('Ordenação').selectOption('value-asc')
   const lowest = costs
-    .filter((item) => item.category === 'Cloud' && item.status === 'Atenção')
+    .filter((item) => item.category === 'TI' && item.status === 'Atenção')
     .sort((a, b) => a.cost - b.cost)[0]
   await expect(page.locator('.cost-card h2').first()).toHaveText(lowest.title)
   await page.locator('.cost-details-link').first().click()
   await expect(page).toHaveURL(new RegExp(lowest.id))
   await expect(page.locator('h1')).toHaveText(lowest.title)
   await page.goBack()
-  await expect(page.getByLabel('Categoria', { exact: true })).toHaveValue(
-    'Cloud',
+  await expect(page.getByLabel('Departamento', { exact: true })).toHaveValue(
+    'TI',
   )
 })
 
@@ -93,7 +126,9 @@ test('exibir os 120 cards completos e alterar a quantidade por página', async (
     expect.arrayContaining(costs.map((cost) => cost.description)),
   )
   expect(await cards.locator('td').allTextContents()).not.toContain('')
-  await expect(page.getByRole('status')).toContainText('1–120 de 120 recursos')
+  await expect(page.getByRole('status')).toContainText(
+    '1–120 de 120 colaboradores',
+  )
   expect(
     await page.evaluate(
       () => document.documentElement.scrollWidth <= innerWidth,
@@ -108,8 +143,8 @@ test('exibir os 120 cards completos e alterar a quantidade por página', async (
   await page.getByLabel('Cards por página').selectOption('48')
   await expect(cards).toHaveCount(48)
   await expect(page.getByRole('status')).toContainText('1–48')
-  await page.getByLabel('Categoria', { exact: true }).selectOption('Cloud')
-  await expect(cards).toHaveCount(24)
+  await page.getByLabel('Departamento', { exact: true }).selectOption('TI')
+  await expect(cards).toHaveCount(30)
 })
 
 test('dashboard filtra indicadores e mantém valores coerentes', async ({
@@ -117,20 +152,20 @@ test('dashboard filtra indicadores e mantém valores coerentes', async ({
 }) => {
   await page.goto('/dashboard')
   await expect(page.locator('.metric-card').nth(1)).toContainText('120')
-  await page.getByRole('button', { name: 'Cloud', exact: true }).click()
-  await expect(page.locator('.metric-card').nth(1)).toContainText('24')
+  await page.getByRole('button', { name: 'TI', exact: true }).click()
+  await expect(page.locator('.metric-card').nth(1)).toContainText('30')
   await expect(
     page.locator('.metric-card').nth(2).locator('strong'),
   ).toHaveText('1')
   const total = costs
-    .filter((item) => item.category === 'Cloud')
+    .filter((item) => item.category === 'TI')
     .reduce((sum, item) => sum + item.cost, 0)
   await expect(
     page.locator('.metric-card').first().locator('strong'),
   ).toHaveText(currency(total))
   await page.getByRole('link', { name: 'Ver catálogo' }).click()
-  await expect(page.getByLabel('Categoria', { exact: true })).toHaveValue(
-    'Cloud',
+  await expect(page.getByLabel('Departamento', { exact: true })).toHaveValue(
+    'TI',
   )
 })
 

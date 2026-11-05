@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft, CalendarDays, Info, TrendingUp, Wallet } from 'lucide-react'
+import { ArrowLeft, Info, UserRound, TrendingUp, Wallet } from 'lucide-react'
 import { costService, currency, percentage } from '../../services/costService'
 import { StatusBadge } from '../../components/ui/StatusBadge'
 import {
@@ -15,22 +15,20 @@ export default function CostDetails() {
     return (
       <div className="empty-state">
         <Info size={32} />
-        <h1>Recurso não encontrado</h1>
-        <p>Este ID não faz parte do catálogo demonstrativo.</p>
+        <h1>Colaborador não encontrado</h1>
+        <p>Este ID não faz parte da base demonstrativa.</p>
         <Button to="/custos">Voltar ao catálogo</Button>
       </div>
     )
   const details = [
-    ['Identificador', cost.id],
-    ['Serviço', cost.resource],
-    ['Categoria', cost.category],
-    ['Área responsável', cost.owner],
-    ['Ambiente', cost.environment],
-    ['Período', cost.period],
-    ['Consumo simulado', `${cost.quantity} ${cost.unit}`],
-    ['Custo por unidade', currency(cost.cost / cost.quantity)],
-    ['Valor anterior', currency(cost.history[4].cost)],
-    ['Valor atual', currency(cost.cost)],
+    ['ID do colaborador', String(cost.collaboratorId)],
+    ['Cargo', cost.role],
+    ['Departamento', cost.category],
+    ['Status contratual simulado', cost.employmentStatus],
+    ['Competência', cost.referencePeriod],
+    ['Chave de cruzamento', 'CPF mascarado · ***.***.***-**'],
+    ['Origem dos custos fixos', 'Sólides (base local simulada)'],
+    ['Origem das despesas variáveis', 'Omie (base local simulada)'],
   ]
   return (
     <>
@@ -41,61 +39,146 @@ export default function CostDetails() {
       <div className="app-page-heading detail-heading">
         <div>
           <span className="eyebrow">
-            {cost.id} / {cost.category}
+            Colaborador {cost.collaboratorId} / {cost.category}
           </span>
           <h1>{cost.title}</h1>
-          <p>{cost.description}</p>
+          <p>
+            {cost.role} · {cost.period}
+          </p>
         </div>
         <StatusBadge status={cost.status} />
       </div>
       <div className="demo-banner">
         <Info size={16} />
         <p>
-          Registro e histórico inteiramente simulados para demonstração da
-          plataforma.
+          {cost.collaboratorId === 101
+            ? 'Caso de referência do contexto do projeto. Valores reproduzidos com dados locais; nenhuma consulta externa é realizada.'
+            : 'Colaborador, valores e lançamentos fictícios para demonstrar a consolidação mensal.'}
         </p>
       </div>
       <div className="metrics-grid detail-metrics">
         <MetricCard
-          title="Custo mensal"
+          title="Custo mensal total"
           value={currency(cost.cost)}
-          note="Referência: outubro de 2026"
+          note="Salário + benefícios + despesas variáveis"
           icon={Wallet}
           accent="metric-blue"
         />
         <MetricCard
           title="Variação mensal"
           value={percentage(cost.variation)}
-          note="Comparação com setembro de 2026"
+          note="Em relação a setembro de 2026"
           icon={TrendingUp}
         />
         <MetricCard
-          title="Consumo simulado"
-          value={String(cost.quantity)}
-          note={cost.unit}
-          icon={CalendarDays}
+          title="Lançamentos variáveis"
+          value={String(cost.expenses.length)}
+          note="Onfly e Flash, na competência selecionada"
+          icon={UserRound}
         />
       </div>
+      <section className="resource-section">
+        <div className="resource-heading">
+          <div>
+            <h2>Composição do custo mensal</h2>
+            <p>
+              Soma dos custos fixos e dos lançamentos variáveis da mesma pessoa
+              e competência.
+            </p>
+          </div>
+        </div>
+        <table className="detail-table">
+          <caption className="sr-only">
+            Composição mensal de {cost.title}
+          </caption>
+          <tbody>
+            <tr>
+              <th scope="row">Salário base · Sólides</th>
+              <td>{currency(cost.salaryBase)}</td>
+            </tr>
+            {cost.fixedBenefits.map((benefit) => (
+              <tr key={benefit.name}>
+                <th scope="row">{benefit.name}</th>
+                <td>{currency(benefit.value)}</td>
+              </tr>
+            ))}
+            <tr>
+              <th scope="row">Subtotal de benefícios</th>
+              <td>{currency(cost.benefitsTotal)}</td>
+            </tr>
+            <tr>
+              <th scope="row">Subtotal fixo · Sólides</th>
+              <td>{currency(cost.fixedTotal)}</td>
+            </tr>
+            <tr>
+              <th scope="row">Subtotal variável · Omie</th>
+              <td>{currency(cost.variableTotal)}</td>
+            </tr>
+            <tr className="consolidation-total">
+              <th scope="row">Custo mensal consolidado</th>
+              <td>{currency(cost.cost)}</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section className="resource-section">
+        <div className="resource-heading">
+          <div>
+            <h2>Despesas variáveis e reembolsos</h2>
+            <p>
+              Registros filtrados por colaborador e competência{' '}
+              {cost.referencePeriod}.
+            </p>
+          </div>
+        </div>
+        <div
+          className="table-scroll"
+          tabIndex={0}
+          role="region"
+          aria-label="Lançamentos variáveis do colaborador"
+        >
+          <table className="cost-table">
+            <caption className="sr-only">
+              Lançamentos Omie de {cost.title}
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Identificador</th>
+                <th scope="col">Origem</th>
+                <th scope="col">Descrição</th>
+                <th scope="col">Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              {cost.expenses.map((expense) => (
+                <tr key={expense.id}>
+                  <td>{expense.id}</td>
+                  <td>{expense.origem}</td>
+                  <td>{expense.descricao}</td>
+                  <td className="table-value">{currency(expense.valor)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
       <ChartContainer
-        title="Histórico do recurso"
-        subtitle="Evolução de maio a outubro de 2026"
+        title="Histórico consolidado"
+        subtitle="Valores simulados de maio a outubro de 2026"
       >
-        <EvolutionChart
-          data={cost.history.map((item) => ({
-            month: item.month,
-            cost: item.cost,
-          }))}
-        />
+        <EvolutionChart data={cost.history} />
       </ChartContainer>
       <section className="resource-section">
         <div className="resource-heading">
           <div>
-            <h2>Informações do recurso</h2>
-            <p>Detalhamento do custo e do contexto operacional.</p>
+            <h2>Dados cadastrais demonstrativos</h2>
+            <p>Contexto da consulta, sem exibir o CPF completo.</p>
           </div>
         </div>
         <table className="detail-table">
-          <caption className="sr-only">Detalhes de {cost.title}</caption>
+          <caption className="sr-only">
+            Dados cadastrais de {cost.title}
+          </caption>
           <tbody>
             {details.map(([label, value]) => (
               <tr key={label}>
@@ -109,11 +192,10 @@ export default function CostDetails() {
       <div className="info-note">
         <Info size={20} />
         <p>
-          {cost.status === 'Atenção'
-            ? 'O recurso apresenta aumento superior a 10% no cenário simulado. Revise consumo e contexto antes de interpretar a variação como uma oportunidade de otimização.'
-            : cost.status === 'Otimizado'
-              ? 'O status Otimizado representa redução superior a 5% em relação ao mês anterior nos dados simulados. Não representa uma economia comprovada em ambiente real.'
-              : 'O recurso se encontra na faixa regular de variação do cenário simulado. A interpretação deve considerar o consumo e as necessidades da operação.'}
+          Os status indicam apenas a variação do custo simulado: Atenção acima
+          de 10%, Redução abaixo de −5% e Regular nos demais casos. Uma redução
+          não comprova ganho de eficiência. Encargos e outras parcelas não são
+          estimados: a fórmula segue o escopo fornecido.
         </p>
       </div>
     </>

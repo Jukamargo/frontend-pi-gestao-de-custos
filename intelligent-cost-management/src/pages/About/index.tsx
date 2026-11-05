@@ -7,7 +7,7 @@ export default function About() {
         <SectionHeading
           level={1}
           eyebrow="SOBRE O PROJETO"
-          title="Um lugar para acompanhar os custos da operação."
+          title="O custo por colaborador, com as duas fontes na mesma visão."
         >
           Conheça a proposta da plataforma Gestão de custos, desenvolvida no
           contexto da 2RPnet / Inovanet Tech.
@@ -19,18 +19,20 @@ export default function About() {
           <span className="eyebrow">O DESAFIO</span>
           <h2>Quando os dados estão dispersos, a visão fica limitada.</h2>
           <p>
-            Serviços, licenças e operações geram custos em diferentes frentes.
-            Sem uma visão consolidada, comparar períodos e entender variações
-            exige esforço manual e dificulta a priorização.
+            Cadastros, salários e benefícios estão no RH. Viagens, hospedagens e
+            reembolsos chegam ao Financeiro por ferramentas diferentes. O
+            cruzamento manual em planilhas dificulta consultar o custo de uma
+            pessoa em uma competência específica.
           </p>
         </article>
         <article>
           <span className="eyebrow">A PROPOSTA</span>
           <h2>Consultar, comparar e entender.</h2>
           <p>
-            A plataforma reúne indicadores, gráficos e detalhes dos serviços.
-            Cada visualização usa a mesma base de dados, permitindo passar do
-            total consolidado à análise de um recurso específico.
+            O escopo prioriza a Sólides como fonte de dados cadastrais e custos
+            fixos e o Omie como fonte de despesas variáveis. A associação por
+            CPF e competência permite consolidar salário base + benefícios fixos
+            + despesas variáveis, preservando os lançamentos de origem.
           </p>
         </article>
       </section>

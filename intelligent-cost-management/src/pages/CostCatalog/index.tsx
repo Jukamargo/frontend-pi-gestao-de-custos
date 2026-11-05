@@ -29,12 +29,12 @@ export default function CostCatalog() {
           <h1>Catálogo de custos</h1>
           <p>
             Explore {costService.list().length} cards com título, descrição e
-            tabela de informações de cada recurso.
+            composição mensal de cada colaborador.
           </p>
         </div>
         <span className="period-badge">
           <Layers3 size={16} />
-          {costService.list().length} recursos
+          {costService.list().length} colaboradores
         </span>
       </div>
       <div className="demo-banner">
@@ -53,10 +53,10 @@ export default function CostCatalog() {
                 {(page - 1) * pageSize + 1}–
                 {Math.min(page * pageSize, filtered.length)}
               </strong>{' '}
-              de <strong>{filtered.length}</strong> recursos
+              de <strong>{filtered.length}</strong> colaboradores
             </>
           ) : (
-            '0 recursos encontrados'
+            '0 colaboradores encontrados'
           )}
         </p>
         <div className="catalog-display-controls">

@@ -792,6 +792,210 @@
 .marketing-page .page-intro + .about-section {
   padding-top: 65px;
 }
+.consolidation-demo {
+  margin-top: 55px;
+  padding: 30px;
+  background: #f7f8f7;
+  border: 1px solid #cbd6dd;
+  border-radius: 8px;
+}
+.consolidation-demo .section-title-row {
+  margin-bottom: 25px;
+  align-items: center;
+}
+.marketing-page .consolidation-demo h2 {
+  font-size: 29px;
+}
+.local-demo-label {
+  color: #6c8075;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.consolidation-controls {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+.consolidation-controls > div {
+  min-width: 0;
+}
+.consolidation-controls label {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 12px;
+  color: #536b80;
+}
+.consolidation-controls select {
+  width: 100%;
+  min-width: 0;
+  min-height: 45px;
+  padding: 11px;
+  border: 1px solid #cad5df;
+  border-radius: 5px;
+  background: #fff;
+  color: #2d465d;
+  font-size: 12px;
+}
+.demo-prompt {
+  margin: 24px 0;
+  padding-left: 17px;
+  border-left: 2px solid #91a9be;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #617588;
+}
+.consolidation-equation {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr auto 1.2fr;
+  gap: 12px;
+  align-items: center;
+  padding: 24px 0;
+  border-block: 1px solid #dce3e7;
+}
+.consolidation-equation > div {
+  min-width: 0;
+}
+.consolidation-equation > span,
+.consolidation-equation > svg {
+  color: #899cac;
+}
+.consolidation-equation > div > span {
+  display: block;
+  font-size: 10px;
+  color: #657b8e;
+}
+.consolidation-equation strong {
+  display: block;
+  margin: 11px 0;
+  color: #294c6b;
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  white-space: nowrap;
+}
+.consolidation-equation small {
+  font-size: 9px;
+  color: #8a9aa8;
+}
+.equation-total {
+  padding: 16px;
+  background: #e5edf4;
+  border-radius: 6px;
+}
+.consolidation-sources {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+  margin-top: 32px;
+}
+.consolidation-sources h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.consolidation-sources p {
+  font-size: 11px;
+  margin: 10px 0 15px;
+}
+.consolidation-sources table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+.consolidation-sources th,
+.consolidation-sources td {
+  padding: 12px 0;
+  border-top: 1px solid #dce3e7;
+  line-height: 1.6;
+}
+.consolidation-sources th {
+  font-weight: 400;
+  color: #738799;
+  text-align: left;
+  padding-right: 10px;
+}
+.consolidation-sources td {
+  color: #3e5d78;
+  text-align: right;
+  white-space: nowrap;
+}
+.source-subtotal th,
+.source-subtotal td {
+  font-weight: 500;
+}
+.marketing-page .demo-explanation {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #728599;
+  margin-top: 25px;
+}
+.demo-explanation svg {
+  margin-top: 3px;
+}
+@media (max-width: 1000px) {
+  .consolidation-equation {
+    grid-template-columns: 1fr 1fr;
+    gap: 23px;
+  }
+  .consolidation-equation > span,
+  .consolidation-equation > svg {
+    display: none;
+  }
+  .local-demo-label {
+    white-space: normal;
+  }
+  .consolidation-demo .section-title-row {
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .consolidation-equation strong {
+    font-size: 25px;
+  }
+  .consolidation-sources {
+    gap: 25px;
+  }
+}
+@media (max-width: 600px) {
+  .consolidation-demo {
+    padding: 21px 17px;
+    margin-top: 40px;
+  }
+  .marketing-page .consolidation-demo h2 {
+    font-size: 25px;
+  }
+  .consolidation-controls {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .consolidation-sources {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .consolidation-equation {
+    gap: 20px 10px;
+  }
+  .consolidation-equation strong {
+    font-size: 20px;
+    letter-spacing: -0.7px;
+  }
+  .consolidation-equation > div > span {
+    font-size: 9px;
+  }
+  .equation-total {
+    padding: 12px;
+  }
+  .consolidation-equation small {
+    font-size: 8px;
+  }
+  .demo-prompt {
+    font-size: 12px;
+  }
+  .consolidation-sources table {
+    font-size: 10px;
+  }
+}
 @media (min-width: 1600px) {
   .hero-grid {
     gap: 110px;
