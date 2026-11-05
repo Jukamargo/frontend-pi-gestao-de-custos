@@ -4,6 +4,32 @@ import { currency } from '../src/services/costService'
 import { employees, variableExpenses } from '../src/data/people'
 import { consolidateEmployee } from '../src/services/consolidationService'
 
+test('apresentar as restrições do ecossistema de RH sem indicar automações ativas', async ({
+  page,
+}) => {
+  await page.goto('/tecnologias')
+  await page.getByRole('link', { name: 'Ver mapeamento de RH' }).click()
+  await expect(page).toHaveURL(/\/tecnologias#ecossistema-rh$/)
+  await expect(
+    page.getByRole('article', { name: 'Porto Seguro', exact: true }),
+  ).toContainText('apenas seguro de vida')
+  const alura = page.getByRole('article', { name: 'Alura', exact: true })
+  await expect(alura).toContainText('e-mail à administração')
+  await expect(alura).toContainText('O alerta ainda não está definido')
+  await expect(
+    page.getByRole('article', { name: 'SENAI', exact: true }),
+  ).toContainText('Em análise')
+  await expect(
+    page.getByRole('article', { name: 'Jurídico', exact: true }),
+  ).toContainText('Fora do escopo atual')
+  const email = page.getByRole('article', {
+    name: 'E-mail → Sólides',
+    exact: true,
+  })
+  for (const source of ['Padizzi', 'Limpeza', 'VT Privado', 'Seguros', 'Ourho'])
+    await expect(email).toContainText(source)
+})
+
 test('alternar o tema por teclado e manter a escolha na navegação e na recarga', async ({
   page,
 }) => {
