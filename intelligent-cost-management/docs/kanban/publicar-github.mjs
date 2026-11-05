@@ -11,9 +11,13 @@ const owner = 'Jukamargo'
 const mode = process.argv[2]
 if (backlog.repository !== repository || backlog.cards.length !== 120)
   throw new Error('Destino ou quantidade de cartões inesperados.')
-if (!['--issues', '--project', '--verify'].includes(mode)) {
+if (backlog.scope !== 'frontend')
+  throw new Error(
+    'Este publicador aceita somente o backlog exclusivo de front-end.',
+  )
+if (!['--issues', '--update', '--project', '--verify'].includes(mode)) {
   console.log(
-    `Backlog validado: ${backlog.cards.length} tarefas. Para publicar, use --issues; para montar o quadro, --project; para conferir, --verify.`,
+    `Backlog validado: ${backlog.cards.length} tarefas. Para publicar, use --issues; para corrigir as existentes, --update; para montar o quadro, --project; para conferir, --verify.`,
   )
   process.exit(0)
 }
@@ -145,7 +149,7 @@ if (!repo.has_issues || !repo.permissions?.push)
 const liveIssues = await listIssues()
 reconcile(liveIssues)
 
-if (mode === '--issues') {
+if (mode === '--issues' || mode === '--update') {
   const labels = await request(`/repos/${repository}/labels?per_page=100`)
   const areaLabels = [...new Set(backlog.cards.map((card) => card.area))].map(
     (area, index) => ({
@@ -158,7 +162,12 @@ if (mode === '--issues') {
     {
       name: 'kanban: gestão de custos',
       color: '1765F3',
-      description: 'Backlog de 120 tarefas do projeto Inovanet',
+      description: 'Backlog de 120 tarefas de front-end do projeto',
+    },
+    {
+      name: 'escopo: frontend',
+      color: '387868',
+      description: 'Tarefa exclusiva da interface web do projeto',
     },
     ...areaLabels,
     {
@@ -178,12 +187,86 @@ if (mode === '--issues') {
       await pause(1800)
     }
   for (const [index, card] of backlog.cards.entries()) {
+    if (mode === '--update') {
+      const issue = liveIssues.find((issue) =>
+        issue.body?.includes(`<!-- gestao-de-custos-kanban:${card.id} -->`),
+      )
+      if (!issue)
+        throw new Error(
+          `A issue existente de ${card.id} não foi localizada; nenhuma nova issue será criada neste modo.`,
+        )
+      const backupPath = `${root}artifacts/issues-antes-da-correcao-frontend.json`
+      if (!existsSync(backupPath))
+        writeFileSync(backupPath, JSON.stringify(liveIssues, null, 2))
+      const legacyAreas = [
+        'Escopo e governança',
+        'Mapeamento de RH e Sólides',
+        'Mapeamento financeiro e ecossistema',
+        'API mock Sólides',
+        'API mock Omie',
+        'Enriquecimento das bases mock',
+        'Sincronização e fontes de conhecimento',
+        'Agente Gemini Enterprise',
+        'Validação e reconciliação',
+        'BigQuery e evolução analítica',
+        'Front-end institucional',
+        'Front-end demonstrativo e entrega',
+      ]
+      const managedLabels = new Set([
+        ...legacyAreas.map((area) => `área: ${area}`),
+        ...areaLabels.map((label) => label.name),
+        'prioridade: alta',
+        'prioridade: média',
+      ])
+      const issueLabels = [
+        ...new Set([
+          ...issue.labels
+            .map((label) => label.name)
+            .filter((label) => !managedLabels.has(label)),
+          'kanban: gestão de custos',
+          'escopo: frontend',
+          `área: ${card.area}`,
+          `prioridade: ${card.priority.toLocaleLowerCase('pt-BR')}`,
+        ]),
+      ]
+      const sameLabels =
+        issueLabels.length === issue.labels.length &&
+        issueLabels.every((name) =>
+          issue.labels.some((label) => label.name === name),
+        )
+      if (
+        issue.title !== card.title ||
+        issue.body?.trim() !== card.body.trim() ||
+        !sameLabels
+      ) {
+        const updated = await request(
+          `/repos/${repository}/issues/${issue.number}`,
+          'PATCH',
+          { title: card.title, body: card.body, labels: issueLabels },
+        )
+        if (updated.number !== issue.number || updated.title !== card.title)
+          throw new Error(`Atualização não confirmada de ${card.id}.`)
+        state.issues[card.id] = {
+          number: updated.number,
+          id: updated.node_id,
+          url: updated.html_url,
+        }
+        save()
+        await pause(1800)
+      }
+      if ((index + 1) % 10 === 0)
+        console.log(
+          `${index + 1}/120 issues corrigidas para front-end. Última: ${issue.html_url}`,
+        )
+      continue
+    }
     if (!state.issues[card.id]) {
       const issue = await request(`/repos/${repository}/issues`, 'POST', {
         title: card.title,
         body: card.body,
         labels: [
           'kanban: gestão de custos',
+          'escopo: frontend',
           `área: ${card.area}`,
           `prioridade: ${card.priority.toLocaleLowerCase('pt-BR')}`,
         ],
@@ -205,7 +288,7 @@ if (mode === '--issues') {
   if (Object.keys(state.issues).length !== 120)
     throw new Error('A verificação não confirmou as 120 issues.')
   console.log(
-    `120 issues verificadas: https://github.com/${repository}/issues?q=is%3Aissue%20label%3A%22kanban%3A%20gest%C3%A3o%20de%20custos%22`,
+    `120 issues de front-end confirmadas: https://github.com/${repository}/issues?q=is%3Aissue%20label%3A%22escopo%3A%20frontend%22`,
   )
 }
 
@@ -215,7 +298,7 @@ if (mode === '--project') {
       'Conclua e verifique as 120 issues antes de montar o quadro.',
     )
   const projectReadme =
-    'Quadro de acompanhamento do projeto Gestão de custos — Inovanet.\n\n120 tarefas com descrição, tabela de metadados e critérios de aceite. As tarefas de revisão ficam inicialmente em A validar; novas entregas ficam em A fazer. Responsáveis e prazos permanecem a definir. Nenhum cartão foi marcado como concluído automaticamente.\n\n<!-- gestao-de-custos-kanban-project -->'
+    'Quadro de acompanhamento do front-end do projeto Gestão de custos.\n\n120 tarefas exclusivas de interface web, com descrição, tabela de metadados e critérios de aceite. As tarefas de revisão ficam inicialmente em A validar; novas entregas ficam em A fazer. Responsáveis e prazos permanecem a definir. Nenhum cartão foi marcado como concluído automaticamente.\n\n<!-- gestao-de-custos-kanban-project -->'
   if (!state.project) {
     const projects = await graphql(
       'query($owner:String!){user(login:$owner){id projectsV2(first:100){nodes{id title url number readme}}}}',
@@ -257,7 +340,7 @@ if (mode === '--project') {
       input: {
         projectId: state.project.id,
         shortDescription:
-          'Kanban de 120 tarefas de RH, Financeiro, APIs mock, Gemini Enterprise e front-end.',
+          'Kanban de 120 tarefas exclusivas do front-end: páginas, componentes, dashboard, consulta, acessibilidade e testes.',
         readme: projectReadme,
       },
     },
@@ -387,6 +470,9 @@ if (mode === '--verify') {
       (issue) =>
         issue.body?.includes(`<!-- gestao-de-custos-kanban:${card.id} -->`) &&
         issue.title === card.title &&
+        issue.body?.replaceAll('\r\n', '\n').trim() ===
+          card.body.replaceAll('\r\n', '\n').trim() &&
+        issue.labels.some((label) => label.name === 'escopo: frontend') &&
         issue.body.includes('| Campo |') &&
         issue.body.includes('## Critérios de aceite'),
     ),
@@ -424,6 +510,6 @@ if (mode === '--verify') {
       )
   }
   save()
-  const report = `# Publicação das tarefas no GitHub\n\nRepositório: [${repository}](https://github.com/${repository}).\n\n**120 issues verificadas pela API**, com título, descrição, tabela de informações e critérios de aceite.\n\n${state.project ? `Project: [${backlog.projectTitle}](${state.project.url}). Visualização Kanban e 120 itens confirmados pela API.\n` : 'Project: criação pendente da autorização específica de GitHub Projects. As issues já estão cadastradas.\n'}\nNenhuma issue foi encerrada automaticamente. Responsáveis e prazos permanecem sem atribuição; prioridades são propostas para revisão.\n\n| Identificador do backlog | Issue | Título |\n| --- | --- | --- |\n${backlog.cards.map((card) => `| ${card.id} | [#${state.issues[card.id].number}](${state.issues[card.id].url}) | ${card.title.replace(/^\[[^\]]+\] /, '')} |`).join('\n')}\n`
+  const report = `# Publicação das tarefas de front-end no GitHub\n\nRepositório: [${repository}](https://github.com/${repository}).\n\n**120 issues exclusivas de front-end verificadas pela API**, com título, descrição, tabela de informações e critérios de aceite.\n\n${state.project ? `Project: [${backlog.projectTitle}](${state.project.url}). Visualização Kanban e 120 itens confirmados pela API.\n` : 'Project: criação pendente da autorização específica de GitHub Projects. As issues já estão cadastradas.\n'}\nNenhuma issue foi encerrada automaticamente. Responsáveis e prazos permanecem sem atribuição; prioridades são propostas para revisão.\n\n| Identificador do backlog | Issue | Título |\n| --- | --- | --- |\n${backlog.cards.map((card) => `| ${card.id} | [#${state.issues[card.id].number}](${state.issues[card.id].url}) | ${card.title.replace(/^\[[^\]]+\] /, '')} |`).join('\n')}\n`
   writeFileSync(new URL('./publicacao.md', import.meta.url), report)
 }
