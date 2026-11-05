@@ -137,4 +137,4 @@ Resoluções de teste: **1440 × 1000**, **768 × 1024** e **390 × 844**. Captu
 
 ## Git
 
-Mantenha mudanças em branches de trabalho e use commits semânticos, como `feat: add cost catalog`, `fix: improve mobile navigation` e `docs: document demo data`. Execute lint, testes e build antes de integrar à `main`. Nenhum push, publicação ou alteração de remotos é necessário para executar este projeto localmente.
+Mantenha mudanças em branches de trabalho e siga o padrão Conventional Commits: `tipo(escopo opcional): Descrição`. Escreva a descrição em português, iniciando com verbo no infinitivo e letra maiúscula, sem ponto final. Exemplos: `feat: Adicionar catálogo de custos`, `fix: Corrigir navegação mobile` e `docs: Documentar dados simulados`. Use o tipo correspondente à mudança, como `feat`, `fix`, `docs`, `refactor`, `test` ou `chore`, e mantenha cada commit focado em uma alteração coerente. Execute lint, testes e build antes de integrar à `main`. Nenhum push, publicação ou alteração de remotos é necessário para executar este projeto localmente.
