@@ -48,9 +48,10 @@ Os testes de interface usam Google Chrome instalado no computador, sem download 
 - Menu mobile com diálogo nativo, foco contido, Escape, indicação de rota ativa, fechamento ao navegar e bloqueio de rolagem.
 - Dashboard com quatro KPIs calculados, evolução mensal, distribuição por categoria, comparativo entre meses e recursos de maior custo.
 - Filtro de categoria no dashboard, com atualização de todos os indicadores e gráficos.
-- Catálogo com **120 registros distintos**, componente de card reutilizável e 12 itens por página.
+- Catálogo com **120 registros distintos**, componente de card reutilizável e seleção de 12, 24, 48 ou todos os cards por página.
+- Cada card apresenta título, descrição, categoria, valor, status e tabela com serviço, área responsável, referência, consumo, ambiente e variação mensal.
 - Busca por título, descrição ou ID, insensível a acentos e caixa; filtros por categoria/status; ordenação por valor e nome.
-- Filtros e paginação na URL, preservados pela navegação de voltar do navegador.
+- Filtros, quantidade de cards por página e paginação na URL, preservados pela navegação de voltar do navegador.
 - Contagem de resultados, estado vazio e limpeza dos filtros.
 - Página de detalhes com contexto, consumo, custo unitário e histórico individual.
 - Valores em reais (`pt-BR`), tabela com rolagem contida e gráficos com descrição textual acessível.

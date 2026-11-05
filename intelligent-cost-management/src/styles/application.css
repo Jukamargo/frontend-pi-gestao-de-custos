@@ -549,9 +549,20 @@
   font-weight: 500;
   color: #b3c5df;
 }
-.results-header > span {
-  font-size: 8px;
-  color: #627c9f;
+.catalog-display-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  color: #94a3b8;
+}
+.catalog-display-controls select {
+  min-height: 40px;
+  padding: 7px 9px;
+  border: 1px solid #ffffff17;
+  border-radius: 6px;
+  background: #0d192c;
+  color: #c0d1e8;
 }
 .cost-grid {
   display: grid;
@@ -630,6 +641,7 @@
   color: #667e9f;
 }
 .mini-table {
+  table-layout: fixed;
   border-collapse: collapse;
   width: 100%;
   margin-bottom: 10px;
@@ -641,8 +653,13 @@
 .mini-table td {
   font-size: 8px;
   padding-block: 10px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  vertical-align: top;
 }
 .mini-table th {
+  width: 42%;
+  padding-right: 8px;
   font-weight: 400;
   text-align: left;
   color: #6c84a6;
@@ -1141,8 +1158,8 @@
   .results-header p {
     font-size: 9px;
   }
-  .results-header > span {
-    font-size: 7px;
+  .catalog-display-controls {
+    font-size: 8px;
   }
   .cost-grid {
     grid-template-columns: 1fr;

@@ -77,6 +77,41 @@ test('catálogo permite busca, filtros, ordenação e navegação de páginas', 
   )
 })
 
+test('exibir os 120 cards completos e alterar a quantidade por página', async ({
+  page,
+}) => {
+  await page.goto('/custos')
+  await page.getByLabel('Cards por página').selectOption('120')
+  const cards = page.locator('.cost-card')
+  await expect(cards).toHaveCount(120)
+  await expect(cards.locator('table')).toHaveCount(120)
+  await expect(cards.locator('tbody tr')).toHaveCount(720)
+  const titles = await cards.locator('h2').allTextContents()
+  expect(new Set(titles).size).toBe(120)
+  expect([...titles].sort()).toEqual(costs.map((cost) => cost.title).sort())
+  expect(await cards.locator('.cost-description').allTextContents()).toEqual(
+    expect.arrayContaining(costs.map((cost) => cost.description)),
+  )
+  expect(await cards.locator('td').allTextContents()).not.toContain('')
+  await expect(page.getByRole('status')).toContainText('1–120 de 120 recursos')
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true)
+  await page.reload()
+  await expect(cards).toHaveCount(120)
+  await page.getByLabel('Cards por página').selectOption('24')
+  await expect(cards).toHaveCount(24)
+  await page.getByRole('button', { name: 'Próxima página' }).click()
+  await expect(page.getByRole('status')).toContainText('25–48')
+  await page.getByLabel('Cards por página').selectOption('48')
+  await expect(cards).toHaveCount(48)
+  await expect(page.getByRole('status')).toContainText('1–48')
+  await page.getByLabel('Categoria', { exact: true }).selectOption('Cloud')
+  await expect(cards).toHaveCount(24)
+})
+
 test('dashboard filtra indicadores e mantém valores coerentes', async ({
   page,
 }) => {

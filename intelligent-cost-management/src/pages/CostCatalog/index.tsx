@@ -2,11 +2,19 @@ import { ChevronLeft, ChevronRight, Layers3 } from 'lucide-react'
 import { CostCard } from '../../components/cards/CostCard'
 import { CostFilters } from '../../components/CostFilters'
 import { EmptyState } from '../../components/ui/EmptyState'
-import { PAGE_SIZE, useCostFilters } from '../../hooks/useCostFilters'
+import { PAGE_SIZES, useCostFilters } from '../../hooks/useCostFilters'
 import { costService } from '../../services/costService'
 export default function CostCatalog() {
-  const { query, filtered, visible, page, totalPages, update, reset } =
-    useCostFilters()
+  const {
+    query,
+    filtered,
+    visible,
+    page,
+    pageSize,
+    totalPages,
+    update,
+    reset,
+  } = useCostFilters()
   function changePage(next: number) {
     update('page', String(next))
     document
@@ -19,7 +27,10 @@ export default function CostCatalog() {
         <div>
           <span className="eyebrow">DO PANORAMA AO DETALHE</span>
           <h1>Catálogo de custos</h1>
-          <p>Explore, compare e entenda cada recurso da operação.</p>
+          <p>
+            Explore {costService.list().length} cards com título, descrição e
+            tabela de informações de cada recurso.
+          </p>
         </div>
         <span className="period-badge">
           <Layers3 size={16} />
@@ -39,8 +50,8 @@ export default function CostCatalog() {
           {filtered.length ? (
             <>
               <strong>
-                {(page - 1) * PAGE_SIZE + 1}–
-                {Math.min(page * PAGE_SIZE, filtered.length)}
+                {(page - 1) * pageSize + 1}–
+                {Math.min(page * pageSize, filtered.length)}
               </strong>{' '}
               de <strong>{filtered.length}</strong> recursos
             </>
@@ -48,7 +59,20 @@ export default function CostCatalog() {
             '0 recursos encontrados'
           )}
         </p>
-        <span>Valores mensais em BRL</span>
+        <div className="catalog-display-controls">
+          <label htmlFor="page-size">Cards por página</label>
+          <select
+            id="page-size"
+            value={pageSize}
+            onChange={(event) => update('limit', event.target.value)}
+          >
+            {PAGE_SIZES.map((size) => (
+              <option key={size} value={size}>
+                {size === 120 ? 'Todos' : size}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
       {!filtered.length ? (
         <EmptyState onReset={reset} />

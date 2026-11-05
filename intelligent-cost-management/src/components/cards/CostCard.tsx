@@ -40,8 +40,22 @@ export function CostCard({ cost }: { cost: CostRecord }) {
         <caption className="sr-only">Resumo de {cost.title}</caption>
         <tbody>
           <tr>
+            <th scope="row">Serviço</th>
+            <td>{cost.resource}</td>
+          </tr>
+          <tr>
+            <th scope="row">Área responsável</th>
+            <td>{cost.owner}</td>
+          </tr>
+          <tr>
             <th scope="row">Referência</th>
-            <td>Out / 2026</td>
+            <td>{cost.period}</td>
+          </tr>
+          <tr>
+            <th scope="row">Consumo</th>
+            <td>
+              {cost.quantity} {cost.unit}
+            </td>
           </tr>
           <tr>
             <th scope="row">Ambiente</th>
