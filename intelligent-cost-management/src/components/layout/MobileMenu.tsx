@@ -60,7 +60,9 @@ export function MobileMenu({ onClose }: { onClose: () => void }) {
           </NavLink>
         ))}
       </nav>
-      <p className="mobile-menu-note">Mais clareza. Melhores decisões.</p>
+      <p className="mobile-menu-note">
+        Gestão de custos · Ambiente demonstrativo
+      </p>
     </dialog>
   )
 }

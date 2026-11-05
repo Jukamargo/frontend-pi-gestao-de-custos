@@ -40,7 +40,7 @@
   margin: 55px 0 25px;
   padding: 18px 14px;
   border: 1px solid #4386ff20;
-  background: linear-gradient(140deg, #142c4b65, #0c182b);
+  background: #102035;
   border-radius: 9px;
 }
 .sidebar-note > svg {
@@ -183,7 +183,7 @@
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 20px 16px;
-  background: linear-gradient(130deg, #111e33, #0d1728);
+  background: #101c2e;
   min-width: 0;
 }
 .metric-top {
@@ -192,7 +192,7 @@
   justify-content: space-between;
   gap: 7px;
   color: #9babc1;
-  font-size: 9px;
+  font-size: 10px;
   margin-bottom: 18px;
 }
 .metric-top svg {
@@ -206,14 +206,14 @@
   display: block;
 }
 .metric-card > p {
-  font-size: 8px;
+  font-size: 9px;
   line-height: 1.7;
-  color: #6e85a5;
+  color: #8296b2;
   margin-top: 10px;
 }
 .metric-blue {
   border-color: #4386ff45;
-  background: linear-gradient(135deg, #142a4b, #0f1d33);
+  background: #14263d;
 }
 .metric-blue .metric-top svg {
   color: #75a7ff;
@@ -573,7 +573,7 @@
   padding: 19px 17px 0;
   border: 1px solid #ffffff13;
   border-radius: 9px;
-  background: linear-gradient(135deg, #111e32, #0d182a);
+  background: #101c2e;
   min-width: 0;
   transition:
     transform 0.2s,
@@ -582,7 +582,6 @@
   flex-direction: column;
 }
 .cost-card:hover {
-  transform: translateY(-3px);
   border-color: #4386ff55;
 }
 .cost-card-top {
@@ -602,7 +601,7 @@
   border: 1px solid #4386ff1c;
 }
 .cost-category {
-  font-size: 8px;
+  font-size: 10px;
   color: #7ba8ec;
   margin-bottom: 10px;
 }
@@ -611,14 +610,14 @@
   color: #526c91;
 }
 .cost-card h2 {
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.6;
   letter-spacing: -0.2px;
   margin-bottom: 11px;
-  min-height: 42px;
+  min-height: 48px;
 }
 .cost-description {
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.8;
   margin-bottom: 22px;
   color: #8297b4;
@@ -651,7 +650,7 @@
 }
 .mini-table th,
 .mini-table td {
-  font-size: 8px;
+  font-size: 10px;
   padding-block: 10px;
   line-height: 1.6;
   overflow-wrap: anywhere;
@@ -675,7 +674,7 @@
   padding-block: 15px;
   margin-top: 4px;
   border-top: 1px solid var(--line);
-  font-size: 9px;
+  font-size: 11px;
   color: #86adf0;
 }
 .cost-details-link:hover {

@@ -1,7 +1,6 @@
 import {
   ArrowRight,
   ArrowUpRight,
-  BrainCircuit,
   ChartNoAxesCombined,
   Check,
   CirclePlay,
@@ -9,106 +8,91 @@ import {
   Database,
   FileInput,
   Gauge,
+  Info,
   Layers3,
-  Network,
-  Sparkles,
+  Search,
   Workflow,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { SectionHeading } from './ui/SectionHeading'
 import { Button } from './ui/Button'
+import {
+  costService,
+  compactCurrency,
+  summarizeCosts,
+} from '../services/costService'
+
+const summary = summarizeCosts(costService.list())
+
 export function AboutSection() {
   return (
     <section className="section about-section" id="sobre">
       <div className="container about-grid">
-        <div>
-          <SectionHeading
-            eyebrow="VISÃO ALÉM DOS NÚMEROS"
-            title="Cada custo conta uma história. Entenda a sua."
-          >
-            Dados dispersos dificultam decisões. A plataforma Gestão de custos
-            propõe reunir informações operacionais e transformar complexidade em
-            uma visão clara do negócio.
-          </SectionHeading>
-          <p className="section-copy">
-            No contexto da 2RPnet / Inovanet Tech, o projeto explora como a
-            inteligência artificial pode apoiar a análise de custos, identificar
-            padrões e trazer mais contexto à tomada de decisão.
+        <div className="about-intro">
+          <span className="eyebrow">Sobre o projeto</span>
+          <h2>
+            O primeiro passo
+            <br />é enxergar o todo.
+          </h2>
+          <span className="section-index">01 / Visão da operação</span>
+        </div>
+        <div className="about-copy">
+          <p className="lead-copy">
+            Cloud, licenças, infraestrutura, APIs e operações. Custos de
+            naturezas diferentes precisam de uma leitura em comum.
+          </p>
+          <p>
+            A plataforma Gestão de custos organiza os recursos por categoria e
+            período. Você acompanha a evolução dos valores e consulta as
+            informações de cada serviço sem precisar reconstruir a análise a
+            cada consulta.
+          </p>
+          <p>
+            Este projeto faz parte do contexto da 2RPnet / Inovanet Tech. A
+            versão atual utiliza dados simulados para apresentar a experiência
+            de navegação e análise.
           </p>
           <Link to="/sobre" className="text-link">
-            Conheça o projeto <ArrowUpRight size={17} />
+            Entender a proposta <ArrowUpRight size={17} />
           </Link>
-        </div>
-        <div className="about-visual">
-          <div className="about-visual-header">
-            <span className="eyebrow">DA INFORMAÇÃO À DECISÃO</span>
-            <Network size={18} />
-          </div>
-          <div className="data-stream">
-            <span>
-              <Database size={16} />
-              Custos
-            </span>
-            <span>
-              <Layers3 size={16} />
-              Recursos
-            </span>
-            <span>
-              <Workflow size={16} />
-              Operações
-            </span>
-          </div>
-          <div className="stream-connectors" aria-hidden="true" />
-          <div className="intelligence-core">
-            <BrainCircuit size={31} />
-            <div>
-              <strong>Inteligência com contexto</strong>
-              <span>Conectar. Interpretar. Orientar.</span>
-            </div>
-            <Sparkles size={18} />
-          </div>
-          <div className="stream-output">
-            <Check size={17} />
-            <span>Informações claras para decisões melhores</span>
-          </div>
-          <small>Representação conceitual da solução</small>
         </div>
       </div>
     </section>
   )
 }
+
 const benefits = [
   {
-    icon: BrainCircuit,
+    icon: Search,
     number: '01',
-    title: 'Análise inteligente',
-    text: 'Explore padrões e variações para compreender o que está por trás de cada custo.',
+    title: 'Entenda as variações',
+    text: 'Compare os valores mês a mês e identifique quais recursos merecem uma análise mais próxima.',
     detail:
-      'Uma base consistente ajuda a distinguir tendências, sazonalidade e desvios que merecem investigação.',
+      'O histórico de cada recurso permite consultar a evolução dos custos e comparar outubro com setembro.',
   },
   {
-    icon: Workflow,
+    icon: Layers3,
     number: '02',
-    title: 'Automação de processos',
-    text: 'Uma proposta para reduzir tarefas repetitivas e dar mais espaço à análise estratégica.',
+    title: 'Encontre o que precisa',
+    text: 'Filtre por categoria e status ou busque diretamente por serviço, descrição e identificador.',
     detail:
-      'O fluxo conceitual organiza a entrada, a interpretação e a apresentação de informações. A automação depende da futura integração.',
+      'Os filtros e a paginação ficam na URL. Você pode voltar para a mesma consulta pelo histórico do navegador.',
   },
   {
     icon: ChartNoAxesCombined,
     number: '03',
-    title: 'Visibilidade de custos',
-    text: 'Visualize recursos, categorias e indicadores em uma experiência integrada.',
+    title: 'Tenha uma visão consolidada',
+    text: 'Veja a distribuição dos custos e acompanhe os mesmos registros no dashboard e no catálogo.',
     detail:
-      'Navegue do panorama geral ao detalhe de um recurso, mantendo o mesmo período e a mesma fonte de dados.',
+      'Indicadores, gráficos e cards compartilham a mesma fonte de dados, com totais calculados a partir dos registros.',
   },
   {
     icon: Gauge,
     number: '04',
-    title: 'Eficiência operacional',
-    text: 'Identifique pontos de atenção e priorize oportunidades de otimização.',
+    title: 'Priorize a próxima análise',
+    text: 'Use os pontos de atenção para começar pelos recursos com maior crescimento no período.',
     detail:
-      'Compare valores e variações para formular hipóteses. Nenhuma alteração em recursos é executada por este demonstrador.',
+      'O status Atenção sinaliza aumentos acima de 10% no cenário simulado. A avaliação da causa continua sendo uma decisão humana.',
   },
 ]
 export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
@@ -118,15 +102,15 @@ export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
         <div className="section-title-row">
           <SectionHeading
             level={expanded ? 1 : 2}
-            eyebrow="INTELIGÊNCIA QUE GERA CLAREZA"
-            title="Menos complexidade. Mais possibilidades."
+            eyebrow="Na rotina de gestão"
+            title="O que você pode acompanhar."
           >
-            Uma nova perspectiva para conectar gestão de custos e decisões
-            estratégicas.
+            Uma consulta rápida para encontrar um recurso. Uma visão mais ampla
+            para entender o período.
           </SectionHeading>
           {!expanded && (
             <Link to="/beneficios" className="text-link">
-              Explore os benefícios <ArrowUpRight size={17} />
+              Ver todos os benefícios <ArrowUpRight size={17} />
             </Link>
           )}
         </div>
@@ -134,15 +118,12 @@ export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
           {benefits.map(({ icon: Icon, ...item }) => (
             <article className="benefit-card" key={item.number}>
               <div className="benefit-card-top">
-                <span className="feature-icon">
-                  <Icon size={23} />
-                </span>
                 <span>{item.number}</span>
+                <Icon size={22} strokeWidth={1.5} />
               </div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
               {expanded && <p className="benefit-detail">{item.detail}</p>}
-              <div className="benefit-line" />
             </article>
           ))}
         </div>
@@ -150,6 +131,7 @@ export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
     </section>
   )
 }
+
 export function AgentSection({ full = false }: { full?: boolean }) {
   return (
     <section className="section agent-section" id="demonstracao">
@@ -158,146 +140,142 @@ export function AgentSection({ full = false }: { full?: boolean }) {
           <div>
             <SectionHeading
               level={full ? 1 : 2}
-              eyebrow="CONHEÇA O AGENTE"
-              title="Da pergunta certa ao próximo passo."
+              eyebrow="Demonstração"
+              title="Veja como a análise pode funcionar."
             >
-              A proposta de um agente que apoia sua análise, contextualiza
-              informações e ajuda a encontrar oportunidades nos dados.
+              Um espaço para conhecer o fluxo proposto do agente de apoio à
+              análise de custos. O vídeo real será incluído quando estiver
+              disponível.
             </SectionHeading>
             <div className="agent-points">
               <span>
                 <Check size={16} />
-                Interpretação de informações operacionais
+                Organização das informações operacionais
               </span>
               <span>
                 <Check size={16} />
-                Análise de variações e padrões de custos
+                Leitura das variações de custos
               </span>
               <span>
                 <Check size={16} />
-                Insights para apoiar decisões humanas
+                Resultados para avaliação da equipe
               </span>
             </div>
             {!full && (
-              <Button to="/demonstracao" secondary>
-                Explorar demonstração <ArrowUpRight size={17} />
-              </Button>
+              <Link to="/demonstracao" className="text-link">
+                Conhecer a demonstração <ArrowUpRight size={17} />
+              </Link>
             )}
           </div>
           <div
             className="video-placeholder"
             aria-label="Espaço reservado para o vídeo real de demonstração do agente"
           >
-            <div className="video-grid" aria-hidden="true" />
-            <span className="video-tag">
-              <span />
-              DEMONSTRAÇÃO DO AGENTE
-            </span>
+            <div className="video-top">
+              <span>Apresentação do agente</span>
+              <span>Em breve</span>
+            </div>
             <span className="video-play">
-              <CirclePlay size={47} strokeWidth={1} />
+              <CirclePlay size={49} strokeWidth={1.3} />
             </span>
-            <h3>Inteligência em ação.</h3>
-            <p>O vídeo de demonstração estará disponível em breve.</p>
+            <h3>Demonstração em preparação</h3>
+            <p>O vídeo ainda não foi disponibilizado.</p>
             <span className="video-footnote">
-              Vídeo real a ser disponibilizado pela equipe
+              Gestão de custos / Demonstração
             </span>
           </div>
-        </div>
-        <div className="agent-flow" aria-label="Fluxo conceitual do agente">
-          {[
-            {
-              icon: FileInput,
-              title: 'Entrada de dados',
-              sub: 'Informações operacionais',
-            },
-            {
-              icon: Workflow,
-              title: 'Processamento',
-              sub: 'Organização e contexto',
-            },
-            {
-              icon: BrainCircuit,
-              title: 'Análise',
-              sub: 'Interpretação inteligente',
-            },
-            {
-              icon: ChartNoAxesCombined,
-              title: 'Resultados',
-              sub: 'Insights para decisões',
-            },
-          ].map(({ icon: Icon, title, sub }, i) => (
-            <div className="flow-step" key={title}>
-              <span className="flow-number">0{i + 1}</span>
-              <Icon size={22} />
-              <div>
-                <strong>{title}</strong>
-                <small>{sub}</small>
-              </div>
-              {i < 3 && <ArrowRight className="flow-arrow" size={18} />}
-            </div>
-          ))}
         </div>
         {full && (
-          <div className="info-note">
-            <Sparkles size={20} />
-            <p>
-              <strong>Uma proposta em evolução.</strong> Este ambiente apresenta
-              o fluxo conceitual. Não há agente de IA conectado nem
-              processamento de dados reais. A reprodução do vídeo será
-              habilitada quando o arquivo for fornecido.
-            </p>
-          </div>
+          <>
+            <div className="agent-flow" aria-label="Fluxo conceitual do agente">
+              {[
+                {
+                  icon: FileInput,
+                  title: 'Entrada de dados',
+                  sub: 'Informações operacionais',
+                },
+                {
+                  icon: Workflow,
+                  title: 'Processamento',
+                  sub: 'Organização dos registros',
+                },
+                {
+                  icon: Search,
+                  title: 'Análise',
+                  sub: 'Leitura das variações',
+                },
+                {
+                  icon: ChartNoAxesCombined,
+                  title: 'Resultados',
+                  sub: 'Avaliação pela equipe',
+                },
+              ].map(({ icon: Icon, title, sub }, i) => (
+                <div className="flow-step" key={title}>
+                  <span className="flow-number">0{i + 1}</span>
+                  <Icon size={21} />
+                  <div>
+                    <strong>{title}</strong>
+                    <small>{sub}</small>
+                  </div>
+                  {i < 3 && <ArrowRight className="flow-arrow" size={17} />}
+                </div>
+              ))}
+            </div>
+            <div className="info-note">
+              <Info size={20} />
+              <p>
+                <strong>Sobre esta demonstração.</strong> O fluxo é conceitual.
+                A integração com um agente de IA está prevista para uma etapa
+                futura; não há processamento de dados reais neste ambiente.
+              </p>
+            </div>
+          </>
         )}
       </div>
     </section>
   )
 }
+
 export function TechnologiesSection({ full = false }: { full?: boolean }) {
   return (
     <section className="section technologies-section" id="tecnologias">
       <div className="container">
-        <SectionHeading
-          level={full ? 1 : 2}
-          eyebrow="CONSTRUÍDO PARA EVOLUIR"
-          title="Uma base sólida. Um futuro conectado."
-          center
-        >
-          Uma interface modular, com separação entre apresentação e dados,
-          preparada para evoluir junto com a solução.
-        </SectionHeading>
+        <div className="section-title-row">
+          <SectionHeading
+            level={full ? 1 : 2}
+            eyebrow="Por dentro da plataforma"
+            title="Uma estrutura simples de entender."
+          >
+            A interface e os dados simulados estão implementados. A conexão com
+            API e agente faz parte das próximas etapas.
+          </SectionHeading>
+          {!full && (
+            <Link className="text-link" to="/tecnologias">
+              Conhecer a estrutura <ArrowUpRight size={17} />
+            </Link>
+          )}
+        </div>
         <div className="architecture">
           <div className="architecture-node">
-            <span className="feature-icon">
-              <Code2 size={25} />
-            </span>
-            <small>01 / EXPERIÊNCIA</small>
-            <h3>Interface web</h3>
-            <p>React · TypeScript · Vite</p>
-            <span className="architecture-status">Implementado</span>
+            <Code2 size={23} strokeWidth={1.5} />
+            <small>01 / Interface</small>
+            <h3>Navegação e visualização</h3>
+            <p>React, TypeScript e Vite</p>
+            <span className="architecture-status">Disponível nesta versão</span>
           </div>
-          <span className="architecture-arrow">
-            <ArrowRight />
-          </span>
           <div className="architecture-node">
-            <span className="feature-icon">
-              <Database size={25} />
-            </span>
-            <small>02 / DADOS</small>
-            <h3>Camada de serviços</h3>
-            <p>Dados tipados e simulados</p>
-            <span className="architecture-status">Implementado</span>
+            <Database size={23} strokeWidth={1.5} />
+            <small>02 / Dados</small>
+            <h3>Uma fonte compartilhada</h3>
+            <p>Registros tipados e simulados</p>
+            <span className="architecture-status">Disponível nesta versão</span>
           </div>
-          <span className="architecture-arrow">
-            <ArrowRight />
-          </span>
           <div className="architecture-node planned">
-            <span className="feature-icon">
-              <BrainCircuit size={25} />
-            </span>
-            <small>03 / INTELIGÊNCIA</small>
-            <h3>API + agente de IA</h3>
+            <Workflow size={23} strokeWidth={1.5} />
+            <small>03 / Próxima etapa</small>
+            <h3>Integração com API e agente</h3>
             <p>Contrato a ser definido</p>
-            <span className="architecture-status">Integração futura</span>
+            <span className="architecture-status">Planejado</span>
           </div>
         </div>
         {full && (
@@ -306,52 +284,61 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
               <h3>Interface e navegação</h3>
               <p>
                 React com TypeScript e React Router para páginas independentes.
-                Tailwind CSS e estilos compartilhados garantem consistência
-                visual.
+                Tailwind CSS e estilos compartilhados organizam a apresentação.
               </p>
             </article>
             <article>
-              <h3>Visualização e acessibilidade</h3>
+              <h3>Gráficos e acessibilidade</h3>
               <p>
-                Recharts para gráficos a partir dos registros do catálogo,
-                Lucide para ícones e Inter hospedada localmente. Transições
-                respeitam a preferência por movimento reduzido.
+                Recharts apresenta os dados do catálogo, Lucide fornece os
+                ícones e a fonte Inter é hospedada localmente. A interface
+                respeita a preferência por movimento reduzido.
               </p>
             </article>
             <article>
-              <h3>Evolução da solução</h3>
+              <h3>Próximas integrações</h3>
               <p>
-                O adaptador de serviços isola a fonte de dados. Backend,
-                provedor de IA, autenticação e integrações corporativas ainda
-                não foram definidos ou implementados.
+                A camada de serviços isola a origem dos registros. Backend,
+                provedor de IA e integrações corporativas ainda não foram
+                definidos ou implementados.
               </p>
             </article>
           </div>
         )}
-        <p className="architecture-caption">
-          Arquitetura conceitual · Nenhuma integração externa em produção neste
-          demonstrador.
-        </p>
       </div>
     </section>
   )
 }
+
 export function CallToAction() {
   return (
-    <section className="container cta-section">
-      <div>
-        <span className="eyebrow">EXPLORE NA PRÁTICA</span>
-        <h2>
-          Seu próximo insight
-          <br />
-          começa com uma nova visão.
-        </h2>
-        <p>Explore os indicadores e navegue por 120 recursos demonstrativos.</p>
+    <section className="cta-section">
+      <div className="container cta-inner">
+        <div>
+          <span className="eyebrow">Experimente a plataforma</span>
+          <h2>
+            Comece pelo panorama.
+            <br />
+            Aprofunde nos detalhes.
+          </h2>
+          <p>
+            {summary.count} recursos e {summary.categories} categorias para
+            explorar com dados simulados.
+          </p>
+        </div>
+        <div className="cta-actions">
+          <Button to="/dashboard" arrow>
+            Abrir dashboard
+          </Button>
+          <Link to="/custos">
+            Ou ir direto ao catálogo <ArrowRight size={16} />
+          </Link>
+        </div>
+        <span className="cta-total" aria-hidden="true">
+          {compactCurrency(summary.total)}
+          <small>em custos demonstrativos</small>
+        </span>
       </div>
-      <Button to="/dashboard" arrow>
-        Explorar dashboard
-      </Button>
-      <div className="cta-orbits" aria-hidden="true" />
     </section>
   )
 }

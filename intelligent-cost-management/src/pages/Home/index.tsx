@@ -1,13 +1,5 @@
+import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import {
-  ArrowDown,
-  ArrowUpRight,
-  Check,
-  CirclePlay,
-  Database,
-  ShieldCheck,
-  Sparkles,
-} from 'lucide-react'
 import { Button } from '../../components/ui/Button'
 import { DashboardPreview } from '../../components/DashboardPreview'
 import {
@@ -17,114 +9,119 @@ import {
   CallToAction,
   TechnologiesSection,
 } from '../../components/MarketingSections'
-import { SectionHeading } from '../../components/ui/SectionHeading'
+import { CostCard } from '../../components/cards/CostCard'
+import { costService, summarizeCosts } from '../../services/costService'
+
+const records = costService.list()
+const summary = summarizeCosts(records)
+const featured = [records[0], records[32], records[81]]
+
 export default function Home() {
   return (
     <>
       <section className="hero-section">
-        <div className="hero-grid-lines" aria-hidden="true" />
         <div className="container hero-grid">
           <div className="hero-content">
-            <span className="hero-pill">
+            <span className="hero-kicker">
               <span />
-              <Sparkles size={13} />
-              GESTÃO DE CUSTOS, EVOLUÍDA
+              Gestão de custos operacionais
             </span>
             <h1>
-              Transformando
+              Cada custo,
               <br />
-              dados em decisões
-              <br />
-              <span>inteligentes.</span>
+              <span>no seu lugar.</span>
             </h1>
             <p>
-              Clareza sobre seus custos. Inteligência para ir além.
-              <br className="desktop-break" /> Uma nova forma de conectar dados,
-              identificar oportunidades e apoiar decisões estratégicas.
+              Acompanhe os recursos da operação, compare períodos e entenda o
+              que mudou. Do total ao detalhe, sem perder o contexto.
             </p>
             <div className="hero-buttons">
-              <Button to="/sobre" arrow>
-                Conheça a solução
+              <Button to="/dashboard" arrow>
+                Explorar dashboard
               </Button>
-              <Button to="/demonstracao" secondary>
-                <CirclePlay size={18} />
-                Assistir demonstração
-              </Button>
+              <Link className="hero-secondary" to="/custos">
+                Ver catálogo de custos <ArrowUpRight size={17} />
+              </Link>
             </div>
-            <div className="hero-notes">
-              <span>
-                <Check size={14} />
-                Visão integrada
-              </span>
-              <span>
-                <Check size={14} />
-                Análise inteligente
-              </span>
-              <span>
-                <Check size={14} />
-                Decisões com contexto
-              </span>
+            <div className="hero-footnote">
+              <span />
+              Demonstração com dados simulados. Sem cadastro.
             </div>
           </div>
-          <div className="hero-dashboard">
-            <div className="hero-dashboard-glow" aria-hidden="true" />
-            <DashboardPreview />
-          </div>
+          <DashboardPreview />
         </div>
         <div className="container hero-bottom">
-          <span>
-            GESTÃO DE CUSTOS <span className="slash">/</span> UMA NOVA
-            PERSPECTIVA
-          </span>
-          <a href="#sobre" aria-label="Explorar a próxima seção">
-            <ArrowDown size={17} />
+          <a href="#sobre">
+            Conheça o projeto <ArrowDown size={15} />
           </a>
+          <span>
+            2RPnet <span className="slash">/</span> Inovanet Tech
+          </span>
         </div>
       </section>
-      <div className="trust-strip">
-        <div className="container trust-inner">
-          <span>UM PROJETO NO CONTEXTO</span>
-          <strong>
-            2RPnet <i>/</i> Inovanet Tech
-          </strong>
-          <div />
-          <span>
-            <ShieldCheck size={18} />
-            Tecnologia com propósito
-          </span>
-          <span>
-            <Database size={18} />
-            Decisões orientadas por dados
+      <div className="project-facts">
+        <div className="container facts-inner">
+          <p>
+            Uma base para
+            <br />
+            <strong>entender a operação.</strong>
+          </p>
+          <div>
+            <strong>{summary.count}</strong>
+            <span>recursos no catálogo</span>
+          </div>
+          <div>
+            <strong>{summary.categories.toString().padStart(2, '0')}</strong>
+            <span>categorias de custos</span>
+          </div>
+          <div>
+            <strong>
+              {summary.evolution.length.toString().padStart(2, '0')}
+            </strong>
+            <span>meses de histórico</span>
+          </div>
+          <span className="facts-note">
+            Cenário demonstrativo
+            <br />
+            Maio — Outubro de 2026
           </span>
         </div>
       </div>
       <AboutSection />
       <BenefitsSection />
-      <AgentSection />
-      <TechnologiesSection />
-      <section className="section dashboard-preview-section">
-        <div className="container dashboard-showcase">
-          <div>
-            <SectionHeading
-              eyebrow="DO PANORAMA AO DETALHE"
-              title="Todos os custos. Uma visão integrada."
-            >
-              Indicadores, evolução e distribuição de custos em um só lugar.
-              Explore o dashboard e aprofunde a análise no catálogo de recursos.
-            </SectionHeading>
-            <Button to="/dashboard" arrow>
-              Acessar dashboard completo
-            </Button>
-            <Link className="text-link preview-catalog-link" to="/custos">
-              Conhecer catálogo de custos <ArrowUpRight size={16} />
-            </Link>
-            <span className="data-disclaimer">
-              Dados simulados · Outubro de 2026
-            </span>
+      <section className="section catalog-showcase">
+        <div className="container">
+          <div className="section-title-row">
+            <div>
+              <span className="eyebrow">O custo, em detalhe</span>
+              <h2>
+                Por trás do total,
+                <br />
+                existem recursos.
+              </h2>
+            </div>
+            <div className="section-side-copy">
+              <p>
+                Serviço, consumo, área responsável e variação mensal.
+                Informações que ajudam a entender cada lançamento.
+              </p>
+              <Link className="text-link" to="/custos">
+                Explorar os {summary.count} recursos <ArrowUpRight size={17} />
+              </Link>
+            </div>
           </div>
-          <DashboardPreview />
+          <div className="featured-costs">
+            {featured.map((cost) => (
+              <CostCard key={cost.id} cost={cost} />
+            ))}
+          </div>
+          <p className="catalog-caption">
+            Exemplos do catálogo · Valores mensais em reais · Dados simulados
+          </p>
         </div>
       </section>
+      <AgentSection />
+      <TechnologiesSection />
       <CallToAction />
     </>
   )

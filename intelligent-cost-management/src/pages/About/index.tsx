@@ -7,10 +7,10 @@ export default function About() {
         <SectionHeading
           level={1}
           eyebrow="SOBRE O PROJETO"
-          title="Mais contexto para cada decisão."
+          title="Um lugar para acompanhar os custos da operação."
         >
-          Conheça a visão da plataforma Gestão de custos, uma proposta de gestão
-          inteligente de custos no contexto da 2RPnet / Inovanet Tech.
+          Conheça a proposta da plataforma Gestão de custos, desenvolvida no
+          contexto da 2RPnet / Inovanet Tech.
         </SectionHeading>
       </div>
       <AboutSection />
@@ -26,11 +26,11 @@ export default function About() {
         </article>
         <article>
           <span className="eyebrow">A PROPOSTA</span>
-          <h2>Conectar informação e interpretação.</h2>
+          <h2>Consultar, comparar e entender.</h2>
           <p>
-            A plataforma apresenta indicadores e recursos de forma organizada. A
-            integração futura com um agente de IA poderá acrescentar
-            interpretação e insights, sempre como apoio à avaliação humana.
+            A plataforma reúne indicadores, gráficos e detalhes dos serviços.
+            Cada visualização usa a mesma base de dados, permitindo passar do
+            total consolidado à análise de um recurso específico.
           </p>
         </article>
       </section>

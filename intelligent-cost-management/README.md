@@ -119,7 +119,9 @@ Esses status não representam avaliação de uma IA nem resultados financeiros c
 
 [Protótipo do Figma fornecido](https://www.figma.com/design/Q6pYa2PRIZKpCFZ2L3BZuX/Untitled?node-id=0-1).
 
-**Limitação:** o arquivo não pôde ser acessado durante a implementação; não foi possível inspecionar suas telas ou afirmar fidelidade ao protótipo. A interface segue as especificações fornecidas: fundo `#080F1F`, superfícies escuras, azul `#1765F3`, destaque `#58C4FF`, tipografia Inter e estilo corporativo minimalista. Não foram encontrados logos oficiais: os nomes institucionais aparecem como texto e o símbolo da aplicação é próprio, baseado em um ícone Lucide.
+**Limitação:** o arquivo não pôde ser acessado durante a implementação; não foi possível inspecionar suas telas ou afirmar fidelidade ao protótipo. Não foram encontrados logos oficiais: os nomes institucionais aparecem como texto e o símbolo da aplicação é próprio, baseado em um ícone Lucide.
+
+A revisão visual prioriza o conteúdo da gestão de custos: destaque inicial azul-marinho `#0C182A`, seções institucionais em branco e tom claro `#F5F5F0`, azul `#1765F3` nas ações e tipografia Inter. O dashboard e o catálogo mantêm superfícies escuras, com menos efeitos e maior legibilidade nos cards. A página inicial apresenta uma única prévia dos indicadores e três recursos extraídos do catálogo, com textos diretos sobre as funções disponíveis. A integração futura com IA permanece documentada na demonstração e nas tecnologias.
 
 ## Testes
 

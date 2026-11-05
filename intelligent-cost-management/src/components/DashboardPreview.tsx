@@ -1,100 +1,59 @@
-import {
-  ArrowDownRight,
-  ArrowUpRight,
-  Ellipsis,
-  LayoutDashboard,
-  Layers3,
-  Sparkles,
-} from 'lucide-react'
+import { ArrowUpRight, ArrowRight, ChartNoAxesCombined } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import {
   costService,
-  compactCurrency,
+  currency,
   percentage,
   summarizeCosts,
 } from '../services/costService'
 import { EvolutionChart } from './charts/CostCharts'
+
 const summary = summarizeCosts(costService.list())
 export function DashboardPreview() {
   return (
     <div className="dashboard-preview">
-      <div className="preview-window-bar">
-        <div className="window-dots">
-          <i />
-          <i />
-          <i />
-        </div>
-        <span>Gestão de custos</span>
-        <span className="preview-live">
-          <span />
-          Demo
-        </span>
-      </div>
-      <div className="preview-body">
-        <aside className="preview-sidebar" aria-hidden="true">
-          <span className="preview-brand-icon">
-            <Sparkles size={18} />
-          </span>
-          <LayoutDashboard size={17} />
-          <Layers3 size={17} />
-          <div />
-          <span>GC</span>
-        </aside>
-        <div className="preview-main">
-          <div className="preview-title">
-            <div>
-              <span>VISÃO GERAL</span>
-              <h3>Seus custos, em perspectiva.</h3>
-            </div>
-            <Ellipsis size={18} />
-          </div>
-          <div className="preview-metrics">
-            <div>
-              <span>Custo total analisado</span>
-              <strong>{compactCurrency(summary.total)}</strong>
-              <small>{percentage(summary.variation)} vs. mês anterior</small>
-            </div>
-            <div>
-              <span>Recursos monitorados</span>
-              <strong>
-                {summary.count}
-                <small>recursos</small>
-              </strong>
-              <small>5 categorias de custos</small>
-            </div>
-          </div>
-          <div className="preview-chart-title">
-            <strong>Evolução de custos</strong>
-            <span>
-              <i />
-              Custos mensais
-            </span>
-          </div>
-          <EvolutionChart data={summary.evolution} small />
-          <div className="preview-insight">
-            <span className="insight-icon">
-              <Sparkles size={16} />
-            </span>
-            <div>
-              <strong>Clareza para agir com inteligência</strong>
-              <span>
-                {summary.alerts} recursos com aumento acima de 10% no cenário
-                simulado.
-              </span>
-            </div>
-            <ArrowUpRight size={16} />
-          </div>
-        </div>
-      </div>
-      <Link to="/dashboard" className="preview-floating">
-        <span className="floating-icon">
-          <ArrowDownRight size={19} />
-        </span>
+      <div className="preview-header">
         <span>
-          <small>EXPLORE AS POSSIBILIDADES</small>
-          <strong>Uma visão completa dos seus custos</strong>
+          <ChartNoAxesCombined size={17} />
+          Resumo da operação
         </span>
-        <ArrowUpRight size={17} />
+        <span>Out / 2026</span>
+      </div>
+      <div className="preview-main">
+        <div className="preview-total">
+          <span>Custo total analisado</span>
+          <strong>{currency(summary.total)}</strong>
+          <span className="preview-change">
+            <ArrowUpRight size={13} />
+            {percentage(summary.variation)} <span>em relação a setembro</span>
+          </span>
+        </div>
+        <div className="preview-chart-title">
+          <h2>Evolução mensal</h2>
+          <span>Maio — Outubro</span>
+        </div>
+        <EvolutionChart data={summary.evolution} small />
+        <div className="preview-summary">
+          <div>
+            <strong>{summary.count}</strong>
+            <span>Recursos</span>
+          </div>
+          <div>
+            <strong>{summary.categories}</strong>
+            <span>Categorias</span>
+          </div>
+          <div>
+            <strong>{summary.alerts}</strong>
+            <span>Pontos de atenção</span>
+          </div>
+        </div>
+      </div>
+      <Link className="preview-footer" to="/dashboard">
+        <span>
+          <span />
+          Dados demonstrativos
+        </span>
+        Ver dashboard <ArrowRight size={15} />
       </Link>
     </div>
   )

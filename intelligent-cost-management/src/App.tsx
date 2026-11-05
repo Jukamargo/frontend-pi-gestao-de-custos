@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { Header } from './components/layout/Header'
 import { Footer } from './components/layout/Footer'
 import { AppLayout } from './components/layout/AppLayout'
+import { MarketingLayout } from './components/layout/MarketingLayout'
 import Home from './pages/Home'
 import About from './pages/About'
 import Benefits from './pages/Benefits'
@@ -13,7 +14,7 @@ const Dashboard = lazy(() => import('./pages/Dashboard'))
 const CostCatalog = lazy(() => import('./pages/CostCatalog'))
 const CostDetails = lazy(() => import('./pages/CostDetails'))
 const titles: Record<string, string> = {
-  '/': 'Decisões inteligentes',
+  '/': 'Custos operacionais',
   '/sobre': 'Sobre o projeto',
   '/beneficios': 'Benefícios',
   '/demonstracao': 'Demonstração do agente',
@@ -47,11 +48,13 @@ export default function App() {
           }
         >
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/sobre" element={<About />} />
-            <Route path="/beneficios" element={<Benefits />} />
-            <Route path="/demonstracao" element={<AgentDemo />} />
-            <Route path="/tecnologias" element={<Technologies />} />
+            <Route element={<MarketingLayout />}>
+              <Route path="/" element={<Home />} />
+              <Route path="/sobre" element={<About />} />
+              <Route path="/beneficios" element={<Benefits />} />
+              <Route path="/demonstracao" element={<AgentDemo />} />
+              <Route path="/tecnologias" element={<Technologies />} />
+            </Route>
             <Route element={<AppLayout />}>
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/custos" element={<CostCatalog />} />

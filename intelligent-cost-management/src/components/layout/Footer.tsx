@@ -9,9 +9,9 @@ export function Footer() {
           <div>
             <Brand />
             <p>
-              Inteligência para entender os custos.
+              Acompanhe os custos da operação.
               <br />
-              Clareza para decidir o próximo passo.
+              Do panorama geral a cada recurso.
             </p>
           </div>
           <div>

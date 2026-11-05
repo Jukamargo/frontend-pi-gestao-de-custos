@@ -3,7 +3,7 @@ import {
   LayoutDashboard,
   Layers3,
   ArrowLeft,
-  Sparkles,
+  BookOpen,
   CircleHelp,
 } from 'lucide-react'
 export function AppLayout() {
@@ -20,11 +20,11 @@ export function AppLayout() {
           Catálogo de custos
         </NavLink>
         <div className="sidebar-note">
-          <Sparkles size={20} />
-          <strong>Decisões com contexto</strong>
-          <p>Conheça a proposta do agente de inteligência artificial.</p>
-          <Link to="/demonstracao">
-            Explorar demonstração <ArrowLeft className="rotate-180" size={14} />
+          <BookOpen size={20} />
+          <strong>Como ler os indicadores</strong>
+          <p>Entenda os dados e os critérios desta demonstração.</p>
+          <Link to="/sobre">
+            Sobre o projeto <ArrowLeft className="rotate-180" size={14} />
           </Link>
         </div>
         <Link className="sidebar-help" to="/sobre">
@@ -36,7 +36,7 @@ export function AppLayout() {
         <div className="workspace-bar">
           <span>
             <span className="live-dot" />
-            Workspace demonstrativo
+            Ambiente demonstrativo
           </span>
           <span>Outubro, 2026</span>
         </div>
