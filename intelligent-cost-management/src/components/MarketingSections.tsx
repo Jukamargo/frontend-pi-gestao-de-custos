@@ -14,9 +14,8 @@ import {
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { SectionHeading } from './ui/SectionHeading'
-import { Button } from './ui/Button'
+import { ChatbotButton } from './ui/ChatbotButton'
 import { ConsolidationDemo } from './ConsolidationDemo'
-import { ChatbotDemo } from './chat/ChatbotDemo'
 import { AgentVideo } from './AgentVideo'
 
 export function AboutSection() {
@@ -46,9 +45,8 @@ export function AboutSection() {
           </p>
           <p>
             Desenvolvida no contexto da 2RPnet / Inovanet Tech, esta versão
-            apresenta uma conversa demonstrativa e um caso de consulta de
-            custos. O chatbot utiliza conteúdo local, sem acesso aos sistemas
-            externos.
+            apresenta a proposta de integração e um caso de consulta de custos.
+            O chatbot será implementado em uma próxima etapa.
           </p>
           <Link to="/sobre" className="text-link">
             Entender a proposta <ArrowUpRight size={17} />
@@ -82,7 +80,7 @@ const benefits = [
     title: 'Consultar em uma conversa',
     text: 'Usar o chatbot como ponto de consulta para dúvidas sobre processos, ferramentas e custos.',
     detail:
-      'A demonstração responde sobre o escopo informado e calcula custos da base fictícia. A integração ao agente e aos sistemas reais será uma etapa posterior.',
+      'O chatbot será implementado futuramente. Nesta versão, a consulta de custos está disponível no dashboard, no catálogo e nos seletores demonstrativos.',
   },
   {
     icon: Gauge,
@@ -90,7 +88,7 @@ const benefits = [
     title: 'Identificar a fonte da resposta',
     text: 'Apresentar a origem das informações e distinguir dados demonstrativos de processos ainda em análise.',
     detail:
-      'As respostas locais indicam se vêm do mapeamento da equipe ou das bases fictícias. As restrições da Alura, do SENAI e do Jurídico permanecem visíveis.',
+      'O chatbot futuro deverá indicar a origem das informações. O mapeamento atual preserva as restrições da Alura, do SENAI e do Jurídico.',
   },
 ]
 export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
@@ -138,12 +136,12 @@ export function AgentSection({ full = false }: { full?: boolean }) {
           <div>
             <SectionHeading
               level={full ? 1 : 2}
-              eyebrow="Demonstração do chatbot"
+              eyebrow="Chatbot · próxima etapa"
               title="Perguntas sobre processos, ferramentas e custos"
             >
               O chatbot será o ponto de consulta às informações das ferramentas
-              principais. Nesta versão, você pode experimentar respostas locais
-              baseadas no escopo informado e nos dados fictícios do projeto.
+              principais. Seu acesso será disponibilizado após a implementação e
+              a definição das integrações do projeto.
             </SectionHeading>
             <div className="agent-points">
               <span>
@@ -159,13 +157,15 @@ export function AgentSection({ full = false }: { full?: boolean }) {
                 Gestão de custos como um dos casos de uso
               </span>
             </div>
-            {!full && (
+            {full ? (
+              <ChatbotButton />
+            ) : (
               <Link to="/demonstracao" className="text-link">
-                Testar chatbot <ArrowUpRight size={17} />
+                Conhecer a proposta <ArrowUpRight size={17} />
               </Link>
             )}
           </div>
-          {full ? <ChatbotDemo /> : <AgentVideo />}
+          <AgentVideo />
         </div>
         {full && (
           <>
@@ -206,16 +206,13 @@ export function AgentSection({ full = false }: { full?: boolean }) {
             <div className="info-note">
               <Info size={20} />
               <p>
-                <strong>Sobre esta demonstração.</strong> A conversa usa
-                respostas locais e dados fictícios. O agente Gemini Enterprise e
-                as ferramentas externas ainda não estão conectados a esta
-                interface. Nenhuma automação é executada pelo chat.
+                <strong>Chatbot em etapa futura.</strong> O botão indica o
+                acesso previsto. A consulta de custos abaixo usa seletores e
+                dados fictícios, sem conexão ao agente ou às ferramentas
+                externas.
               </p>
             </div>
             <ConsolidationDemo />
-            <div className="agent-video-section">
-              <AgentVideo />
-            </div>
           </>
         )}
       </div>
@@ -273,7 +270,7 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
             <h3>Chatbot</h3>
             <p>Respostas às dúvidas da equipe, com indicação das fontes.</p>
             <span className="architecture-status">
-              Objetivo central · conversa local nesta interface
+              Objetivo central · implementação futura
             </span>
           </div>
         </div>
@@ -282,10 +279,9 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
             <article>
               <h3>Nesta interface</h3>
               <p>
-                React, TypeScript, Vite e React Router. O chatbot demonstra
-                respostas locais a perguntas sobre o escopo e calcula custos
-                fictícios. Seu adaptador pode ser substituído pela integração
-                com o agente quando houver um contrato de acesso.
+                React, TypeScript, Vite e React Router. A interface apresenta o
+                escopo e o botão de acesso futuro ao chatbot. O dashboard e os
+                seletores de custos utilizam dados fictícios locais.
               </p>
             </article>
             <article>
@@ -319,17 +315,15 @@ export function CallToAction() {
     <section className="cta-section">
       <div className="container cta-inner">
         <div>
-          <span className="eyebrow">Acesso à demonstração</span>
-          <h2>Experimente uma consulta pelo chatbot</h2>
+          <span className="eyebrow">Próxima etapa do projeto</span>
+          <h2>Chatbot para as dúvidas da equipe</h2>
           <p>
-            Teste perguntas sobre as rotinas mapeadas e consulte um exemplo de
-            custo mensal.
+            O acesso será disponibilizado após a implementação do chatbot e das
+            integrações com as ferramentas principais.
           </p>
         </div>
         <div className="cta-actions">
-          <Button to="/demonstracao" arrow>
-            Testar chatbot
-          </Button>
+          <ChatbotButton />
           <Link to="/dashboard">
             Ver caso de uso de custos <ArrowRight size={16} />
           </Link>

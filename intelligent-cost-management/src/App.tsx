@@ -17,7 +17,7 @@ const titles: Record<string, string> = {
   '/': 'Automação e chatbot',
   '/sobre': 'Sobre o projeto',
   '/beneficios': 'Benefícios',
-  '/demonstracao': 'Chatbot demonstrativo',
+  '/demonstracao': 'Demonstração do projeto',
   '/tecnologias': 'Tecnologias',
   '/dashboard': 'Dashboard',
   '/custos': 'Catálogo de custos',

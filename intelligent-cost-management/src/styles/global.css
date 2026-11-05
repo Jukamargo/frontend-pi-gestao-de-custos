@@ -139,6 +139,13 @@ main {
 .button-primary:hover {
   background: var(--primary-hover);
 }
+.chatbot-button:disabled {
+  opacity: 1;
+  cursor: default;
+  background: var(--surface-accent);
+  border-color: var(--border);
+  color: var(--text-secondary);
+}
 .button-secondary {
   background: var(--surface);
   border-color: var(--border);

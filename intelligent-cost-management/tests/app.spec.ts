@@ -4,40 +4,21 @@ import { currency } from '../src/services/costService'
 import { employees, variableExpenses } from '../src/data/people'
 import { consolidateEmployee } from '../src/services/consolidationService'
 
-test('destacar o chatbot e consultar processos e custos com indicação de fontes', async ({
+test('manter apenas o botão de acesso futuro ao chatbot sem interface de conversa', async ({
   page,
 }) => {
-  await page.goto('/')
-  await expect(page.locator('h1')).toContainText('Automatizar rotinas')
-  await page
-    .locator('.hero-buttons')
-    .getByRole('link', { name: 'Testar chatbot' })
-    .click()
-  await expect(page).toHaveURL(/\/demonstracao$/)
-  const question = page.getByLabel('Sua pergunta', { exact: true })
-  const log = page.getByRole('log', { name: 'Histórico da conversa' })
-  await expect(
-    page.getByRole('button', { name: 'Enviar pergunta' }),
-  ).toBeDisabled()
-  await question.fill('Como solicitar licenças da Alura?')
-  await question.press('Enter')
-  await expect(log).toContainText('e-mail à administração')
-  await expect(log).toContainText('Escopo informado pela equipe · Alura')
-  await expect(question).toHaveValue('')
-  await expect(question).toBeFocused()
-  await page
-    .getByRole('button', {
-      name: 'Qual é o custo do colaborador 101 em 2026-10?',
-    })
-    .click()
-  await expect(log).toContainText(currency(12025.5))
-  await expect(log).toContainText('Dados fictícios de Sólides e Omie')
-  await question.fill('Qual é a previsão do tempo amanhã?')
-  await page.getByRole('button', { name: 'Enviar pergunta' }).click()
-  await expect(log).toContainText('Não encontrei uma resposta')
-  await page.getByRole('button', { name: 'Limpar conversa' }).click()
-  await expect(log.locator('.chat-message')).toHaveCount(1)
-  await expect(log).not.toContainText('e-mail à administração')
+  for (const path of ['/', '/demonstracao']) {
+    await page.goto(path)
+    const buttons = page.getByRole('button', { name: 'Chatbot — em breve' })
+    await expect(buttons.first()).toBeVisible()
+    for (const button of await buttons.all())
+      await expect(button).toBeDisabled()
+    await expect(page.getByRole('log')).toHaveCount(0)
+    await expect(page.getByRole('textbox')).toHaveCount(0)
+    await expect(
+      page.getByRole('button', { name: 'Enviar pergunta' }),
+    ).toHaveCount(0)
+  }
 })
 
 test('apresentar as restrições do ecossistema de RH sem indicar automações ativas', async ({

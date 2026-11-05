@@ -28,7 +28,7 @@ export function Footer() {
             <Link to="/custos">
               Catálogo de custos <ArrowUpRight size={13} />
             </Link>
-            <Link to="/demonstracao">Chatbot demonstrativo</Link>
+            <Link to="/demonstracao">Demonstração do projeto</Link>
           </div>
         </div>
         <div className="footer-bottom">

@@ -58,10 +58,10 @@ export function ConsolidationDemo() {
           </select>
         </div>
       </div>
-      <blockquote className="demo-prompt">
-        “Qual foi o custo consolidado de {employee.nome}, ID{' '}
-        {employee.colaborador_id}, no período {period}?”
-      </blockquote>
+      <p className="demo-prompt">
+        Consulta de custos: {employee.nome} · ID {employee.colaborador_id} ·{' '}
+        {period}
+      </p>
       <div className="consolidation-equation" aria-label="Composição do custo">
         <div>
           <span>Salário base</span>

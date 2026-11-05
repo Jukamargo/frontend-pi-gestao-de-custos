@@ -1,8 +1,7 @@
 import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { Button } from '../../components/ui/Button'
+import { ChatbotButton } from '../../components/ui/ChatbotButton'
 import { DashboardPreview } from '../../components/DashboardPreview'
-import { ChatbotPreview } from '../../components/chat/ChatbotPreview'
 import {
   AboutSection,
   AgentSection,
@@ -14,6 +13,7 @@ import { CostCard } from '../../components/cards/CostCard'
 import { costService } from '../../services/costService'
 
 const records = costService.list()
+const featured = [records[0], records[32], records[81]]
 
 export default function Home() {
   return (
@@ -37,19 +37,17 @@ export default function Home() {
               consultas sobre RH, processos e custos.
             </p>
             <div className="hero-buttons">
-              <Button to="/demonstracao" arrow>
-                Testar chatbot
-              </Button>
+              <ChatbotButton />
               <Link className="hero-secondary" to="/tecnologias">
                 Ver ferramentas <ArrowUpRight size={17} />
               </Link>
             </div>
             <div className="hero-footnote">
               <span />
-              Demonstração local · integrações reais em etapa futura.
+              Chatbot e integrações previstos para uma próxima etapa.
             </div>
           </div>
-          <ChatbotPreview />
+          <DashboardPreview />
         </div>
         <div className="container hero-bottom">
           <a href="#sobre">
@@ -97,8 +95,9 @@ export default function Home() {
             </div>
             <div className="section-side-copy">
               <p>
-                A gestão de custos é um exemplo de consulta do chatbot. O
-                dashboard e o catálogo demonstram a composição dos valores de
+                A gestão de custos é um dos casos de uso previstos para o
+                chatbot. O dashboard e o catálogo demonstram a composição dos
+                valores de
                 {` ${records.length}`} colaboradores fictícios.
               </p>
               <Link className="text-link" to="/custos">
@@ -106,9 +105,10 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="cost-use-case-grid">
-            <DashboardPreview />
-            <CostCard cost={records[0]} />
+          <div className="featured-costs">
+            {featured.map((cost) => (
+              <CostCard key={cost.id} cost={cost} />
+            ))}
           </div>
           <p className="catalog-caption">
             Dados fictícios para demonstração · Outubro de 2026
