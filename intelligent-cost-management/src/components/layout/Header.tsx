@@ -4,6 +4,7 @@ import { Menu, LayoutDashboard } from 'lucide-react'
 import { Brand } from './Brand'
 import { MobileMenu } from './MobileMenu'
 import { Button } from '../ui/Button'
+import { ThemeToggle } from '../ui/ThemeToggle'
 export function Header() {
   const [open, setOpen] = useState(false)
   return (
@@ -20,21 +21,24 @@ export function Header() {
           <NavLink to="/demonstracao">Demonstração</NavLink>
           <NavLink to="/tecnologias">Tecnologias</NavLink>
         </nav>
-        <div className="header-action">
-          <Button to="/dashboard">
-            <LayoutDashboard size={15} />
-            Acessar dashboard
-          </Button>
+        <div className="header-controls">
+          <div className="header-action">
+            <Button to="/dashboard">
+              <LayoutDashboard size={15} />
+              Acessar dashboard
+            </Button>
+          </div>
+          <ThemeToggle />
+          <button
+            className="icon-button menu-toggle"
+            aria-label="Abrir menu"
+            aria-expanded={open}
+            aria-controls="mobile-navigation"
+            onClick={() => setOpen(true)}
+          >
+            <Menu />
+          </button>
         </div>
-        <button
-          className="icon-button menu-toggle"
-          aria-label="Abrir menu"
-          aria-expanded={open}
-          aria-controls="mobile-navigation"
-          onClick={() => setOpen(true)}
-        >
-          <Menu />
-        </button>
       </div>
       {open && <MobileMenu onClose={() => setOpen(false)} />}
     </header>
