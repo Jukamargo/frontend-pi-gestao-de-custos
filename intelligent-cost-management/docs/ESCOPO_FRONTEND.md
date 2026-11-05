@@ -28,6 +28,12 @@ Centralizar dados de RH e Financeiro para consultar o custo mensal de um colabor
 - Identificadores de rota mantidos para evitar quebra dos links existentes.
 - CPF completo ausente da apresentação; a chave existe somente nas bases locais de demonstração.
 
+## Atualização do ecossistema de RH
+
+O [mapeamento de serviços de RH](ECOSSISTEMA_RH.md) incorpora as observações e o diagrama fornecidos posteriormente pelo responsável. A rota `/tecnologias` apresenta as propostas para Flash, Vixting, Clude, Sindpd e entrada de dados por e-mail na Sólides, o papel documental do SharePoint e as restrições de Alura, SENAI e Jurídico. Porto Seguro fica limitado a seguro de vida; SulAmérica e Wellhub seguem o agrupamento de saúde e bem-estar informado pela equipe.
+
+Esse complemento é uma apresentação de escopo, sem executar integrações ou alterar os valores demonstrativos do catálogo e do dashboard.
+
 ## Limites e decisões
 
 Os modelos locais são normalizados para a interface, e não uma declaração de compatibilidade integral com todos os campos das APIs externas. Nenhum endpoint externo é chamado nesta versão. O texto não apresenta o workflow documentado como se estivesse conectado ao navegador.
