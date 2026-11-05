@@ -24,7 +24,7 @@ export function DashboardPreview() {
           <i />
           <i />
         </div>
-        <span>Intelligent Cost Management</span>
+        <span>Gestão de custos</span>
         <span className="preview-live">
           <span />
           Demo
@@ -38,7 +38,7 @@ export function DashboardPreview() {
           <LayoutDashboard size={17} />
           <Layers3 size={17} />
           <div />
-          <span>ICM</span>
+          <span>GC</span>
         </aside>
         <div className="preview-main">
           <div className="preview-title">

@@ -34,7 +34,7 @@ export default function Dashboard() {
     <>
       <div className="app-page-heading">
         <div>
-          <span className="eyebrow">INTELLIGENT COST MANAGEMENT</span>
+          <span className="eyebrow">GESTÃO DE CUSTOS</span>
           <h1>Visão geral</h1>
           <p>Uma perspectiva clara dos seus custos operacionais.</p>
         </div>

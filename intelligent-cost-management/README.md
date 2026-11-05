@@ -1,4 +1,4 @@
-# Intelligent Cost Management
+# Gestão de custos
 
 Front-end institucional e demonstrativo de uma plataforma de gestão inteligente de custos, no contexto da **2RPnet / Inovanet Tech**. Apresenta a proposta da solução e permite explorar custos operacionais com indicadores, gráficos e um catálogo de recursos.
 

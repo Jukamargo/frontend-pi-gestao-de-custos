@@ -32,7 +32,7 @@ export function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>© 2026 Intelligent Cost Management</span>
+          <span>© 2026 Gestão de custos</span>
           <span>Projeto no contexto 2RPnet / Inovanet Tech</span>
           <span className="demo-dot">Ambiente demonstrativo</span>
         </div>

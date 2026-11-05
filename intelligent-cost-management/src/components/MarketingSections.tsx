@@ -26,7 +26,7 @@ export function AboutSection() {
             eyebrow="VISÃO ALÉM DOS NÚMEROS"
             title="Cada custo conta uma história. Entenda a sua."
           >
-            Dados dispersos dificultam decisões. O Intelligent Cost Management
+            Dados dispersos dificultam decisões. A plataforma Gestão de custos
             propõe reunir informações operacionais e transformar complexidade em
             uma visão clara do negócio.
           </SectionHeading>

@@ -9,7 +9,7 @@ export default function About() {
           eyebrow="SOBRE O PROJETO"
           title="Mais contexto para cada decisão."
         >
-          Conheça a visão do Intelligent Cost Management, uma proposta de gestão
+          Conheça a visão da plataforma Gestão de custos, uma proposta de gestão
           inteligente de custos no contexto da 2RPnet / Inovanet Tech.
         </SectionHeading>
       </div>

@@ -24,7 +24,7 @@ const titles: Record<string, string> = {
 function RouteEffects() {
   const { pathname } = useLocation()
   useEffect(() => {
-    document.title = `${titles[pathname] || (pathname.startsWith('/custos/') ? 'Detalhes do custo' : 'Página não encontrada')} | Intelligent Cost Management`
+    document.title = `${titles[pathname] || (pathname.startsWith('/custos/') ? 'Detalhes do custo' : 'Página não encontrada')} | Gestão de custos`
     window.scrollTo({ top: 0, behavior: 'instant' })
     document.getElementById('main-content')?.focus({ preventScroll: true })
   }, [pathname])

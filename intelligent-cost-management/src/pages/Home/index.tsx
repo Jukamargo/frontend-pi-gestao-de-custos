@@ -73,8 +73,8 @@ export default function Home() {
         </div>
         <div className="container hero-bottom">
           <span>
-            INTELLIGENT COST MANAGEMENT <span className="slash">/</span> UMA
-            NOVA PERSPECTIVA
+            GESTÃO DE CUSTOS <span className="slash">/</span> UMA NOVA
+            PERSPECTIVA
           </span>
           <a href="#sobre" aria-label="Explorar a próxima seção">
             <ArrowDown size={17} />
