@@ -1,143 +1,167 @@
-# Gestão de custos
+# Gestão de custos — Inovanet
 
-Front-end institucional e demonstrativo de uma plataforma de gestão inteligente de custos, no contexto da **2RPnet / Inovanet Tech**. Apresenta a proposta da solução e permite explorar custos operacionais com indicadores, gráficos e um catálogo de recursos.
+Front-end institucional e demonstrativo do projeto de **centralização de RH e Financeiro**, no contexto 2RPnet / Inovanet Tech. A finalidade principal é consultar o **custo mensal por colaborador**, reunindo salário base e benefícios fixos da Sólides com despesas variáveis e reembolsos do Omie.
 
-O objetivo é tornar as informações de custos mais claras e apresentar como um agente de inteligência artificial poderá apoiar a interpretação dos dados. Esta versão funciona de forma independente, sem backend, autenticação ou conexão com IA.
+O escopo foi alinhado ao documento `CONTEXTO_GERAL_PROJETO.md` fornecido pelo responsável. Consulte o [mapeamento de escopo](docs/ESCOPO_FRONTEND.md) para distinguir o projeto de referência das funcionalidades executadas nesta interface.
+
+## Fórmula e fontes
+
+```text
+Custo mensal consolidado = salário base + benefícios fixos + despesas variáveis
+Sólides / RH              = salário + VR/VA + saúde + Wellhub + auxílio home office
+Omie / Financeiro         = viagens e hospedagens Onfly + reembolsos Flash
+Chave de associação       = colaborador_cpf normalizado + competência AAAA-MM
+```
+
+Esta fórmula reproduz o escopo fornecido. A demonstração não calcula encargos, tributos ou outras parcelas não especificadas.
+
+O documento descreve APIs mock FastAPI para Sólides e Omie, serviços no Render, sincronização para CSV e workflow validado no Gemini Enterprise Workflow Builder. **Este front-end funciona com bases locais e não se conecta a esses serviços ou ao agente.** A implementação externa foi documentada pela equipe; sua disponibilidade atual não foi verificada por este repositório.
 
 ## Tecnologias
 
-- React 19 e TypeScript, com Vite 8.
-- Tailwind CSS 4 com plugin Vite e estilos compartilhados.
-- React Router 7 para navegação e parâmetros de filtros na URL.
-- Recharts 3 para gráficos e Lucide React para ícones.
-- Inter hospedada localmente por meio de `@fontsource/inter`.
-- Oxlint, Prettier e Playwright para qualidade e testes.
+- React 19, TypeScript estrito e Vite 8.
+- React Router 7, Tailwind CSS 4 e estilos compartilhados.
+- Recharts 3, Lucide React e Inter hospedada localmente.
+- Oxlint, Prettier e Playwright.
 
-As versões efetivamente instaladas estão registradas em `package-lock.json`. Motion não foi necessário: as transições usam CSS e respeitam `prefers-reduced-motion`.
+As versões instaladas estão registradas em `package-lock.json`. As transições usam CSS e respeitam `prefers-reduced-motion`.
 
 ## Instalação e execução
 
-Pré-requisito: Node.js 22.12+ ou uma versão LTS compatível com o Vite instalado e npm. O desenvolvimento foi validado com Node.js 26.7.0.
+Pré-requisito: Node.js 22.12+ ou versão compatível com o Vite instalado e npm. Ambiente validado com Node.js 26.7.0.
 
-Execute os comandos dentro de `intelligent-cost-management/`:
+Execute dentro da pasta existente `intelligent-cost-management/`:
 
 ```bash
 npm ci
 npm run dev
 ```
 
-Abra o endereço informado pelo Vite, normalmente `http://localhost:5173`.
-
-No PowerShell, caso a política local bloqueie `npm.ps1`, utilize `npm.cmd` no lugar de `npm`. Não é necessário alterar a política de execução do Windows.
+Abra o endereço informado pelo Vite, normalmente `http://localhost:5173`. No PowerShell, use `npm.cmd` quando a política local bloquear `npm.ps1`; não é necessário alterar a política do sistema.
 
 ```bash
 npm run lint         # Análise estática
-npm run build        # TypeScript + build de produção em dist/
-npm run preview      # Prévia do build de produção
-npm test             # Dados e fluxos de interface em 3 resoluções
-npm run test:data    # Somente testes dos dados e agregações
+npm run build        # TypeScript e build de produção em dist/
+npm run preview      # Prévia do build
+npm test             # Dados e interface nas três resoluções
+npm run test:data    # Somente regras, integridade e consolidação
 npm run format       # Formatação do código e documentação
 ```
 
-Os testes de interface usam Google Chrome instalado no computador, sem download de outro navegador. Para ambientes sem Chrome, instale-o ou configure um navegador disponível em `playwright.config.ts`. O Playwright inicia e encerra seu próprio servidor Vite na porta 4173; evite utilizá-la para outro projeto durante os testes.
+Os testes usam Google Chrome instalado no computador. Sem Chrome, instale-o ou configure um navegador disponível em `playwright.config.ts`. O Playwright utiliza a porta 4173 para seu servidor de testes.
 
 ## Funcionalidades
 
-- Landing page com hero, prévia do dashboard, contexto, benefícios, fluxo do agente, arquitetura conceitual e chamadas para a aplicação.
-- Páginas institucionais independentes e uma página 404.
-- Menu mobile com diálogo nativo, foco contido, Escape, indicação de rota ativa, fechamento ao navegar e bloqueio de rolagem.
-- Dashboard com quatro KPIs calculados, evolução mensal, distribuição por categoria, comparativo entre meses e recursos de maior custo.
-- Filtro de categoria no dashboard, com atualização de todos os indicadores e gráficos.
-- Catálogo com **120 registros distintos**, componente de card reutilizável e seleção de 12, 24, 48 ou todos os cards por página.
-- Cada card apresenta título, descrição, categoria, valor, status e tabela com serviço, área responsável, referência, consumo, ambiente e variação mensal.
-- Busca por título, descrição ou ID, insensível a acentos e caixa; filtros por categoria/status; ordenação por valor e nome.
-- Filtros, quantidade de cards por página e paginação na URL, preservados pela navegação de voltar do navegador.
-- Contagem de resultados, estado vazio e limpeza dos filtros.
-- Página de detalhes com contexto, consumo, custo unitário e histórico individual.
-- Valores em reais (`pt-BR`), tabela com rolagem contida e gráficos com descrição textual acessível.
-- Layouts para desktop, tablet e mobile, navegação por teclado e link para pular ao conteúdo.
+- Apresentação do problema de dados fragmentados entre RH e Financeiro e da fórmula de consolidação por pessoa.
+- Páginas independentes, menu mobile acessível, indicação da rota ativa, Escape, contenção de foco e bloqueio da rolagem de fundo.
+- **120 cards de colaboradores fictícios**, com título, descrição, departamento, custo mensal e tabela de composição.
+- Tabelas dos cards com salário base, benefícios fixos, despesas variáveis, referência, fontes e variação mensal.
+- Busca por nome, cargo, descrição e ID; filtros por departamento e variação; ordenação por nome e valor; páginas de 12, 24, 48 ou todos os cards.
+- Filtros e paginação na URL, contagem de resultados e estado vazio.
+- Dashboard com custo mensal consolidado, número de colaboradores, departamentos e alertas demonstrativos.
+- Evolução de seis meses, composição entre salários/benefícios/despesas e comparativo entre departamentos.
+- Detalhes por pessoa com benefícios discriminados, subtotal fixo, lançamentos variáveis com origem e valor, histórico e cadastro fictício.
+- **Consulta demonstrativa local por colaborador e competência**, com exemplo de pergunta em linguagem natural, cálculo e discriminação das fontes. A pergunta exibida não é enviada a um agente.
+- Arquitetura que distingue o que está documentado no projeto, o que funciona nesta interface e o que permanece no roadmap.
+- Formatação `pt-BR`, gráficos com descrição textual e tabelas com rolagem contida no mobile.
+
+## Caso de referência do contexto
+
+Colaboradora de ID **101 — Ana Beatriz Souza**, competência **2026-10**. O nome e os valores reproduzem o caso mock descrito no documento, sem representar uma consulta a dados reais.
+
+| Componente                   |            Valor |
+| ---------------------------- | ---------------: |
+| Salário base                 |      R$ 8.500,00 |
+| VR / VA                      |        R$ 880,00 |
+| SulAmérica                   |        R$ 650,00 |
+| Wellhub                      |        R$ 150,00 |
+| Auxílio home office          |        R$ 200,00 |
+| Total de benefícios fixos    |      R$ 1.880,00 |
+| **Subtotal fixo**            | **R$ 10.380,00** |
+| Onfly — viagens              |        R$ 940,50 |
+| Flash — reembolso            |        R$ 285,00 |
+| Onfly — hospedagem           |        R$ 420,00 |
+| **Subtotal variável**        |  **R$ 1.645,50** |
+| **Custo mensal consolidado** | **R$ 12.025,50** |
+
+Disponível em `/demonstracao` e `/custos/ICM-001`. O ID de rota `ICM-001` é preservado; o identificador de negócio do colaborador é `101`.
+
+## Dados simulados e reconciliação
+
+A base contém 120 pessoas, distribuídas de forma determinística entre **TI, Financeiro, Operações e RH**. Além do caso de referência, nomes, salários, benefícios, status contratuais e despesas foram gerados exclusivamente para demonstração.
+
+Cada pessoa possui quatro benefícios e três despesas por competência, ao longo de seis meses de maio a outubro de 2026. São 2.160 lançamentos variáveis fictícios. Salários e benefícios permanecem constantes no histórico; as despesas variam de forma determinística. Todos os totais históricos são recalculados pela mesma fórmula.
+
+`consolidateEmployee` normaliza o CPF, valida o formato da competência e seleciona somente as despesas da pessoa e do período consultados. O CPF é uma chave interna das fixtures: a interface não exibe o número completo. Não há entrada de CPFs reais.
+
+Dashboard, cards, detalhes e prévia usam os mesmos registros consolidados. A variação total é calculada sobre os totais dos períodos, sem média simples dos percentuais individuais.
+
+Os status de custo são regras adicionais desta demonstração, separadas do status contratual:
+
+- **Atenção:** aumento superior a 10% em relação a setembro.
+- **Redução:** queda superior a 5%.
+- **Regular:** demais variações.
+
+Essas regras não vêm do agente e não comprovam eficiência ou economia. O status contratual fictício é apresentado separadamente nos detalhes.
 
 ## Rotas
 
-| Rota            | Conteúdo                                |
-| --------------- | --------------------------------------- |
-| `/`             | Início e apresentação completa          |
-| `/sobre`        | Contexto, desafio e proposta            |
-| `/beneficios`   | Benefícios detalhados                   |
-| `/demonstracao` | Placeholder do vídeo e fluxo conceitual |
-| `/tecnologias`  | Arquitetura e stack implementada        |
-| `/dashboard`    | Indicadores e gráficos                  |
-| `/custos`       | Catálogo, filtros e paginação           |
-| `/custos/:id`   | Detalhes e histórico do recurso         |
+| Rota            | Conteúdo                                                         |
+| --------------- | ---------------------------------------------------------------- |
+| `/`             | Apresentação e prévia do custo por colaborador                   |
+| `/sobre`        | Fragmentação entre RH e Financeiro e objetivo do projeto         |
+| `/beneficios`   | Centralização, consulta por pessoa e rastreabilidade             |
+| `/demonstracao` | Consulta local, caso de referência, fluxo e placeholder do vídeo |
+| `/tecnologias`  | Fontes, sincronização, Gemini Enterprise e limites da interface  |
+| `/dashboard`    | Indicadores e gráficos consolidados                              |
+| `/custos`       | Catálogo de 120 colaboradores                                    |
+| `/custos/:id`   | Composição e lançamentos de uma pessoa                           |
 
-Para hospedar o build, configure o servidor estático para redirecionar rotas desconhecidas a `index.html` (fallback de SPA), preservando os arquivos estáticos. Sem isso, atualizar uma rota interna diretamente poderá resultar em 404 do servidor.
+Na hospedagem estática, configure fallback de SPA para `index.html`, preservando os arquivos estáticos. Assim, atualizar uma rota interna não produz 404 do servidor.
 
 ## Estrutura
 
 ```text
 src/
-  assets/                 # Recursos originais do template, preservados
   components/
-    layout/               # Header, Footer, marca, menu e workspace
-    ui/                   # Botões, títulos, badges e estado vazio
-    cards/                # CostCard e MetricCard
-    charts/               # Contêiner e gráficos reutilizáveis
-    CostFilters.tsx
-    CostTable.tsx
-    DashboardPreview.tsx
-    MarketingSections.tsx
-  data/costs.ts           # Fonte determinística dos 120 recursos
-  hooks/useCostFilters.ts # Busca, filtros e paginação na URL
-  services/costService.ts # Adaptador, filtros, agregações e formatação
-  types/cost.ts           # Contratos e categorias/status
-  pages/                 # Páginas institucionais e aplicação
-  styles/                # Design system, marketing e aplicação
-  App.tsx                # Rotas e carregamento de páginas
-  main.tsx
-tests/
-  data.spec.ts            # Integridade dos dados e reconciliação
-  app.spec.ts             # Navegação, filtros, dashboard e menu
+    layout/                  # Navegação, páginas institucionais e workspace
+    ui/                      # Botões, títulos, badges e estado vazio
+    cards/                   # Cards de colaboradores e indicadores
+    charts/                  # Gráficos compartilhados
+    ConsolidationDemo.tsx    # Consulta local por pessoa e competência
+    MarketingSections.tsx    # Seções institucionais
+  data/
+    people.ts                # Colaboradores e lançamentos variáveis fictícios
+    costs.ts                 # Registros e histórico consolidados
+  services/
+    consolidationService.ts # Cruzamento por CPF e competência e soma dos custos
+    costService.ts           # Consulta local, agregações, filtros e formatação
+  types/cost.ts              # Contratos locais normalizados
+  hooks/                     # Filtros e paginação na URL
+  pages/                     # Páginas institucionais e aplicação
+  styles/                    # Design system, marketing e aplicação
+tests/                       # Regras, reconciliação e fluxos de interface
+docs/ESCOPO_FRONTEND.md       # Correspondência com o contexto fornecido
 ```
 
-## Dados simulados
+## Referência visual e qualidade
 
-A coleção é gerada de forma determinística: **5 categorias × 6 serviços × 4 áreas = 120 recursos**. Categorias: Cloud, Infraestrutura, APIs, Licenças e Operações. Os recursos têm IDs e títulos únicos, descrição, serviço, custo, período, variação, status, área, ambiente, consumo e histórico de seis meses.
+[Protótipo Figma fornecido](https://www.figma.com/design/Q6pYa2PRIZKpCFZ2L3BZuX/Untitled?node-id=0-1). O arquivo não pôde ser acessado durante a implementação; não se afirma fidelidade ao protótipo. Não foram encontrados logos oficiais.
 
-O período principal é **outubro de 2026**; o histórico vai de maio a outubro. Todos os custos são fictícios. O dashboard e suas prévias agregam os mesmos registros utilizados nos cards e detalhes. Não há valores aleatórios por renderização ou indicadores independentes do catálogo.
+O visual mantém azul-marinho no destaque inicial, seções claras, fonte Inter e apresentação direta. O conteúdo enfatiza a gestão de custos, com informações sobre o agente concentradas nas áreas pertinentes.
 
-O valor de setembro de cada registro é derivado da variação percentual de outubro e arredondado para centavos. Os indicadores somam os registros; a variação total é calculada sobre os totais, sem tirar a média simples das variações individuais.
-
-Regras demonstrativas de status:
-
-- **Atenção:** aumento superior a 10% em relação a setembro.
-- **Otimizado:** redução superior a 5%.
-- **Regular:** demais variações.
-
-Esses status não representam avaliação de uma IA nem resultados financeiros comprovados. Consumo, custo unitário e ambientes também são fictícios. Não envie informações reais ou confidenciais para este demonstrador.
-
-## Referência visual
-
-[Protótipo do Figma fornecido](https://www.figma.com/design/Q6pYa2PRIZKpCFZ2L3BZuX/Untitled?node-id=0-1).
-
-**Limitação:** o arquivo não pôde ser acessado durante a implementação; não foi possível inspecionar suas telas ou afirmar fidelidade ao protótipo. Não foram encontrados logos oficiais: os nomes institucionais aparecem como texto e o símbolo da aplicação é próprio, baseado em um ícone Lucide.
-
-A revisão visual prioriza o conteúdo da gestão de custos: destaque inicial azul-marinho `#0C182A`, seções institucionais em branco e tom claro `#F5F5F0`, azul `#1765F3` nas ações e tipografia Inter. O dashboard e o catálogo mantêm superfícies escuras, com menos efeitos e maior legibilidade nos cards. A página inicial apresenta uma única prévia dos indicadores e três recursos extraídos do catálogo, com textos diretos sobre as funções disponíveis. A integração futura com IA permanece documentada na demonstração e nas tecnologias.
-
-## Testes
-
-Os testes de dados verificam unicidade, integridade, histórico, regras de status, agregações, busca, filtros, ordenação e coleção vazia. Os testes de interface cobrem as rotas, ausência de erros JavaScript e overflow da página, filtros combinados, paginação, detalhes, valores do dashboard e menu por teclado.
-
-Resoluções de teste: **1440 × 1000**, **768 × 1024** e **390 × 844**. Capturas de Home, Dashboard e Catálogo são geradas em `artifacts/`, pasta ignorada pelo Git. Traces de falhas ficam em `test-results/`.
+Os testes verificam o caso 101 de R$ 12.025,50, associação por CPF normalizado, isolamento por competência, integridade dos 120 cards, reconciliação dos gráficos, filtros, paginação e ausência de CPF completo na tela. Os fluxos são executados em **1440 × 1000**, **768 × 1024** e **390 × 844**. Capturas ficam em `artifacts/` e traces de falha em `test-results/`, pastas ignoradas pelo Git.
 
 ## Próximas etapas
 
-1. Disponibilizar acesso ao Figma e validar a interface com a equipe.
-2. Receber logos oficiais e o vídeo real do agente para substituir o placeholder.
-3. Definir contrato de API, erros, paginação remota e estratégia de atualização dos dados.
-4. Substituir o adaptador `costService` e a coleção local, acrescentando estados de carregamento/erro na integração assíncrona.
-5. Definir e integrar o agente de IA com fontes verificáveis e supervisão humana.
-6. Validar acessibilidade com tecnologias assistivas e navegadores adicionais antes da publicação.
+1. Validar a correspondência dos modelos locais com os contratos completos das APIs mock Sólides e Omie.
+2. Definir acesso do front-end às fontes e ao workflow: autenticação, autorização, CORS, tratamento de erros e estados de carregamento.
+3. Integrar os serviços existentes e o agente quando houver contrato de acesso apropriado para a interface.
+4. Acompanhar a liberação do dataset BigQuery prevista no roadmap e a evolução dos prompts/bases do projeto.
+5. Receber vídeo, logos oficiais e acesso ao Figma.
+
+Nenhum backend, banco de dados, autenticação ou publicação foi adicionado neste front-end.
 
 ## Git
 
-Mantenha mudanças em branches de trabalho e siga o padrão Conventional Commits: `tipo(escopo opcional): Descrição`. Escreva a descrição em português, iniciando com verbo no infinitivo e letra maiúscula, sem ponto final. Exemplos: `feat: Adicionar catálogo de custos`, `fix: Corrigir navegação mobile` e `docs: Documentar dados simulados`. Use o tipo correspondente à mudança, como `feat`, `fix`, `docs`, `refactor`, `test` ou `chore`, e mantenha cada commit focado em uma alteração coerente. Execute lint, testes e build antes de integrar à `main`. Nenhum push, publicação ou alteração de remotos é necessário para executar este projeto localmente.
+Conforme a orientação direta do responsável nesta sessão, use Conventional Commits com descrição em português, iniciando por verbo no infinitivo e letra maiúscula: `feat: Adicionar consulta por colaborador`, `fix: Corrigir filtro de competência`, `docs: Documentar composição do custo`. Mantenha commits focados e execute as verificações antes de integrar à `main`. Push e alterações de remotos dependem de autorização.
