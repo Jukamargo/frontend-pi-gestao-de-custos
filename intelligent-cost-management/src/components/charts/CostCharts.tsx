@@ -14,12 +14,12 @@ import {
   YAxis,
 } from 'recharts'
 import { compactCurrency, currency } from '../../services/costService'
-const colors = ['#4386ff', '#58c4ff', '#7b7cf6', '#37c8ad', '#8ca2c4']
+const colors = ['#2d6197', '#88a6c2', '#bccbda', '#598978', '#9aabbc']
 const tooltipStyle = {
-  background: '#111e33',
-  border: '1px solid #31425d',
-  borderRadius: 10,
-  color: '#f8fafc',
+  background: '#ffffff',
+  border: '1px solid #d7e0eb',
+  borderRadius: 6,
+  color: '#263b54',
   fontSize: 12,
 }
 export function ChartContainer({
@@ -67,25 +67,25 @@ export function EvolutionChart({
         >
           <defs>
             <linearGradient id={id} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#397bff" stopOpacity={0.32} />
-              <stop offset="100%" stopColor="#397bff" stopOpacity={0.01} />
+              <stop offset="0%" stopColor="#3976af" stopOpacity={0.14} />
+              <stop offset="100%" stopColor="#3976af" stopOpacity={0.01} />
             </linearGradient>
           </defs>
           <CartesianGrid
-            stroke="#243249"
+            stroke="var(--chart-grid)"
             vertical={false}
-            strokeDasharray="3 5"
+            strokeDasharray="0"
           />
           <XAxis
             dataKey="month"
-            tick={{ fill: '#94a3b8', fontSize: 11 }}
+            tick={{ fill: 'var(--chart-axis)', fontSize: 11 }}
             axisLine={false}
             tickLine={false}
             dy={8}
           />
           <YAxis
             tickFormatter={compactCurrency}
-            tick={{ fill: '#94a3b8', fontSize: 10 }}
+            tick={{ fill: 'var(--chart-axis)', fontSize: 11 }}
             width={small ? 62 : 80}
             axisLine={false}
             tickLine={false}
@@ -97,12 +97,12 @@ export function EvolutionChart({
           <Area
             type="monotone"
             dataKey="cost"
-            stroke="#538dff"
+            stroke="#2d6197"
             strokeWidth={2.5}
             fill={`url(#${id})`}
             isAnimationActive={false}
             dot={false}
-            activeDot={{ r: 5, stroke: '#080f1f', strokeWidth: 3 }}
+            activeDot={{ r: 5, stroke: '#ffffff', strokeWidth: 3 }}
           />
         </AreaChart>
       </ResponsiveContainer>
@@ -181,11 +181,11 @@ export function ComparisonChart({
     <>
       <div className="comparison-legend">
         <span>
-          <i style={{ background: '#354966' }} />
+          <i style={{ background: '#b9c9da' }} />
           Setembro
         </span>
         <span>
-          <i style={{ background: '#4386ff' }} />
+          <i style={{ background: '#2d6197' }} />
           Outubro
         </span>
       </div>
@@ -202,7 +202,7 @@ export function ComparisonChart({
         <ResponsiveContainer width="100%" height="100%" minWidth={0}>
           <BarChart data={data} margin={{ left: 0, right: 4 }}>
             <CartesianGrid
-              stroke="#243249"
+              stroke="var(--chart-grid)"
               vertical={false}
               strokeDasharray="3 5"
             />
@@ -215,34 +215,34 @@ export function ComparisonChart({
                     ? 'Oper.'
                     : name
               }
-              tick={{ fill: '#a4b1c6', fontSize: 10 }}
+              tick={{ fill: 'var(--chart-axis)', fontSize: 11 }}
               tickLine={false}
               axisLine={false}
               interval={0}
             />
             <YAxis
               tickFormatter={compactCurrency}
-              tick={{ fill: '#94a3b8', fontSize: 10 }}
+              tick={{ fill: 'var(--chart-axis)', fontSize: 11 }}
               width={75}
               tickLine={false}
               axisLine={false}
             />
             <Tooltip
               contentStyle={tooltipStyle}
-              cursor={{ fill: '#ffffff05' }}
+              cursor={{ fill: '#edf2f8' }}
               formatter={(value) => currency(Number(value))}
             />
             <Bar
               dataKey="previous"
               name="Setembro"
-              fill="#354966"
+              fill="#b9c9da"
               radius={[4, 4, 0, 0]}
               isAnimationActive={false}
             />
             <Bar
               dataKey="value"
               name="Outubro"
-              fill="#4386ff"
+              fill="#2d6197"
               radius={[4, 4, 0, 0]}
               isAnimationActive={false}
             />

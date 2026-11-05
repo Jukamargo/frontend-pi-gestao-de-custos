@@ -25,11 +25,11 @@ export default function CostCatalog() {
     <>
       <div className="app-page-heading">
         <div>
-          <span className="eyebrow">DO PANORAMA AO DETALHE</span>
+          <span className="eyebrow">CUSTOS DE PESSOAL</span>
           <h1>Catálogo de custos</h1>
           <p>
-            Explore {costService.list().length} cards com título, descrição e
-            composição mensal de cada colaborador.
+            Consulte os custos de {costService.list().length} colaboradores por
+            departamento e confira a composição mensal de cada valor.
           </p>
         </div>
         <span className="period-badge">

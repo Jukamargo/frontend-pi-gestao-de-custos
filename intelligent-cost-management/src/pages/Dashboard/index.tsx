@@ -86,21 +86,21 @@ export default function Dashboard() {
           accent="metric-blue"
         />
         <MetricCard
-          title="Colaboradores monitorados"
+          title="Colaboradores"
           value={String(summary.count)}
           note="Registros no período selecionado"
           icon={Database}
         />
         <MetricCard
-          title="Departamentos monitorados"
+          title="Departamentos"
           value={String(summary.categories)}
-          note="Distribuição dos colaboradores analisados"
+          note="Departamentos no período"
           icon={Layers3}
         />
         <MetricCard
-          title="Alertas identificados"
+          title="Alertas de custo"
           value={String(summary.alerts)}
-          note="Colaboradores com aumento acima de 10%"
+          note="Aumento mensal acima de 10%"
           icon={Bell}
           accent="metric-amber"
         />

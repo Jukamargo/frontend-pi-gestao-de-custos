@@ -24,21 +24,21 @@ export default function Home() {
           <div className="hero-content">
             <span className="hero-kicker">
               <span />
-              Centralização de RH e Financeiro
+              RH e Financeiro · Gestão de pessoas
             </span>
             <h1>
-              O custo de cada
+              Gestão de custos
               <br />
-              <span>colaborador.</span>
+              <span>por colaborador.</span>
             </h1>
             <p>
-              Reúna salário, benefícios fixos e despesas variáveis em uma visão
-              mensal por pessoa. Um demonstrativo que conecta o cadastro do RH
-              aos lançamentos do Financeiro.
+              Acompanhe salários, benefícios e despesas em um só lugar. Consulte
+              os custos por pessoa e departamento, com acesso aos lançamentos
+              que compõem cada valor.
             </p>
             <div className="hero-buttons">
               <Button to="/dashboard" arrow>
-                Explorar dashboard
+                Acessar dashboard
               </Button>
               <Link className="hero-secondary" to="/custos">
                 Ver colaboradores <ArrowUpRight size={17} />
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
             <div className="hero-footnote">
               <span />
-              Demonstração com dados simulados. Sem cadastro.
+              Ambiente de demonstração com dados fictícios.
             </div>
           </div>
           <DashboardPreview />
@@ -63,9 +63,9 @@ export default function Home() {
       <div className="project-facts">
         <div className="container facts-inner">
           <p>
-            Uma base para
+            Nesta demonstração
             <br />
-            <strong>consolidar custos de pessoas.</strong>
+            <strong>Custos mensais de pessoal</strong>
           </p>
           <div>
             <strong>{summary.count}</strong>
@@ -94,21 +94,17 @@ export default function Home() {
         <div className="container">
           <div className="section-title-row">
             <div>
-              <span className="eyebrow">O custo, em detalhe</span>
-              <h2>
-                Salário, benefícios
-                <br />e despesas variáveis.
-              </h2>
+              <span className="eyebrow">Consulta por colaborador</span>
+              <h2>A composição de cada custo</h2>
             </div>
             <div className="section-side-copy">
               <p>
-                Cada card apresenta o custo mensal de um colaborador. Os
-                detalhes mostram os benefícios da Sólides e os lançamentos
-                variáveis do Omie, com dados simulados.
+                Consulte o salário, os benefícios e as despesas do mês. Os dados
+                simulam os registros de RH da Sólides e os lançamentos
+                financeiros do Omie.
               </p>
               <Link className="text-link" to="/custos">
-                Explorar os {summary.count} colaboradores{' '}
-                <ArrowUpRight size={17} />
+                Ver todos os colaboradores <ArrowUpRight size={17} />
               </Link>
             </div>
           </div>
@@ -118,8 +114,7 @@ export default function Home() {
             ))}
           </div>
           <p className="catalog-caption">
-            Caso 101 reproduz o exemplo do contexto · Demais pessoas fictícias ·
-            Outubro de 2026
+            Dados fictícios para demonstração · Outubro de 2026
           </p>
         </div>
       </section>

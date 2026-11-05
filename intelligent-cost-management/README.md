@@ -54,6 +54,7 @@ Os testes usam Google Chrome instalado no computador. Sem Chrome, instale-o ou c
 
 ## Funcionalidades
 
+- Interface clara e uniforme entre páginas institucionais e aplicação, com azul sóbrio, tipografia legível, gráficos em tons discretos e valores com algarismos de largura fixa.
 - Apresentação do problema de dados fragmentados entre RH e Financeiro e da fórmula de consolidação por pessoa.
 - Páginas independentes, menu mobile acessível, indicação da rota ativa, Escape, contenção de foco e bloqueio da rolagem de fundo.
 - **120 cards de colaboradores fictícios**, com título, descrição, departamento, custo mensal e tabela de composição.

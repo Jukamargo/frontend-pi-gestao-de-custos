@@ -1,7 +1,7 @@
 .app-layout {
   display: grid;
-  grid-template-columns: 186px minmax(0, 1fr);
-  gap: 35px;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 28px;
   align-items: start;
 }
 .app-sidebar {
@@ -10,9 +10,9 @@
   padding-top: 32px;
 }
 .sidebar-label {
-  font-size: 8px;
-  letter-spacing: 1.6px;
-  color: #617b9e;
+  font-size: 11px;
+  letter-spacing: 0.8px;
+  color: #5e6e82;
   display: block;
   margin-bottom: 19px;
   padding-inline: 12px;
@@ -22,39 +22,39 @@
   align-items: center;
   gap: 11px;
   padding: 13px 12px;
-  color: #90a3bf;
-  font-size: 11px;
+  color: #526174;
+  font-size: 13px;
   border-radius: 7px;
   margin-bottom: 5px;
   min-height: 44px;
 }
 .app-sidebar > a.active {
-  background: #1765f316;
-  color: #91b9ff;
-  border: 1px solid #4386ff24;
+  background: #e7eef7;
+  color: #245f9e;
+  border: 1px solid #d8e2ef;
 }
 .app-sidebar > a:hover {
-  background: #ffffff05;
+  background: #edf1f6;
 }
 .sidebar-note {
   margin: 55px 0 25px;
   padding: 18px 14px;
-  border: 1px solid #4386ff20;
-  background: #102035;
+  border: 1px solid #dce3eb;
+  background: #edf1f6;
   border-radius: 9px;
 }
 .sidebar-note > svg {
-  color: #7da8ef;
+  color: #567697;
   margin-bottom: 14px;
 }
 .sidebar-note > strong {
   display: block;
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 500;
-  color: #c2d2e9;
+  color: #33465b;
 }
 .sidebar-note p {
-  font-size: 10px;
+  font-size: 12px;
   margin-top: 9px;
   line-height: 1.8;
 }
@@ -62,19 +62,19 @@
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 9px;
-  color: #8ab3f5;
+  font-size: 12px;
+  color: #245f9e;
   margin-top: 15px;
 }
 .app-sidebar > .sidebar-help {
-  font-size: 10px;
-  color: #6d85a5;
+  font-size: 12px;
+  color: #5e6e82;
 }
 .app-content {
   border-left: 1px solid var(--line);
   min-width: 0;
-  padding-left: 35px;
-  padding-bottom: 30px;
+  padding-left: 28px;
+  padding-bottom: 56px;
 }
 .workspace-bar {
   min-height: 63px;
@@ -83,8 +83,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  color: #7389a7;
-  font-size: 9px;
+  color: #5e6e82;
+  font-size: 12px;
   margin-bottom: 33px;
 }
 .workspace-bar > span:first-child {
@@ -104,7 +104,7 @@
   margin-bottom: 27px;
 }
 .app-page-heading .eyebrow {
-  font-size: 8px;
+  font-size: 12px;
   letter-spacing: 1.4px;
   margin-bottom: 10px;
 }
@@ -114,38 +114,39 @@
   line-height: 1.3;
 }
 .app-page-heading p {
-  font-size: 11px;
+  font-size: 13px;
   margin-top: 9px;
 }
 .period-badge {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 10px;
-  color: #9eafc6;
+  font-size: 12px;
+  color: #526174;
   padding: 10px 12px;
   border: 1px solid var(--line);
   border-radius: 6px;
   white-space: nowrap;
+  background: #fff;
 }
 .demo-banner {
   padding: 13px 15px;
-  border: 1px solid #4386ff24;
-  background: #1765f307;
+  border: 1px solid #d8e2ef;
+  background: #eef3f8;
   display: flex;
   align-items: center;
   gap: 9px;
   border-radius: 6px;
   margin-bottom: 25px;
-  color: #85adf2;
+  color: #245f9e;
 }
 .demo-banner p {
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.7;
-  color: #8199bd;
+  color: #5e7087;
 }
 .demo-banner strong {
-  color: #a6c1eb;
+  color: #334d6c;
   font-weight: 500;
 }
 .dashboard-toolbar {
@@ -157,21 +158,21 @@
   flex-wrap: wrap;
 }
 .category-tabs button {
-  font-size: 10px;
+  font-size: 12px;
   padding: 9px 12px;
   min-height: 36px;
   border: 1px solid transparent;
   border-radius: 6px;
   background: transparent;
-  color: #8398b6;
+  color: #526174;
 }
 .category-tabs button:hover {
-  background: #ffffff04;
+  background: #edf1f6;
 }
 .category-tabs button.active {
-  background: #15263f;
-  border-color: #45699b30;
-  color: #b9d3ff;
+  background: #e7eef7;
+  border-color: #d5dfed;
+  color: #245f9e;
 }
 .metrics-grid {
   display: grid;
@@ -182,8 +183,8 @@
 .metric-card {
   border: 1px solid var(--line);
   border-radius: 8px;
-  padding: 20px 16px;
-  background: #101c2e;
+  padding: 22px 18px;
+  background: #ffffff;
   min-width: 0;
 }
 .metric-top {
@@ -191,12 +192,14 @@
   align-items: center;
   justify-content: space-between;
   gap: 7px;
-  color: #9babc1;
-  font-size: 10px;
+  color: #5e6c7e;
+  font-size: 12px;
+  line-height: 1.6;
   margin-bottom: 18px;
+  min-height: 38px;
 }
 .metric-top svg {
-  color: #667e9e;
+  color: #7c8da2;
 }
 .metric-card > strong {
   font-size: clamp(18px, 1.7vw, 25px);
@@ -204,22 +207,25 @@
   letter-spacing: -0.8px;
   white-space: nowrap;
   display: block;
+  font-variant-numeric: tabular-nums;
 }
 .metric-card > p {
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.7;
-  color: #8296b2;
+  color: #5e6e82;
   margin-top: 10px;
 }
 .metric-blue {
-  border-color: #4386ff45;
-  background: #14263d;
+  border-color: #bacde2;
+  background: #ffffff;
+  border-top: 3px solid #245f9e;
+  padding-top: 20px;
 }
 .metric-blue .metric-top svg {
-  color: #75a7ff;
+  color: #245f9e;
 }
 .metric-amber .metric-top svg {
-  color: #dcac68;
+  color: #98651d;
 }
 .dashboard-charts {
   display: grid;
@@ -231,7 +237,7 @@
 .chart-container {
   padding: 23px 20px;
   border: 1px solid var(--line);
-  background: #0d182a;
+  background: #ffffff;
   border-radius: 9px;
   min-width: 0;
   margin-bottom: 20px;
@@ -247,22 +253,22 @@
   margin-bottom: 20px;
 }
 .chart-heading h2 {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: -0.2px;
 }
 .chart-heading p {
-  font-size: 9px;
-  color: #7188aa;
+  font-size: 12px;
+  color: #5e6e82;
   margin-top: 7px;
 }
 .chart-period {
-  font-size: 7px;
+  font-size: 12px;
   letter-spacing: 1px;
   padding: 5px 7px;
   border-radius: 4px;
   border: 1px solid var(--line);
-  color: #6c83a4;
+  color: #5e6e82;
 }
 .chart-area {
   height: 250px;
@@ -275,14 +281,14 @@
   padding-top: 20px;
   margin-top: 15px;
   border-top: 1px solid var(--line);
-  font-size: 9px;
-  color: #7f96b5;
+  font-size: 12px;
+  color: #5e6e82;
 }
 .chart-summary strong {
   display: block;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
-  color: #c7d7ed;
+  color: #33465b;
   margin-top: 7px;
 }
 .donut-wrap {
@@ -300,8 +306,8 @@
   pointer-events: none;
 }
 .donut-label > span {
-  font-size: 8px;
-  color: #8fa5c2;
+  font-size: 12px;
+  color: #5e6e82;
 }
 .donut-label strong {
   font-size: 20px;
@@ -318,8 +324,8 @@
 .chart-legend > div {
   display: flex;
   justify-content: space-between;
-  font-size: 9px;
-  color: #8da3c1;
+  font-size: 12px;
+  color: #526174;
 }
 .chart-legend span {
   display: flex;
@@ -335,15 +341,15 @@
 }
 .chart-legend strong {
   font-weight: 500;
-  color: #b0c4e0;
+  color: #33465b;
 }
 .comparison-legend {
   display: flex;
   gap: 18px;
   justify-content: flex-end;
   margin: -5px 5px 20px;
-  color: #8ca4c4;
-  font-size: 9px;
+  color: #526174;
+  font-size: 12px;
 }
 .comparison-legend > span {
   display: flex;
@@ -353,7 +359,7 @@
 .resource-section {
   border: 1px solid var(--line);
   border-radius: 9px;
-  background: #0d182a;
+  background: #ffffff;
   overflow: hidden;
   margin-top: 25px;
 }
@@ -365,23 +371,26 @@
   gap: 15px;
 }
 .resource-heading h2 {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
 }
 .resource-heading p {
-  font-size: 9px;
+  font-size: 12px;
   margin-top: 7px;
-  color: #7188aa;
+  color: #5e6e82;
 }
 .resource-heading > .text-link {
-  font-size: 9px;
+  font-size: 12px;
   white-space: nowrap;
 }
 .table-scroll {
   position: relative;
   overflow: auto;
   max-width: 100%;
-  scrollbar-color: #2c466c #0d182a;
+  scrollbar-color: #c8d2df #ffffff;
+}
+.table-hint {
+  display: none;
 }
 .cost-table {
   width: 100%;
@@ -390,39 +399,43 @@
   text-align: left;
 }
 .cost-table thead {
-  background: #101f34;
+  background: #f7f9fc;
 }
 .cost-table th {
-  font-size: 9px;
-  color: #7990ae;
+  font-size: 12px;
+  color: #526174;
   font-weight: 500;
   padding: 13px 15px;
   white-space: nowrap;
 }
 .cost-table td {
   padding: 16px 15px;
-  font-size: 9px;
-  color: #93a7c2;
+  font-size: 12px;
+  color: #526174;
   border-top: 1px solid var(--line);
 }
+.cost-table tbody tr:hover {
+  background: #f7f9fc;
+}
 .cost-table td:first-child a {
-  color: #bbcae0;
-  font-size: 10px;
+  color: #263b54;
+  font-size: 12px;
   display: block;
   max-width: 210px;
 }
 .cost-table td:first-child a:hover {
-  color: #81adf9;
+  color: #245f9e;
 }
 .table-id {
   display: block;
-  font-size: 7px;
-  color: #5f799e;
+  font-size: 12px;
+  color: #5e6e82;
   margin-top: 5px;
 }
 .cost-table .table-value {
   white-space: nowrap;
-  color: #c0d1e8;
+  color: #263b54;
+  font-variant-numeric: tabular-nums;
 }
 .cost-table .icon-button {
   width: 28px;
@@ -436,7 +449,7 @@
   border-radius: 4px;
   padding: 4px 6px;
   line-height: 1.4;
-  font-size: 7px;
+  font-size: 12px;
   white-space: nowrap;
 }
 .status > span {
@@ -446,23 +459,24 @@
   background: currentColor;
 }
 .status-warning {
-  background: #f0ae4810;
-  color: #e7b46b;
-  border: 1px solid #f0ae4820;
+  background: #fff8eb;
+  color: #906018;
+  border: 1px solid #f0deba;
 }
 .status-success {
-  background: #53c4a210;
-  color: #67c6ac;
-  border: 1px solid #53c4a220;
+  background: #eff8f3;
+  color: #217154;
+  border: 1px solid #cee5d8;
 }
 .status-regular {
-  background: #538fff0c;
-  color: #83a8e6;
-  border: 1px solid #538fff1a;
+  background: #eff3f8;
+  color: #46617e;
+  border: 1px solid #dbe4ee;
 }
 .cost-filters {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   gap: 10px;
   margin: 30px 0 24px;
 }
@@ -476,39 +490,45 @@
 .search-field > svg {
   position: absolute;
   left: 13px;
-  color: #6881a5;
+  color: #5e6e82;
 }
 .search-field input {
   width: 100%;
-  background: #0d192c;
-  border: 1px solid #ffffff17;
+  background: #ffffff;
+  border: 1px solid #d5dde7;
   border-radius: 6px;
   padding: 13px 12px 13px 40px;
-  font-size: 10px;
-  color: #d0def1;
+  font-size: 12px;
+  color: #263b54;
   min-height: 42px;
 }
 .search-field input::placeholder {
-  color: #687e9d;
+  color: #68788d;
 }
 .select-field {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
   position: relative;
   min-width: 125px;
+}
+.select-field label {
+  font-size: 12px;
+  color: #526174;
 }
 .select-field select {
   width: 100%;
   padding: 12px 28px 12px 12px;
   min-height: 42px;
-  border: 1px solid #ffffff17;
+  border: 1px solid #d5dde7;
   border-radius: 6px;
-  background: #0d192c;
-  font-size: 9px;
-  color: #9bb0cd;
+  background: #ffffff;
+  font-size: 12px;
+  color: #526174;
 }
 .select-field option {
-  background: #111e33;
+  background: #ffffff;
 }
 .sort-field {
   min-width: 130px;
@@ -516,7 +536,8 @@
 .sort-field svg {
   position: absolute;
   left: 11px;
-  color: #6881a5;
+  bottom: 14px;
+  color: #5e6e82;
   pointer-events: none;
 }
 .sort-field select {
@@ -528,8 +549,8 @@
   gap: 5px;
   background: none;
   border: none;
-  color: #8eb0e4;
-  font-size: 9px;
+  color: #245f9e;
+  font-size: 12px;
   padding: 5px;
   min-height: 36px;
 }
@@ -542,27 +563,27 @@
   gap: 10px;
 }
 .results-header p {
-  font-size: 10px;
-  color: #748cab;
+  font-size: 12px;
+  color: #5e6e82;
 }
 .results-header strong {
   font-weight: 500;
-  color: #b3c5df;
+  color: #33465b;
 }
 .catalog-display-controls {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 9px;
-  color: #94a3b8;
+  font-size: 12px;
+  color: #5e6e82;
 }
 .catalog-display-controls select {
   min-height: 40px;
   padding: 7px 9px;
-  border: 1px solid #ffffff17;
+  border: 1px solid #d5dde7;
   border-radius: 6px;
-  background: #0d192c;
-  color: #c0d1e8;
+  background: #ffffff;
+  color: #263b54;
 }
 .cost-grid {
   display: grid;
@@ -571,18 +592,16 @@
 }
 .cost-card {
   padding: 19px 17px 0;
-  border: 1px solid #ffffff13;
+  border: 1px solid #dfe5ed;
   border-radius: 9px;
-  background: #101c2e;
+  background: #ffffff;
   min-width: 0;
-  transition:
-    transform 0.2s,
-    border-color 0.2s;
+  transition: border-color 0.2s;
   display: flex;
   flex-direction: column;
 }
 .cost-card:hover {
-  border-color: #4386ff55;
+  border-color: #9eb5d0;
 }
 .cost-card-top {
   display: flex;
@@ -596,18 +615,20 @@
   display: grid;
   place-items: center;
   border-radius: 8px;
-  color: #8ab2f3;
-  background: #1765f30f;
-  border: 1px solid #4386ff1c;
+  color: #526f8f;
+  background: #f0f4f8;
+  border: 1px solid #dce4ee;
+  font-size: 12px;
+  font-weight: 600;
 }
 .cost-category {
-  font-size: 10px;
-  color: #7ba8ec;
+  font-size: 12px;
+  color: #3e628a;
   margin-bottom: 10px;
 }
 .cost-category > span {
-  font-size: 7px;
-  color: #526c91;
+  font-size: 12px;
+  color: #5e6e82;
 }
 .cost-card h2 {
   font-size: 15px;
@@ -617,10 +638,10 @@
   min-height: 48px;
 }
 .cost-description {
-  font-size: 11px;
+  font-size: 13px;
   line-height: 1.8;
   margin-bottom: 22px;
-  color: #8297b4;
+  color: #5e6e82;
   flex: 1;
 }
 .cost-price {
@@ -634,10 +655,11 @@
   font-weight: 500;
   letter-spacing: -0.8px;
   white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 .cost-price > span {
-  font-size: 8px;
-  color: #667e9f;
+  font-size: 12px;
+  color: #5e6e82;
 }
 .mini-table {
   table-layout: fixed;
@@ -646,11 +668,11 @@
   margin-bottom: 10px;
 }
 .mini-table tr {
-  border-top: 1px solid #ffffff08;
+  border-top: 1px solid #edf0f4;
 }
 .mini-table th,
 .mini-table td {
-  font-size: 10px;
+  font-size: 12px;
   padding-block: 10px;
   line-height: 1.6;
   overflow-wrap: anywhere;
@@ -661,11 +683,12 @@
   padding-right: 8px;
   font-weight: 400;
   text-align: left;
-  color: #6c84a6;
+  color: #5e6e82;
 }
 .mini-table td {
   text-align: right;
-  color: #9aafcd;
+  color: #465c76;
+  font-variant-numeric: tabular-nums;
 }
 .cost-details-link {
   display: flex;
@@ -674,11 +697,11 @@
   padding-block: 15px;
   margin-top: 4px;
   border-top: 1px solid var(--line);
-  font-size: 11px;
-  color: #86adf0;
+  font-size: 13px;
+  color: #245f9e;
 }
 .cost-details-link:hover {
-  color: #c3dcff;
+  color: #194b80;
 }
 .pagination {
   display: flex;
@@ -688,7 +711,7 @@
   margin-top: 30px;
 }
 .pagination > .button {
-  font-size: 9px;
+  font-size: 12px;
   min-height: 36px;
   padding: 8px 11px;
 }
@@ -705,24 +728,24 @@
 .page-numbers button {
   width: 30px;
   height: 32px;
-  font-size: 10px;
+  font-size: 12px;
   border: 1px solid transparent;
   border-radius: 5px;
   background: transparent;
-  color: #7891b3;
+  color: #5e6e82;
 }
 .page-numbers button.active {
-  background: #1765f31f;
-  border-color: #4386ff50;
-  color: #a3c5ff;
+  background: #e7eef7;
+  border-color: #c3d3e6;
+  color: #245f9e;
 }
 .page-ellipsis {
-  color: #5d769a;
-  font-size: 9px;
+  color: #5e6e82;
+  font-size: 12px;
   padding-inline: 3px;
 }
 .empty-state {
-  border: 1px dashed #304769;
+  border: 1px dashed #c3cfdd;
   border-radius: 9px;
   padding: 65px 20px;
   display: flex;
@@ -734,20 +757,20 @@
   min-height: 360px;
 }
 .empty-state > svg {
-  color: #6c95cf;
+  color: #6481a0;
 }
 .empty-state h2,
 .empty-state h1 {
   font-size: 20px;
 }
 .empty-state p {
-  font-size: 12px;
+  font-size: 14px;
 }
 .empty-state .button {
   margin-top: 8px;
 }
 .back-link {
-  font-size: 10px;
+  font-size: 12px;
   margin: 0 0 20px;
 }
 .detail-heading {
@@ -760,7 +783,7 @@
   max-width: 650px;
 }
 .detail-heading > .status {
-  font-size: 9px;
+  font-size: 12px;
   margin-top: 27px;
   padding: 7px 9px;
 }
@@ -775,22 +798,22 @@
 .detail-table td {
   padding: 16px 22px;
   border-top: 1px solid var(--line);
-  font-size: 11px;
+  font-size: 13px;
   text-align: left;
   line-height: 1.6;
 }
 .detail-table th {
   font-weight: 400;
-  color: #7d96b7;
+  color: #5e6e82;
   width: 40%;
 }
 .detail-table td {
-  color: #bdcee6;
+  color: #33465b;
 }
 .consolidation-total th,
 .consolidation-total td {
-  background: #172d47;
-  color: #cce1ff;
+  background: #edf3fa;
+  color: #263e5e;
   font-weight: 600;
 }
 .resource-section + .chart-container {
@@ -820,7 +843,7 @@
     padding-left: 22px;
   }
   .app-sidebar > a {
-    font-size: 10px;
+    font-size: 12px;
     padding-inline: 8px;
     gap: 8px;
   }
@@ -837,7 +860,7 @@
     padding: 17px 12px;
   }
   .metric-top {
-    font-size: 8px;
+    font-size: 12px;
   }
   .metric-top svg {
     width: 15px;
@@ -884,7 +907,7 @@
     padding-top: 20px;
   }
   .app-sidebar > a {
-    font-size: 11px;
+    font-size: 13px;
     padding: 12px;
   }
   .app-sidebar .sidebar-label,
@@ -903,11 +926,14 @@
   .metric-card {
     padding: 20px 16px;
   }
+  .metrics-grid:not(.detail-metrics) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .metric-card > strong {
     font-size: 23px;
   }
   .metric-top {
-    font-size: 9px;
+    font-size: 12px;
   }
   .cost-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -920,30 +946,30 @@
     font-size: 15px;
   }
   .cost-description {
-    font-size: 11px;
+    font-size: 13px;
   }
   .cost-price strong {
     font-size: 25px;
   }
   .cost-category {
-    font-size: 9px;
+    font-size: 12px;
   }
   .mini-table td,
   .mini-table th {
-    font-size: 10px;
+    font-size: 12px;
   }
   .cost-details-link {
-    font-size: 11px;
+    font-size: 13px;
     min-height: 49px;
   }
   .status {
-    font-size: 8px;
+    font-size: 12px;
   }
   .cost-filters .search-field {
     flex-basis: 100%;
   }
   .category-tabs button {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 700px) {
@@ -957,9 +983,8 @@
     height: 215px;
   }
   .chart-legend {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px 25px;
+    display: flex;
+    gap: 14px;
     margin-inline: 15px;
   }
   .donut-label strong {
@@ -969,7 +994,7 @@
     font-size: 14px;
   }
   .chart-heading p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .metric-card > strong {
     font-size: 24px;
@@ -987,11 +1012,11 @@
     gap: 15px;
   }
   .period-badge {
-    font-size: 9px;
+    font-size: 12px;
     padding: 9px;
   }
   .app-page-heading p {
-    font-size: 10px;
+    font-size: 12px;
   }
   .chart-summary {
     gap: 40px;
@@ -1000,7 +1025,13 @@
     padding: 20px 16px;
   }
   .resource-heading p {
-    font-size: 8px;
+    font-size: 12px;
+  }
+  .table-hint {
+    display: block;
+    padding: 0 16px 16px;
+    font-size: 12px;
+    color: #5e6e82;
   }
   .cost-grid {
     gap: 14px;
@@ -1009,20 +1040,20 @@
     padding: 18px 16px 0;
   }
   .cost-card h2 {
-    font-size: 13px;
+    font-size: 15px;
   }
   .cost-description {
-    font-size: 10px;
+    font-size: 12px;
   }
   .cost-price strong {
     font-size: 22px;
   }
   .mini-table td,
   .mini-table th {
-    font-size: 8px;
+    font-size: 12px;
   }
   .cost-details-link {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 @media (max-width: 600px) {
@@ -1035,17 +1066,17 @@
     font-size: 29px;
   }
   .app-page-heading p {
-    font-size: 11px;
+    font-size: 13px;
   }
   .app-page-heading .eyebrow {
-    font-size: 8px;
+    font-size: 12px;
   }
   .period-badge {
-    font-size: 9px;
+    font-size: 12px;
     min-height: 34px;
   }
   .workspace-bar {
-    font-size: 8px;
+    font-size: 12px;
     margin-bottom: 27px;
   }
   .app-sidebar {
@@ -1053,7 +1084,7 @@
     padding-top: 15px;
   }
   .app-sidebar > a {
-    font-size: 10px;
+    font-size: 12px;
     padding: 11px;
   }
   .app-sidebar > a svg {
@@ -1065,7 +1096,7 @@
     margin-bottom: 20px;
   }
   .demo-banner p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .metric-card {
     padding: 17px 13px;
@@ -1074,8 +1105,12 @@
     font-size: 20px;
     letter-spacing: -0.7px;
   }
+  .metrics-grid:not(.detail-metrics) .metric-card:first-child > strong {
+    font-size: clamp(14px, 4.3vw, 18px);
+    letter-spacing: -0.6px;
+  }
   .metric-top {
-    font-size: 8px;
+    font-size: 12px;
     gap: 5px;
     margin-bottom: 14px;
   }
@@ -1083,7 +1118,7 @@
     width: 14px;
   }
   .metric-card > p {
-    font-size: 7px;
+    font-size: 12px;
     line-height: 1.8;
   }
   .metrics-grid {
@@ -1094,7 +1129,7 @@
     gap: 5px;
   }
   .category-tabs button {
-    font-size: 9px;
+    font-size: 12px;
     padding: 8px 10px;
     min-height: 36px;
   }
@@ -1105,10 +1140,10 @@
     padding: 20px 13px;
   }
   .chart-heading h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .chart-heading p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .chart-area {
     height: 235px;
@@ -1118,27 +1153,27 @@
   }
   .chart-legend {
     margin-inline: 10px;
-    gap: 14px 20px;
+    gap: 14px;
   }
   .chart-legend > div {
-    font-size: 8px;
+    font-size: 12px;
   }
   .chart-summary {
     gap: 30px;
-    font-size: 8px;
+    font-size: 12px;
   }
   .chart-summary strong {
-    font-size: 12px;
+    font-size: 14px;
   }
   .resource-heading h2 {
-    font-size: 12px;
+    font-size: 14px;
   }
   .resource-heading > .text-link {
-    font-size: 8px;
+    font-size: 12px;
     gap: 5px;
   }
   .resource-heading p {
-    font-size: 8px;
+    font-size: 12px;
     max-width: 210px;
   }
   .cost-filters {
@@ -1147,27 +1182,30 @@
   }
   .select-field {
     min-width: 0;
-    flex-basis: calc(50% - 5px);
+    flex-basis: 100%;
   }
   .sort-field {
     flex-basis: 100%;
   }
   .select-field select {
-    font-size: 10px;
+    font-size: 16px;
     min-height: 44px;
   }
   .search-field input {
-    font-size: 10px;
+    font-size: 16px;
     min-height: 44px;
   }
   .results-header {
     margin-bottom: 16px;
   }
   .results-header p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .catalog-display-controls {
-    font-size: 8px;
+    font-size: 12px;
+  }
+  .catalog-display-controls select {
+    font-size: 16px;
   }
   .cost-grid {
     grid-template-columns: 1fr;
@@ -1180,10 +1218,10 @@
     margin-bottom: 21px;
   }
   .cost-category {
-    font-size: 10px;
+    font-size: 12px;
   }
   .cost-category > span {
-    font-size: 8px;
+    font-size: 12px;
   }
   .cost-card h2 {
     font-size: 16px;
@@ -1191,26 +1229,26 @@
     margin-bottom: 12px;
   }
   .cost-description {
-    font-size: 11px;
+    font-size: 13px;
     margin-bottom: 24px;
   }
   .cost-price strong {
     font-size: 28px;
   }
   .cost-price > span {
-    font-size: 10px;
+    font-size: 12px;
   }
   .mini-table th,
   .mini-table td {
-    font-size: 10px;
+    font-size: 12px;
     padding-block: 11px;
   }
   .cost-details-link {
-    font-size: 11px;
+    font-size: 13px;
     min-height: 51px;
   }
   .status {
-    font-size: 9px;
+    font-size: 12px;
     padding: 5px 8px;
   }
   .category-icon {
@@ -1253,7 +1291,7 @@
   }
   .detail-table th,
   .detail-table td {
-    font-size: 10px;
+    font-size: 12px;
     padding: 14px;
     overflow-wrap: anywhere;
   }
@@ -1261,9 +1299,14 @@
     width: 42%;
   }
   .comparison-legend {
-    font-size: 8px;
+    font-size: 12px;
   }
   .cost-table td {
     padding-block: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .detail-metrics {
+    grid-template-columns: 1fr;
   }
 }

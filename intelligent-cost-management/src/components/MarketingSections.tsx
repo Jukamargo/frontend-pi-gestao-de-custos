@@ -17,11 +17,7 @@ import { Link } from 'react-router-dom'
 import { SectionHeading } from './ui/SectionHeading'
 import { Button } from './ui/Button'
 import { ConsolidationDemo } from './ConsolidationDemo'
-import {
-  costService,
-  compactCurrency,
-  summarizeCosts,
-} from '../services/costService'
+import { costService, summarizeCosts } from '../services/costService'
 
 const summary = summarizeCosts(costService.list())
 
@@ -32,18 +28,15 @@ export function AboutSection() {
         <div className="about-intro">
           <span className="eyebrow">Sobre o projeto</span>
           <h2>
-            RH e Financeiro,
-            <br />
-            na mesma visão.
+            Informações de RH
+            <br />e Financeiro reunidas.
           </h2>
-          <span className="section-index">
-            01 / Centralização de custos por pessoa
-          </span>
+          <span className="section-index">Projeto Inovanet Tech</span>
         </div>
         <div className="about-copy">
           <p className="lead-copy">
-            O cadastro está no RH. As viagens e os reembolsos estão no
-            Financeiro. O custo mensal de uma pessoa depende das duas fontes.
+            Para apurar o custo mensal de um colaborador, é preciso reunir os
+            dados do cadastro de RH e os lançamentos financeiros.
           </p>
           <p>
             O projeto Inovanet propõe centralizar os dados da Sólides e do Omie,
@@ -51,10 +44,9 @@ export function AboutSection() {
             fórmula reúne salário base, benefícios fixos e despesas variáveis.
           </p>
           <p>
-            Este projeto faz parte do contexto da 2RPnet / Inovanet Tech. A
-            interface atual utiliza bases locais fictícias. Os serviços mock, a
-            sincronização e o workflow Gemini Enterprise são descritos no
-            contexto técnico do projeto, sem conexão ativa por esta página.
+            Desenvolvida no contexto da 2RPnet / Inovanet Tech, esta versão
+            permite consultar e comparar custos com dados fictícios. As
+            integrações estão descritas na página de tecnologias.
           </p>
           <Link to="/sobre" className="text-link">
             Entender a proposta <ArrowUpRight size={17} />
@@ -106,11 +98,11 @@ export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
         <div className="section-title-row">
           <SectionHeading
             level={expanded ? 1 : 2}
-            eyebrow="Na rotina de gestão"
-            title="O que você pode acompanhar."
+            eyebrow="Recursos da plataforma"
+            title="Informações para a rotina de gestão"
           >
-            Uma visão do custo mensal que começa no cadastro e termina nos
-            lançamentos que compõem o total.
+            Consulte o total do mês, compare períodos e confira a origem dos
+            valores de cada colaborador.
           </SectionHeading>
           {!expanded && (
             <Link to="/beneficios" className="text-link">
@@ -145,12 +137,12 @@ export function AgentSection({ full = false }: { full?: boolean }) {
             <SectionHeading
               level={full ? 1 : 2}
               eyebrow="Demonstração"
-              title="Da consulta à composição do custo."
+              title="Consulta de custos na prática"
             >
-              O contexto do projeto descreve o Agente de Gestão de Custos —
-              Inovanet, construído no Gemini Enterprise Workflow Builder. Ele
-              consulta dados de RH e cruza as despesas para responder sobre o
-              custo mensal de um colaborador.
+              Selecione um colaborador e uma competência para consultar o
+              salário, os benefícios e as despesas do período. A demonstração
+              apresenta a regra de consolidação prevista para o agente do
+              projeto.
             </SectionHeading>
             <div className="agent-points">
               <span>
@@ -168,7 +160,7 @@ export function AgentSection({ full = false }: { full?: boolean }) {
             </div>
             {!full && (
               <Link to="/demonstracao" className="text-link">
-                Conhecer a demonstração <ArrowUpRight size={17} />
+                Abrir consulta demonstrativa <ArrowUpRight size={17} />
               </Link>
             )}
           </div>
@@ -230,10 +222,9 @@ export function AgentSection({ full = false }: { full?: boolean }) {
             <div className="info-note">
               <Info size={20} />
               <p>
-                <strong>Projeto e interface são etapas distintas.</strong> O
-                documento registra um workflow validado no projeto de
-                referência. Esta interface demonstra a regra com dados locais e
-                não se conecta ao Gemini Enterprise nem aos serviços externos.
+                <strong>Sobre esta demonstração.</strong> A consulta utiliza
+                dados fictícios. O agente Gemini Enterprise descrito no projeto
+                ainda não está conectado a esta interface.
               </p>
             </div>
           </>
@@ -250,13 +241,12 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
         <div className="section-title-row">
           <SectionHeading
             level={full ? 1 : 2}
-            eyebrow="Por dentro da plataforma"
-            title="Das fontes ao custo consolidado."
+            eyebrow="Estrutura do projeto"
+            title="Fontes de dados e consolidação"
           >
-            Arquitetura descrita no contexto: APIs mock de RH e Financeiro,
-            sincronização para fontes de conhecimento e orquestração no Gemini
-            Enterprise. A interface web apresenta uma simulação local desse
-            fluxo.
+            O projeto prevê a consulta aos dados de RH e Financeiro para
+            calcular o custo por colaborador. Esta versão apresenta o fluxo com
+            dados locais, sem conexão aos serviços externos.
           </SectionHeading>
           {!full && (
             <Link className="text-link" to="/tecnologias">
@@ -269,7 +259,7 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
             <Code2 size={23} strokeWidth={1.5} />
             <small>01 / Fontes</small>
             <h3>Sólides + Omie</h3>
-            <p>APIs mock em FastAPI · serviços descritos no Render</p>
+            <p>Cadastro, salários, benefícios e despesas por competência.</p>
             <span className="architecture-status">
               Implementação documentada no projeto
             </span>
@@ -278,7 +268,7 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
             <Database size={23} strokeWidth={1.5} />
             <small>02 / Sincronização</small>
             <h3>ETL e fontes de conhecimento</h3>
-            <p>sync_apis_to_drive.py · CSVs de colaboradores e despesas</p>
+            <p>Organização dos registros de colaboradores e despesas.</p>
             <span className="architecture-status">
               Pipeline descrito no contexto
             </span>
@@ -287,7 +277,7 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
             <Workflow size={23} strokeWidth={1.5} />
             <small>03 / Orquestração</small>
             <h3>Gemini Enterprise</h3>
-            <p>Workflow Builder · consulta RH → Financeiro → consolidação</p>
+            <p>Consulta às fontes e consolidação do custo mensal.</p>
             <span className="architecture-status">
               Workflow validado segundo o documento
             </span>
@@ -334,12 +324,8 @@ export function CallToAction() {
     <section className="cta-section">
       <div className="container cta-inner">
         <div>
-          <span className="eyebrow">Experimente a plataforma</span>
-          <h2>
-            Comece pelo panorama.
-            <br />
-            Aprofunde nos detalhes.
-          </h2>
+          <span className="eyebrow">Acesso à demonstração</span>
+          <h2>Consulte os custos do período</h2>
           <p>
             {summary.count} colaboradores em {summary.categories} departamentos,
             com custos fixos e variáveis simulados.
@@ -350,13 +336,9 @@ export function CallToAction() {
             Abrir dashboard
           </Button>
           <Link to="/custos">
-            Ou ir direto ao catálogo <ArrowRight size={16} />
+            Consultar colaboradores <ArrowRight size={16} />
           </Link>
         </div>
-        <span className="cta-total" aria-hidden="true">
-          {compactCurrency(summary.total)}
-          <small>em custos demonstrativos</small>
-        </span>
       </div>
     </section>
   )

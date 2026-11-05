@@ -1,4 +1,4 @@
-import { ArrowUpRight, UserRound } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import type { CostRecord } from '../../types/cost'
 import { currency, percentage } from '../../services/costService'
@@ -7,8 +7,12 @@ export function CostCard({ cost }: { cost: CostRecord }) {
   return (
     <article className="cost-card">
       <div className="cost-card-top">
-        <span className="category-icon">
-          <UserRound size={19} />
+        <span className="category-icon" aria-hidden="true">
+          {cost.title
+            .split(' ')
+            .slice(0, 2)
+            .map((name) => name[0])
+            .join('')}
         </span>
         <StatusBadge status={cost.status} />
       </div>

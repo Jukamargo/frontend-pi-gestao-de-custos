@@ -9,19 +9,19 @@ export function Footer() {
           <div>
             <Brand />
             <p>
-              Custos de pessoas, do RH ao Financeiro.
+              Consulta e acompanhamento dos custos de pessoal.
               <br />
-              Do consolidado a cada lançamento.
+              Salários, benefícios e despesas por colaborador.
             </p>
           </div>
           <div>
-            <span className="footer-label">EXPLORE A PLATAFORMA</span>
+            <span className="footer-label">O PROJETO</span>
             <Link to="/sobre">Sobre o projeto</Link>
             <Link to="/beneficios">Benefícios</Link>
             <Link to="/tecnologias">Tecnologias</Link>
           </div>
           <div>
-            <span className="footer-label">EXPERIMENTE</span>
+            <span className="footer-label">CONSULTAS</span>
             <Link to="/dashboard">
               Dashboard <ArrowUpRight size={13} />
             </Link>

@@ -24,9 +24,7 @@ export function CostFilters({
         />
       </div>
       <div className="select-field">
-        <label className="sr-only" htmlFor="category">
-          Departamento
-        </label>
+        <label htmlFor="category">Departamento</label>
         <select
           id="category"
           value={query.category}
@@ -39,9 +37,7 @@ export function CostFilters({
         </select>
       </div>
       <div className="select-field">
-        <label className="sr-only" htmlFor="status">
-          Status
-        </label>
+        <label htmlFor="status">Status</label>
         <select
           id="status"
           value={query.status}
@@ -55,9 +51,7 @@ export function CostFilters({
       </div>
       <div className="select-field sort-field">
         <SlidersHorizontal size={16} aria-hidden="true" />
-        <label className="sr-only" htmlFor="sort">
-          Ordenação
-        </label>
+        <label htmlFor="sort">Ordenação</label>
         <select
           id="sort"
           value={query.sort}

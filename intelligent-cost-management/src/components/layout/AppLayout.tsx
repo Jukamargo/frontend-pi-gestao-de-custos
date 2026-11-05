@@ -10,7 +10,7 @@ export function AppLayout() {
   return (
     <div className="app-layout container">
       <aside className="app-sidebar">
-        <span className="sidebar-label">WORKSPACE</span>
+        <span className="sidebar-label">GESTÃO DE CUSTOS</span>
         <NavLink to="/dashboard">
           <LayoutDashboard size={18} />
           Visão geral
@@ -38,7 +38,7 @@ export function AppLayout() {
             <span className="live-dot" />
             Ambiente demonstrativo
           </span>
-          <span>Outubro, 2026</span>
+          <span>RH e Financeiro</span>
         </div>
         <Outlet />
       </div>

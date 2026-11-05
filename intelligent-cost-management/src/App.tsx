@@ -43,7 +43,7 @@ export default function App() {
         <Suspense
           fallback={
             <div className="loading-state" role="status">
-              Carregando experiência…
+              Carregando página…
             </div>
           }
         >

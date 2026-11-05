@@ -7,7 +7,7 @@ export default function About() {
         <SectionHeading
           level={1}
           eyebrow="SOBRE O PROJETO"
-          title="O custo por colaborador, com as duas fontes na mesma visão."
+          title="Gestão de custos de pessoal"
         >
           Conheça a proposta da plataforma Gestão de custos, desenvolvida no
           contexto da 2RPnet / Inovanet Tech.
@@ -17,7 +17,7 @@ export default function About() {
       <section className="container narrative-grid section">
         <article>
           <span className="eyebrow">O DESAFIO</span>
-          <h2>Quando os dados estão dispersos, a visão fica limitada.</h2>
+          <h2>Informações em fontes diferentes</h2>
           <p>
             Cadastros, salários e benefícios estão no RH. Viagens, hospedagens e
             reembolsos chegam ao Financeiro por ferramentas diferentes. O
@@ -27,7 +27,7 @@ export default function About() {
         </article>
         <article>
           <span className="eyebrow">A PROPOSTA</span>
-          <h2>Consultar, comparar e entender.</h2>
+          <h2>Consolidação por pessoa e período</h2>
           <p>
             O escopo prioriza a Sólides como fonte de dados cadastrais e custos
             fixos e o Omie como fonte de despesas variáveis. A associação por
