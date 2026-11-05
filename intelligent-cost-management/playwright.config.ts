@@ -6,7 +6,7 @@ export default defineConfig({
   reporter: 'list',
   use: { baseURL: 'http://127.0.0.1:4173', trace: 'retain-on-failure' },
   projects: [
-    { name: 'data', testMatch: 'data.spec.ts' },
+    { name: 'data', testMatch: ['data.spec.ts', 'chat.spec.ts'] },
     ...[
       { name: 'desktop', width: 1440, height: 1000 },
       { name: 'tablet', width: 768, height: 1024 },
