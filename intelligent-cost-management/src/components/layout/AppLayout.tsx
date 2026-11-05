@@ -1,0 +1,47 @@
+import { Link, NavLink, Outlet } from 'react-router-dom'
+import {
+  LayoutDashboard,
+  Layers3,
+  ArrowLeft,
+  Sparkles,
+  CircleHelp,
+} from 'lucide-react'
+export function AppLayout() {
+  return (
+    <div className="app-layout container">
+      <aside className="app-sidebar">
+        <span className="sidebar-label">WORKSPACE</span>
+        <NavLink to="/dashboard">
+          <LayoutDashboard size={18} />
+          Visão geral
+        </NavLink>
+        <NavLink to="/custos">
+          <Layers3 size={18} />
+          Catálogo de custos
+        </NavLink>
+        <div className="sidebar-note">
+          <Sparkles size={20} />
+          <strong>Decisões com contexto</strong>
+          <p>Conheça a proposta do agente de inteligência artificial.</p>
+          <Link to="/demonstracao">
+            Explorar demonstração <ArrowLeft className="rotate-180" size={14} />
+          </Link>
+        </div>
+        <Link className="sidebar-help" to="/sobre">
+          <CircleHelp size={17} />
+          Sobre este ambiente
+        </Link>
+      </aside>
+      <div className="app-content">
+        <div className="workspace-bar">
+          <span>
+            <span className="live-dot" />
+            Workspace demonstrativo
+          </span>
+          <span>Outubro, 2026</span>
+        </div>
+        <Outlet />
+      </div>
+    </div>
+  )
+}
