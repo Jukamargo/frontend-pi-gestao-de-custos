@@ -4,6 +4,101 @@ import { currency } from '../src/services/costService'
 import { employees, variableExpenses } from '../src/data/people'
 import { consolidateEmployee } from '../src/services/consolidationService'
 
+test('alternar o tema por teclado e manter a escolha na navegação e na recarga', async ({
+  page,
+}) => {
+  await page.emulateMedia({ colorScheme: 'light' })
+  await page.goto('/')
+  const toggle = page.getByRole('switch', { name: 'Modo escuro' })
+  await expect(toggle).toHaveAttribute('aria-checked', 'false')
+  await toggle.focus()
+  await page.keyboard.press('Space')
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
+  await expect(toggle).toHaveAttribute('aria-checked', 'true')
+  await page.goto('/dashboard')
+  await expect(toggle).toHaveAttribute('aria-checked', 'true')
+  await page.reload()
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
+  await toggle.focus()
+  await page.keyboard.press('Enter')
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light')
+  await page.emulateMedia({ colorScheme: 'dark' })
+  await expect(toggle).toHaveAttribute('aria-checked', 'false')
+  await page.reload()
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light')
+})
+
+test('seguir o sistema e sincronizar a escolha de tema entre abas', async ({
+  page,
+  context,
+}) => {
+  await page.emulateMedia({ colorScheme: 'dark' })
+  await page.goto('/')
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
+  await page.emulateMedia({ colorScheme: 'light' })
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light')
+  const second = await context.newPage()
+  await second.emulateMedia({ colorScheme: 'light' })
+  await second.goto('/custos')
+  await second.getByRole('switch', { name: 'Modo escuro' }).click()
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
+  await second.close()
+})
+
+test('alternar o tema mesmo com armazenamento bloqueado', async ({ page }) => {
+  const errors: string[] = []
+  page.on('pageerror', (error) => errors.push(error.message))
+  await page.addInitScript(() => {
+    Object.defineProperty(window, 'localStorage', {
+      get() {
+        throw new DOMException('Armazenamento bloqueado', 'SecurityError')
+      },
+    })
+  })
+  await page.emulateMedia({ colorScheme: 'dark' })
+  await page.goto('/')
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
+  await page.getByRole('switch', { name: 'Modo escuro' }).click()
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light')
+  await page.emulateMedia({ colorScheme: 'light' })
+  await page.emulateMedia({ colorScheme: 'dark' })
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light')
+  expect(errors).toEqual([])
+})
+
+test('exibir todas as páginas no modo escuro sem overflow', async ({
+  page,
+}, testInfo) => {
+  await page.emulateMedia({ colorScheme: 'dark' })
+  for (const path of [
+    '/',
+    '/sobre',
+    '/beneficios',
+    '/demonstracao',
+    '/tecnologias',
+    '/dashboard',
+    '/custos',
+    '/custos/ICM-001',
+    '/nao-existe',
+  ]) {
+    await page.goto(path)
+    await expect(page.locator('main h1')).toBeVisible()
+    await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
+    await page.evaluate(() => document.fonts.ready)
+    expect(
+      await page.evaluate(
+        () => document.documentElement.scrollWidth <= innerWidth,
+      ),
+      path,
+    ).toBe(true)
+    if (path === '/' || path === '/dashboard')
+      await page.screenshot({
+        path: `artifacts/${testInfo.project.name}-dark-${path === '/' ? 'home' : 'dashboard'}.png`,
+        fullPage: true,
+      })
+  }
+})
+
 test('consultar colaborador e competência e conferir o caso de referência', async ({
   page,
 }) => {
