@@ -4,6 +4,8 @@ Front-end institucional e demonstrativo do projeto de **centralização de RH e 
 
 O escopo foi alinhado ao documento `CONTEXTO_GERAL_PROJETO.md` fornecido pelo responsável. Consulte o [mapeamento de escopo](docs/ESCOPO_FRONTEND.md) para distinguir o projeto de referência das funcionalidades executadas nesta interface.
 
+Os **120 cartões solicitados para acompanhamento do projeto pertencem ao Kanban externo no GitHub**, e não ao dashboard financeiro do site. O backlog, as descrições e a publicação estão documentados em [docs/kanban](docs/kanban/README.md). A base fictícia de colaboradores da aplicação é independente desse quadro de tarefas.
+
 ## Fórmula e fontes
 
 ```text
