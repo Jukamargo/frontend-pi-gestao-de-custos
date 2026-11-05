@@ -23,7 +23,7 @@ export function ConsolidationDemo() {
     >
       <div className="section-title-row">
         <div>
-          <span className="eyebrow">Consulta demonstrativa</span>
+          <span className="eyebrow">Caso de uso · gestão de custos</span>
           <h2 id="consolidation-heading">Como se forma o custo mensal?</h2>
         </div>
         <span className="local-demo-label">

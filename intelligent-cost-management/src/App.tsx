@@ -14,10 +14,10 @@ const Dashboard = lazy(() => import('./pages/Dashboard'))
 const CostCatalog = lazy(() => import('./pages/CostCatalog'))
 const CostDetails = lazy(() => import('./pages/CostDetails'))
 const titles: Record<string, string> = {
-  '/': 'Custos por colaborador',
+  '/': 'Automação e chatbot',
   '/sobre': 'Sobre o projeto',
   '/beneficios': 'Benefícios',
-  '/demonstracao': 'Demonstração do agente',
+  '/demonstracao': 'Chatbot demonstrativo',
   '/tecnologias': 'Tecnologias',
   '/dashboard': 'Dashboard',
   '/custos': 'Catálogo de custos',

@@ -3,7 +3,6 @@ import {
   ArrowUpRight,
   ChartNoAxesCombined,
   Check,
-  CirclePlay,
   Code2,
   Database,
   FileInput,
@@ -17,9 +16,8 @@ import { Link } from 'react-router-dom'
 import { SectionHeading } from './ui/SectionHeading'
 import { Button } from './ui/Button'
 import { ConsolidationDemo } from './ConsolidationDemo'
-import { costService, summarizeCosts } from '../services/costService'
-
-const summary = summarizeCosts(costService.list())
+import { ChatbotDemo } from './chat/ChatbotDemo'
+import { AgentVideo } from './AgentVideo'
 
 export function AboutSection() {
   return (
@@ -28,25 +26,29 @@ export function AboutSection() {
         <div className="about-intro">
           <span className="eyebrow">Sobre o projeto</span>
           <h2>
-            Informações de RH
-            <br />e Financeiro reunidas.
+            Ferramentas integradas,
+            <br />
+            consultas pelo chatbot.
           </h2>
           <span className="section-index">Projeto Inovanet Tech</span>
         </div>
         <div className="about-copy">
           <p className="lead-copy">
-            Para apurar o custo mensal de um colaborador, é preciso reunir os
-            dados do cadastro de RH e os lançamentos financeiros.
+            O objetivo é automatizar as rotinas da empresa e reunir as
+            informações das ferramentas principais em um chatbot que responda às
+            dúvidas da equipe.
           </p>
           <p>
-            O projeto Inovanet propõe centralizar os dados da Sólides e do Omie,
-            cruzando os registros pelo CPF do colaborador e pela competência. A
-            fórmula reúne salário base, benefícios fixos e despesas variáveis.
+            O mapeamento contempla cadastros de RH, benefícios, ponto,
+            atestados, documentos e comunicação com fornecedores. Cada conexão
+            depende das condições da ferramenta e do processo definido pela
+            equipe.
           </p>
           <p>
             Desenvolvida no contexto da 2RPnet / Inovanet Tech, esta versão
-            permite consultar e comparar custos com dados fictícios. As
-            integrações estão descritas na página de tecnologias.
+            apresenta uma conversa demonstrativa e um caso de consulta de
+            custos. O chatbot utiliza conteúdo local, sem acesso aos sistemas
+            externos.
           </p>
           <Link to="/sobre" className="text-link">
             Entender a proposta <ArrowUpRight size={17} />
@@ -61,34 +63,34 @@ const benefits = [
   {
     icon: Search,
     number: '01',
-    title: 'Centralize as informações',
-    text: 'Reúna os custos fixos do RH e os lançamentos variáveis do Financeiro em uma consulta por colaborador.',
+    title: 'Conectar as ferramentas',
+    text: 'Organizar o acesso às informações dos sistemas principais para responder às consultas da equipe.',
     detail:
-      'Sólides fornece salário e benefícios. Omie concentra despesas e reembolsos originados em Onfly e Flash.',
+      'O projeto mapeia RH, Financeiro, benefícios e documentos. A prioridade e a forma de conexão de cada ferramenta ainda devem ser definidas.',
   },
   {
     icon: Layers3,
     number: '02',
-    title: 'Consulte por pessoa e mês',
-    text: 'Encontre um colaborador e acompanhe a composição do custo na competência escolhida.',
+    title: 'Automatizar rotinas manuais',
+    text: 'Reduzir o trabalho de cadastro, troca de dados e comunicação nos processos mapeados pelo RH.',
     detail:
-      'A consulta demonstrativa permite selecionar pessoa e competência. O catálogo de outubro oferece busca por nome, cargo e ID, além de filtro por departamento.',
+      'Flash, Vixting e Clude têm propostas de automação de cadastros. O mapeamento também inclui e-mails ao Sindpd e entrada de dados de fornecedores na Sólides.',
   },
   {
     icon: ChartNoAxesCombined,
     number: '03',
-    title: 'Veja como o total se forma',
-    text: 'Separe salário, benefícios fixos, viagens, hospedagens e reembolsos antes de analisar o valor consolidado.',
+    title: 'Consultar em uma conversa',
+    text: 'Usar o chatbot como ponto de consulta para dúvidas sobre processos, ferramentas e custos.',
     detail:
-      'A fórmula do escopo é salário base + benefícios fixos + despesas variáveis. Não há estimativa adicional de encargos nesta demonstração.',
+      'A demonstração responde sobre o escopo informado e calcula custos da base fictícia. A integração ao agente e aos sistemas reais será uma etapa posterior.',
   },
   {
     icon: Gauge,
     number: '04',
-    title: 'Preserve a origem dos valores',
-    text: 'Consulte os benefícios e os lançamentos que compõem o custo, com indicação da fonte e do período.',
+    title: 'Identificar a fonte da resposta',
+    text: 'Apresentar a origem das informações e distinguir dados demonstrativos de processos ainda em análise.',
     detail:
-      'O cruzamento usa colaborador_cpf e competência. O CPF completo não é exibido na interface e todos os registros desta versão são fictícios.',
+      'As respostas locais indicam se vêm do mapeamento da equipe ou das bases fictícias. As restrições da Alura, do SENAI e do Jurídico permanecem visíveis.',
   },
 ]
 export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
@@ -98,11 +100,11 @@ export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
         <div className="section-title-row">
           <SectionHeading
             level={expanded ? 1 : 2}
-            eyebrow="Recursos da plataforma"
-            title="Informações para a rotina de gestão"
+            eyebrow="Objetivos da solução"
+            title="Automação com um ponto de consulta"
           >
-            Consulte o total do mês, compare períodos e confira a origem dos
-            valores de cada colaborador.
+            Conectar os sistemas principais, automatizar os processos mapeados e
+            disponibilizar as informações para consulta pelo chatbot.
           </SectionHeading>
           {!expanded && (
             <Link to="/beneficios" className="text-link">
@@ -136,76 +138,58 @@ export function AgentSection({ full = false }: { full?: boolean }) {
           <div>
             <SectionHeading
               level={full ? 1 : 2}
-              eyebrow="Demonstração"
-              title="Consulta de custos na prática"
+              eyebrow="Demonstração do chatbot"
+              title="Perguntas sobre processos, ferramentas e custos"
             >
-              Selecione um colaborador e uma competência para consultar o
-              salário, os benefícios e as despesas do período. A demonstração
-              apresenta a regra de consolidação prevista para o agente do
-              projeto.
+              O chatbot será o ponto de consulta às informações das ferramentas
+              principais. Nesta versão, você pode experimentar respostas locais
+              baseadas no escopo informado e nos dados fictícios do projeto.
             </SectionHeading>
             <div className="agent-points">
               <span>
                 <Check size={16} />
-                Salário e benefícios fixos da Sólides
+                Dúvidas sobre as rotinas e ferramentas mapeadas
               </span>
               <span>
                 <Check size={16} />
-                Despesas do Omie associadas ao CPF e à competência
+                Respostas com indicação da fonte
               </span>
               <span>
                 <Check size={16} />
-                Demonstrativo consolidado para avaliação da equipe
+                Gestão de custos como um dos casos de uso
               </span>
             </div>
             {!full && (
               <Link to="/demonstracao" className="text-link">
-                Abrir consulta demonstrativa <ArrowUpRight size={17} />
+                Testar chatbot <ArrowUpRight size={17} />
               </Link>
             )}
           </div>
-          <div
-            className="video-placeholder"
-            aria-label="Espaço reservado para o vídeo real de demonstração do agente"
-          >
-            <div className="video-top">
-              <span>Apresentação do agente</span>
-              <span>Em breve</span>
-            </div>
-            <span className="video-play">
-              <CirclePlay size={49} strokeWidth={1.3} />
-            </span>
-            <h3>Demonstração em preparação</h3>
-            <p>O vídeo ainda não foi disponibilizado.</p>
-            <span className="video-footnote">
-              Gestão de custos / Demonstração
-            </span>
-          </div>
+          {full ? <ChatbotDemo /> : <AgentVideo />}
         </div>
-        {full && <ConsolidationDemo />}
         {full && (
           <>
             <div className="agent-flow" aria-label="Fluxo conceitual do agente">
               {[
                 {
                   icon: FileInput,
-                  title: 'Solicitação',
-                  sub: 'Pessoa e competência',
+                  title: 'Pergunta',
+                  sub: 'Dúvida da equipe',
                 },
                 {
                   icon: Workflow,
-                  title: 'Consulta RH',
-                  sub: 'Sólides: salário e benefícios',
+                  title: 'Consulta às fontes',
+                  sub: 'Ferramentas principais',
                 },
                 {
                   icon: Search,
-                  title: 'Consulta Financeiro',
-                  sub: 'Omie: CPF e competência',
+                  title: 'Organização',
+                  sub: 'Informações relevantes',
                 },
                 {
                   icon: ChartNoAxesCombined,
-                  title: 'Consolidação',
-                  sub: 'Fixo + variável',
+                  title: 'Resposta',
+                  sub: 'Conteúdo e origem',
                 },
               ].map(({ icon: Icon, title, sub }, i) => (
                 <div className="flow-step" key={title}>
@@ -222,10 +206,15 @@ export function AgentSection({ full = false }: { full?: boolean }) {
             <div className="info-note">
               <Info size={20} />
               <p>
-                <strong>Sobre esta demonstração.</strong> A consulta utiliza
-                dados fictícios. O agente Gemini Enterprise descrito no projeto
-                ainda não está conectado a esta interface.
+                <strong>Sobre esta demonstração.</strong> A conversa usa
+                respostas locais e dados fictícios. O agente Gemini Enterprise e
+                as ferramentas externas ainda não estão conectados a esta
+                interface. Nenhuma automação é executada pelo chat.
               </p>
+            </div>
+            <ConsolidationDemo />
+            <div className="agent-video-section">
+              <AgentVideo />
             </div>
           </>
         )}
@@ -242,12 +231,12 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
           <SectionHeading
             level={full ? 1 : 2}
             eyebrow="Estrutura do projeto"
-            title="Fontes de dados e consolidação"
+            title="Ferramentas, automações e chatbot"
           >
-            O projeto prevê a consulta aos dados de RH e Financeiro para
-            calcular o custo por colaborador. O escopo também mapeia rotinas de
-            RH, benefícios e documentos. Esta versão utiliza dados locais, sem
-            conexão aos serviços externos.
+            O objetivo é conectar as ferramentas principais para automatizar
+            rotinas e disponibilizar suas informações em um chatbot. As conexões
+            devem respeitar a disponibilidade de cada serviço e as restrições
+            registradas no mapeamento de RH.
           </SectionHeading>
           {full ? (
             <a className="text-link" href="#ecossistema-rh">
@@ -262,29 +251,29 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
         <div className="architecture">
           <div className="architecture-node">
             <Code2 size={23} strokeWidth={1.5} />
-            <small>01 / Fontes</small>
-            <h3>Sólides + Omie</h3>
-            <p>Cadastro, salários, benefícios e despesas por competência.</p>
+            <small>01 / Ferramentas</small>
+            <h3>Sistemas e fornecedores</h3>
+            <p>Informações de RH, Financeiro, benefícios e documentos.</p>
             <span className="architecture-status">
-              Implementação documentada no projeto
+              Ferramentas da primeira etapa a priorizar
             </span>
           </div>
           <div className="architecture-node">
             <Database size={23} strokeWidth={1.5} />
-            <small>02 / Sincronização</small>
-            <h3>ETL e fontes de conhecimento</h3>
-            <p>Organização dos registros de colaboradores e despesas.</p>
+            <small>02 / Automação</small>
+            <h3>Conectores e rotinas</h3>
+            <p>Cadastros, sincronização de dados e comunicação.</p>
             <span className="architecture-status">
-              Pipeline descrito no contexto
+              Escopo mapeado · meios de conexão a confirmar
             </span>
           </div>
           <div className="architecture-node">
             <Workflow size={23} strokeWidth={1.5} />
-            <small>03 / Orquestração</small>
-            <h3>Gemini Enterprise</h3>
-            <p>Consulta às fontes e consolidação do custo mensal.</p>
+            <small>03 / Consulta</small>
+            <h3>Chatbot</h3>
+            <p>Respostas às dúvidas da equipe, com indicação das fontes.</p>
             <span className="architecture-status">
-              Workflow validado segundo o documento
+              Objetivo central · conversa local nesta interface
             </span>
           </div>
         </div>
@@ -293,13 +282,14 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
             <article>
               <h3>Nesta interface</h3>
               <p>
-                React, TypeScript, Vite e React Router. Os cálculos usam dados
-                locais tipados. Nenhum serviço externo ou agente é acionado pelo
-                navegador nesta versão.
+                React, TypeScript, Vite e React Router. O chatbot demonstra
+                respostas locais a perguntas sobre o escopo e calcula custos
+                fictícios. Seu adaptador pode ser substituído pela integração
+                com o agente quando houver um contrato de acesso.
               </p>
             </article>
             <article>
-              <h3>Contratos e cruzamento</h3>
+              <h3>Caso de uso de custos</h3>
               <p>
                 O contexto define GET /solides/colaboradores/{'{id}'} e GET
                 /omie/despesas, com CPF e competência AAAA-MM. O cruzamento
@@ -310,11 +300,11 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
             <article>
               <h3>Próximas etapas do projeto</h3>
               <p>
-                Enriquecer as bases e os prompts de demonstração, conectar o
-                agente ao BigQuery quando o dataset for liberado e integrar a
-                apresentação web. O mapeamento de RH abaixo detalha as
-                automações propostas para cadastros, comunicação e documentos,
-                incluindo as restrições de cada serviço.
+                Priorizar as ferramentas principais, confirmar seus contratos de
+                acesso e integrar o chatbot. O contexto técnico registra um
+                workflow Gemini Enterprise para a consulta de custos; sua
+                conexão à interface e a evolução para BigQuery permanecem etapas
+                futuras.
               </p>
             </article>
           </div>
@@ -330,18 +320,18 @@ export function CallToAction() {
       <div className="container cta-inner">
         <div>
           <span className="eyebrow">Acesso à demonstração</span>
-          <h2>Consulte os custos do período</h2>
+          <h2>Experimente uma consulta pelo chatbot</h2>
           <p>
-            {summary.count} colaboradores em {summary.categories} departamentos,
-            com custos fixos e variáveis simulados.
+            Teste perguntas sobre as rotinas mapeadas e consulte um exemplo de
+            custo mensal.
           </p>
         </div>
         <div className="cta-actions">
-          <Button to="/dashboard" arrow>
-            Abrir dashboard
+          <Button to="/demonstracao" arrow>
+            Testar chatbot
           </Button>
-          <Link to="/custos">
-            Consultar colaboradores <ArrowRight size={16} />
+          <Link to="/dashboard">
+            Ver caso de uso de custos <ArrowRight size={16} />
           </Link>
         </div>
       </div>

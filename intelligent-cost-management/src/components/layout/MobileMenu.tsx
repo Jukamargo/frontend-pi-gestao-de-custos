@@ -6,7 +6,7 @@ const navigation = [
   { to: '/', label: 'Início' },
   { to: '/sobre', label: 'Sobre o projeto' },
   { to: '/beneficios', label: 'Benefícios' },
-  { to: '/demonstracao', label: 'Demonstração do agente' },
+  { to: '/demonstracao', label: 'Chatbot demonstrativo' },
   { to: '/tecnologias', label: 'Tecnologias' },
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/custos', label: 'Catálogo de custos' },

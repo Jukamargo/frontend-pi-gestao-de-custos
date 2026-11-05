@@ -8,6 +8,7 @@
 @import './styles/marketing.css';
 @import './styles/application.css';
 @import './styles/ecosystem.css';
+@import './styles/chat.css';
 
 @theme {
   --font-sans: 'Inter', sans-serif;

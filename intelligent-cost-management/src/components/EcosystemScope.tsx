@@ -16,9 +16,10 @@ export function EcosystemScope() {
         <span className="eyebrow">Mapeamento de RH</span>
         <h2 id="ecosystem-heading">Serviços e oportunidades de automação</h2>
         <p>
-          Escopo informado pela equipe para cadastros, benefícios, documentos e
-          comunicação. As situações abaixo indicam o encaminhamento de cada
-          serviço; não representam integrações ativas nesta demonstração.
+          O objetivo é automatizar as rotinas mapeadas e conectar as ferramentas
+          principais ao chatbot para responder às dúvidas da equipe. As
+          situações abaixo indicam o encaminhamento de cada serviço; não
+          representam integrações ativas nesta demonstração.
         </p>
       </div>
 

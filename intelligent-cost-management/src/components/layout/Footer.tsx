@@ -9,9 +9,9 @@ export function Footer() {
           <div>
             <Brand />
             <p>
-              Consulta e acompanhamento dos custos de pessoal.
+              Projeto de integração de ferramentas e automação de rotinas.
               <br />
-              Salários, benefícios e despesas por colaborador.
+              Consultas de RH, processos e custos por chatbot.
             </p>
           </div>
           <div>
@@ -28,7 +28,7 @@ export function Footer() {
             <Link to="/custos">
               Catálogo de custos <ArrowUpRight size={13} />
             </Link>
-            <Link to="/demonstracao">Demonstração do agente</Link>
+            <Link to="/demonstracao">Chatbot demonstrativo</Link>
           </div>
         </div>
         <div className="footer-bottom">

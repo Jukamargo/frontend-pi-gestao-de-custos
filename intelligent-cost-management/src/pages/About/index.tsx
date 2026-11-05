@@ -7,7 +7,7 @@ export default function About() {
         <SectionHeading
           level={1}
           eyebrow="SOBRE O PROJETO"
-          title="Gestão de custos de pessoal"
+          title="Automação de rotinas e consultas por chatbot"
         >
           Conheça a proposta da plataforma Gestão de custos, desenvolvida no
           contexto da 2RPnet / Inovanet Tech.
@@ -19,20 +19,21 @@ export default function About() {
           <span className="eyebrow">O DESAFIO</span>
           <h2>Informações em fontes diferentes</h2>
           <p>
-            Cadastros, salários e benefícios estão no RH. Viagens, hospedagens e
-            reembolsos chegam ao Financeiro por ferramentas diferentes. O
-            cruzamento manual em planilhas dificulta consultar o custo de uma
-            pessoa em uma competência específica.
+            Cadastros, benefícios, ponto, documentos e lançamentos financeiros
+            estão distribuídos entre ferramentas e e-mails. A equipe precisa
+            reunir essas informações e repetir tarefas manuais para executar
+            rotinas ou responder a uma dúvida.
           </p>
         </article>
         <article>
           <span className="eyebrow">A PROPOSTA</span>
-          <h2>Consolidação por pessoa e período</h2>
+          <h2>Ferramentas conectadas a um ponto de consulta</h2>
           <p>
-            O escopo prioriza a Sólides como fonte de dados cadastrais e custos
-            fixos e o Omie como fonte de despesas variáveis. A associação por
-            CPF e competência permite consolidar salário base + benefícios fixos
-            + despesas variáveis, preservando os lançamentos de origem.
+            O objetivo é automatizar os processos mapeados e conectar as
+            ferramentas principais a um chatbot que responda às dúvidas da
+            equipe. A consulta de custos por colaborador é um dos casos de uso,
+            com informações de RH e Financeiro. As prioridades de conexão e os
+            contratos de acesso precisam ser definidos para cada ferramenta.
           </p>
         </article>
       </section>
