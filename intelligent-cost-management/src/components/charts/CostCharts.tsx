@@ -14,12 +14,18 @@ import {
   YAxis,
 } from 'recharts'
 import { compactCurrency, currency } from '../../services/costService'
-const colors = ['#2d6197', '#88a6c2', '#bccbda', '#598978', '#9aabbc']
+const colors = [
+  'var(--chart-series-1)',
+  'var(--chart-series-2)',
+  'var(--chart-series-3)',
+  'var(--chart-series-4)',
+  'var(--chart-series-5)',
+]
 const tooltipStyle = {
-  background: '#ffffff',
-  border: '1px solid #d7e0eb',
+  background: 'var(--surface)',
+  border: '1px solid var(--border)',
   borderRadius: 6,
-  color: '#263b54',
+  color: 'var(--text-primary)',
   fontSize: 12,
 }
 export function ChartContainer({
@@ -67,8 +73,16 @@ export function EvolutionChart({
         >
           <defs>
             <linearGradient id={id} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#3976af" stopOpacity={0.14} />
-              <stop offset="100%" stopColor="#3976af" stopOpacity={0.01} />
+              <stop
+                offset="0%"
+                stopColor="var(--chart-fill)"
+                stopOpacity={0.14}
+              />
+              <stop
+                offset="100%"
+                stopColor="var(--chart-fill)"
+                stopOpacity={0.01}
+              />
             </linearGradient>
           </defs>
           <CartesianGrid
@@ -92,17 +106,19 @@ export function EvolutionChart({
           />
           <Tooltip
             contentStyle={tooltipStyle}
+            itemStyle={{ color: 'var(--text-primary)' }}
+            labelStyle={{ color: 'var(--text-primary)' }}
             formatter={(value) => [currency(Number(value)), 'Custo']}
           />
           <Area
             type="monotone"
             dataKey="cost"
-            stroke="#2d6197"
+            stroke="var(--chart-series-1)"
             strokeWidth={2.5}
             fill={`url(#${id})`}
             isAnimationActive={false}
             dot={false}
-            activeDot={{ r: 5, stroke: '#ffffff', strokeWidth: 3 }}
+            activeDot={{ r: 5, stroke: 'var(--surface)', strokeWidth: 3 }}
           />
         </AreaChart>
       </ResponsiveContainer>
@@ -142,6 +158,8 @@ export function DistributionChart({
             </Pie>
             <Tooltip
               contentStyle={tooltipStyle}
+              itemStyle={{ color: 'var(--text-primary)' }}
+              labelStyle={{ color: 'var(--text-primary)' }}
               formatter={(value) => currency(Number(value))}
             />
           </PieChart>
@@ -181,11 +199,11 @@ export function ComparisonChart({
     <>
       <div className="comparison-legend">
         <span>
-          <i style={{ background: '#b9c9da' }} />
+          <i style={{ background: 'var(--chart-previous)' }} />
           Setembro
         </span>
         <span>
-          <i style={{ background: '#2d6197' }} />
+          <i style={{ background: 'var(--chart-series-1)' }} />
           Outubro
         </span>
       </div>
@@ -229,20 +247,22 @@ export function ComparisonChart({
             />
             <Tooltip
               contentStyle={tooltipStyle}
-              cursor={{ fill: '#edf2f8' }}
+              itemStyle={{ color: 'var(--text-primary)' }}
+              labelStyle={{ color: 'var(--text-primary)' }}
+              cursor={{ fill: 'var(--surface-hover)' }}
               formatter={(value) => currency(Number(value))}
             />
             <Bar
               dataKey="previous"
               name="Setembro"
-              fill="#b9c9da"
+              fill="var(--chart-previous)"
               radius={[4, 4, 0, 0]}
               isAnimationActive={false}
             />
             <Bar
               dataKey="value"
               name="Outubro"
-              fill="#2d6197"
+              fill="var(--chart-series-1)"
               radius={[4, 4, 0, 0]}
               isAnimationActive={false}
             />
