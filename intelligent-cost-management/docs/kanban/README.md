@@ -37,6 +37,7 @@ Revisão de **5 de novembro de 2026**, baseada nas orientações mais recentes e
 - Validar o banner institucional sem resumo operacional, KPIs ou gráficos no destaque inicial.
 - Priorizar a revisão dos temas claro e escuro, da persistência da preferência e da responsividade, incluindo larguras intermediárias e cortes de textos ou valores.
 - Manter somente o botão **Chatbot — em breve**, desabilitado enquanto a integração estiver pendente. A tarefa GC-KB-092 registra a necessidade de obter a forma de acesso da equipe externa antes de configurar e validar a integração. Não recriar o agente nem simular respostas.
+- Apresentar o fluxo confirmado do agente externo: **Manual Trigger → Consulta RH (Sólides) → Consulta Financeiro (Omie) → Consolidação**. As consultas fazem requisições separadas e a Consolidação é um nó próprio após a Omie. Registrar a documentação oficial das duas plataformas como referência das respostas, conforme informado pela equipe.
 - Revisar o mapa de RH: SulAmérica/Wellhub, Porto Seguro apenas vida, propostas Flash/Clude e Vixting/Sólides, restrição Alura, SENAI em análise, SharePoint, Sindpd e entradas por e-mail na Sólides. Jurídico permanece arquivo, fora das automações atuais.
 - Preservar a base financeira local, seus cálculos e a navegação de dashboard, catálogo e detalhes, sem inventar dados para novos serviços.
 

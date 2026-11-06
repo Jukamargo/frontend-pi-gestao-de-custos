@@ -1349,11 +1349,11 @@ Apresentar um placeholder profissional até o recebimento do vídeo real da equi
 
 Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 "
-"GC-KB-046","[GC-KB-046] Revisar o fluxo conceitual de consulta pelo chatbot","Revisar a explicação de entrada, processamento, análise e resultado como proposta futura de consulta.","Páginas institucionais","2 — Revisar a apresentação institucional","Alta","A validar","src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx","Identificar o fluxo como conceitual.
-Não associar as etapas a uma execução real inexistente.
+"GC-KB-046","[GC-KB-046] Apresentar o fluxo atualizado do agente externo","Revisar a sequência informada pela equipe: Manual Trigger, Consulta RH (Sólides), Consulta Financeiro (Omie) e Consolidação.","Páginas institucionais","2 — Revisar a apresentação institucional","Alta","A validar","src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx","Identificar as requisições separadas de RH e Financeiro e a Consolidação como nó próprio após a Omie.
+Apresentar o fluxo do agente externo sem executá-lo pelo front-end enquanto a integração estiver pendente.
 Anexar evidência de revisão ou entrega antes de concluir o cartão.","<!-- gestao-de-custos-kanban:GC-KB-046 -->
 
-Revisar a explicação de entrada, processamento, análise e resultado como proposta futura de consulta.
+Revisar a sequência informada pela equipe: Manual Trigger, Consulta RH (Sólides), Consulta Financeiro (Omie) e Consolidação.
 
 ## Informações do cartão
 
@@ -1371,19 +1371,19 @@ Revisar a explicação de entrada, processamento, análise e resultado como prop
 
 ## Critérios de aceite
 
-- [ ] Identificar o fluxo como conceitual.
-- [ ] Não associar as etapas a uma execução real inexistente.
+- [ ] Identificar as requisições separadas de RH e Financeiro e a Consolidação como nó próprio após a Omie.
+- [ ] Apresentar o fluxo do agente externo sem executá-lo pelo front-end enquanto a integração estiver pendente.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
 Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 "
-"GC-KB-047","[GC-KB-047] Alinhar Tecnologias a ferramentas, automações e chatbot","Revisar o diagrama e os textos sobre as ferramentas do backoffice, automações e o papel do chatbot externo.","Páginas institucionais","2 — Revisar a apresentação institucional","Alta","A validar","src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx","Distinguir a interface implementada das integrações propostas.
+"GC-KB-047","[GC-KB-047] Alinhar Tecnologias a ferramentas, automações e chatbot","Revisar o diagrama e os textos do backoffice, distinguindo as ferramentas, o chatbot externo e seu fluxo atualizado de quatro etapas.","Páginas institucionais","2 — Revisar a apresentação institucional","Alta","A validar","src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx","Distinguir a interface implementada das integrações propostas.
 Relacionar o mapa de RH à automação interna e identificar a integração de acesso ao chatbot como pendente.
 Anexar evidência de revisão ou entrega antes de concluir o cartão.","<!-- gestao-de-custos-kanban:GC-KB-047 -->
 
-Revisar o diagrama e os textos sobre as ferramentas do backoffice, automações e o papel do chatbot externo.
+Revisar o diagrama e os textos do backoffice, distinguindo as ferramentas, o chatbot externo e seu fluxo atualizado de quatro etapas.
 
 ## Informações do cartão
 
@@ -2759,11 +2759,11 @@ Alinhar com a equipe externa a forma de integrar o chatbot existente ao front-en
 
 Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 "
-"GC-KB-093","[GC-KB-093] Revisar a comunicação da integração do chatbot externo","Conferir os rótulos que distinguem o desenvolvimento externo do chatbot e a integração pendente neste front-end.","Demonstração e integração do chatbot","2 — Revisar a apresentação institucional","Alta","A validar","src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md","Informar que falta integrar o acesso, sem dizer que o chatbot ainda precisa ser criado.
-Não afirmar consulta em tempo real ou execução de automações.
+"GC-KB-093","[GC-KB-093] Revisar a comunicação da integração do chatbot externo","Conferir os rótulos do chatbot externo e registrar que suas respostas se baseiam na documentação oficial de Sólides e Omie, conforme informado pela equipe.","Demonstração e integração do chatbot","2 — Revisar a apresentação institucional","Alta","A validar","src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md","Informar que falta integrar o acesso, sem dizer que o chatbot ainda precisa ser criado.
+Não afirmar consulta em tempo real à documentação, mecanismo de busca ou contratos de API que não foram fornecidos.
 Anexar evidência de revisão ou entrega antes de concluir o cartão.","<!-- gestao-de-custos-kanban:GC-KB-093 -->
 
-Conferir os rótulos que distinguem o desenvolvimento externo do chatbot e a integração pendente neste front-end.
+Conferir os rótulos do chatbot externo e registrar que suas respostas se baseiam na documentação oficial de Sólides e Omie, conforme informado pela equipe.
 
 ## Informações do cartão
 
@@ -2782,7 +2782,7 @@ Conferir os rótulos que distinguem o desenvolvimento externo do chatbot e a int
 ## Critérios de aceite
 
 - [ ] Informar que falta integrar o acesso, sem dizer que o chatbot ainda precisa ser criado.
-- [ ] Não afirmar consulta em tempo real ou execução de automações.
+- [ ] Não afirmar consulta em tempo real à documentação, mecanismo de busca ou contratos de API que não foram fornecidos.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação

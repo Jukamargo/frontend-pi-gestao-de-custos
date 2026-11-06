@@ -311,14 +311,14 @@ export const groups = [
         'Evitar um botão de reprodução que prometa conteúdo inexistente.',
       ],
       [
-        'Revisar o fluxo conceitual de consulta pelo chatbot',
-        'Revisar a explicação de entrada, processamento, análise e resultado como proposta futura de consulta.',
-        'Identificar o fluxo como conceitual.',
-        'Não associar as etapas a uma execução real inexistente.',
+        'Apresentar o fluxo atualizado do agente externo',
+        'Revisar a sequência informada pela equipe: Manual Trigger, Consulta RH (Sólides), Consulta Financeiro (Omie) e Consolidação.',
+        'Identificar as requisições separadas de RH e Financeiro e a Consolidação como nó próprio após a Omie.',
+        'Apresentar o fluxo do agente externo sem executá-lo pelo front-end enquanto a integração estiver pendente.',
       ],
       [
         'Alinhar Tecnologias a ferramentas, automações e chatbot',
-        'Revisar o diagrama e os textos sobre as ferramentas do backoffice, automações e o papel do chatbot externo.',
+        'Revisar o diagrama e os textos do backoffice, distinguindo as ferramentas, o chatbot externo e seu fluxo atualizado de quatro etapas.',
         'Distinguir a interface implementada das integrações propostas.',
         'Relacionar o mapa de RH à automação interna e identificar a integração de acesso ao chatbot como pendente.',
       ],
@@ -643,9 +643,9 @@ export const groups = [
       ],
       [
         'Revisar a comunicação da integração do chatbot externo',
-        'Conferir os rótulos que distinguem o desenvolvimento externo do chatbot e a integração pendente neste front-end.',
+        'Conferir os rótulos do chatbot externo e registrar que suas respostas se baseiam na documentação oficial de Sólides e Omie, conforme informado pela equipe.',
         'Informar que falta integrar o acesso, sem dizer que o chatbot ainda precisa ser criado.',
-        'Não afirmar consulta em tempo real ou execução de automações.',
+        'Não afirmar consulta em tempo real à documentação, mecanismo de busca ou contratos de API que não foram fornecidos.',
       ],
       [
         'Validar a apresentação do vídeo ainda pendente',

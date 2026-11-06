@@ -61,7 +61,7 @@ A atualização reutiliza as mesmas issues. Não encerra tarefas, muda colunas o
 | GC-KB-043                | [#43](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/43)   | Revisar os benefícios institucionais da solução                   |
 | GC-KB-044                | [#44](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/44)   | Revisar a página Demonstração do projeto                          |
 | GC-KB-045                | [#45](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/45)   | Preservar o espaço reservado ao vídeo real                        |
-| GC-KB-046                | [#46](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/46)   | Revisar o fluxo conceitual de consulta pelo chatbot               |
+| GC-KB-046                | [#46](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/46)   | Apresentar o fluxo atualizado do agente externo                   |
 | GC-KB-047                | [#47](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/47)   | Alinhar Tecnologias a ferramentas, automações e chatbot           |
 | GC-KB-048                | [#48](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/48)   | Revisar a comunicação de integrações futuras                      |
 | GC-KB-049                | [#49](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/49)   | Revisar a linguagem profissional das páginas                      |

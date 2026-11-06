@@ -8,6 +8,8 @@ As observações posteriores sobre fornecedores e rotinas estão no [mapeamento 
 
 A pendência é [integrar o acesso ao chatbot externo](docs/CHATBOT.md). Nesta versão, há apenas o botão **Chatbot — em breve**, desabilitado até a configuração e validação dessa integração. O agente não será recriado neste repositório. A rota `/demonstracao` apresenta o contexto, o espaço reservado para o vídeo e o exemplo de custos por seletores.
 
+O fluxo informado pela equipe é **Manual Trigger → Consulta RH (Sólides) → Consulta Financeiro (Omie) → Consolidação**, com requisições separadas para RH e Financeiro e um nó próprio de consolidação após a Omie. As respostas têm como referência a documentação oficial dessas plataformas, conforme informado pelo responsável. Essa confirmação atualiza o agrupamento de nós descrito no documento original. Consulte o [registro do chatbot](docs/CHATBOT.md#fluxo-informado-do-agente-externo).
+
 Os **120 cartões solicitados são tarefas exclusivamente de front-end para o [Kanban externo no GitHub](https://github.com/users/Jukamargo/projects/2)**, com título e descrição, e não registros do dashboard financeiro nem tarefas de backend ou infraestrutura. O backlog e a publicação estão documentados em [docs/kanban](docs/kanban/README.md). A base fictícia de colaboradores da aplicação é independente desse quadro de tarefas.
 
 ## Caso de uso: custos por colaborador

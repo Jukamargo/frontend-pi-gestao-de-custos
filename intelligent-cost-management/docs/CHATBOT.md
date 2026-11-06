@@ -16,6 +16,21 @@ A rota `/demonstracao` apresenta a proposta, o vídeo ainda pendente e o caso de
 
 Os valores fictícios do dashboard, do catálogo e da consulta por seletores continuam usando a mesma regra de consolidação.
 
+## Fluxo informado do agente externo
+
+```text
+Manual Trigger
+  → Consulta RH (Sólides)
+  → Consulta Financeiro (Omie)
+  → Consolidação
+```
+
+As consultas a Sólides e Omie fazem **requisições separadas**. A Consolidação é um **nó próprio, após a consulta à Omie**, conforme a confirmação mais recente do responsável. Essa confirmação atualiza a estrutura anterior do documento de contexto, que agrupava a consulta financeira e a consolidação no mesmo nó.
+
+Segundo a equipe, as respostas são elaboradas com base na **documentação oficial de Sólides e Omie**. As referências específicas dos documentos não foram fornecidas; seu uso no agente externo não foi verificado neste repositório. A informação não define mecanismo de busca documental, consulta em tempo real aos documentos ou contrato de API específico.
+
+O fluxo é apresentado na rota `/demonstracao`. Sua execução pertence ao agente externo; esta interface não dispara essas requisições enquanto sua integração não estiver configurada.
+
 ## Integração pendente
 
 O desenvolvimento do chatbot pertence à equipe externa. O trabalho deste front-end é integrar o acesso ao serviço existente quando a forma de acesso for fornecida e validada. O botão deve ser habilitado somente após essa integração; não é necessário recriar o chatbot neste repositório.

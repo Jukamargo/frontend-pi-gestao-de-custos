@@ -10,6 +10,12 @@ O chatbot é desenvolvido externamente como canal de consulta às informações 
 
 A gestão de custos por colaborador é um caso de uso dessa proposta. Sua consolidação considera salário base, benefícios fixos e despesas variáveis, cruzando CPF e competência. Os cálculos e dados fictícios existentes foram preservados.
 
+## Fluxo atualizado do agente
+
+Conforme a confirmação mais recente do responsável: **Manual Trigger → Consulta RH (Sólides) → Consulta Financeiro (Omie) → Consolidação**. RH e Financeiro fazem requisições separadas; a Consolidação ocorre em nó próprio após a consulta financeira. Essa orientação prevalece sobre o agrupamento antigo de consulta financeira e consolidação no documento de contexto.
+
+As respostas usam como referência a documentação oficial de Sólides e Omie, segundo a equipe. A interface apresenta essa informação sem afirmar que acessou esses documentos ou validou a implementação externa. Consulte o [registro do chatbot](CHATBOT.md#fluxo-informado-do-agente-externo).
+
 ## O que pertence a cada etapa
 
 | Elemento                      | Descrito no projeto de referência                                                        | Executado por este front-end                                      |
