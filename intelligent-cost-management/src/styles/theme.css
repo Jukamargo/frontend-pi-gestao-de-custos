@@ -31,12 +31,12 @@
   --chart-series-5: #9aabbc;
   --chart-previous: #b9c9da;
   --chart-fill: #3976af;
-  --banner-background: #102a45;
-  --banner-end: #18436c;
-  --banner-text: #f3f7fc;
-  --banner-muted: #c1d0df;
-  --banner-accent: #a3c7ec;
-  --banner-line: #ffffff26;
+  --banner-background: #eaf1f8;
+  --banner-end: #f5f8fc;
+  --banner-text: #172c43;
+  --banner-muted: #4d627a;
+  --banner-accent: #245f9e;
+  --banner-line: #c5d4e4;
   --muted: var(--text-muted);
   --line: var(--border);
   --blue: var(--accent);
@@ -74,4 +74,8 @@
   --chart-fill: #8ab8ec;
   --banner-background: #0b1829;
   --banner-end: #142e4a;
+  --banner-text: #f3f7fc;
+  --banner-muted: #c1d0df;
+  --banner-accent: #a3c7ec;
+  --banner-line: #ffffff26;
 }
