@@ -1,8 +1,12 @@
 # Backlog de 120 tarefas de front-end — Gestão de custos
 
-Tarefas exclusivamente de front-end para o Kanban externo da equipe. Os identificadores GC-KB são internos deste backlog e não são números de issue do GitHub ou códigos GLPI. Todos os responsáveis e prazos permanecem a definir.
+Revisão: 2026-11-05 — Automação, ecossistema de RH e chatbot futuro.
 
-# [GC-KB-001] Configurar o projeto React com TypeScript
+Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo.
+
+Tarefas exclusivamente de front-end para o Kanban externo da equipe. Os identificadores GC-KB são internos deste backlog e não são números de issue do GitHub ou códigos GLPI. As sugestões não substituem responsáveis, prazos ou andamento registrados pela equipe.
+
+# [GC-KB-001] Revisar a configuração React, TypeScript e Vite
 
 <!-- gestao-de-custos-kanban:GC-KB-001 -->
 
@@ -10,17 +14,17 @@ Organizar a aplicação de interface com React, TypeScript e Vite, mantendo os c
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-001 |
-| Área | Arquitetura do front-end |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | package.json, vite.config.ts, tsconfig*.json e src/App.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                 |
+| ------------------------- | -------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-001                                                                  |
+| Área                      | Arquitetura do front-end                                                   |
+| Fase                      | 1 — Validar a base da interface                                            |
+| Prioridade proposta       | Alta                                                                       |
+| Situação inicial proposta | A validar                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                  |
+| Fonte                     | src/App.tsx, src/main.tsx, src/services e configurações do Vite/TypeScript |
+| Responsável               | A definir pela equipe                                                      |
+| Prazo                     | Não definido                                                               |
 
 ## Critérios de aceite
 
@@ -30,11 +34,11 @@ Organizar a aplicação de interface com React, TypeScript e Vite, mantendo os c
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-002] Organizar os diretórios da aplicação
+# [GC-KB-002] Validar a separação de páginas, dados e componentes
 
 <!-- gestao-de-custos-kanban:GC-KB-002 -->
 
@@ -42,17 +46,17 @@ Separar páginas, componentes compartilhados, dados de demonstração, serviços
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-002 |
-| Área | Arquitetura do front-end |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | package.json, vite.config.ts, tsconfig*.json e src/App.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                 |
+| ------------------------- | -------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-002                                                                  |
+| Área                      | Arquitetura do front-end                                                   |
+| Fase                      | 1 — Validar a base da interface                                            |
+| Prioridade proposta       | Alta                                                                       |
+| Situação inicial proposta | A validar                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                  |
+| Fonte                     | src/App.tsx, src/main.tsx, src/services e configurações do Vite/TypeScript |
+| Responsável               | A definir pela equipe                                                      |
+| Prazo                     | Não definido                                                               |
 
 ## Critérios de aceite
 
@@ -62,11 +66,11 @@ Separar páginas, componentes compartilhados, dados de demonstração, serviços
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-003] Habilitar a verificação estrita de tipos
+# [GC-KB-003] Revisar a tipagem dos dados compartilhados
 
 <!-- gestao-de-custos-kanban:GC-KB-003 -->
 
@@ -74,17 +78,17 @@ Configurar o TypeScript para detectar inconsistências nas propriedades dos comp
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-003 |
-| Área | Arquitetura do front-end |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | package.json, vite.config.ts, tsconfig*.json e src/App.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                 |
+| ------------------------- | -------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-003                                                                  |
+| Área                      | Arquitetura do front-end                                                   |
+| Fase                      | 1 — Validar a base da interface                                            |
+| Prioridade proposta       | Alta                                                                       |
+| Situação inicial proposta | A validar                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                  |
+| Fonte                     | src/App.tsx, src/main.tsx, src/services e configurações do Vite/TypeScript |
+| Responsável               | A definir pela equipe                                                      |
+| Prazo                     | Não definido                                                               |
 
 ## Critérios de aceite
 
@@ -94,11 +98,11 @@ Configurar o TypeScript para detectar inconsistências nas propriedades dos comp
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-004] Integrar o Tailwind ao processo de build
+# [GC-KB-004] Validar a composição dos estilos com o Vite
 
 <!-- gestao-de-custos-kanban:GC-KB-004 -->
 
@@ -106,17 +110,17 @@ Configurar o Tailwind CSS com o Vite e organizar sua convivência com os estilos
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-004 |
-| Área | Arquitetura do front-end |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | package.json, vite.config.ts, tsconfig*.json e src/App.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                 |
+| ------------------------- | -------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-004                                                                  |
+| Área                      | Arquitetura do front-end                                                   |
+| Fase                      | 1 — Validar a base da interface                                            |
+| Prioridade proposta       | Alta                                                                       |
+| Situação inicial proposta | A validar                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                  |
+| Fonte                     | src/App.tsx, src/main.tsx, src/services e configurações do Vite/TypeScript |
+| Responsável               | A definir pela equipe                                                      |
+| Prazo                     | Não definido                                                               |
 
 ## Critérios de aceite
 
@@ -126,11 +130,11 @@ Configurar o Tailwind CSS com o Vite e organizar sua convivência com os estilos
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-005] Configurar as rotas públicas do site
+# [GC-KB-005] Revisar as rotas institucionais e demonstrativas
 
 <!-- gestao-de-custos-kanban:GC-KB-005 -->
 
@@ -138,17 +142,17 @@ Definir rotas para início, projeto, benefícios, demonstração, tecnologias, d
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-005 |
-| Área | Arquitetura do front-end |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | package.json, vite.config.ts, tsconfig*.json e src/App.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                 |
+| ------------------------- | -------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-005                                                                  |
+| Área                      | Arquitetura do front-end                                                   |
+| Fase                      | 1 — Validar a base da interface                                            |
+| Prioridade proposta       | Alta                                                                       |
+| Situação inicial proposta | A validar                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                  |
+| Fonte                     | src/App.tsx, src/main.tsx, src/services e configurações do Vite/TypeScript |
+| Responsável               | A definir pela equipe                                                      |
+| Prazo                     | Não definido                                                               |
 
 ## Critérios de aceite
 
@@ -158,43 +162,43 @@ Definir rotas para início, projeto, benefícios, demonstração, tecnologias, d
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-006] Separar os layouts institucional e demonstrativo
+# [GC-KB-006] Preservar a separação entre apresentação e caso de custos
 
 <!-- gestao-de-custos-kanban:GC-KB-006 -->
 
-Organizar a apresentação institucional e a área de consulta de custos em layouts reutilizáveis, mantendo a identidade do mesmo produto.
+Revisar os layouts existentes para apresentar automação e conexão das ferramentas como objetivo geral, mantendo custos como um caso de uso.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-006 |
-| Área | Arquitetura do front-end |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | package.json, vite.config.ts, tsconfig*.json e src/App.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                 |
+| ------------------------- | -------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-006                                                                  |
+| Área                      | Arquitetura do front-end                                                   |
+| Fase                      | 1 — Validar a base da interface                                            |
+| Prioridade proposta       | Alta                                                                       |
+| Situação inicial proposta | A validar                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                  |
+| Fonte                     | src/App.tsx, src/main.tsx, src/services e configurações do Vite/TypeScript |
+| Responsável               | A definir pela equipe                                                      |
+| Prazo                     | Não definido                                                               |
 
 ## Critérios de aceite
 
-- [ ] Reutilizar os elementos comuns de navegação.
-- [ ] Aplicar os estilos de cada experiência sem afetar a outra.
+- [ ] Manter a abertura institucional em formato de banner.
+- [ ] Preservar as rotas de dashboard, catálogo e detalhes como demonstrações locais.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-007] Carregar as páginas da aplicação sob demanda
+# [GC-KB-007] Validar o carregamento sob demanda da aplicação
 
 <!-- gestao-de-custos-kanban:GC-KB-007 -->
 
@@ -202,17 +206,17 @@ Utilizar carregamento sob demanda nas páginas mais pesadas e apresentar um esta
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-007 |
-| Área | Arquitetura do front-end |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | package.json, vite.config.ts, tsconfig*.json e src/App.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                 |
+| ------------------------- | -------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-007                                                                  |
+| Área                      | Arquitetura do front-end                                                   |
+| Fase                      | 1 — Validar a base da interface                                            |
+| Prioridade proposta       | Alta                                                                       |
+| Situação inicial proposta | A validar                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                  |
+| Fonte                     | src/App.tsx, src/main.tsx, src/services e configurações do Vite/TypeScript |
+| Responsável               | A definir pela equipe                                                      |
+| Prazo                     | Não definido                                                               |
 
 ## Critérios de aceite
 
@@ -222,11 +226,11 @@ Utilizar carregamento sob demanda nas páginas mais pesadas e apresentar um esta
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-008] Atualizar o título do navegador por página
+# [GC-KB-008] Revisar títulos e metadados das páginas
 
 <!-- gestao-de-custos-kanban:GC-KB-008 -->
 
@@ -234,17 +238,17 @@ Definir títulos de documento coerentes com a página aberta e com o nome Gestã
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-008 |
-| Área | Arquitetura do front-end |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | package.json, vite.config.ts, tsconfig*.json e src/App.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                 |
+| ------------------------- | -------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-008                                                                  |
+| Área                      | Arquitetura do front-end                                                   |
+| Fase                      | 1 — Validar a base da interface                                            |
+| Prioridade proposta       | Alta                                                                       |
+| Situação inicial proposta | A validar                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                  |
+| Fonte                     | src/App.tsx, src/main.tsx, src/services e configurações do Vite/TypeScript |
+| Responsável               | A definir pela equipe                                                      |
+| Prazo                     | Não definido                                                               |
 
 ## Critérios de aceite
 
@@ -254,11 +258,11 @@ Definir títulos de documento coerentes com a página aberta e com o nome Gestã
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-009] Implementar a página de rota não encontrada
+# [GC-KB-009] Validar as rotas inexistentes
 
 <!-- gestao-de-custos-kanban:GC-KB-009 -->
 
@@ -266,17 +270,17 @@ Apresentar uma tela de erro amigável quando o endereço não corresponde a nenh
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-009 |
-| Área | Arquitetura do front-end |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | package.json, vite.config.ts, tsconfig*.json e src/App.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                 |
+| ------------------------- | -------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-009                                                                  |
+| Área                      | Arquitetura do front-end                                                   |
+| Fase                      | 1 — Validar a base da interface                                            |
+| Prioridade proposta       | Alta                                                                       |
+| Situação inicial proposta | A validar                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                  |
+| Fonte                     | src/App.tsx, src/main.tsx, src/services e configurações do Vite/TypeScript |
+| Responsável               | A definir pela equipe                                                      |
+| Prazo                     | Não definido                                                               |
 
 ## Critérios de aceite
 
@@ -286,11 +290,11 @@ Apresentar uma tela de erro amigável quando o endereço não corresponde a nenh
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-010] Isolar o acesso aos dados da interface
+# [GC-KB-010] Preservar a origem local dos dados demonstrativos
 
 <!-- gestao-de-custos-kanban:GC-KB-010 -->
 
@@ -298,17 +302,17 @@ Centralizar a leitura das fixtures e as consultas locais em uma camada de servi�
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-010 |
-| Área | Arquitetura do front-end |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | package.json, vite.config.ts, tsconfig*.json e src/App.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                 |
+| ------------------------- | -------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-010                                                                  |
+| Área                      | Arquitetura do front-end                                                   |
+| Fase                      | 1 — Validar a base da interface                                            |
+| Prioridade proposta       | Alta                                                                       |
+| Situação inicial proposta | A validar                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                  |
+| Fonte                     | src/App.tsx, src/main.tsx, src/services e configurações do Vite/TypeScript |
+| Responsável               | A definir pela equipe                                                      |
+| Prazo                     | Não definido                                                               |
 
 ## Critérios de aceite
 
@@ -318,43 +322,43 @@ Centralizar a leitura das fixtures e as consultas locais em uma camada de servi�
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-011] Definir os tokens visuais da aplicação
+# [GC-KB-011] Revisar os tokens semânticos dos dois temas
 
 <!-- gestao-de-custos-kanban:GC-KB-011 -->
 
-Padronizar cores, superfícies, bordas e estados de interação para manter consistência entre páginas institucionais e aplicação demonstrativa.
+Conferir os tokens de fundo, superfície, texto e borda nos temas claro e escuro.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-011 |
-| Área | Design system |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ui, src/styles/global.css e src/index.css |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-011                                                                              |
+| Área                      | Design system                                                                          |
+| Fase                      | 1 — Validar a base da interface                                                        |
+| Prioridade proposta       | Alta                                                                                   |
+| Situação inicial proposta | A validar                                                                              |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                              |
+| Fonte                     | src/styles/theme.css, src/styles/global.css, src/components/ui e src/hooks/useTheme.ts |
+| Responsável               | A definir pela equipe                                                                  |
+| Prazo                     | Não definido                                                                           |
 
 ## Critérios de aceite
 
-- [ ] Utilizar a paleta aprovada para o site.
-- [ ] Evitar cores isoladas sem função visual definida.
+- [ ] Manter contraste e distinção das superfícies nos dois temas.
+- [ ] Evitar cores fixas que mantenham superfícies escuras no modo claro.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-012] Configurar a tipografia Inter na interface
+# [GC-KB-012] Validar a tipografia Inter e os valores monetários
 
 <!-- gestao-de-custos-kanban:GC-KB-012 -->
 
@@ -362,17 +366,17 @@ Carregar a fonte Inter localmente e definir uma hierarquia legível para título
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-012 |
-| Área | Design system |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ui, src/styles/global.css e src/index.css |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-012                                                                              |
+| Área                      | Design system                                                                          |
+| Fase                      | 1 — Validar a base da interface                                                        |
+| Prioridade proposta       | Alta                                                                                   |
+| Situação inicial proposta | A validar                                                                              |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                              |
+| Fonte                     | src/styles/theme.css, src/styles/global.css, src/components/ui e src/hooks/useTheme.ts |
+| Responsável               | A definir pela equipe                                                                  |
+| Prazo                     | Não definido                                                                           |
 
 ## Critérios de aceite
 
@@ -382,11 +386,11 @@ Carregar a fonte Inter localmente e definir uma hierarquia legível para título
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-013] Criar o componente compartilhado de botão
+# [GC-KB-013] Revisar botões e links conforme sua função
 
 <!-- gestao-de-custos-kanban:GC-KB-013 -->
 
@@ -394,17 +398,17 @@ Implementar botões e links de ação com variantes principal e secundária, dim
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-013 |
-| Área | Design system |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ui, src/styles/global.css e src/index.css |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-013                                                                              |
+| Área                      | Design system                                                                          |
+| Fase                      | 1 — Validar a base da interface                                                        |
+| Prioridade proposta       | Alta                                                                                   |
+| Situação inicial proposta | A validar                                                                              |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                              |
+| Fonte                     | src/styles/theme.css, src/styles/global.css, src/components/ui e src/hooks/useTheme.ts |
+| Responsável               | A definir pela equipe                                                                  |
+| Prazo                     | Não definido                                                                           |
 
 ## Critérios de aceite
 
@@ -414,11 +418,11 @@ Implementar botões e links de ação com variantes principal e secundária, dim
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-014] Criar o componente de título de seção
+# [GC-KB-014] Validar a hierarquia dos títulos de seção
 
 <!-- gestao-de-custos-kanban:GC-KB-014 -->
 
@@ -426,17 +430,17 @@ Padronizar o cabeçalho das seções com texto de apoio, título e descrição o
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-014 |
-| Área | Design system |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ui, src/styles/global.css e src/index.css |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-014                                                                              |
+| Área                      | Design system                                                                          |
+| Fase                      | 1 — Validar a base da interface                                                        |
+| Prioridade proposta       | Alta                                                                                   |
+| Situação inicial proposta | A validar                                                                              |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                              |
+| Fonte                     | src/styles/theme.css, src/styles/global.css, src/components/ui e src/hooks/useTheme.ts |
+| Responsável               | A definir pela equipe                                                                  |
+| Prazo                     | Não definido                                                                           |
 
 ## Critérios de aceite
 
@@ -446,11 +450,11 @@ Padronizar o cabeçalho das seções com texto de apoio, título e descrição o
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-015] Criar o componente de indicador financeiro
+# [GC-KB-015] Revisar a apresentação dos indicadores financeiros
 
 <!-- gestao-de-custos-kanban:GC-KB-015 -->
 
@@ -458,17 +462,17 @@ Implementar o card de métrica com rótulo, valor, contexto e ícone opcional pa
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-015 |
-| Área | Design system |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ui, src/styles/global.css e src/index.css |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-015                                                                              |
+| Área                      | Design system                                                                          |
+| Fase                      | 1 — Validar a base da interface                                                        |
+| Prioridade proposta       | Alta                                                                                   |
+| Situação inicial proposta | A validar                                                                              |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                              |
+| Fonte                     | src/styles/theme.css, src/styles/global.css, src/components/ui e src/hooks/useTheme.ts |
+| Responsável               | A definir pela equipe                                                                  |
+| Prazo                     | Não definido                                                                           |
 
 ## Critérios de aceite
 
@@ -478,11 +482,11 @@ Implementar o card de métrica com rótulo, valor, contexto e ícone opcional pa
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-016] Criar o componente de status de variação
+# [GC-KB-016] Validar os status de variação de custos
 
 <!-- gestao-de-custos-kanban:GC-KB-016 -->
 
@@ -490,17 +494,17 @@ Apresentar Regular, Atenção e Redução com texto e distinção visual, sem de
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-016 |
-| Área | Design system |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ui, src/styles/global.css e src/index.css |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-016                                                                              |
+| Área                      | Design system                                                                          |
+| Fase                      | 1 — Validar a base da interface                                                        |
+| Prioridade proposta       | Alta                                                                                   |
+| Situação inicial proposta | A validar                                                                              |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                              |
+| Fonte                     | src/styles/theme.css, src/styles/global.css, src/components/ui e src/hooks/useTheme.ts |
+| Responsável               | A definir pela equipe                                                                  |
+| Prazo                     | Não definido                                                                           |
 
 ## Critérios de aceite
 
@@ -510,11 +514,11 @@ Apresentar Regular, Atenção e Redução com texto e distinção visual, sem de
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-017] Criar o contêiner compartilhado dos gráficos
+# [GC-KB-017] Revisar os contêineres e as legendas dos gráficos
 
 <!-- gestao-de-custos-kanban:GC-KB-017 -->
 
@@ -522,17 +526,17 @@ Organizar título, contexto e área de visualização dos gráficos em um compon
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-017 |
-| Área | Design system |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ui, src/styles/global.css e src/index.css |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-017                                                                              |
+| Área                      | Design system                                                                          |
+| Fase                      | 1 — Validar a base da interface                                                        |
+| Prioridade proposta       | Alta                                                                                   |
+| Situação inicial proposta | A validar                                                                              |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                              |
+| Fonte                     | src/styles/theme.css, src/styles/global.css, src/components/ui e src/hooks/useTheme.ts |
+| Responsável               | A definir pela equipe                                                                  |
+| Prazo                     | Não definido                                                                           |
 
 ## Critérios de aceite
 
@@ -542,11 +546,11 @@ Organizar título, contexto e área de visualização dos gráficos em um compon
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-018] Criar o componente de estado vazio
+# [GC-KB-018] Validar as mensagens de estado vazio
 
 <!-- gestao-de-custos-kanban:GC-KB-018 -->
 
@@ -554,17 +558,17 @@ Apresentar uma mensagem útil quando a busca ou os filtros não encontram colabo
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-018 |
-| Área | Design system |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ui, src/styles/global.css e src/index.css |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-018                                                                              |
+| Área                      | Design system                                                                          |
+| Fase                      | 1 — Validar a base da interface                                                        |
+| Prioridade proposta       | Alta                                                                                   |
+| Situação inicial proposta | A validar                                                                              |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                              |
+| Fonte                     | src/styles/theme.css, src/styles/global.css, src/components/ui e src/hooks/useTheme.ts |
+| Responsável               | A definir pela equipe                                                                  |
+| Prazo                     | Não definido                                                                           |
 
 ## Critérios de aceite
 
@@ -574,11 +578,11 @@ Apresentar uma mensagem útil quando a busca ou os filtros não encontram colabo
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-019] Padronizar a formatação monetária e percentual
+# [GC-KB-019] Preservar a formatação monetária e percentual
 
 <!-- gestao-de-custos-kanban:GC-KB-019 -->
 
@@ -586,17 +590,17 @@ Centralizar a apresentação de valores em reais e percentuais em português do 
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-019 |
-| Área | Design system |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ui, src/styles/global.css e src/index.css |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-019                                                                              |
+| Área                      | Design system                                                                          |
+| Fase                      | 1 — Validar a base da interface                                                        |
+| Prioridade proposta       | Alta                                                                                   |
+| Situação inicial proposta | A validar                                                                              |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                              |
+| Fonte                     | src/styles/theme.css, src/styles/global.css, src/components/ui e src/hooks/useTheme.ts |
+| Responsável               | A definir pela equipe                                                                  |
+| Prazo                     | Não definido                                                                           |
 
 ## Critérios de aceite
 
@@ -606,11 +610,11 @@ Centralizar a apresentação de valores em reais e percentuais em português do 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-020] Padronizar ícones e microinterações
+# [GC-KB-020] Revisar ícones e interações do visual empresarial
 
 <!-- gestao-de-custos-kanban:GC-KB-020 -->
 
@@ -618,17 +622,17 @@ Utilizar ícones Lucide e transições discretas para ações e informações, m
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-020 |
-| Área | Design system |
-| Fase | 1 — Estrutura da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ui, src/styles/global.css e src/index.css |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                             |
+| ------------------------- | -------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-020                                                                              |
+| Área                      | Design system                                                                          |
+| Fase                      | 1 — Validar a base da interface                                                        |
+| Prioridade proposta       | Alta                                                                                   |
+| Situação inicial proposta | A validar                                                                              |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                              |
+| Fonte                     | src/styles/theme.css, src/styles/global.css, src/components/ui e src/hooks/useTheme.ts |
+| Responsável               | A definir pela equipe                                                                  |
+| Prazo                     | Não definido                                                                           |
 
 ## Critérios de aceite
 
@@ -638,11 +642,11 @@ Utilizar ícones Lucide e transições discretas para ações e informações, m
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-021] Implementar a identificação visual do site
+# [GC-KB-021] Preservar o nome Gestão de custos na navegação
 
 <!-- gestao-de-custos-kanban:GC-KB-021 -->
 
@@ -650,17 +654,17 @@ Apresentar o nome Gestão de custos e o símbolo da aplicação nos pontos de na
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-021 |
-| Área | Layout e navegação |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/layout |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                 |
+| ------------------------- | ---------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-021                                                  |
+| Área                      | Layout e navegação                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                   |
+| Prioridade proposta       | Alta                                                       |
+| Situação inicial proposta | A validar                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente  |
+| Fonte                     | src/components/layout, src/App.tsx e src/styles/global.css |
+| Responsável               | A definir pela equipe                                      |
+| Prazo                     | Não definido                                               |
 
 ## Critérios de aceite
 
@@ -670,43 +674,43 @@ Apresentar o nome Gestão de custos e o símbolo da aplicação nos pontos de na
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-022] Implementar o cabeçalho para desktop
+# [GC-KB-022] Validar o cabeçalho nas larguras intermediárias
 
 <!-- gestao-de-custos-kanban:GC-KB-022 -->
 
-Organizar a navegação horizontal e o acesso ao dashboard no cabeçalho das páginas.
+Revisar o espaço entre marca, navegação, seletor de tema e ações nas larguras intermediárias.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-022 |
-| Área | Layout e navegação |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/layout |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                 |
+| ------------------------- | ---------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-022                                                  |
+| Área                      | Layout e navegação                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                   |
+| Prioridade proposta       | Alta                                                       |
+| Situação inicial proposta | A validar                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente  |
+| Fonte                     | src/components/layout, src/App.tsx e src/styles/global.css |
+| Responsável               | A definir pela equipe                                      |
+| Prazo                     | Não definido                                               |
 
 ## Critérios de aceite
 
-- [ ] Manter os links legíveis e clicáveis.
-- [ ] Preservar o layout sem sobreposição entre marca, navegação e ação principal.
+- [ ] Evitar colisões entre 768 e 1280 pixels.
+- [ ] Exibir o menu mobile antes de a navegação ficar comprimida.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-023] Implementar a indicação de rota ativa
+# [GC-KB-023] Conferir a indicação da página ativa
 
 <!-- gestao-de-custos-kanban:GC-KB-023 -->
 
@@ -714,17 +718,17 @@ Sinalizar visualmente a página atual nos menus de navegação.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-023 |
-| Área | Layout e navegação |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/layout |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                 |
+| ------------------------- | ---------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-023                                                  |
+| Área                      | Layout e navegação                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                   |
+| Prioridade proposta       | Alta                                                       |
+| Situação inicial proposta | A validar                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente  |
+| Fonte                     | src/components/layout, src/App.tsx e src/styles/global.css |
+| Responsável               | A definir pela equipe                                      |
+| Prazo                     | Não definido                                               |
 
 ## Critérios de aceite
 
@@ -734,11 +738,11 @@ Sinalizar visualmente a página atual nos menus de navegação.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-024] Implementar o acionamento do menu mobile
+# [GC-KB-024] Validar a abertura e o fechamento do menu mobile
 
 <!-- gestao-de-custos-kanban:GC-KB-024 -->
 
@@ -746,17 +750,17 @@ Exibir um botão de menu em telas menores e controlar a abertura da navegação 
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-024 |
-| Área | Layout e navegação |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/layout |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                 |
+| ------------------------- | ---------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-024                                                  |
+| Área                      | Layout e navegação                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                   |
+| Prioridade proposta       | Alta                                                       |
+| Situação inicial proposta | A validar                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente  |
+| Fonte                     | src/components/layout, src/App.tsx e src/styles/global.css |
+| Responsável               | A definir pela equipe                                      |
+| Prazo                     | Não definido                                               |
 
 ## Critérios de aceite
 
@@ -766,11 +770,11 @@ Exibir um botão de menu em telas menores e controlar a abertura da navegação 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-025] Implementar a navegação das opções do menu mobile
+# [GC-KB-025] Revisar os destinos e rótulos do menu mobile
 
 <!-- gestao-de-custos-kanban:GC-KB-025 -->
 
@@ -778,17 +782,17 @@ Disponibilizar as páginas previstas dentro do menu móvel e fechar o painel ap�
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-025 |
-| Área | Layout e navegação |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/layout |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                 |
+| ------------------------- | ---------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-025                                                  |
+| Área                      | Layout e navegação                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                   |
+| Prioridade proposta       | Alta                                                       |
+| Situação inicial proposta | A validar                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente  |
+| Fonte                     | src/components/layout, src/App.tsx e src/styles/global.css |
+| Responsável               | A definir pela equipe                                      |
+| Prazo                     | Não definido                                               |
 
 ## Critérios de aceite
 
@@ -798,11 +802,11 @@ Disponibilizar as páginas previstas dentro do menu móvel e fechar o painel ap�
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-026] Implementar o controle de foco do menu mobile
+# [GC-KB-026] Validar o foco e o Escape no menu mobile
 
 <!-- gestao-de-custos-kanban:GC-KB-026 -->
 
@@ -810,17 +814,17 @@ Manter o foco dentro do menu aberto e devolvê-lo ao acionador após o fechament
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-026 |
-| Área | Layout e navegação |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/layout |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                 |
+| ------------------------- | ---------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-026                                                  |
+| Área                      | Layout e navegação                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                   |
+| Prioridade proposta       | Alta                                                       |
+| Situação inicial proposta | A validar                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente  |
+| Fonte                     | src/components/layout, src/App.tsx e src/styles/global.css |
+| Responsável               | A definir pela equipe                                      |
+| Prazo                     | Não definido                                               |
 
 ## Critérios de aceite
 
@@ -830,11 +834,11 @@ Manter o foco dentro do menu aberto e devolvê-lo ao acionador após o fechament
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-027] Implementar o bloqueio da rolagem no menu aberto
+# [GC-KB-027] Conferir a rolagem durante a navegação modal
 
 <!-- gestao-de-custos-kanban:GC-KB-027 -->
 
@@ -842,17 +846,17 @@ Impedir a rolagem de fundo enquanto o menu móvel estiver ativo e restaurar o co
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-027 |
-| Área | Layout e navegação |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/layout |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                 |
+| ------------------------- | ---------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-027                                                  |
+| Área                      | Layout e navegação                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                   |
+| Prioridade proposta       | Alta                                                       |
+| Situação inicial proposta | A validar                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente  |
+| Fonte                     | src/components/layout, src/App.tsx e src/styles/global.css |
+| Responsável               | A definir pela equipe                                      |
+| Prazo                     | Não definido                                               |
 
 ## Critérios de aceite
 
@@ -862,11 +866,11 @@ Impedir a rolagem de fundo enquanto o menu móvel estiver ativo e restaurar o co
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-028] Implementar o rodapé institucional
+# [GC-KB-028] Revisar o rodapé e seus caminhos de navegação
 
 <!-- gestao-de-custos-kanban:GC-KB-028 -->
 
@@ -874,17 +878,17 @@ Organizar identificação do produto, contexto do projeto, links de navegação 
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-028 |
-| Área | Layout e navegação |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/layout |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                 |
+| ------------------------- | ---------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-028                                                  |
+| Área                      | Layout e navegação                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                   |
+| Prioridade proposta       | Alta                                                       |
+| Situação inicial proposta | A validar                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente  |
+| Fonte                     | src/components/layout, src/App.tsx e src/styles/global.css |
+| Responsável               | A definir pela equipe                                      |
+| Prazo                     | Não definido                                               |
 
 ## Critérios de aceite
 
@@ -894,11 +898,11 @@ Organizar identificação do produto, contexto do projeto, links de navegação 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-029] Implementar a navegação lateral da aplicação
+# [GC-KB-029] Validar a navegação entre dashboard e catálogo
 
 <!-- gestao-de-custos-kanban:GC-KB-029 -->
 
@@ -906,17 +910,17 @@ Criar a navegação entre dashboard e catálogo na área demonstrativa, adaptand
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-029 |
-| Área | Layout e navegação |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/layout |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                 |
+| ------------------------- | ---------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-029                                                  |
+| Área                      | Layout e navegação                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                   |
+| Prioridade proposta       | Alta                                                       |
+| Situação inicial proposta | A validar                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente  |
+| Fonte                     | src/components/layout, src/App.tsx e src/styles/global.css |
+| Responsável               | A definir pela equipe                                      |
+| Prazo                     | Não definido                                               |
 
 ## Critérios de aceite
 
@@ -926,11 +930,11 @@ Criar a navegação entre dashboard e catálogo na área demonstrativa, adaptand
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-030] Implementar o comportamento de foco e rolagem entre rotas
+# [GC-KB-030] Revisar foco, âncoras e rolagem entre páginas
 
 <!-- gestao-de-custos-kanban:GC-KB-030 -->
 
@@ -938,17 +942,17 @@ Reposicionar a experiência ao abrir uma página e direcionar o foco para o cont
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-030 |
-| Área | Layout e navegação |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/layout |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                 |
+| ------------------------- | ---------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-030                                                  |
+| Área                      | Layout e navegação                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                   |
+| Prioridade proposta       | Alta                                                       |
+| Situação inicial proposta | A validar                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente  |
+| Fonte                     | src/components/layout, src/App.tsx e src/styles/global.css |
+| Responsável               | A definir pela equipe                                      |
+| Prazo                     | Não definido                                               |
 
 ## Critérios de aceite
 
@@ -958,459 +962,459 @@ Reposicionar a experiência ao abrir uma página e direcionar o foco para o cont
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-031] Construir a seção principal da página inicial
+# [GC-KB-031] Validar o banner institucional da página inicial
 
 <!-- gestao-de-custos-kanban:GC-KB-031 -->
 
-Apresentar o foco em custo por colaborador com um título claro e uma descrição que conecte RH e Financeiro.
+Revisar o destaque de abertura como banner profissional sobre automação e conexão das ferramentas principais.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-031 |
-| Área | Página inicial |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Home/index.tsx e src/components/DashboardPreview.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                |
+| ------------------------- | --------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-031                                                 |
+| Área                      | Página inicial                                            |
+| Fase                      | 2 — Revisar a apresentação institucional                  |
+| Prioridade proposta       | Alta                                                      |
+| Situação inicial proposta | A validar                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente |
+| Fonte                     | src/pages/Home/index.tsx e src/styles/banner.css          |
+| Responsável               | A definir pela equipe                                     |
+| Prazo                     | Não definido                                              |
 
 ## Critérios de aceite
 
-- [ ] Explicar o propósito sem depender de jargões de IA.
-- [ ] Preservar o nome e a identidade do produto.
+- [ ] Apresentar mensagem principal clara e ações visíveis.
+- [ ] Manter composição equilibrada em desktop e celular.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-032] Implementar as ações principais da página inicial
+# [GC-KB-032] Manter o resumo operacional fora do destaque inicial
 
 <!-- gestao-de-custos-kanban:GC-KB-032 -->
 
-Disponibilizar caminhos diretos para o dashboard e para a consulta dos colaboradores demonstrativos.
+Conferir a remoção do resumo da operação e das prévias financeiras do destaque inicial, conforme a orientação mais recente.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-032 |
-| Área | Página inicial |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Home/index.tsx e src/components/DashboardPreview.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                |
+| ------------------------- | --------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-032                                                 |
+| Área                      | Página inicial                                            |
+| Fase                      | 2 — Revisar a apresentação institucional                  |
+| Prioridade proposta       | Alta                                                      |
+| Situação inicial proposta | A validar                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente |
+| Fonte                     | src/pages/Home/index.tsx e src/styles/banner.css          |
+| Responsável               | A definir pela equipe                                     |
+| Prazo                     | Não definido                                              |
 
 ## Critérios de aceite
 
-- [ ] Abrir os destinos corretos.
-- [ ] Distinguir a ação principal da ação complementar.
+- [ ] Não exibir resumo, KPIs ou gráficos no banner.
+- [ ] Evitar faixas redundantes de números ou etapas no destaque.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-033] Exibir a indicação de dados simulados no destaque inicial
+# [GC-KB-033] Revisar a descrição do objetivo no banner
 
 <!-- gestao-de-custos-kanban:GC-KB-033 -->
 
-Informar na apresentação inicial que os valores pertencem a uma demonstração com dados fictícios.
+Explicar a automação das rotinas e a proposta de consulta futura por chatbot com linguagem empresarial direta.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-033 |
-| Área | Página inicial |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Home/index.tsx e src/components/DashboardPreview.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                |
+| ------------------------- | --------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-033                                                 |
+| Área                      | Página inicial                                            |
+| Fase                      | 2 — Revisar a apresentação institucional                  |
+| Prioridade proposta       | Alta                                                      |
+| Situação inicial proposta | A validar                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente |
+| Fonte                     | src/pages/Home/index.tsx e src/styles/banner.css          |
+| Responsável               | A definir pela equipe                                     |
+| Prazo                     | Não definido                                              |
 
 ## Critérios de aceite
 
-- [ ] Manter a indicação visível junto às ações principais.
-- [ ] Não apresentar o cenário como informação real da empresa.
+- [ ] Tratar gestão de custos como um dos casos de uso.
+- [ ] Não afirmar que o chatbot ou as integrações já estão ativos.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-034] Construir a prévia visual do dashboard
+# [GC-KB-034] Validar a ação Conheça a solução
 
 <!-- gestao-de-custos-kanban:GC-KB-034 -->
 
-Apresentar na página inicial um resumo coerente com os indicadores da aplicação, utilizando a mesma base de dados.
+Revisar o destino, a legibilidade e o comportamento da chamada principal do banner.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-034 |
-| Área | Página inicial |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Home/index.tsx e src/components/DashboardPreview.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                |
+| ------------------------- | --------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-034                                                 |
+| Área                      | Página inicial                                            |
+| Fase                      | 2 — Revisar a apresentação institucional                  |
+| Prioridade proposta       | Alta                                                      |
+| Situação inicial proposta | A validar                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente |
+| Fonte                     | src/pages/Home/index.tsx e src/styles/banner.css          |
+| Responsável               | A definir pela equipe                                     |
+| Prazo                     | Não definido                                              |
 
 ## Critérios de aceite
 
-- [ ] Reconciliar total e contagens com o dashboard.
-- [ ] Manter a prévia legível nas telas previstas.
+- [ ] Navegar para a apresentação da solução por teclado e toque.
+- [ ] Manter rótulo e área de toque adequados.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-035] Exibir a evolução mensal na prévia do site
+# [GC-KB-035] Preservar o botão futuro do chatbot no banner
 
 <!-- gestao-de-custos-kanban:GC-KB-035 -->
 
-Integrar um gráfico resumido de evolução dos custos à apresentação inicial.
+Conferir o componente compartilhado que indica o acesso ao chatbot a ser criado posteriormente.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-035 |
-| Área | Página inicial |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Home/index.tsx e src/components/DashboardPreview.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                |
+| ------------------------- | --------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-035                                                 |
+| Área                      | Página inicial                                            |
+| Fase                      | 2 — Revisar a apresentação institucional                  |
+| Prioridade proposta       | Alta                                                      |
+| Situação inicial proposta | A validar                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente |
+| Fonte                     | src/pages/Home/index.tsx e src/styles/banner.css          |
+| Responsável               | A definir pela equipe                                     |
+| Prazo                     | Não definido                                              |
 
 ## Critérios de aceite
 
-- [ ] Usar os valores históricos dos registros demonstrativos.
-- [ ] Apresentar contexto de período e descrição acessível.
+- [ ] Exibir Chatbot — em breve desabilitado.
+- [ ] Não abrir chat, modal, conversa simulada ou serviço.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-036] Apresentar os números do cenário demonstrativo
+# [GC-KB-036] Conferir as cores visíveis do banner no modo claro
 
 <!-- gestao-de-custos-kanban:GC-KB-036 -->
 
-Exibir a quantidade de colaboradores, departamentos e meses de histórico calculada a partir das fixtures da aplicação.
+Validar o fundo realmente claro e o contraste do banner após a troca de tema.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-036 |
-| Área | Página inicial |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Home/index.tsx e src/components/DashboardPreview.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                |
+| ------------------------- | --------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-036                                                 |
+| Área                      | Página inicial                                            |
+| Fase                      | 2 — Revisar a apresentação institucional                  |
+| Prioridade proposta       | Alta                                                      |
+| Situação inicial proposta | A validar                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente |
+| Fonte                     | src/pages/Home/index.tsx e src/styles/banner.css          |
+| Responsável               | A definir pela equipe                                     |
+| Prazo                     | Não definido                                              |
 
 ## Critérios de aceite
 
-- [ ] Calcular as contagens a partir da base utilizada.
-- [ ] Distinguir essas contagens das tarefas do Kanban externo.
+- [ ] Conferir as cores calculadas além do atributo do documento.
+- [ ] Manter título, descrição e botões legíveis.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-037] Apresentar o contexto do projeto na página inicial
+# [GC-KB-037] Conferir a apresentação do banner no modo escuro
 
 <!-- gestao-de-custos-kanban:GC-KB-037 -->
 
-Introduzir a fragmentação de informações entre RH e Financeiro e a necessidade de consolidação por pessoa.
+Revisar a composição azul escura do banner no tema noturno.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-037 |
-| Área | Página inicial |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Home/index.tsx e src/components/DashboardPreview.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                |
+| ------------------------- | --------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-037                                                 |
+| Área                      | Página inicial                                            |
+| Fase                      | 2 — Revisar a apresentação institucional                  |
+| Prioridade proposta       | Alta                                                      |
+| Situação inicial proposta | A validar                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente |
+| Fonte                     | src/pages/Home/index.tsx e src/styles/banner.css          |
+| Responsável               | A definir pela equipe                                     |
+| Prazo                     | Não definido                                              |
 
 ## Critérios de aceite
 
-- [ ] Relacionar a narrativa ao escopo fornecido.
-- [ ] Evitar depoimentos ou resultados empresariais inventados.
+- [ ] Preservar a hierarquia entre fundo, texto e ações.
+- [ ] Alternar de tema sem camadas de cores incorretas.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-038] Exibir exemplos de composição de custos na página inicial
+# [GC-KB-038] Validar a adaptação contínua do banner
 
 <!-- gestao-de-custos-kanban:GC-KB-038 -->
 
-Apresentar alguns registros do catálogo como exemplos concretos de salário, benefícios e despesas variáveis.
+Revisar tamanhos fluidos, margens e ações nas larguras entre os pontos de quebra.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-038 |
-| Área | Página inicial |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Home/index.tsx e src/components/DashboardPreview.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                |
+| ------------------------- | --------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-038                                                 |
+| Área                      | Página inicial                                            |
+| Fase                      | 2 — Revisar a apresentação institucional                  |
+| Prioridade proposta       | Alta                                                      |
+| Situação inicial proposta | A validar                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente |
+| Fonte                     | src/pages/Home/index.tsx e src/styles/banner.css          |
+| Responsável               | A definir pela equipe                                     |
+| Prazo                     | Não definido                                              |
 
 ## Critérios de aceite
 
-- [ ] Reutilizar os dados e o componente de card da aplicação.
-- [ ] Identificar os exemplos como fictícios.
+- [ ] Evitar saltos, cortes e rolagem horizontal entre 320 e 1440 pixels.
+- [ ] Empilhar as ações no celular sem comprimir os rótulos.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-039] Organizar as seções institucionais da página inicial
+# [GC-KB-039] Revisar os exemplos de custos abaixo do banner
 
 <!-- gestao-de-custos-kanban:GC-KB-039 -->
 
-Compor benefícios, demonstração, arquitetura e chamadas para a aplicação em uma sequência compreensível.
+Conferir os exemplos financeiros abaixo do destaque sem devolver o resumo operacional ao banner.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-039 |
-| Área | Página inicial |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Home/index.tsx e src/components/DashboardPreview.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                |
+| ------------------------- | --------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-039                                                 |
+| Área                      | Página inicial                                            |
+| Fase                      | 2 — Revisar a apresentação institucional                  |
+| Prioridade proposta       | Alta                                                      |
+| Situação inicial proposta | A validar                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente |
+| Fonte                     | src/pages/Home/index.tsx e src/styles/banner.css          |
+| Responsável               | A definir pela equipe                                     |
+| Prazo                     | Não definido                                              |
 
 ## Critérios de aceite
 
-- [ ] Evitar repetição desnecessária da mesma prévia.
-- [ ] Permitir avançar da apresentação geral para páginas específicas.
+- [ ] Identificar os exemplos como fictícios.
+- [ ] Reutilizar os dados e o componente de card da aplicação.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-040] Implementar a chamada final para exploração da plataforma
+# [GC-KB-040] Revisar a sequência das seções institucionais
 
 <!-- gestao-de-custos-kanban:GC-KB-040 -->
 
-Encerrar a apresentação com acesso ao dashboard e ao catálogo de custos, contextualizando a demonstração.
+Revisar a continuidade da leitura entre banner, projeto, benefícios, demonstração e tecnologias.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-040 |
-| Área | Página inicial |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Home/index.tsx e src/components/DashboardPreview.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                |
+| ------------------------- | --------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-040                                                 |
+| Área                      | Página inicial                                            |
+| Fase                      | 2 — Revisar a apresentação institucional                  |
+| Prioridade proposta       | Alta                                                      |
+| Situação inicial proposta | A validar                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente |
+| Fonte                     | src/pages/Home/index.tsx e src/styles/banner.css          |
+| Responsável               | A definir pela equipe                                     |
+| Prazo                     | Não definido                                              |
 
 ## Critérios de aceite
 
-- [ ] Oferecer duas rotas de exploração funcionais.
-- [ ] Manter os textos coerentes com os recursos disponíveis.
+- [ ] Evitar repetição de promessas e explicações.
+- [ ] Manter acesso às páginas específicas e à demonstração financeira.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-041] Construir a página sobre o projeto
+# [GC-KB-041] Alinhar a página Sobre ao objetivo de automação
 
 <!-- gestao-de-custos-kanban:GC-KB-041 -->
 
-Apresentar problema, objetivo e contexto da centralização de custos de pessoas em uma página independente.
+Revisar a apresentação no contexto 2RPnet/Inovanet Tech e das rotinas informadas pela equipe.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-041 |
-| Área | Páginas institucionais |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/About, Benefits, AgentDemo, Technologies e src/components/MarketingSections.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-041                                                                                                               |
+| Área                      | Páginas institucionais                                                                                                  |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                |
+| Prioridade proposta       | Alta                                                                                                                    |
+| Situação inicial proposta | A validar                                                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                               |
+| Fonte                     | src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx |
+| Responsável               | A definir pela equipe                                                                                                   |
+| Prazo                     | Não definido                                                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Explicar a fragmentação de dados entre RH e Financeiro.
-- [ ] Manter a página acessível por rota própria.
+- [ ] Explicar a conexão das ferramentas principais ao chatbot futuro.
+- [ ] Não inventar tecnologias internas ou integrações em produção.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-042] Explicar as parcelas de custo no conteúdo institucional
+# [GC-KB-042] Distinguir o caso de custos do objetivo geral
 
 <!-- gestao-de-custos-kanban:GC-KB-042 -->
 
-Apresentar salário base, benefícios fixos e despesas variáveis como a fórmula de consolidação prevista no escopo.
+Conferir a narrativa que posiciona custos por colaborador como exemplo da proposta mais ampla de automação.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-042 |
-| Área | Páginas institucionais |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/About, Benefits, AgentDemo, Technologies e src/components/MarketingSections.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-042                                                                                                               |
+| Área                      | Páginas institucionais                                                                                                  |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                |
+| Prioridade proposta       | Alta                                                                                                                    |
+| Situação inicial proposta | A validar                                                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                               |
+| Fonte                     | src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx |
+| Responsável               | A definir pela equipe                                                                                                   |
+| Prazo                     | Não definido                                                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Identificar a origem de cada parcela.
-- [ ] Não acrescentar estimativas de encargos não definidas.
+- [ ] Preservar a regra salário + benefícios + despesas no exemplo.
+- [ ] Incluir RH, documentos e comunicação sem restringir a solução a finanças.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-043] Construir a página de benefícios da solução
+# [GC-KB-043] Revisar os benefícios institucionais da solução
 
 <!-- gestao-de-custos-kanban:GC-KB-043 -->
 
-Detalhar centralização, consulta por pessoa e competência, composição do custo e rastreabilidade de origem.
+Apresentar os benefícios esperados de visibilidade, redução de tarefas manuais e consulta de informações.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-043 |
-| Área | Páginas institucionais |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/About, Benefits, AgentDemo, Technologies e src/components/MarketingSections.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-043                                                                                                               |
+| Área                      | Páginas institucionais                                                                                                  |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                |
+| Prioridade proposta       | Alta                                                                                                                    |
+| Situação inicial proposta | A validar                                                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                               |
+| Fonte                     | src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx |
+| Responsável               | A definir pela equipe                                                                                                   |
+| Prazo                     | Não definido                                                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Relacionar cada benefício a uma função ou proposta identificável.
-- [ ] Evitar promessas de economia comprovada.
+- [ ] Não inventar resultados comprovados ou métricas de economia.
+- [ ] Relacionar cada benefício a uma proposta identificável.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-044] Construir a página de demonstração do agente
+# [GC-KB-044] Revisar a página Demonstração do projeto
 
 <!-- gestao-de-custos-kanban:GC-KB-044 -->
 
-Organizar a explicação do fluxo documentado e o acesso à consulta demonstrativa local.
+Conferir a apresentação da proposta, do vídeo pendente e do exemplo estruturado de custos.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-044 |
-| Área | Páginas institucionais |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/About, Benefits, AgentDemo, Technologies e src/components/MarketingSections.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-044                                                                                                               |
+| Área                      | Páginas institucionais                                                                                                  |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                |
+| Prioridade proposta       | Alta                                                                                                                    |
+| Situação inicial proposta | A validar                                                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                               |
+| Fonte                     | src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx |
+| Responsável               | A definir pela equipe                                                                                                   |
+| Prazo                     | Não definido                                                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Distinguir a apresentação do agente de sua execução real.
-- [ ] Manter a página disponível em rota própria.
+- [ ] Separar o cálculo local da disponibilidade futura do chatbot.
+- [ ] Não apresentar campo de perguntas ou conversa simulada.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-045] Preparar o espaço de vídeo da demonstração
+# [GC-KB-045] Preservar o espaço reservado ao vídeo real
 
 <!-- gestao-de-custos-kanban:GC-KB-045 -->
 
@@ -1418,17 +1422,17 @@ Apresentar um placeholder profissional até o recebimento do vídeo real da equi
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-045 |
-| Área | Páginas institucionais |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/About, Benefits, AgentDemo, Technologies e src/components/MarketingSections.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-045                                                                                                               |
+| Área                      | Páginas institucionais                                                                                                  |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                |
+| Prioridade proposta       | Alta                                                                                                                    |
+| Situação inicial proposta | A validar                                                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                               |
+| Fonte                     | src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx |
+| Responsável               | A definir pela equipe                                                                                                   |
+| Prazo                     | Não definido                                                                                                            |
 
 ## Critérios de aceite
 
@@ -1438,139 +1442,139 @@ Apresentar um placeholder profissional até o recebimento do vídeo real da equi
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-046] Apresentar o fluxo do agente em etapas visuais
+# [GC-KB-046] Revisar o fluxo conceitual de consulta pelo chatbot
 
 <!-- gestao-de-custos-kanban:GC-KB-046 -->
 
-Representar na interface solicitação, consulta RH, consulta financeira e consolidação dos resultados.
+Revisar a explicação de entrada, processamento, análise e resultado como proposta futura de consulta.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-046 |
-| Área | Páginas institucionais |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/About, Benefits, AgentDemo, Technologies e src/components/MarketingSections.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-046                                                                                                               |
+| Área                      | Páginas institucionais                                                                                                  |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                |
+| Prioridade proposta       | Alta                                                                                                                    |
+| Situação inicial proposta | A validar                                                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                               |
+| Fonte                     | src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx |
+| Responsável               | A definir pela equipe                                                                                                   |
+| Prazo                     | Não definido                                                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Explicar a função de cada etapa com linguagem clara.
-- [ ] Preservar a leitura do fluxo no celular.
+- [ ] Identificar o fluxo como conceitual.
+- [ ] Não associar as etapas a uma execução real inexistente.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-047] Construir a página de tecnologias do projeto
+# [GC-KB-047] Alinhar Tecnologias a ferramentas, automações e chatbot
 
 <!-- gestao-de-custos-kanban:GC-KB-047 -->
 
-Apresentar a arquitetura documentada e os recursos de interface utilizados pelo front-end.
+Revisar o diagrama e os textos sobre ecossistema, automações e arquitetura conceitual.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-047 |
-| Área | Páginas institucionais |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/About, Benefits, AgentDemo, Technologies e src/components/MarketingSections.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-047                                                                                                               |
+| Área                      | Páginas institucionais                                                                                                  |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                |
+| Prioridade proposta       | Alta                                                                                                                    |
+| Situação inicial proposta | A validar                                                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                               |
+| Fonte                     | src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx |
+| Responsável               | A definir pela equipe                                                                                                   |
+| Prazo                     | Não definido                                                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Separar implementação documentada do projeto e execução local do site.
-- [ ] Identificar BigQuery como evolução prevista no contexto.
+- [ ] Distinguir a interface implementada das integrações propostas.
+- [ ] Relacionar o mapa de RH ao objetivo de consulta futura por chatbot.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-048] Distinguir integrações documentadas e conexões ativas
+# [GC-KB-048] Revisar a comunicação de integrações futuras
 
 <!-- gestao-de-custos-kanban:GC-KB-048 -->
 
-Revisar textos e rótulos para não apresentar os serviços e o workflow como se estivessem conectados ao navegador.
+Conferir verbos, legendas e situações usados para falar das ferramentas citadas no escopo.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-048 |
-| Área | Páginas institucionais |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/About, Benefits, AgentDemo, Technologies e src/components/MarketingSections.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-048                                                                                                               |
+| Área                      | Páginas institucionais                                                                                                  |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                |
+| Prioridade proposta       | Alta                                                                                                                    |
+| Situação inicial proposta | A validar                                                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                               |
+| Fonte                     | src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx |
+| Responsável               | A definir pela equipe                                                                                                   |
+| Prazo                     | Não definido                                                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Informar quando uma informação vem do contexto do projeto.
-- [ ] Indicar explicitamente o cálculo local da demonstração.
+- [ ] Não tratar os rótulos API do diagrama como contratos validados.
+- [ ] Identificar propostas, restrições e pontos em análise.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-049] Revisar a linguagem institucional do front-end
+# [GC-KB-049] Revisar a linguagem profissional das páginas
 
 <!-- gestao-de-custos-kanban:GC-KB-049 -->
 
-Ajustar títulos e descrições para uma apresentação direta sobre gestão de custos, mantendo o visual sóbrio solicitado.
+Revisar textos institucionais para uma comunicação direta sobre as rotinas mapeadas e o objetivo do projeto.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-049 |
-| Área | Páginas institucionais |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/About, Benefits, AgentDemo, Technologies e src/components/MarketingSections.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-049                                                                                                               |
+| Área                      | Páginas institucionais                                                                                                  |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                |
+| Prioridade proposta       | Alta                                                                                                                    |
+| Situação inicial proposta | A validar                                                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                               |
+| Fonte                     | src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx |
+| Responsável               | A definir pela equipe                                                                                                   |
+| Prazo                     | Não definido                                                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Reduzir termos genéricos e efeitos associados a uma apresentação artificial.
-- [ ] Preservar os nomes e fatos fornecidos pelo responsável.
+- [ ] Remover termos genéricos e promessas exageradas.
+- [ ] Não inventar clientes, tecnologias ou capacidades disponíveis.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-050] Validar a correspondência visual com o protótipo disponível
+# [GC-KB-050] Validar a correspondência visual quando o Figma estiver acessível
 
 <!-- gestao-de-custos-kanban:GC-KB-050 -->
 
@@ -1578,17 +1582,17 @@ Comparar componentes, espaçamentos e páginas com o Figma quando o acesso ao ar
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-050 |
-| Área | Páginas institucionais |
-| Fase | 2 — Páginas institucionais |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A fazer |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/About, Benefits, AgentDemo, Technologies e src/components/MarketingSections.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                              |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-050                                                                                                               |
+| Área                      | Páginas institucionais                                                                                                  |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                |
+| Prioridade proposta       | Alta                                                                                                                    |
+| Situação inicial proposta | A fazer                                                                                                                 |
+| Referência de execução    | Validação dependente do acesso ao Figma; aceite visual pendente                                                         |
+| Fonte                     | src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx |
+| Responsável               | A definir pela equipe                                                                                                   |
+| Prazo                     | Não definido                                                                                                            |
 
 ## Critérios de aceite
 
@@ -1598,11 +1602,11 @@ Comparar componentes, espaçamentos e páginas com o Figma quando o acesso ao ar
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-051] Construir a página de catálogo de custos
+# [GC-KB-051] Revisar a página do catálogo demonstrativo
 
 <!-- gestao-de-custos-kanban:GC-KB-051 -->
 
@@ -1610,17 +1614,17 @@ Organizar a consulta dos colaboradores demonstrativos com cabeçalho, aviso de s
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-051 |
-| Área | Cards de custos |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/cards/CostCard.tsx, src/types/cost.ts e src/pages/CostCatalog |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-051                                                                        |
+| Área                      | Catálogo e detalhes de custos                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                            |
+| Prioridade proposta       | Média                                                                            |
+| Situação inicial proposta | A validar                                                                        |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                        |
+| Fonte                     | src/pages/CostCatalog, src/pages/CostDetails e src/components/cards/CostCard.tsx |
+| Responsável               | A definir pela equipe                                                            |
+| Prazo                     | Não definido                                                                     |
 
 ## Critérios de aceite
 
@@ -1630,11 +1634,11 @@ Organizar a consulta dos colaboradores demonstrativos com cabeçalho, aviso de s
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-052] Criar o componente reutilizável de card de custo
+# [GC-KB-052] Preservar o componente reutilizável de custo
 
 <!-- gestao-de-custos-kanban:GC-KB-052 -->
 
@@ -1642,17 +1646,17 @@ Implementar uma única estrutura de card renderizada a partir dos registros tipa
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-052 |
-| Área | Cards de custos |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/cards/CostCard.tsx, src/types/cost.ts e src/pages/CostCatalog |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-052                                                                        |
+| Área                      | Catálogo e detalhes de custos                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                            |
+| Prioridade proposta       | Média                                                                            |
+| Situação inicial proposta | A validar                                                                        |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                        |
+| Fonte                     | src/pages/CostCatalog, src/pages/CostDetails e src/components/cards/CostCard.tsx |
+| Responsável               | A definir pela equipe                                                            |
+| Prazo                     | Não definido                                                                     |
 
 ## Critérios de aceite
 
@@ -1662,11 +1666,11 @@ Implementar uma única estrutura de card renderizada a partir dos registros tipa
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-053] Exibir nome e identificação do colaborador no card
+# [GC-KB-053] Conferir títulos e identificação dos colaboradores
 
 <!-- gestao-de-custos-kanban:GC-KB-053 -->
 
@@ -1674,17 +1678,17 @@ Apresentar título legível com o nome fictício e o identificador de negócio d
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-053 |
-| Área | Cards de custos |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/cards/CostCard.tsx, src/types/cost.ts e src/pages/CostCatalog |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-053                                                                        |
+| Área                      | Catálogo e detalhes de custos                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                            |
+| Prioridade proposta       | Média                                                                            |
+| Situação inicial proposta | A validar                                                                        |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                        |
+| Fonte                     | src/pages/CostCatalog, src/pages/CostDetails e src/components/cards/CostCard.tsx |
+| Responsável               | A definir pela equipe                                                            |
+| Prazo                     | Não definido                                                                     |
 
 ## Critérios de aceite
 
@@ -1694,235 +1698,235 @@ Apresentar título legível com o nome fictício e o identificador de negócio d
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-054] Exibir a descrição contextual do colaborador no card
+# [GC-KB-054] Revisar a tabela de composição de cada card
 
 <!-- gestao-de-custos-kanban:GC-KB-054 -->
 
-Apresentar cargo, departamento e contexto da composição mensal de forma objetiva.
+Conferir as linhas de salário, benefícios e despesas de cada card.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-054 |
-| Área | Cards de custos |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/cards/CostCard.tsx, src/types/cost.ts e src/pages/CostCatalog |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-054                                                                        |
+| Área                      | Catálogo e detalhes de custos                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                            |
+| Prioridade proposta       | Média                                                                            |
+| Situação inicial proposta | A validar                                                                        |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                        |
+| Fonte                     | src/pages/CostCatalog, src/pages/CostDetails e src/components/cards/CostCard.tsx |
+| Responsável               | A definir pela equipe                                                            |
+| Prazo                     | Não definido                                                                     |
 
 ## Critérios de aceite
 
-- [ ] Utilizar informações do registro exibido.
-- [ ] Manter a descrição legível em diferentes tamanhos de card.
+- [ ] Somar as parcelas ao total mensal exibido.
+- [ ] Manter tabela semântica e legível no celular.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-055] Exibir o custo mensal consolidado no card
+# [GC-KB-055] Validar valor mensal e status dos cards
 
 <!-- gestao-de-custos-kanban:GC-KB-055 -->
 
-Destacar o valor calculado a partir de salário, benefícios e despesas variáveis do colaborador.
+Revisar custo, competência, variação percentual e sinalização visual dos cards.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-055 |
-| Área | Cards de custos |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/cards/CostCard.tsx, src/types/cost.ts e src/pages/CostCatalog |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-055                                                                        |
+| Área                      | Catálogo e detalhes de custos                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                            |
+| Prioridade proposta       | Média                                                                            |
+| Situação inicial proposta | A validar                                                                        |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                        |
+| Fonte                     | src/pages/CostCatalog, src/pages/CostDetails e src/components/cards/CostCard.tsx |
+| Responsável               | A definir pela equipe                                                            |
+| Prazo                     | Não definido                                                                     |
 
 ## Critérios de aceite
 
-- [ ] Usar formatação monetária pt-BR.
-- [ ] Reconciliar o total com as parcelas apresentadas.
+- [ ] Exibir valor em reais e referência mensal correta.
+- [ ] Usar a mesma regra de status nas outras telas.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-056] Exibir a tabela de composição dentro do card
+# [GC-KB-056] Preservar a base determinística de colaboradores
 
 <!-- gestao-de-custos-kanban:GC-KB-056 -->
 
-Organizar salário base, benefícios e despesas variáveis em uma tabela compacta de leitura rápida.
+Conferir os 120 registros fictícios do site, separados das 120 tarefas externas do Kanban.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-056 |
-| Área | Cards de custos |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/cards/CostCard.tsx, src/types/cost.ts e src/pages/CostCatalog |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-056                                                                        |
+| Área                      | Catálogo e detalhes de custos                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                            |
+| Prioridade proposta       | Média                                                                            |
+| Situação inicial proposta | A validar                                                                        |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                        |
+| Fonte                     | src/pages/CostCatalog, src/pages/CostDetails e src/components/cards/CostCard.tsx |
+| Responsável               | A definir pela equipe                                                            |
+| Prazo                     | Não definido                                                                     |
 
 ## Critérios de aceite
 
-- [ ] Usar cabeçalhos de linha associados aos valores.
-- [ ] Manter a tabela dentro dos limites do card no celular.
+- [ ] Manter IDs únicos e valores estáveis entre execuções.
+- [ ] Compartilhar a coleção com dashboard e detalhes.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-057] Exibir competência e fontes dos valores no card
+# [GC-KB-057] Validar os links dos cards para os detalhes
 
 <!-- gestao-de-custos-kanban:GC-KB-057 -->
 
-Apresentar a referência mensal e a indicação de fontes simuladas Sólides e Omie.
+Conferir o destino e o nome acessível da ação de detalhes de cada card.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-057 |
-| Área | Cards de custos |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/cards/CostCard.tsx, src/types/cost.ts e src/pages/CostCatalog |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-057                                                                        |
+| Área                      | Catálogo e detalhes de custos                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                            |
+| Prioridade proposta       | Média                                                                            |
+| Situação inicial proposta | A validar                                                                        |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                        |
+| Fonte                     | src/pages/CostCatalog, src/pages/CostDetails e src/components/cards/CostCard.tsx |
+| Responsável               | A definir pela equipe                                                            |
+| Prazo                     | Não definido                                                                     |
 
 ## Critérios de aceite
 
-- [ ] Derivar o período do registro apresentado.
-- [ ] Distinguir fonte simulada de consulta externa ativa.
+- [ ] Abrir o registro selecionado por teclado e toque.
+- [ ] Permitir retornar ao catálogo mantendo o contexto da consulta.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-058] Exibir status e variação mensal no card
+# [GC-KB-058] Revisar os dados cadastrais nos detalhes
 
 <!-- gestao-de-custos-kanban:GC-KB-058 -->
 
-Apresentar o percentual de variação e o rótulo Regular, Atenção ou Redução de acordo com as regras demonstrativas.
+Revisar nome fictício, identificador, cargo, departamento e competência nos detalhes.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-058 |
-| Área | Cards de custos |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/cards/CostCard.tsx, src/types/cost.ts e src/pages/CostCatalog |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-058                                                                        |
+| Área                      | Catálogo e detalhes de custos                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                            |
+| Prioridade proposta       | Média                                                                            |
+| Situação inicial proposta | A validar                                                                        |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                        |
+| Fonte                     | src/pages/CostCatalog, src/pages/CostDetails e src/components/cards/CostCard.tsx |
+| Responsável               | A definir pela equipe                                                            |
+| Prazo                     | Não definido                                                                     |
 
 ## Critérios de aceite
 
-- [ ] Conferir a comparação com o mês anterior.
-- [ ] Não confundir o status financeiro com status contratual.
+- [ ] Apresentar apenas informações da base e mascarar o CPF.
+- [ ] Manter correspondência com o card de origem.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-059] Implementar o acesso aos detalhes pelo card
+# [GC-KB-059] Conferir benefícios e despesas nos detalhes do custo
 
 <!-- gestao-de-custos-kanban:GC-KB-059 -->
 
-Disponibilizar uma ação para abrir a composição completa do custo da pessoa selecionada.
+Conferir benefícios, lançamentos variáveis, origens e subtotais nos detalhes.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-059 |
-| Área | Cards de custos |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/cards/CostCard.tsx, src/types/cost.ts e src/pages/CostCatalog |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-059                                                                        |
+| Área                      | Catálogo e detalhes de custos                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                            |
+| Prioridade proposta       | Média                                                                            |
+| Situação inicial proposta | A validar                                                                        |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                        |
+| Fonte                     | src/pages/CostCatalog, src/pages/CostDetails e src/components/cards/CostCard.tsx |
+| Responsável               | A definir pela equipe                                                            |
+| Prazo                     | Não definido                                                                     |
 
 ## Critérios de aceite
 
-- [ ] Navegar para o identificador correspondente.
-- [ ] Fornecer um nome acessível que identifique o colaborador.
+- [ ] Reconciliar parcelas e total com o serviço compartilhado.
+- [ ] Não inventar novos valores para serviços do mapa de RH.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-060] Organizar o grid responsivo dos cards de custos
+# [GC-KB-060] Validar o histórico individual e os detalhes inexistentes
 
 <!-- gestao-de-custos-kanban:GC-KB-060 -->
 
-Adaptar o catálogo ao espaço disponível com colunas adequadas para desktop, tablet e celular.
+Revisar a série individual e o tratamento de um identificador desconhecido nos detalhes.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-060 |
-| Área | Cards de custos |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/cards/CostCard.tsx, src/types/cost.ts e src/pages/CostCatalog |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                       |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-060                                                                        |
+| Área                      | Catálogo e detalhes de custos                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                            |
+| Prioridade proposta       | Média                                                                            |
+| Situação inicial proposta | A validar                                                                        |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                        |
+| Fonte                     | src/pages/CostCatalog, src/pages/CostDetails e src/components/cards/CostCard.tsx |
+| Responsável               | A definir pela equipe                                                            |
+| Prazo                     | Não definido                                                                     |
 
 ## Critérios de aceite
 
-- [ ] Exibir uma coluna em telas pequenas.
-- [ ] Preservar alinhamento e legibilidade dos conteúdos.
+- [ ] Usar o histórico do registro selecionado na mesma base.
+- [ ] Exibir estado de registro inexistente sem erro e com retorno ao catálogo.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-061] Implementar a busca textual dos colaboradores
+# [GC-KB-061] Validar a busca por nome, cargo e identificação
 
 <!-- gestao-de-custos-kanban:GC-KB-061 -->
 
@@ -1930,17 +1934,17 @@ Permitir localizar registros pelo nome, cargo, descrição ou identificador exib
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-061 |
-| Área | Filtros e paginação |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/CostFilters.tsx e src/hooks/useCostFilters.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-061                                                                           |
+| Área                      | Filtros e paginação                                                                 |
+| Fase                      | 3 — Preservar o caso de uso de custos                                               |
+| Prioridade proposta       | Média                                                                               |
+| Situação inicial proposta | A validar                                                                           |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                           |
+| Fonte                     | src/hooks/useCostFilters.ts, src/components/CostFilters.tsx e src/pages/CostCatalog |
+| Responsável               | A definir pela equipe                                                               |
+| Prazo                     | Não definido                                                                        |
 
 ## Critérios de aceite
 
@@ -1950,11 +1954,11 @@ Permitir localizar registros pelo nome, cargo, descrição ou identificador exib
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-062] Normalizar acentos e caixa na busca da interface
+# [GC-KB-062] Revisar a busca sem distinção de acentos
 
 <!-- gestao-de-custos-kanban:GC-KB-062 -->
 
@@ -1962,17 +1966,17 @@ Permitir consultas equivalentes com ou sem acentos e sem diferença entre maiús
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-062 |
-| Área | Filtros e paginação |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/CostFilters.tsx e src/hooks/useCostFilters.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-062                                                                           |
+| Área                      | Filtros e paginação                                                                 |
+| Fase                      | 3 — Preservar o caso de uso de custos                                               |
+| Prioridade proposta       | Média                                                                               |
+| Situação inicial proposta | A validar                                                                           |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                           |
+| Fonte                     | src/hooks/useCostFilters.ts, src/components/CostFilters.tsx e src/pages/CostCatalog |
+| Responsável               | A definir pela equipe                                                               |
+| Prazo                     | Não definido                                                                        |
 
 ## Critérios de aceite
 
@@ -1982,11 +1986,11 @@ Permitir consultas equivalentes com ou sem acentos e sem diferença entre maiús
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-063] Implementar o filtro por departamento
+# [GC-KB-063] Validar o filtro por departamento
 
 <!-- gestao-de-custos-kanban:GC-KB-063 -->
 
@@ -1994,17 +1998,17 @@ Disponibilizar opções de TI, Financeiro, Operações e RH a partir dos departa
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-063 |
-| Área | Filtros e paginação |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/CostFilters.tsx e src/hooks/useCostFilters.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-063                                                                           |
+| Área                      | Filtros e paginação                                                                 |
+| Fase                      | 3 — Preservar o caso de uso de custos                                               |
+| Prioridade proposta       | Média                                                                               |
+| Situação inicial proposta | A validar                                                                           |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                           |
+| Fonte                     | src/hooks/useCostFilters.ts, src/components/CostFilters.tsx e src/pages/CostCatalog |
+| Responsável               | A definir pela equipe                                                               |
+| Prazo                     | Não definido                                                                        |
 
 ## Critérios de aceite
 
@@ -2014,11 +2018,11 @@ Disponibilizar opções de TI, Financeiro, Operações e RH a partir dos departa
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-064] Implementar o filtro por variação de custo
+# [GC-KB-064] Validar o filtro por variação de custo
 
 <!-- gestao-de-custos-kanban:GC-KB-064 -->
 
@@ -2026,17 +2030,17 @@ Permitir restringir os resultados pelos status financeiros demonstrativos.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-064 |
-| Área | Filtros e paginação |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/CostFilters.tsx e src/hooks/useCostFilters.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-064                                                                           |
+| Área                      | Filtros e paginação                                                                 |
+| Fase                      | 3 — Preservar o caso de uso de custos                                               |
+| Prioridade proposta       | Média                                                                               |
+| Situação inicial proposta | A validar                                                                           |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                           |
+| Fonte                     | src/hooks/useCostFilters.ts, src/components/CostFilters.tsx e src/pages/CostCatalog |
+| Responsável               | A definir pela equipe                                                               |
+| Prazo                     | Não definido                                                                        |
 
 ## Critérios de aceite
 
@@ -2046,11 +2050,11 @@ Permitir restringir os resultados pelos status financeiros demonstrativos.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-065] Implementar a ordenação por valor
+# [GC-KB-065] Revisar a ordenação por valor
 
 <!-- gestao-de-custos-kanban:GC-KB-065 -->
 
@@ -2058,17 +2062,17 @@ Permitir organizar os resultados pelo maior ou menor custo mensal consolidado.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-065 |
-| Área | Filtros e paginação |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/CostFilters.tsx e src/hooks/useCostFilters.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-065                                                                           |
+| Área                      | Filtros e paginação                                                                 |
+| Fase                      | 3 — Preservar o caso de uso de custos                                               |
+| Prioridade proposta       | Média                                                                               |
+| Situação inicial proposta | A validar                                                                           |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                           |
+| Fonte                     | src/hooks/useCostFilters.ts, src/components/CostFilters.tsx e src/pages/CostCatalog |
+| Responsável               | A definir pela equipe                                                               |
+| Prazo                     | Não definido                                                                        |
 
 ## Critérios de aceite
 
@@ -2078,11 +2082,11 @@ Permitir organizar os resultados pelo maior ou menor custo mensal consolidado.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-066] Implementar a ordenação alfabética dos registros
+# [GC-KB-066] Validar a ordenação alfabética dos registros
 
 <!-- gestao-de-custos-kanban:GC-KB-066 -->
 
@@ -2090,17 +2094,17 @@ Disponibilizar a organização dos colaboradores pelo nome, respeitando a ordena
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-066 |
-| Área | Filtros e paginação |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/CostFilters.tsx e src/hooks/useCostFilters.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-066                                                                           |
+| Área                      | Filtros e paginação                                                                 |
+| Fase                      | 3 — Preservar o caso de uso de custos                                               |
+| Prioridade proposta       | Média                                                                               |
+| Situação inicial proposta | A validar                                                                           |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                           |
+| Fonte                     | src/hooks/useCostFilters.ts, src/components/CostFilters.tsx e src/pages/CostCatalog |
+| Responsável               | A definir pela equipe                                                               |
+| Prazo                     | Não definido                                                                        |
 
 ## Critérios de aceite
 
@@ -2110,11 +2114,11 @@ Disponibilizar a organização dos colaboradores pelo nome, respeitando a ordena
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-067] Implementar a navegação paginada do catálogo
+# [GC-KB-067] Revisar a navegação de páginas do catálogo
 
 <!-- gestao-de-custos-kanban:GC-KB-067 -->
 
@@ -2122,17 +2126,17 @@ Organizar os resultados em páginas e disponibilizar controles para avançar, vo
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-067 |
-| Área | Filtros e paginação |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/CostFilters.tsx e src/hooks/useCostFilters.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-067                                                                           |
+| Área                      | Filtros e paginação                                                                 |
+| Fase                      | 3 — Preservar o caso de uso de custos                                               |
+| Prioridade proposta       | Média                                                                               |
+| Situação inicial proposta | A validar                                                                           |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                           |
+| Fonte                     | src/hooks/useCostFilters.ts, src/components/CostFilters.tsx e src/pages/CostCatalog |
+| Responsável               | A definir pela equipe                                                               |
+| Prazo                     | Não definido                                                                        |
 
 ## Critérios de aceite
 
@@ -2142,11 +2146,11 @@ Organizar os resultados em páginas e disponibilizar controles para avançar, vo
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-068] Implementar a seleção da quantidade de registros por página
+# [GC-KB-068] Validar a quantidade de cards por página
 
 <!-- gestao-de-custos-kanban:GC-KB-068 -->
 
@@ -2154,17 +2158,17 @@ Permitir escolher os tamanhos previstos e visualizar todos os registros da base 
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-068 |
-| Área | Filtros e paginação |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/CostFilters.tsx e src/hooks/useCostFilters.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-068                                                                           |
+| Área                      | Filtros e paginação                                                                 |
+| Fase                      | 3 — Preservar o caso de uso de custos                                               |
+| Prioridade proposta       | Média                                                                               |
+| Situação inicial proposta | A validar                                                                           |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                           |
+| Fonte                     | src/hooks/useCostFilters.ts, src/components/CostFilters.tsx e src/pages/CostCatalog |
+| Responsável               | A definir pela equipe                                                               |
+| Prazo                     | Não definido                                                                        |
 
 ## Critérios de aceite
 
@@ -2174,11 +2178,11 @@ Permitir escolher os tamanhos previstos e visualizar todos os registros da base 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-069] Persistir o recorte da consulta na URL
+# [GC-KB-069] Preservar os filtros na URL e no retorno
 
 <!-- gestao-de-custos-kanban:GC-KB-069 -->
 
@@ -2186,17 +2190,17 @@ Registrar busca, filtros, ordenação, limite e página nos parâmetros de naveg
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-069 |
-| Área | Filtros e paginação |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/CostFilters.tsx e src/hooks/useCostFilters.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-069                                                                           |
+| Área                      | Filtros e paginação                                                                 |
+| Fase                      | 3 — Preservar o caso de uso de custos                                               |
+| Prioridade proposta       | Média                                                                               |
+| Situação inicial proposta | A validar                                                                           |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                           |
+| Fonte                     | src/hooks/useCostFilters.ts, src/components/CostFilters.tsx e src/pages/CostCatalog |
+| Responsável               | A definir pela equipe                                                               |
+| Prazo                     | Não definido                                                                        |
 
 ## Critérios de aceite
 
@@ -2206,11 +2210,11 @@ Registrar busca, filtros, ordenação, limite e página nos parâmetros de naveg
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-070] Implementar a limpeza dos filtros e a contagem de resultados
+# [GC-KB-070] Revisar a limpeza dos filtros e a contagem de resultados
 
 <!-- gestao-de-custos-kanban:GC-KB-070 -->
 
@@ -2218,17 +2222,17 @@ Permitir restaurar o catálogo e anunciar a quantidade encontrada de forma clara
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-070 |
-| Área | Filtros e paginação |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/CostFilters.tsx e src/hooks/useCostFilters.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                          |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-070                                                                           |
+| Área                      | Filtros e paginação                                                                 |
+| Fase                      | 3 — Preservar o caso de uso de custos                                               |
+| Prioridade proposta       | Média                                                                               |
+| Situação inicial proposta | A validar                                                                           |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                           |
+| Fonte                     | src/hooks/useCostFilters.ts, src/components/CostFilters.tsx e src/pages/CostCatalog |
+| Responsável               | A definir pela equipe                                                               |
+| Prazo                     | Não definido                                                                        |
 
 ## Critérios de aceite
 
@@ -2238,43 +2242,43 @@ Permitir restaurar o catálogo e anunciar a quantidade encontrada de forma clara
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-071] Construir o layout do dashboard financeiro
+# [GC-KB-071] Revisar o contexto demonstrativo do dashboard
 
 <!-- gestao-de-custos-kanban:GC-KB-071 -->
 
-Organizar indicadores, filtros, gráficos e listagem de custos em uma página de visão geral.
+Conferir o cabeçalho, período e identificação dos dados fictícios no dashboard financeiro.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-071 |
-| Área | Dashboard financeiro |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Dashboard, src/components/charts e src/services/costService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-071                                                                               |
+| Área                      | Dashboard financeiro                                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                                   |
+| Prioridade proposta       | Média                                                                                   |
+| Situação inicial proposta | A validar                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                               |
+| Fonte                     | src/pages/Dashboard, src/components/charts/CostCharts.tsx e src/services/costService.ts |
+| Responsável               | A definir pela equipe                                                                   |
+| Prazo                     | Não definido                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Identificar claramente o período de referência.
-- [ ] Manter a página separada do Kanban externo de tarefas.
+- [ ] Informar a competência e a origem local dos números.
+- [ ] Não apresentar a tela como monitoramento de integrações reais.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-072] Exibir o indicador de custo mensal consolidado
+# [GC-KB-072] Conferir o custo mensal consolidado
 
 <!-- gestao-de-custos-kanban:GC-KB-072 -->
 
@@ -2282,17 +2286,17 @@ Apresentar a soma dos custos dos colaboradores incluídos no recorte atual.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-072 |
-| Área | Dashboard financeiro |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Dashboard, src/components/charts e src/services/costService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-072                                                                               |
+| Área                      | Dashboard financeiro                                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                                   |
+| Prioridade proposta       | Média                                                                                   |
+| Situação inicial proposta | A validar                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                               |
+| Fonte                     | src/pages/Dashboard, src/components/charts/CostCharts.tsx e src/services/costService.ts |
+| Responsável               | A definir pela equipe                                                                   |
+| Prazo                     | Não definido                                                                            |
 
 ## Critérios de aceite
 
@@ -2302,11 +2306,11 @@ Apresentar a soma dos custos dos colaboradores incluídos no recorte atual.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-073] Exibir os indicadores de colaboradores e departamentos
+# [GC-KB-073] Validar as contagens de colaboradores e departamentos
 
 <!-- gestao-de-custos-kanban:GC-KB-073 -->
 
@@ -2314,17 +2318,17 @@ Apresentar a quantidade de pessoas e departamentos existentes no conjunto analis
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-073 |
-| Área | Dashboard financeiro |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Dashboard, src/components/charts e src/services/costService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-073                                                                               |
+| Área                      | Dashboard financeiro                                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                                   |
+| Prioridade proposta       | Média                                                                                   |
+| Situação inicial proposta | A validar                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                               |
+| Fonte                     | src/pages/Dashboard, src/components/charts/CostCharts.tsx e src/services/costService.ts |
+| Responsável               | A definir pela equipe                                                                   |
+| Prazo                     | Não definido                                                                            |
 
 ## Critérios de aceite
 
@@ -2334,43 +2338,43 @@ Apresentar a quantidade de pessoas e departamentos existentes no conjunto analis
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-074] Exibir o indicador de alertas de variação
+# [GC-KB-074] Revisar a apresentação dos alertas demonstrativos
 
 <!-- gestao-de-custos-kanban:GC-KB-074 -->
 
-Apresentar a quantidade de colaboradores com aumento acima do limite demonstrativo definido.
+Revisar o indicador de aumento de custos, distinguindo-o dos possíveis alertas futuros de RH.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-074 |
-| Área | Dashboard financeiro |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Dashboard, src/components/charts e src/services/costService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-074                                                                               |
+| Área                      | Dashboard financeiro                                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                                   |
+| Prioridade proposta       | Média                                                                                   |
+| Situação inicial proposta | A validar                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                               |
+| Fonte                     | src/pages/Dashboard, src/components/charts/CostCharts.tsx e src/services/costService.ts |
+| Responsável               | A definir pela equipe                                                                   |
+| Prazo                     | Não definido                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Contar somente os registros elegíveis do recorte.
-- [ ] Explicar o critério de atenção junto ao indicador.
+- [ ] Contar aumentos acima de 10% conforme a regra local.
+- [ ] Manter o possível alerta de licenças Alura como proposta em avaliação.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-075] Implementar o filtro departamental do dashboard
+# [GC-KB-075] Validar o filtro de departamento no dashboard
 
 <!-- gestao-de-custos-kanban:GC-KB-075 -->
 
@@ -2378,17 +2382,17 @@ Permitir selecionar um departamento e atualizar os indicadores e visualizações
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-075 |
-| Área | Dashboard financeiro |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Dashboard, src/components/charts e src/services/costService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-075                                                                               |
+| Área                      | Dashboard financeiro                                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                                   |
+| Prioridade proposta       | Média                                                                                   |
+| Situação inicial proposta | A validar                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                               |
+| Fonte                     | src/pages/Dashboard, src/components/charts/CostCharts.tsx e src/services/costService.ts |
+| Responsável               | A definir pela equipe                                                                   |
+| Prazo                     | Não definido                                                                            |
 
 ## Critérios de aceite
 
@@ -2398,11 +2402,11 @@ Permitir selecionar um departamento e atualizar os indicadores e visualizações
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-076] Implementar o gráfico de evolução mensal dos custos
+# [GC-KB-076] Revisar a evolução mensal dos custos
 
 <!-- gestao-de-custos-kanban:GC-KB-076 -->
 
@@ -2410,17 +2414,17 @@ Apresentar a série histórica consolidada a partir dos custos mensais das mesma
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-076 |
-| Área | Dashboard financeiro |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Dashboard, src/components/charts e src/services/costService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-076                                                                               |
+| Área                      | Dashboard financeiro                                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                                   |
+| Prioridade proposta       | Média                                                                                   |
+| Situação inicial proposta | A validar                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                               |
+| Fonte                     | src/pages/Dashboard, src/components/charts/CostCharts.tsx e src/services/costService.ts |
+| Responsável               | A definir pela equipe                                                                   |
+| Prazo                     | Não definido                                                                            |
 
 ## Critérios de aceite
 
@@ -2430,11 +2434,11 @@ Apresentar a série histórica consolidada a partir dos custos mensais das mesma
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-077] Implementar o gráfico de composição do custo mensal
+# [GC-KB-077] Conferir a composição entre salário, benefícios e despesas
 
 <!-- gestao-de-custos-kanban:GC-KB-077 -->
 
@@ -2442,17 +2446,17 @@ Apresentar a participação de salários, benefícios fixos e despesas variávei
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-077 |
-| Área | Dashboard financeiro |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Dashboard, src/components/charts e src/services/costService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-077                                                                               |
+| Área                      | Dashboard financeiro                                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                                   |
+| Prioridade proposta       | Média                                                                                   |
+| Situação inicial proposta | A validar                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                               |
+| Fonte                     | src/pages/Dashboard, src/components/charts/CostCharts.tsx e src/services/costService.ts |
+| Responsável               | A definir pela equipe                                                                   |
+| Prazo                     | Não definido                                                                            |
 
 ## Critérios de aceite
 
@@ -2462,11 +2466,11 @@ Apresentar a participação de salários, benefícios fixos e despesas variávei
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-078] Implementar o comparativo entre departamentos e períodos
+# [GC-KB-078] Validar o comparativo entre departamentos e períodos
 
 <!-- gestao-de-custos-kanban:GC-KB-078 -->
 
@@ -2474,17 +2478,17 @@ Apresentar o custo dos departamentos em setembro e outubro no gráfico comparati
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-078 |
-| Área | Dashboard financeiro |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Dashboard, src/components/charts e src/services/costService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-078                                                                               |
+| Área                      | Dashboard financeiro                                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                                   |
+| Prioridade proposta       | Média                                                                                   |
+| Situação inicial proposta | A validar                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                               |
+| Fonte                     | src/pages/Dashboard, src/components/charts/CostCharts.tsx e src/services/costService.ts |
+| Responsável               | A definir pela equipe                                                                   |
+| Prazo                     | Não definido                                                                            |
 
 ## Critérios de aceite
 
@@ -2494,11 +2498,11 @@ Apresentar o custo dos departamentos em setembro e outubro no gráfico comparati
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-079] Implementar a tabela dos maiores custos do recorte
+# [GC-KB-079] Revisar a lista de colaboradores com maiores custos
 
 <!-- gestao-de-custos-kanban:GC-KB-079 -->
 
@@ -2506,17 +2510,17 @@ Apresentar os colaboradores com maiores valores e acesso ao detalhamento individ
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-079 |
-| Área | Dashboard financeiro |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Dashboard, src/components/charts e src/services/costService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-079                                                                               |
+| Área                      | Dashboard financeiro                                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                                   |
+| Prioridade proposta       | Média                                                                                   |
+| Situação inicial proposta | A validar                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                               |
+| Fonte                     | src/pages/Dashboard, src/components/charts/CostCharts.tsx e src/services/costService.ts |
+| Responsável               | A definir pela equipe                                                                   |
+| Prazo                     | Não definido                                                                            |
 
 ## Critérios de aceite
 
@@ -2526,1003 +2530,1003 @@ Apresentar os colaboradores com maiores valores e acesso ao detalhamento individ
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-080] Implementar o acesso ao catálogo a partir do dashboard
+# [GC-KB-080] Validar a grade de indicadores nas larguras intermediárias
 
 <!-- gestao-de-custos-kanban:GC-KB-080 -->
 
-Permitir aprofundar a análise preservando o departamento selecionado quando aplicável.
+Conferir a reorganização dos KPIs antes de os valores financeiros ficarem comprimidos.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-080 |
-| Área | Dashboard financeiro |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/Dashboard, src/components/charts e src/services/costService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                              |
+| ------------------------- | --------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-080                                                                               |
+| Área                      | Dashboard financeiro                                                                    |
+| Fase                      | 3 — Preservar o caso de uso de custos                                                   |
+| Prioridade proposta       | Média                                                                                   |
+| Situação inicial proposta | A validar                                                                               |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                               |
+| Fonte                     | src/pages/Dashboard, src/components/charts/CostCharts.tsx e src/services/costService.ts |
+| Responsável               | A definir pela equipe                                                                   |
+| Prazo                     | Não definido                                                                            |
 
 ## Critérios de aceite
 
-- [ ] Abrir o catálogo com o filtro correspondente.
-- [ ] Manter o aviso de dados demonstrativos visível na experiência.
+- [ ] Evitar cortes nos valores entre 768 e 1280 pixels.
+- [ ] Manter indicadores, gráficos e tabela dentro da área disponível.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-081] Construir a rota de detalhes do colaborador
+# [GC-KB-081] Validar as situações do mapeamento de RH
 
 <!-- gestao-de-custos-kanban:GC-KB-081 -->
 
-Apresentar a composição do custo da pessoa selecionada por meio de uma rota identificável.
+Revisar as ferramentas e seus encaminhamentos segundo as observações mais recentes da equipe.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-081 |
-| Área | Detalhes do colaborador |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/CostDetails/index.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-081                                                                                                 |
+| Área                      | Ecossistema de RH                                                                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                  |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | src/data/ecosystem.ts, src/types/ecosystem.ts, src/components/EcosystemScope.tsx e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Resolver o identificador do card ou tabela de origem.
-- [ ] Oferecer retorno ao catálogo.
+- [ ] Distinguir Mapeado, Proposto, Com restrição, Em análise e Fora do escopo atual.
+- [ ] Não apresentar situação de integração ativa sem confirmação.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-082] Apresentar identificação e contexto do colaborador
+# [GC-KB-082] Revisar a distinção entre saúde e seguro de vida
 
 <!-- gestao-de-custos-kanban:GC-KB-082 -->
 
-Exibir nome fictício, identificador, cargo, departamento e período no detalhamento.
+Conferir o agrupamento SulAmérica/Wellhub e o escopo exclusivo de vida da Porto Seguro.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-082 |
-| Área | Detalhes do colaborador |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/CostDetails/index.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-082                                                                                                 |
+| Área                      | Ecossistema de RH                                                                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                  |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | src/data/ecosystem.ts, src/types/ecosystem.ts, src/components/EcosystemScope.tsx e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Utilizar o registro efetivamente selecionado.
-- [ ] Distinguir o caso de referência dos exemplos adicionais gerados.
+- [ ] Preservar o agrupamento de saúde e bem-estar informado pelo RH.
+- [ ] Não apresentar Porto Seguro como plano de saúde nem alterar os custos fictícios.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-083] Exibir os indicadores individuais de custo
+# [GC-KB-083] Apresentar as propostas de cadastros Flash e Clude
 
 <!-- gestao-de-custos-kanban:GC-KB-083 -->
 
-Apresentar custo mensal, variação e quantidade de lançamentos variáveis no contexto da pessoa consultada.
+Revisar os textos sobre automatizar cadastros manuais de RH na Flash e na Clude.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-083 |
-| Área | Detalhes do colaborador |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/CostDetails/index.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-083                                                                                                 |
+| Área                      | Ecossistema de RH                                                                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                  |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | src/data/ecosystem.ts, src/types/ecosystem.ts, src/components/EcosystemScope.tsx e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Reconciliar os indicadores com a composição apresentada.
-- [ ] Não incorporar dados de outro colaborador.
+- [ ] Descrever as propostas como dependentes de campos e meios técnicos.
+- [ ] Não afirmar existência de API validada nem realizar cadastros pelo site.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-084] Exibir os benefícios fixos discriminados
+# [GC-KB-084] Revisar o escopo Vixting e Sólides
 
 <!-- gestao-de-custos-kanban:GC-KB-084 -->
 
-Apresentar as parcelas de alimentação, saúde, Wellhub e auxílio home office da base demonstrativa.
+Conferir a automação proposta de cadastros Vixting e a relação prevista de ponto e atestados com a Sólides.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-084 |
-| Área | Detalhes do colaborador |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/CostDetails/index.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-084                                                                                                 |
+| Área                      | Ecossistema de RH                                                                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                  |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | src/data/ecosystem.ts, src/types/ecosystem.ts, src/components/EcosystemScope.tsx e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Mostrar os valores individuais e seu subtotal.
-- [ ] Preservar a identificação das parcelas de origem.
+- [ ] Mostrar ponto e atestados como escopo específico da relação.
+- [ ] Indicar que fluxo e contratos ainda precisam ser confirmados.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-085] Exibir os subtotais fixo e variável no detalhe
+# [GC-KB-085] Preservar as restrições e a avaliação do alerta Alura
 
 <!-- gestao-de-custos-kanban:GC-KB-085 -->
 
-Organizar a soma de salário e benefícios separadamente do total de despesas variáveis.
+Revisar o fluxo Alura por e-mail à administração e a hipótese de avisar a Infra sobre licenças.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-085 |
-| Área | Detalhes do colaborador |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/CostDetails/index.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-085                                                                                                 |
+| Área                      | Ecossistema de RH                                                                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                  |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | src/data/ecosystem.ts, src/types/ecosystem.ts, src/components/EcosystemScope.tsx e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Conferir a soma de cada subtotal.
-- [ ] Mostrar o custo consolidado como resultado das parcelas.
+- [ ] Informar a indisponibilidade de automação direta no fluxo descrito.
+- [ ] Apresentar o alerta de inclusão ou remoção apenas como possibilidade em análise, sem envio real.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-086] Exibir a tabela de despesas variáveis da pessoa
+# [GC-KB-086] Manter o processo SENAI em análise
 
 <!-- gestao-de-custos-kanban:GC-KB-086 -->
 
-Apresentar identificador, origem, descrição e valor dos lançamentos associados à competência consultada.
+Conferir o registro dos formulários de matrícula SENAI e a necessidade de estudar o processo.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-086 |
-| Área | Detalhes do colaborador |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/CostDetails/index.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-086                                                                                                 |
+| Área                      | Ecossistema de RH                                                                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                  |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | src/data/ecosystem.ts, src/types/ecosystem.ts, src/components/EcosystemScope.tsx e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Preservar os identificadores das despesas.
-- [ ] Aplicar rolagem contida quando a tabela ultrapassar a largura disponível.
+- [ ] Identificar a situação como Em análise.
+- [ ] Não prometer integração ou automação já definida.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-087] Exibir o histórico individual de custos
+# [GC-KB-087] Revisar o papel documental do SharePoint
 
 <!-- gestao-de-custos-kanban:GC-KB-087 -->
 
-Apresentar a evolução mensal do colaborador em um gráfico contextualizado.
+Revisar a relação prevista de backup do Autentique e armazenamento de relatórios do RH no SharePoint.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-087 |
-| Área | Detalhes do colaborador |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/CostDetails/index.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-087                                                                                                 |
+| Área                      | Ecossistema de RH                                                                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                  |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | src/data/ecosystem.ts, src/types/ecosystem.ts, src/components/EcosystemScope.tsx e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Usar o histórico do registro selecionado.
-- [ ] Identificar a série por período e valores monetários.
+- [ ] Distinguir documentos e relatórios das fontes de custos fictícios.
+- [ ] Não executar backup nem afirmar rotina em produção.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-088] Apresentar o contexto cadastral com CPF mascarado
+# [GC-KB-088] Apresentar a proposta de e-mails ao Sindpd
 
 <!-- gestao-de-custos-kanban:GC-KB-088 -->
 
-Exibir os dados cadastrais necessários para compreender a consulta sem mostrar o identificador pessoal completo.
+Conferir a descrição da automação proposta de e-mails ao Sindpd.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-088 |
-| Área | Detalhes do colaborador |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/CostDetails/index.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-088                                                                                                 |
+| Área                      | Ecossistema de RH                                                                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                  |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | src/data/ecosystem.ts, src/types/ecosystem.ts, src/components/EcosystemScope.tsx e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Mascarar o CPF na apresentação.
-- [ ] Manter os dados da demonstração identificados como fictícios.
+- [ ] Indicar que destinatários, modelos e eventos dependem de definição.
+- [ ] Não implementar envio de e-mails ou coleta de contatos nesta interface.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-089] Implementar o estado de colaborador não encontrado
+# [GC-KB-089] Validar a entrada de dados por e-mail na Sólides
 
 <!-- gestao-de-custos-kanban:GC-KB-089 -->
 
-Apresentar uma mensagem adequada para um identificador inexistente na rota de detalhes.
+Revisar os serviços e a direção da relação proposta para informações recebidas por e-mail.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-089 |
-| Área | Detalhes do colaborador |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/CostDetails/index.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-089                                                                                                 |
+| Área                      | Ecossistema de RH                                                                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                  |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | src/data/ecosystem.ts, src/types/ecosystem.ts, src/components/EcosystemScope.tsx e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Evitar uma tela vazia ou erro de JavaScript.
-- [ ] Oferecer uma ação funcional para voltar ao catálogo.
+- [ ] Listar Padizzi, Limpeza, VT Privado, Seguros e Ourho como origens e Sólides como destino.
+- [ ] Não inventar protocolo, campos ou conexão ativa.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-090] Explicar os critérios de variação no detalhe
+# [GC-KB-090] Manter o Jurídico fora das automações atuais
 
 <!-- gestao-de-custos-kanban:GC-KB-090 -->
 
-Contextualizar os rótulos financeiros usados pela demonstração e os limites da interpretação apresentada.
+Conferir a apresentação do Jurídico como arquivo documental nesta etapa.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-090 |
-| Área | Detalhes do colaborador |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Alta |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/pages/CostDetails/index.tsx |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-090                                                                                                 |
+| Área                      | Ecossistema de RH                                                                                         |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                  |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | src/data/ecosystem.ts, src/types/ecosystem.ts, src/components/EcosystemScope.tsx e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Distinguir redução de custo de economia comprovada.
-- [ ] Não apresentar o status financeiro como avaliação do agente.
+- [ ] Identificar a exclusão do escopo atual de automações.
+- [ ] Não atribuir ao Jurídico fluxos automatizados ou serviço já conectado.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-091] Construir a seção de consulta demonstrativa local
+# [GC-KB-091] Preservar apenas o botão de acesso futuro ao chatbot
 
 <!-- gestao-de-custos-kanban:GC-KB-091 -->
 
-Disponibilizar na interface uma área para explorar a composição de custos sem acionar o agente real.
+Conferir o botão compartilhado conforme a orientação de criar o chatbot somente depois.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-091 |
-| Área | Consulta demonstrativa |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ConsolidationDemo.tsx e src/services/consolidationService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-091                                                                                                                  |
+| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
+| Prioridade proposta       | Alta                                                                                                                       |
+| Situação inicial proposta | A validar                                                                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
+| Responsável               | A definir pela equipe                                                                                                      |
+| Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Identificar a seção como cálculo local com dados fictícios.
-- [ ] Integrar a consulta à página de demonstração.
+- [ ] Exibir Chatbot — em breve desabilitado nos pontos previstos.
+- [ ] Não abrir conversa, modal, janela externa ou serviço de mensagens.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-092] Implementar o seletor de colaborador da consulta
+# [GC-KB-092] Manter ausente a implementação demonstrativa de conversa
 
 <!-- gestao-de-custos-kanban:GC-KB-092 -->
 
-Permitir escolher uma pessoa da base demonstrativa para atualizar o resultado exibido.
+Revisar a aplicação para evitar reintrodução de chat local ou integração antecipada do agente.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-092 |
-| Área | Consulta demonstrativa |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ConsolidationDemo.tsx e src/services/consolidationService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-092                                                                                                                  |
+| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
+| Prioridade proposta       | Alta                                                                                                                       |
+| Situação inicial proposta | A validar                                                                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
+| Responsável               | A definir pela equipe                                                                                                      |
+| Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Apresentar nome e identificador nas opções.
-- [ ] Atualizar somente os dados da pessoa escolhida.
+- [ ] Não manter campo de perguntas, histórico ou respostas simuladas.
+- [ ] Não adicionar gateway de chat, adaptador de agente ou backend nesta etapa.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-093] Implementar o seletor de competência da consulta
+# [GC-KB-093] Revisar os textos de disponibilidade futura do chatbot
 
 <!-- gestao-de-custos-kanban:GC-KB-093 -->
 
-Permitir escolher um dos meses disponíveis nas fixtures da interface.
+Conferir os rótulos e explicações que relacionam o chatbot às ferramentas principais.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-093 |
-| Área | Consulta demonstrativa |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ConsolidationDemo.tsx e src/services/consolidationService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-093                                                                                                                  |
+| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
+| Prioridade proposta       | Alta                                                                                                                       |
+| Situação inicial proposta | A validar                                                                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
+| Responsável               | A definir pela equipe                                                                                                      |
+| Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Atualizar as despesas e os totais de acordo com o mês.
-- [ ] Manter o período escolhido visível no resultado.
+- [ ] Indicar que o acesso será implementado futuramente.
+- [ ] Não afirmar consulta em tempo real ou execução de automações.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-094] Exibir um exemplo contextual de pergunta em linguagem natural
+# [GC-KB-094] Validar a apresentação do vídeo ainda pendente
 
 <!-- gestao-de-custos-kanban:GC-KB-094 -->
 
-Apresentar uma pergunta ilustrativa com a pessoa e a competência selecionadas na interface.
+Revisar o estado visual do espaço do vídeo nas páginas onde o componente é utilizado.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-094 |
-| Área | Consulta demonstrativa |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ConsolidationDemo.tsx e src/services/consolidationService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-094                                                                                                                  |
+| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
+| Prioridade proposta       | Alta                                                                                                                       |
+| Situação inicial proposta | A validar                                                                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
+| Responsável               | A definir pela equipe                                                                                                      |
+| Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Atualizar o exemplo ao mudar os seletores.
-- [ ] Não indicar que a pergunta foi enviada ao Gemini.
+- [ ] Manter placeholder profissional nos dois temas.
+- [ ] Não exibir mídia quebrada ou reprodução de vídeo inexistente.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-095] Implementar a consolidação local dos custos para a interface
+# [GC-KB-095] Revisar os seletores do exemplo de custos
 
 <!-- gestao-de-custos-kanban:GC-KB-095 -->
 
-Calcular o resultado demonstrativo somando salário, benefícios e despesas elegíveis por pessoa e competência.
+Conferir a consulta estruturada por colaborador e competência sem experiência de chat.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-095 |
-| Área | Consulta demonstrativa |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ConsolidationDemo.tsx e src/services/consolidationService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-095                                                                                                                  |
+| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
+| Prioridade proposta       | Alta                                                                                                                       |
+| Situação inicial proposta | A validar                                                                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
+| Responsável               | A definir pela equipe                                                                                                      |
+| Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Utilizar a mesma regra nos resultados que dependem dessa soma.
-- [ ] Manter a implementação no front-end sem criar serviço de backend.
+- [ ] Permitir selecionar registros e meses disponíveis.
+- [ ] Atualizar a composição ao mudar qualquer seletor válido.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-096] Apresentar a fórmula visual do custo mensal
+# [GC-KB-096] Validar a consolidação local das parcelas de custo
 
 <!-- gestao-de-custos-kanban:GC-KB-096 -->
 
-Exibir salário, benefícios, despesas variáveis e total de forma comparável na consulta.
+Revisar a soma local de salário, benefícios fixos e despesas variáveis por CPF e competência.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-096 |
-| Área | Consulta demonstrativa |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ConsolidationDemo.tsx e src/services/consolidationService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-096                                                                                                                  |
+| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
+| Prioridade proposta       | Alta                                                                                                                       |
+| Situação inicial proposta | A validar                                                                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
+| Responsável               | A definir pela equipe                                                                                                      |
+| Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Identificar as parcelas com texto e valores.
-- [ ] Reorganizar a composição para telas pequenas sem perda de conteúdo.
+- [ ] Normalizar CPF e usar competência no formato YYYY-MM.
+- [ ] Reutilizar a regra compartilhada por catálogo e dashboard.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-097] Exibir a origem dos custos fixos na consulta
+# [GC-KB-097] Conferir o total do caso de referência 101
 
 <!-- gestao-de-custos-kanban:GC-KB-097 -->
 
-Apresentar o bloco Sólides/RH com o cadastro fictício, as parcelas de benefício e o subtotal fixo.
+Conferir Ana Beatriz Souza, colaboradora 101, em outubro de 2026 como referência de consistência.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-097 |
-| Área | Consulta demonstrativa |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ConsolidationDemo.tsx e src/services/consolidationService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-097                                                                                                                  |
+| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
+| Prioridade proposta       | Alta                                                                                                                       |
+| Situação inicial proposta | A validar                                                                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
+| Responsável               | A definir pela equipe                                                                                                      |
+| Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Reconciliar os valores com a pessoa selecionada.
-- [ ] Indicar que a fonte exibida é uma simulação local.
+- [ ] Exibir custo fixo de R$ 10.380,00 e variável de R$ 1.645,50.
+- [ ] Manter total de R$ 12.025,50 sem alterar os valores documentados.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-098] Exibir a origem dos custos variáveis na consulta
+# [GC-KB-098] Revisar os blocos de origem Sólides e Omie
 
 <!-- gestao-de-custos-kanban:GC-KB-098 -->
 
-Apresentar o bloco Omie/Financeiro com as despesas Onfly e Flash elegíveis no período.
+Revisar os blocos Sólides/RH de custos fixos e Omie/Financeiro de despesas variáveis.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-098 |
-| Área | Consulta demonstrativa |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ConsolidationDemo.tsx e src/services/consolidationService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-098                                                                                                                  |
+| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
+| Prioridade proposta       | Alta                                                                                                                       |
+| Situação inicial proposta | A validar                                                                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
+| Responsável               | A definir pela equipe                                                                                                      |
+| Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Mostrar origem, descrição e valor dos lançamentos.
-- [ ] Atualizar o subtotal variável ao alterar a consulta.
+- [ ] Identificar os blocos como dados simulados das origens descritas.
+- [ ] Não transformar um fornecedor da fixture em integração real.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-099] Reproduzir o caso de referência na demonstração do site
+# [GC-KB-099] Validar a composição de custos em telas estreitas
 
 <!-- gestao-de-custos-kanban:GC-KB-099 -->
 
-Apresentar o caso 101 em outubro de 2026 com a composição descrita no contexto fornecido.
+Conferir seletores, parcelas, tabela e total do exemplo estruturado no celular.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-099 |
-| Área | Consulta demonstrativa |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ConsolidationDemo.tsx e src/services/consolidationService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-099                                                                                                                  |
+| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
+| Prioridade proposta       | Alta                                                                                                                       |
+| Situação inicial proposta | A validar                                                                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
+| Responsável               | A definir pela equipe                                                                                                      |
+| Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Exibir subtotal fixo de R$ 10.380,00 e variável de R$ 1.645,50.
-- [ ] Exibir total de R$ 12.025,50 como resultado demonstrativo.
+- [ ] Evitar corte de rótulos e valores a partir de 320 pixels.
+- [ ] Manter ordem de leitura e acesso aos controles.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-100] Informar os limites da consulta e anunciar a atualização do resultado
+# [GC-KB-100] Preservar a atualização acessível da consulta local
 
 <!-- gestao-de-custos-kanban:GC-KB-100 -->
 
-Explicar que o navegador utiliza fixtures locais e disponibilizar o novo total às tecnologias assistivas após cada alteração.
+Revisar a identificação e o anúncio do resultado ao alterar os seletores.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-100 |
-| Área | Consulta demonstrativa |
-| Fase | 3 — Aplicação demonstrativa |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/components/ConsolidationDemo.tsx e src/services/consolidationService.ts |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-100                                                                                                                  |
+| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
+| Prioridade proposta       | Alta                                                                                                                       |
+| Situação inicial proposta | A validar                                                                                                                  |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
+| Responsável               | A definir pela equipe                                                                                                      |
+| Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Não simular uma conexão ativa com o workflow.
-- [ ] Anunciar o resultado atualizado sem exigir mudança de página.
+- [ ] Associar rótulos aos controles de colaborador e competência.
+- [ ] Atualizar o resultado sem perda inesperada de foco.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-101] Revisar o layout do site em desktop
+# [GC-KB-101] Validar o layout entre 320 e 1440 pixels
 
 <!-- gestao-de-custos-kanban:GC-KB-101 -->
 
-Conferir as páginas principais na largura de referência de 1440 pixels.
+Revisar todas as rotas em celular, tablet, desktop e nos intervalos entre pontos de quebra.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-101 |
-| Área | Responsividade e acessibilidade |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/styles, componentes de navegação e controles de interface |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-101                                                                    |
+| Área                      | Responsividade e acessibilidade                                              |
+| Fase                      | 4 — Validar a qualidade da entrega                                           |
+| Prioridade proposta       | Alta                                                                         |
+| Situação inicial proposta | A validar                                                                    |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                    |
+| Fonte                     | src/styles, src/components/layout, src/hooks/useTheme.ts e tests/app.spec.ts |
+| Responsável               | A definir pela equipe                                                        |
+| Prazo                     | Não definido                                                                 |
 
 ## Critérios de aceite
 
-- [ ] Preservar alinhamento e hierarquia entre seções.
-- [ ] Evitar sobreposição de elementos de navegação e conteúdo.
+- [ ] Cobrir 320, 390, 768 e 1440 pixels e larguras intermediárias.
+- [ ] Não apresentar rolagem horizontal indevida na página.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-102] Revisar o layout do site em tablet
+# [GC-KB-102] Conferir a continuidade das margens e dos títulos
 
 <!-- gestao-de-custos-kanban:GC-KB-102 -->
 
-Conferir reorganização de grids, menus, indicadores e gráficos em torno de 768 pixels.
+Conferir medidas fluidas para evitar saltos de conteúdo ao redimensionar a janela.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-102 |
-| Área | Responsividade e acessibilidade |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/styles, componentes de navegação e controles de interface |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-102                                                                    |
+| Área                      | Responsividade e acessibilidade                                              |
+| Fase                      | 4 — Validar a qualidade da entrega                                           |
+| Prioridade proposta       | Alta                                                                         |
+| Situação inicial proposta | A validar                                                                    |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                    |
+| Fonte                     | src/styles, src/components/layout, src/hooks/useTheme.ts e tests/app.spec.ts |
+| Responsável               | A definir pela equipe                                                        |
+| Prazo                     | Não definido                                                                 |
 
 ## Critérios de aceite
 
-- [ ] Manter controles utilizáveis sem reduzir excessivamente os textos.
-- [ ] Preservar os conteúdos de cada página.
+- [ ] Manter margens e títulos sem mudanças abruptas.
+- [ ] Não sobrepor textos, controles ou cartões nas transições.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-103] Revisar o layout do site em celular
+# [GC-KB-103] Validar as cores reais ao alternar os temas
 
 <!-- gestao-de-custos-kanban:GC-KB-103 -->
 
-Conferir a experiência de navegação e consulta em torno de 390 pixels e tamanhos próximos.
+Revisar as cores calculadas de banner, páginas, tabelas e gráficos após alternar claro e escuro.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-103 |
-| Área | Responsividade e acessibilidade |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/styles, componentes de navegação e controles de interface |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-103                                                                    |
+| Área                      | Responsividade e acessibilidade                                              |
+| Fase                      | 4 — Validar a qualidade da entrega                                           |
+| Prioridade proposta       | Alta                                                                         |
+| Situação inicial proposta | A validar                                                                    |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                    |
+| Fonte                     | src/styles, src/components/layout, src/hooks/useTheme.ts e tests/app.spec.ts |
+| Responsável               | A definir pela equipe                                                        |
+| Prazo                     | Não definido                                                                 |
 
 ## Critérios de aceite
 
-- [ ] Manter ações e campos acessíveis por toque.
-- [ ] Evitar rolagem horizontal involuntária da página.
+- [ ] Verificar fundos e contraste além do data-theme do documento.
+- [ ] Não deixar superfícies escuras indevidas no modo claro.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-104] Revisar o comportamento responsivo dos gráficos
+# [GC-KB-104] Preservar a escolha de tema no navegador
 
 <!-- gestao-de-custos-kanban:GC-KB-104 -->
 
-Validar dimensões, rótulos e legendas ao reorganizar o dashboard e os detalhes.
+Conferir preferência do sistema, escolha manual, persistência e sincronização do tema entre abas.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-104 |
-| Área | Responsividade e acessibilidade |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/styles, componentes de navegação e controles de interface |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-104                                                                    |
+| Área                      | Responsividade e acessibilidade                                              |
+| Fase                      | 4 — Validar a qualidade da entrega                                           |
+| Prioridade proposta       | Alta                                                                         |
+| Situação inicial proposta | A validar                                                                    |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                    |
+| Fonte                     | src/styles, src/components/layout, src/hooks/useTheme.ts e tests/app.spec.ts |
+| Responsável               | A definir pela equipe                                                        |
+| Prazo                     | Não definido                                                                 |
 
 ## Critérios de aceite
 
-- [ ] Evitar corte de eixos e legendas relevantes.
-- [ ] Manter o acesso ao contexto textual dos valores.
+- [ ] Restaurar a escolha ao recarregar e respeitar o sistema sem escolha salva.
+- [ ] Continuar utilizável com armazenamento bloqueado e sincronizar alterações válidas entre abas.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-105] Revisar a rolagem das tabelas no celular
+# [GC-KB-105] Revisar o contraste dos textos e das ações
 
 <!-- gestao-de-custos-kanban:GC-KB-105 -->
 
-Conferir tabelas de listagem e lançamentos em áreas com rolagem horizontal própria quando necessário.
+Revisar textos secundários, status, links, botões e campos nos dois temas.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-105 |
-| Área | Responsividade e acessibilidade |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/styles, componentes de navegação e controles de interface |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-105                                                                    |
+| Área                      | Responsividade e acessibilidade                                              |
+| Fase                      | 4 — Validar a qualidade da entrega                                           |
+| Prioridade proposta       | Alta                                                                         |
+| Situação inicial proposta | A validar                                                                    |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                    |
+| Fonte                     | src/styles, src/components/layout, src/hooks/useTheme.ts e tests/app.spec.ts |
+| Responsável               | A definir pela equipe                                                        |
+| Prazo                     | Não definido                                                                 |
 
 ## Critérios de aceite
 
-- [ ] Manter a tabela dentro da página.
-- [ ] Fornecer indicação acessível da região rolável.
+- [ ] Manter contraste adequado à leitura e identificação dos controles.
+- [ ] Não usar apenas cor para transmitir estado ou disponibilidade.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-106] Revisar a navegação por teclado na aplicação
+# [GC-KB-106] Validar o uso por teclado e o foco visível
 
 <!-- gestao-de-custos-kanban:GC-KB-106 -->
 
-Conferir links, botões, seletores, pesquisa e paginação sem depender do mouse.
+Percorrer navegação, filtros, seletores, paginação e ações sem mouse.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-106 |
-| Área | Responsividade e acessibilidade |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/styles, componentes de navegação e controles de interface |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-106                                                                    |
+| Área                      | Responsividade e acessibilidade                                              |
+| Fase                      | 4 — Validar a qualidade da entrega                                           |
+| Prioridade proposta       | Alta                                                                         |
+| Situação inicial proposta | A validar                                                                    |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                    |
+| Fonte                     | src/styles, src/components/layout, src/hooks/useTheme.ts e tests/app.spec.ts |
+| Responsável               | A definir pela equipe                                                        |
+| Prazo                     | Não definido                                                                 |
 
 ## Critérios de aceite
 
-- [ ] Preservar uma sequência de foco compreensível.
-- [ ] Permitir executar as ações principais pelo teclado.
+- [ ] Manter ordem de tabulação coerente e foco identificável.
+- [ ] Permitir acionar e sair dos controles sem bloqueios.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-107] Revisar a semântica de títulos e regiões
+# [GC-KB-107] Revisar as regiões, os títulos e os nomes acessíveis
 
 <!-- gestao-de-custos-kanban:GC-KB-107 -->
 
-Conferir conteúdo principal, cabeçalhos, seções, tabelas e hierarquia de títulos nas rotas.
+Conferir HTML semântico e identificação de elementos para tecnologias assistivas.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-107 |
-| Área | Responsividade e acessibilidade |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/styles, componentes de navegação e controles de interface |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-107                                                                    |
+| Área                      | Responsividade e acessibilidade                                              |
+| Fase                      | 4 — Validar a qualidade da entrega                                           |
+| Prioridade proposta       | Alta                                                                         |
+| Situação inicial proposta | A validar                                                                    |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                    |
+| Fonte                     | src/styles, src/components/layout, src/hooks/useTheme.ts e tests/app.spec.ts |
+| Responsável               | A definir pela equipe                                                        |
+| Prazo                     | Não definido                                                                 |
 
 ## Critérios de aceite
 
-- [ ] Disponibilizar um título principal identificável por página.
-- [ ] Associar cabeçalhos e descrições aos elementos correspondentes.
+- [ ] Disponibilizar regiões principais, título de página e hierarquia coerente.
+- [ ] Associar campos a rótulos e identificar controles de ícone.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-108] Revisar nomes acessíveis e mensagens dinâmicas
+# [GC-KB-108] Validar tabelas e gráficos no celular
 
 <!-- gestao-de-custos-kanban:GC-KB-108 -->
 
-Conferir rótulos dos campos, ações representadas por ícones e avisos de atualização de resultados.
+Revisar o conteúdo financeiro amplo sem quebrar o layout da página.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-108 |
-| Área | Responsividade e acessibilidade |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/styles, componentes de navegação e controles de interface |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-108                                                                    |
+| Área                      | Responsividade e acessibilidade                                              |
+| Fase                      | 4 — Validar a qualidade da entrega                                           |
+| Prioridade proposta       | Alta                                                                         |
+| Situação inicial proposta | A validar                                                                    |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                    |
+| Fonte                     | src/styles, src/components/layout, src/hooks/useTheme.ts e tests/app.spec.ts |
+| Responsável               | A definir pela equipe                                                        |
+| Prazo                     | Não definido                                                                 |
 
 ## Critérios de aceite
 
-- [ ] Manter nomes úteis mesmo quando o texto visual estiver oculto no mobile.
-- [ ] Anunciar resultados de busca e consulta quando necessário.
+- [ ] Manter tabelas legíveis com rolagem contida quando necessária.
+- [ ] Oferecer identificação textual de séries, valores e unidades dos gráficos.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-109] Revisar contraste e estados de interação
+# [GC-KB-109] Conferir alvos de toque e telas de pouca altura
 
 <!-- gestao-de-custos-kanban:GC-KB-109 -->
 
-Conferir legibilidade e distinção de hover, foco, ativo e desabilitado nos componentes.
+Conferir botões, tema, menu e paginação em celular e orientação horizontal.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-109 |
-| Área | Responsividade e acessibilidade |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/styles, componentes de navegação e controles de interface |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-109                                                                    |
+| Área                      | Responsividade e acessibilidade                                              |
+| Fase                      | 4 — Validar a qualidade da entrega                                           |
+| Prioridade proposta       | Alta                                                                         |
+| Situação inicial proposta | A validar                                                                    |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                    |
+| Fonte                     | src/styles, src/components/layout, src/hooks/useTheme.ts e tests/app.spec.ts |
+| Responsável               | A definir pela equipe                                                        |
+| Prazo                     | Não definido                                                                 |
 
 ## Critérios de aceite
 
-- [ ] Não depender somente de cores para transmitir estados.
-- [ ] Manter um indicador de foco visível.
+- [ ] Manter controles alcançáveis com área de toque adequada.
+- [ ] Permitir rolar menus e páginas sem ações encobertas.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-110] Respeitar a preferência por movimento reduzido
+# [GC-KB-110] Preservar o movimento reduzido na interface
 
 <!-- gestao-de-custos-kanban:GC-KB-110 -->
 
-Garantir que transições e visualizações não imponham animações a quem solicita redução de movimento.
+Revisar transições e rolagem quando o usuário solicitar menos movimento.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-110 |
-| Área | Responsividade e acessibilidade |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | src/styles, componentes de navegação e controles de interface |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                   |
+| ------------------------- | ---------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-110                                                                    |
+| Área                      | Responsividade e acessibilidade                                              |
+| Fase                      | 4 — Validar a qualidade da entrega                                           |
+| Prioridade proposta       | Alta                                                                         |
+| Situação inicial proposta | A validar                                                                    |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                    |
+| Fonte                     | src/styles, src/components/layout, src/hooks/useTheme.ts e tests/app.spec.ts |
+| Responsável               | A definir pela equipe                                                        |
+| Prazo                     | Não definido                                                                 |
 
 ## Critérios de aceite
 
-- [ ] Aplicar prefers-reduced-motion aos efeitos da interface.
-- [ ] Preservar o uso dos controles com animações desativadas.
+- [ ] Respeitar prefers-reduced-motion nos efeitos existentes.
+- [ ] Manter as funções acessíveis quando animações forem reduzidas.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-111] Validar a integridade das fixtures usadas pelo front-end
+# [GC-KB-111] Validar a integridade e a estabilidade das fixtures
 
 <!-- gestao-de-custos-kanban:GC-KB-111 -->
 
@@ -3530,17 +3534,17 @@ Conferir identificadores, títulos, parcelas e histórico dos registros demonstr
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-111 |
-| Área | Qualidade e documentação |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | tests, playwright.config.ts, README.md e documentação do front-end |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-111                                                                                                 |
+| Área                      | Qualidade e documentação                                                                                  |
+| Fase                      | 4 — Validar a qualidade da entrega                                                                        |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | tests, playwright.config.ts, README.md, docs/ESCOPO_FRONTEND.md, docs/CHATBOT.md e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
@@ -3550,11 +3554,11 @@ Conferir identificadores, títulos, parcelas e histórico dos registros demonstr
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-112] Testar a regra local de consolidação da interface
+# [GC-KB-112] Testar a associação e a soma dos custos locais
 
 <!-- gestao-de-custos-kanban:GC-KB-112 -->
 
@@ -3562,17 +3566,17 @@ Verificar cálculo, associação por identificador normalizado e recorte de comp
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-112 |
-| Área | Qualidade e documentação |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | tests, playwright.config.ts, README.md e documentação do front-end |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-112                                                                                                 |
+| Área                      | Qualidade e documentação                                                                                  |
+| Fase                      | 4 — Validar a qualidade da entrega                                                                        |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | tests, playwright.config.ts, README.md, docs/ESCOPO_FRONTEND.md, docs/CHATBOT.md e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
@@ -3582,11 +3586,11 @@ Verificar cálculo, associação por identificador normalizado e recorte de comp
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-113] Testar as rotas e a ausência de erros no navegador
+# [GC-KB-113] Testar as rotas e os estados de erro da interface
 
 <!-- gestao-de-custos-kanban:GC-KB-113 -->
 
@@ -3594,17 +3598,17 @@ Percorrer as páginas previstas e os estados de rota inexistente no navegador de
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-113 |
-| Área | Qualidade e documentação |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | tests, playwright.config.ts, README.md e documentação do front-end |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-113                                                                                                 |
+| Área                      | Qualidade e documentação                                                                                  |
+| Fase                      | 4 — Validar a qualidade da entrega                                                                        |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | tests, playwright.config.ts, README.md, docs/ESCOPO_FRONTEND.md, docs/CHATBOT.md e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
@@ -3614,11 +3618,11 @@ Percorrer as páginas previstas e os estados de rota inexistente no navegador de
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-114] Testar os filtros e a paginação do catálogo
+# [GC-KB-114] Testar filtros, ordenação e paginação do catálogo
 
 <!-- gestao-de-custos-kanban:GC-KB-114 -->
 
@@ -3626,17 +3630,17 @@ Executar cenários de busca, filtros combinados, ordenação, alteração de lim
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-114 |
-| Área | Qualidade e documentação |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | tests, playwright.config.ts, README.md e documentação do front-end |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-114                                                                                                 |
+| Área                      | Qualidade e documentação                                                                                  |
+| Fase                      | 4 — Validar a qualidade da entrega                                                                        |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | tests, playwright.config.ts, README.md, docs/ESCOPO_FRONTEND.md, docs/CHATBOT.md e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
@@ -3646,196 +3650,196 @@ Executar cenários de busca, filtros combinados, ordenação, alteração de lim
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-115] Testar os indicadores e gráficos do dashboard
+# [GC-KB-115] Testar a coerência do dashboard e dos detalhes
 
 <!-- gestao-de-custos-kanban:GC-KB-115 -->
 
-Conferir que os totais e a composição exibidos reconciliam com a base filtrada.
+Conferir indicadores e totais compartilhados entre dashboard e detalhes.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-115 |
-| Área | Qualidade e documentação |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | tests, playwright.config.ts, README.md e documentação do front-end |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-115                                                                                                 |
+| Área                      | Qualidade e documentação                                                                                  |
+| Fase                      | 4 — Validar a qualidade da entrega                                                                        |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | tests, playwright.config.ts, README.md, docs/ESCOPO_FRONTEND.md, docs/CHATBOT.md e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Validar o recorte por departamento.
-- [ ] Comparar o custo consolidado e suas parcelas.
+- [ ] Comparar resultados com o serviço da mesma base local.
+- [ ] Validar o efeito dos recortes e o acesso ao registro correto.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-116] Testar a consulta demonstrativa e os detalhes do caso 101
+# [GC-KB-116] Testar o acesso futuro ao chatbot sem conversa
 
 <!-- gestao-de-custos-kanban:GC-KB-116 -->
 
-Validar seleção de pessoa e mês, exibição dos lançamentos e composição do custo de referência na interface.
+Conferir o requisito de manter somente o botão desabilitado e o exemplo estruturado por seletores.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-116 |
-| Área | Qualidade e documentação |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | tests, playwright.config.ts, README.md e documentação do front-end |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-116                                                                                                 |
+| Área                      | Qualidade e documentação                                                                                  |
+| Fase                      | 4 — Validar a qualidade da entrega                                                                        |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | tests, playwright.config.ts, README.md, docs/ESCOPO_FRONTEND.md, docs/CHATBOT.md e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Conferir o total de R$ 12.025,50 em outubro de 2026.
-- [ ] Garantir que o CPF completo não apareça nas telas.
+- [ ] Validar o nome acessível e o estado desabilitado do botão.
+- [ ] Confirmar a ausência de interface, histórico e respostas de chat.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-117] Testar o menu mobile e as larguras de referência
+# [GC-KB-117] Testar temas e cortes nas larguras intermediárias
 
 <!-- gestao-de-custos-kanban:GC-KB-117 -->
 
-Executar navegação móvel e verificações de overflow nas resoluções previstas.
+Revisar a cobertura dos defeitos relatados de responsividade e troca para o modo claro.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-117 |
-| Área | Qualidade e documentação |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | tests, playwright.config.ts, README.md e documentação do front-end |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-117                                                                                                 |
+| Área                      | Qualidade e documentação                                                                                  |
+| Fase                      | 4 — Validar a qualidade da entrega                                                                        |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | tests, playwright.config.ts, README.md, docs/ESCOPO_FRONTEND.md, docs/CHATBOT.md e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Conferir abertura, Escape, foco e fechamento ao navegar.
-- [ ] Registrar evidências em desktop, tablet e celular.
+- [ ] Verificar cores calculadas, persistência do tema e sincronização entre abas.
+- [ ] Detectar textos ou valores cortados além do overflow do documento.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-118] Executar lint e build da entrega de front-end
+# [GC-KB-118] Executar as verificações antes dos commits
 
 <!-- gestao-de-custos-kanban:GC-KB-118 -->
 
-Reproduzir as verificações estáticas e a geração do pacote de produção antes de entregar alterações da interface.
+Rodar lint, build e testes apropriados às mudanças, corrigindo falhas antes da entrega.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-118 |
-| Área | Qualidade e documentação |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | tests, playwright.config.ts, README.md e documentação do front-end |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-118                                                                                                 |
+| Área                      | Qualidade e documentação                                                                                  |
+| Fase                      | 4 — Validar a qualidade da entrega                                                                        |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | tests, playwright.config.ts, README.md, docs/ESCOPO_FRONTEND.md, docs/CHATBOT.md e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Corrigir erros encontrados nas verificações.
-- [ ] Registrar os comandos e resultados da versão revisada.
+- [ ] Registrar comandos e resultados de forma verificável.
+- [ ] Evitar testes concorrentes que compartilhem servidor ou arquivos temporários.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-119] Documentar a instalação e as funcionalidades do front-end
+# [GC-KB-119] Atualizar a documentação do escopo e da execução
 
 <!-- gestao-de-custos-kanban:GC-KB-119 -->
 
-Manter o README com tecnologias, estrutura, execução, rotas, dados fictícios e limitações da interface.
+Revisar README, escopo, chatbot e ecossistema para refletir a interface atual.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-119 |
-| Área | Qualidade e documentação |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | tests, playwright.config.ts, README.md e documentação do front-end |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-119                                                                                                 |
+| Área                      | Qualidade e documentação                                                                                  |
+| Fase                      | 4 — Validar a qualidade da entrega                                                                        |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | tests, playwright.config.ts, README.md, docs/ESCOPO_FRONTEND.md, docs/CHATBOT.md e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Permitir reproduzir o ambiente pelo guia.
-- [ ] Separar o Kanban de tarefas dos dados demonstrativos de colaboradores.
+- [ ] Documentar instalação, comandos, fixtures e rotas disponíveis.
+- [ ] Explicitar o chatbot futuro, integrações propostas e Figma ainda não acessado.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-120] Preparar o roteiro de apresentação da interface
+# [GC-KB-120] Preparar a revisão e a apresentação da entrega
 
 <!-- gestao-de-custos-kanban:GC-KB-120 -->
 
-Organizar uma sequência de apresentação que percorra início, dashboard, catálogo, detalhes e consulta demonstrativa.
+Conferir a entrega e organizar mudanças em commits focados sem publicar o código remotamente.
 
 ## Informações do cartão
 
-| Campo | Informação |
-| --- | --- |
-| Identificador do backlog | GC-KB-120 |
-| Área | Qualidade e documentação |
-| Fase | 4 — Revisão da interface |
-| Prioridade proposta | Média |
-| Situação inicial proposta | A validar |
-| Referência de execução | Implementação de interface existente; aceite da equipe a validar |
-| Fonte | tests, playwright.config.ts, README.md e documentação do front-end |
-| Responsável | A definir pela equipe |
-| Prazo | Não definido |
+| Campo                     | Informação                                                                                                |
+| ------------------------- | --------------------------------------------------------------------------------------------------------- |
+| Identificador do backlog  | GC-KB-120                                                                                                 |
+| Área                      | Qualidade e documentação                                                                                  |
+| Fase                      | 4 — Validar a qualidade da entrega                                                                        |
+| Prioridade proposta       | Alta                                                                                                      |
+| Situação inicial proposta | A validar                                                                                                 |
+| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                 |
+| Fonte                     | tests, playwright.config.ts, README.md, docs/ESCOPO_FRONTEND.md, docs/CHATBOT.md e docs/ECOSSISTEMA_RH.md |
+| Responsável               | A definir pela equipe                                                                                     |
+| Prazo                     | Não definido                                                                                              |
 
 ## Critérios de aceite
 
-- [ ] Identificar as telas e os resultados que serão apresentados.
-- [ ] Informar quais funções são locais e quais integrações não estão ativas.
+- [ ] Usar commits semânticos em português com verbo no infinitivo e separar assuntos.
+- [ ] Preservar main e não executar push ou alterar remotos sem autorização.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. A referência a uma entrega existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe.
+Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
