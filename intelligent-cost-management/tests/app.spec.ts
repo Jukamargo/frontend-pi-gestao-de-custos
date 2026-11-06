@@ -4,6 +4,148 @@ import { currency } from '../src/services/costService'
 import { employees, variableExpenses } from '../src/data/people'
 import { consolidateEmployee } from '../src/services/consolidationService'
 
+function luminance(color: string) {
+  const channels = (color.match(/[\d.]+/g) ?? [])
+    .slice(0, 3)
+    .map(Number)
+    .map((value) => {
+      const channel = value / 255
+      return channel <= 0.04045
+        ? channel / 12.92
+        : ((channel + 0.055) / 1.055) ** 2.4
+    })
+  return channels[0] * 0.2126 + channels[1] * 0.7152 + channels[2] * 0.0722
+}
+
+function contrast(foreground: string, background: string) {
+  const values = [luminance(foreground), luminance(background)].sort(
+    (a, b) => b - a,
+  )
+  return (values[0] + 0.05) / (values[1] + 0.05)
+}
+
+test('atualizar as cores visíveis do banner ao alternar entre claro e escuro', async ({
+  page,
+}) => {
+  await page.emulateMedia({ colorScheme: 'dark' })
+  await page.goto('/')
+  const hero = page.locator('.hero-section')
+  const palette = () =>
+    hero.evaluate((element) => {
+      const style = getComputedStyle(element)
+      const heading = element.querySelector('h1')!
+      const button = element.querySelector('.hero-primary')!
+      return {
+        backgrounds: style.backgroundImage.match(/rgba?\([^)]+\)/g) ?? [
+          style.backgroundColor,
+        ],
+        title: getComputedStyle(heading).color,
+        accent: getComputedStyle(heading.querySelector('span')!).color,
+        description: getComputedStyle(
+          element.querySelector('.hero-content > p')!,
+        ).color,
+        buttonText: getComputedStyle(button).color,
+        buttonBackground: getComputedStyle(button).backgroundColor,
+      }
+    })
+  const dark = await palette()
+  expect(luminance(dark.backgrounds[0])).toBeLessThan(0.05)
+  await page.getByRole('switch', { name: 'Modo escuro' }).click()
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light')
+  const light = await palette()
+  expect(luminance(light.backgrounds[0])).toBeGreaterThan(0.7)
+  expect(light.title).not.toBe(dark.title)
+  for (const colors of [light, dark]) {
+    for (const background of colors.backgrounds)
+      for (const text of [colors.title, colors.accent, colors.description])
+        expect(contrast(text, background)).toBeGreaterThanOrEqual(4.5)
+    expect(
+      contrast(colors.buttonText, colors.buttonBackground),
+    ).toBeGreaterThanOrEqual(4.5)
+  }
+  await page.reload()
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light')
+  expect(await palette()).toEqual(light)
+  await page.getByRole('switch', { name: 'Modo escuro' }).click()
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark')
+  expect(await palette()).toEqual(dark)
+})
+
+test('reorganizar banner e valores sem cortes nas bordas das resoluções', async ({
+  page,
+}) => {
+  await page.goto('/')
+  await page.evaluate(() => document.fonts.ready)
+  let previous: { width: number; font: number; container: number } | undefined
+  for (const width of [
+    320, 360, 390, 480, 600, 601, 768, 1000, 1001, 1100, 1101, 1150, 1151, 1440,
+  ]) {
+    await page.setViewportSize({ width, height: 800 })
+    const state = await page.evaluate(() => {
+      const elements = [
+        ...document.querySelectorAll<HTMLElement>(
+          '.header-inner,.hero-content,.hero-content h1,.hero-buttons,.hero-buttons .button',
+        ),
+      ]
+      return {
+        overflow: document.documentElement.scrollWidth > innerWidth,
+        clipped: elements
+          .filter(
+            (element) =>
+              element.scrollWidth > element.clientWidth + 1 ||
+              element.getBoundingClientRect().left < -1 ||
+              element.getBoundingClientRect().right > innerWidth + 1,
+          )
+          .map((element) => element.className),
+        font: parseFloat(
+          getComputedStyle(document.querySelector('.hero-content h1')!)
+            .fontSize,
+        ),
+        container: document
+          .querySelector('.hero-banner-inner')!
+          .getBoundingClientRect().width,
+      }
+    })
+    expect(state.overflow, `${width}px`).toBe(false)
+    expect(state.clipped, `${width}px`).toEqual([])
+    if (previous && width === previous.width + 1) {
+      expect(
+        Math.abs(state.font - previous.font),
+        `${width}px, título`,
+      ).toBeLessThan(2)
+      expect(
+        Math.abs(state.container - previous.container),
+        `${width}px, margem`,
+      ).toBeLessThan(4)
+    }
+    previous = { width, font: state.font, container: state.container }
+  }
+  await page.goto('/demonstracao')
+  for (const width of [320, 360, 390]) {
+    await page.setViewportSize({ width, height: 740 })
+    const clipped = await page
+      .locator('.consolidation-equation strong')
+      .evaluateAll((elements) =>
+        elements
+          .filter((element) => element.scrollWidth > element.clientWidth + 1)
+          .map((element) => element.textContent),
+      )
+    expect(clipped, `${width}px, valores`).toEqual([])
+  }
+  await page.goto('/dashboard')
+  for (const width of [320, 390, 768, 1000, 1001, 1024, 1100, 1101]) {
+    await page.setViewportSize({ width, height: 800 })
+    const clipped = await page
+      .locator('.metric-card > strong')
+      .evaluateAll((elements) =>
+        elements
+          .filter((element) => element.scrollWidth > element.clientWidth + 1)
+          .map((element) => element.textContent),
+      )
+    expect(clipped, `${width}px, indicadores`).toEqual([])
+  }
+})
+
 test('manter apenas o botão de acesso futuro ao chatbot sem interface de conversa', async ({
   page,
 }) => {
