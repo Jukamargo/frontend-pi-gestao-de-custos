@@ -895,6 +895,11 @@
     flex: 1;
   }
 }
+@media (max-width: 1100px) {
+  .metrics-grid:not(.detail-metrics) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 @media (max-width: 1000px) {
   .app-layout {
     display: block;
@@ -925,9 +930,6 @@
   }
   .metric-card {
     padding: 20px 16px;
-  }
-  .metrics-grid:not(.detail-metrics) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .metric-card > strong {
     font-size: 23px;

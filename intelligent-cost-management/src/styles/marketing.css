@@ -685,6 +685,10 @@
   .consolidation-equation {
     gap: 20px 10px;
   }
+  .consolidation-equation > div:first-child,
+  .consolidation-equation > .equation-total {
+    grid-column: 1 / -1;
+  }
   .consolidation-equation strong {
     font-size: 20px;
     letter-spacing: -0.7px;
