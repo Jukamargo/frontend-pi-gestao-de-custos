@@ -48,6 +48,8 @@ Esse complemento é uma apresentação de escopo, sem executar integrações ou 
 
 ## Limites e decisões
 
+O responsável escolheu [definir primeiro a arquitetura de monitoramento](MONITORAMENTO_BACKOFFICE.md), incluindo métricas e sistemas monitoráveis. A proposta separa saúde dos alvos, configuração das integrações e resultado das automações. A coleta externa e seu contrato de leitura devem ser definidos antes da integração de um painel ao front-end.
+
 Os modelos locais são normalizados para a interface, e não uma declaração de compatibilidade integral com todos os campos das APIs externas. Nenhum endpoint externo é chamado nesta versão. O texto não apresenta o workflow documentado como se estivesse conectado ao navegador.
 
 A [integração do chatbot externo permanece pendente](CHATBOT.md). A interface mantém somente seu botão de acesso desabilitado, sem conversa, respostas locais ou adaptador de agente. A consulta por seletores continua disponível como exemplo de custos.
