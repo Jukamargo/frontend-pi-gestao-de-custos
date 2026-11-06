@@ -1,4 +1,4 @@
-// Revisões do front-end atual. O chatbot será implementado em uma etapa futura.
+// Front-end do backoffice interno. Chatbot externo com integração de acesso pendente.
 export const groups = [
   {
     area: 'Arquitetura do front-end',
@@ -38,7 +38,7 @@ export const groups = [
       ],
       [
         'Preservar a separação entre apresentação e caso de custos',
-        'Revisar os layouts existentes para apresentar automação e conexão das ferramentas como objetivo geral, mantendo custos como um caso de uso.',
+        'Revisar os layouts para apresentar a automação interna de backoffice como objetivo geral, mantendo custos como um caso de uso administrativo.',
         'Manter a abertura institucional em formato de banner.',
         'Preservar as rotas de dashboard, catálogo e detalhes como demonstrações locais.',
       ],
@@ -212,9 +212,9 @@ export const groups = [
     fonte: 'src/pages/Home/index.tsx e src/styles/banner.css',
     tasks: [
       [
-        'Validar o banner institucional da página inicial',
-        'Revisar o destaque de abertura como banner profissional sobre automação e conexão das ferramentas principais.',
-        'Apresentar mensagem principal clara e ações visíveis.',
+        'Validar o banner de automação interna de backoffice',
+        'Revisar o destaque de abertura como banner profissional do projeto de backoffice interno.',
+        'Explicar o foco nas rotinas administrativas da equipe e manter ações visíveis.',
         'Manter composição equilibrada em desktop e celular.',
       ],
       [
@@ -225,7 +225,7 @@ export const groups = [
       ],
       [
         'Revisar a descrição do objetivo no banner',
-        'Explicar a automação das rotinas e a proposta de consulta futura por chatbot com linguagem empresarial direta.',
+        'Explicar a automação de RH, Financeiro, documentos e comunicação internos, com o chatbot externo como canal de consulta a integrar.',
         'Tratar gestão de custos como um dos casos de uso.',
         'Não afirmar que o chatbot ou as integrações já estão ativos.',
       ],
@@ -236,8 +236,8 @@ export const groups = [
         'Manter rótulo e área de toque adequados.',
       ],
       [
-        'Preservar o botão futuro do chatbot no banner',
-        'Conferir o componente compartilhado que indica o acesso ao chatbot a ser criado posteriormente.',
+        'Preservar o botão do chatbot externo no banner',
+        'Conferir o botão reservado ao chatbot desenvolvido externamente, cuja integração a este front-end está pendente.',
         'Exibir Chatbot — em breve desabilitado.',
         'Não abrir chat, modal, conversa simulada ou serviço.',
       ],
@@ -281,20 +281,20 @@ export const groups = [
       'src/pages/About, src/pages/Benefits, src/pages/AgentDemo, src/pages/Technologies e src/components/MarketingSections.tsx',
     tasks: [
       [
-        'Alinhar a página Sobre ao objetivo de automação',
-        'Revisar a apresentação no contexto 2RPnet/Inovanet Tech e das rotinas informadas pela equipe.',
-        'Explicar a conexão das ferramentas principais ao chatbot futuro.',
+        'Alinhar a página Sobre à automação de backoffice interno',
+        'Revisar a apresentação do backoffice interno no contexto 2RPnet/Inovanet Tech e das rotinas administrativas informadas.',
+        'Distinguir a automação interna da integração de acesso ao chatbot externo.',
         'Não inventar tecnologias internas ou integrações em produção.',
       ],
       [
         'Distinguir o caso de custos do objetivo geral',
-        'Conferir a narrativa que posiciona custos por colaborador como exemplo da proposta mais ampla de automação.',
+        'Conferir a narrativa que posiciona custos por colaborador como um caso de uso da automação interna de backoffice.',
         'Preservar a regra salário + benefícios + despesas no exemplo.',
         'Incluir RH, documentos e comunicação sem restringir a solução a finanças.',
       ],
       [
         'Revisar os benefícios institucionais da solução',
-        'Apresentar os benefícios esperados de visibilidade, redução de tarefas manuais e consulta de informações.',
+        'Apresentar os benefícios esperados para a equipe interna: redução de tarefas administrativas manuais, informações consistentes e apoio às consultas.',
         'Não inventar resultados comprovados ou métricas de economia.',
         'Relacionar cada benefício a uma proposta identificável.',
       ],
@@ -318,9 +318,9 @@ export const groups = [
       ],
       [
         'Alinhar Tecnologias a ferramentas, automações e chatbot',
-        'Revisar o diagrama e os textos sobre ecossistema, automações e arquitetura conceitual.',
+        'Revisar o diagrama e os textos sobre as ferramentas do backoffice, automações e o papel do chatbot externo.',
         'Distinguir a interface implementada das integrações propostas.',
-        'Relacionar o mapa de RH ao objetivo de consulta futura por chatbot.',
+        'Relacionar o mapa de RH à automação interna e identificar a integração de acesso ao chatbot como pendente.',
       ],
       [
         'Revisar a comunicação de integrações futuras',
@@ -330,7 +330,7 @@ export const groups = [
       ],
       [
         'Revisar a linguagem profissional das páginas',
-        'Revisar textos institucionais para uma comunicação direta sobre as rotinas mapeadas e o objetivo do projeto.',
+        'Revisar a apresentação para uma comunicação direta com a equipe interna sobre as rotinas de backoffice mapeadas.',
         'Remover termos genéricos e promessas exageradas.',
         'Não inventar clientes, tecnologias ou capacidades disponíveis.',
       ],
@@ -560,7 +560,7 @@ export const groups = [
     tasks: [
       [
         'Validar as situações do mapeamento de RH',
-        'Revisar as ferramentas e seus encaminhamentos segundo as observações mais recentes da equipe.',
+        'Revisar as ferramentas de RH e seus encaminhamentos dentro do projeto de automação interna de backoffice.',
         'Distinguir Mapeado, Proposto, Com restrição, Em análise e Fora do escopo atual.',
         'Não apresentar situação de integração ativa sem confirmação.',
       ],
@@ -622,27 +622,29 @@ export const groups = [
     prioridade: 'Alta',
   },
   {
-    area: 'Demonstração e chatbot futuro',
+    area: 'Demonstração e integração do chatbot',
     fase: '2 — Revisar a apresentação institucional',
     fonte:
       'src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md',
     tasks: [
       [
-        'Preservar apenas o botão de acesso futuro ao chatbot',
-        'Conferir o botão compartilhado conforme a orientação de criar o chatbot somente depois.',
+        'Preservar o botão até integrar o chatbot externo',
+        'Conferir o botão compartilhado enquanto a integração de acesso ao chatbot desenvolvido externamente não estiver configurada.',
         'Exibir Chatbot — em breve desabilitado nos pontos previstos.',
         'Não abrir conversa, modal, janela externa ou serviço de mensagens.',
       ],
       [
-        'Manter ausente a implementação demonstrativa de conversa',
-        'Revisar a aplicação para evitar reintrodução de chat local ou integração antecipada do agente.',
-        'Não manter campo de perguntas, histórico ou respostas simuladas.',
-        'Não adicionar gateway de chat, adaptador de agente ou backend nesta etapa.',
+        'Definir a integração de acesso ao chatbot externo',
+        'Alinhar com a equipe externa a forma de integrar o chatbot existente ao front-end, sem desenvolver um novo agente.',
+        'Registrar o endereço de acesso ou contrato de integração fornecido pela equipe responsável.',
+        'Manter somente o botão reservado até a integração ser configurada e validada, sem inventar endpoints ou simular respostas.',
+        'A fazer',
+        'Dependente das informações da equipe externa; integração de acesso pendente',
       ],
       [
-        'Revisar os textos de disponibilidade futura do chatbot',
-        'Conferir os rótulos e explicações que relacionam o chatbot às ferramentas principais.',
-        'Indicar que o acesso será implementado futuramente.',
+        'Revisar a comunicação da integração do chatbot externo',
+        'Conferir os rótulos que distinguem o desenvolvimento externo do chatbot e a integração pendente neste front-end.',
+        'Informar que falta integrar o acesso, sem dizer que o chatbot ainda precisa ser criado.',
         'Não afirmar consulta em tempo real ou execução de automações.',
       ],
       [
@@ -796,8 +798,8 @@ export const groups = [
         'Validar o efeito dos recortes e o acesso ao registro correto.',
       ],
       [
-        'Testar o acesso futuro ao chatbot sem conversa',
-        'Conferir o requisito de manter somente o botão desabilitado e o exemplo estruturado por seletores.',
+        'Testar o botão enquanto a integração do chatbot estiver pendente',
+        'Conferir o botão desabilitado do chatbot externo e o exemplo estruturado por seletores enquanto não houver integração configurada.',
         'Validar o nome acessível e o estado desabilitado do botão.',
         'Confirmar a ausência de interface, histórico e respostas de chat.',
       ],
@@ -817,7 +819,7 @@ export const groups = [
         'Atualizar a documentação do escopo e da execução',
         'Revisar README, escopo, chatbot e ecossistema para refletir a interface atual.',
         'Documentar instalação, comandos, fixtures e rotas disponíveis.',
-        'Explicitar o chatbot futuro, integrações propostas e Figma ainda não acessado.',
+        'Explicitar o objetivo de backoffice interno, o chatbot externo com integração pendente e o Figma ainda não acessado.',
       ],
       [
         'Preparar a revisão e a apresentação da entrega',

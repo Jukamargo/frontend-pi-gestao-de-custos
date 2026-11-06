@@ -3,9 +3,9 @@ import { fileURLToPath } from 'node:url'
 
 import { groups } from './tarefas-frontend.mjs'
 
-const revision = '2026-11-05 — Automação, ecossistema de RH e chatbot futuro'
+const revision = '2026-11-05 — Automação interna de backoffice'
 const objective =
-  'Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo.'
+  'Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada.'
 
 const cards = groups.flatMap((group, groupIndex) =>
   group.tasks.map((task, index) => {
@@ -15,7 +15,7 @@ const cards = groups.flatMap((group, groupIndex) =>
     const referenceStatus =
       task[5] || 'Revisão da interface existente; aceite da equipe pendente'
     const title = `[${id}] ${task[0]}`
-    const body = `<!-- gestao-de-custos-kanban:${id} -->\n\n${task[1]}\n\n## Informações do cartão\n\n| Campo | Informação |\n| --- | --- |\n| Identificador do backlog | ${id} |\n| Área | ${group.area} |\n| Fase | ${group.fase} |\n| Prioridade proposta | ${priority} |\n| Situação inicial proposta | ${status} |\n| Referência de execução | ${referenceStatus} |\n| Fonte | ${group.fonte} |\n| Responsável | A definir pela equipe |\n| Prazo | Não definido |\n\n## Critérios de aceite\n\n- [ ] ${task[2]}\n- [ ] ${task[3]}\n- [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.\n\n## Observação\n\nEste cartão trata exclusivamente do front-end do projeto. ${objective} Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.\n`
+    const body = `<!-- gestao-de-custos-kanban:${id} -->\n\n${task[1]}\n\n## Informações do cartão\n\n| Campo | Informação |\n| --- | --- |\n| Identificador do backlog | ${id} |\n| Área | ${group.area} |\n| Fase | ${group.fase} |\n| Prioridade proposta | ${priority} |\n| Situação inicial proposta | ${status} |\n| Referência de execução | ${referenceStatus} |\n| Fonte | ${group.fonte} |\n| Responsável | A definir pela equipe |\n| Prazo | Não definido |\n\n## Critérios de aceite\n\n- [ ] ${task[2]}\n- [ ] ${task[3]}\n- [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.\n\n## Observação\n\nEste cartão trata exclusivamente do front-end do projeto. ${objective} Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.\n`
     return {
       id,
       title,

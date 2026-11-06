@@ -4,11 +4,11 @@ Repositório: [Jukamargo/frontend-pi-gestao-de-custos](https://github.com/Jukama
 
 **120 issues exclusivas de front-end verificadas pela API**, com títulos, descrições, tabelas de informações, critérios de aceite e rótulos de área e prioridade correspondentes ao backlog local.
 
-Revisão: 2026-11-05 — Automação, ecossistema de RH e chatbot futuro.
+Revisão: 2026-11-05 — Automação interna de backoffice.
 
-Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo.
+Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada.
 
-O alinhamento contempla o banner sem resumo operacional, os temas e a responsividade, as decisões do ecossistema de RH e somente o botão desabilitado do chatbot futuro. Consulte os detalhes do escopo no [guia do Kanban](README.md#alinhamento-ao-escopo-atual).
+O alinhamento apresenta o projeto como automação interna de backoffice e preserva o banner sem resumo operacional, os temas, a responsividade e as decisões do ecossistema de RH. O chatbot é desenvolvido externamente; sua integração a este front-end está pendente, mantendo somente o botão reservado. Consulte os detalhes no [guia do Kanban](README.md#alinhamento-ao-escopo-atual).
 
 Project: [Gestão de custos — Front-end](https://github.com/users/Jukamargo/projects/2). Visualização Kanban e 120 itens confirmados pela API.
 
@@ -46,17 +46,17 @@ A atualização reutiliza as mesmas issues. Não encerra tarefas, muda colunas o
 | GC-KB-028                | [#28](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/28)   | Revisar o rodapé e seus caminhos de navegação                     |
 | GC-KB-029                | [#29](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/29)   | Validar a navegação entre dashboard e catálogo                    |
 | GC-KB-030                | [#30](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/30)   | Revisar foco, âncoras e rolagem entre páginas                     |
-| GC-KB-031                | [#31](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/31)   | Validar o banner institucional da página inicial                  |
+| GC-KB-031                | [#31](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/31)   | Validar o banner de automação interna de backoffice               |
 | GC-KB-032                | [#32](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/32)   | Manter o resumo operacional fora do destaque inicial              |
 | GC-KB-033                | [#33](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/33)   | Revisar a descrição do objetivo no banner                         |
 | GC-KB-034                | [#34](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/34)   | Validar a ação Conheça a solução                                  |
-| GC-KB-035                | [#35](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/35)   | Preservar o botão futuro do chatbot no banner                     |
+| GC-KB-035                | [#35](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/35)   | Preservar o botão do chatbot externo no banner                    |
 | GC-KB-036                | [#36](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/36)   | Conferir as cores visíveis do banner no modo claro                |
 | GC-KB-037                | [#37](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/37)   | Conferir a apresentação do banner no modo escuro                  |
 | GC-KB-038                | [#38](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/38)   | Validar a adaptação contínua do banner                            |
 | GC-KB-039                | [#39](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/39)   | Revisar os exemplos de custos abaixo do banner                    |
 | GC-KB-040                | [#40](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/40)   | Revisar a sequência das seções institucionais                     |
-| GC-KB-041                | [#41](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/41)   | Alinhar a página Sobre ao objetivo de automação                   |
+| GC-KB-041                | [#41](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/41)   | Alinhar a página Sobre à automação de backoffice interno          |
 | GC-KB-042                | [#42](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/42)   | Distinguir o caso de custos do objetivo geral                     |
 | GC-KB-043                | [#43](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/43)   | Revisar os benefícios institucionais da solução                   |
 | GC-KB-044                | [#44](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/44)   | Revisar a página Demonstração do projeto                          |
@@ -106,9 +106,9 @@ A atualização reutiliza as mesmas issues. Não encerra tarefas, muda colunas o
 | GC-KB-088                | [#88](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/88)   | Apresentar a proposta de e-mails ao Sindpd                        |
 | GC-KB-089                | [#89](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/89)   | Validar a entrada de dados por e-mail na Sólides                  |
 | GC-KB-090                | [#90](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/90)   | Manter o Jurídico fora das automações atuais                      |
-| GC-KB-091                | [#91](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/91)   | Preservar apenas o botão de acesso futuro ao chatbot              |
-| GC-KB-092                | [#92](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/92)   | Manter ausente a implementação demonstrativa de conversa          |
-| GC-KB-093                | [#93](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/93)   | Revisar os textos de disponibilidade futura do chatbot            |
+| GC-KB-091                | [#91](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/91)   | Preservar o botão até integrar o chatbot externo                  |
+| GC-KB-092                | [#92](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/92)   | Definir a integração de acesso ao chatbot externo                 |
+| GC-KB-093                | [#93](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/93)   | Revisar a comunicação da integração do chatbot externo            |
 | GC-KB-094                | [#94](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/94)   | Validar a apresentação do vídeo ainda pendente                    |
 | GC-KB-095                | [#95](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/95)   | Revisar os seletores do exemplo de custos                         |
 | GC-KB-096                | [#96](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/96)   | Validar a consolidação local das parcelas de custo                |
@@ -131,7 +131,7 @@ A atualização reutiliza as mesmas issues. Não encerra tarefas, muda colunas o
 | GC-KB-113                | [#113](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/113) | Testar as rotas e os estados de erro da interface                 |
 | GC-KB-114                | [#114](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/114) | Testar filtros, ordenação e paginação do catálogo                 |
 | GC-KB-115                | [#115](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/115) | Testar a coerência do dashboard e dos detalhes                    |
-| GC-KB-116                | [#116](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/116) | Testar o acesso futuro ao chatbot sem conversa                    |
+| GC-KB-116                | [#116](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/116) | Testar o botão enquanto a integração do chatbot estiver pendente  |
 | GC-KB-117                | [#117](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/117) | Testar temas e cortes nas larguras intermediárias                 |
 | GC-KB-118                | [#118](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/118) | Executar as verificações antes dos commits                        |
 | GC-KB-119                | [#119](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/119) | Atualizar a documentação do escopo e da execução                  |

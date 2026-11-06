@@ -1,8 +1,8 @@
 # Backlog de 120 tarefas de front-end — Gestão de custos
 
-Revisão: 2026-11-05 — Automação, ecossistema de RH e chatbot futuro.
+Revisão: 2026-11-05 — Automação interna de backoffice.
 
-Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo.
+Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada.
 
 Tarefas exclusivamente de front-end para o Kanban externo da equipe. Os identificadores GC-KB são internos deste backlog e não são números de issue do GitHub ou códigos GLPI. As sugestões não substituem responsáveis, prazos ou andamento registrados pela equipe.
 
@@ -34,7 +34,7 @@ Organizar a aplicação de interface com React, TypeScript e Vite, mantendo os c
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -66,7 +66,7 @@ Separar páginas, componentes compartilhados, dados de demonstração, serviços
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -98,7 +98,7 @@ Configurar o TypeScript para detectar inconsistências nas propriedades dos comp
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -130,7 +130,7 @@ Configurar o Tailwind CSS com o Vite e organizar sua convivência com os estilos
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -162,7 +162,7 @@ Definir rotas para início, projeto, benefícios, demonstração, tecnologias, d
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -170,7 +170,7 @@ Este cartão trata exclusivamente do front-end do projeto. Revisar a interface d
 
 <!-- gestao-de-custos-kanban:GC-KB-006 -->
 
-Revisar os layouts existentes para apresentar automação e conexão das ferramentas como objetivo geral, mantendo custos como um caso de uso.
+Revisar os layouts para apresentar a automação interna de backoffice como objetivo geral, mantendo custos como um caso de uso administrativo.
 
 ## Informações do cartão
 
@@ -194,7 +194,7 @@ Revisar os layouts existentes para apresentar automação e conexão das ferrame
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -226,7 +226,7 @@ Utilizar carregamento sob demanda nas páginas mais pesadas e apresentar um esta
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -258,7 +258,7 @@ Definir títulos de documento coerentes com a página aberta e com o nome Gestã
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -290,7 +290,7 @@ Apresentar uma tela de erro amigável quando o endereço não corresponde a nenh
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -322,7 +322,7 @@ Centralizar a leitura das fixtures e as consultas locais em uma camada de servi�
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -354,7 +354,7 @@ Conferir os tokens de fundo, superfície, texto e borda nos temas claro e escuro
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -386,7 +386,7 @@ Carregar a fonte Inter localmente e definir uma hierarquia legível para título
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -418,7 +418,7 @@ Implementar botões e links de ação com variantes principal e secundária, dim
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -450,7 +450,7 @@ Padronizar o cabeçalho das seções com texto de apoio, título e descrição o
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -482,7 +482,7 @@ Implementar o card de métrica com rótulo, valor, contexto e ícone opcional pa
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -514,7 +514,7 @@ Apresentar Regular, Atenção e Redução com texto e distinção visual, sem de
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -546,7 +546,7 @@ Organizar título, contexto e área de visualização dos gráficos em um compon
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -578,7 +578,7 @@ Apresentar uma mensagem útil quando a busca ou os filtros não encontram colabo
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -610,7 +610,7 @@ Centralizar a apresentação de valores em reais e percentuais em português do 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -642,7 +642,7 @@ Utilizar ícones Lucide e transições discretas para ações e informações, m
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -674,7 +674,7 @@ Apresentar o nome Gestão de custos e o símbolo da aplicação nos pontos de na
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -706,7 +706,7 @@ Revisar o espaço entre marca, navegação, seletor de tema e ações nas largur
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -738,7 +738,7 @@ Sinalizar visualmente a página atual nos menus de navegação.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -770,7 +770,7 @@ Exibir um botão de menu em telas menores e controlar a abertura da navegação 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -802,7 +802,7 @@ Disponibilizar as páginas previstas dentro do menu móvel e fechar o painel ap�
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -834,7 +834,7 @@ Manter o foco dentro do menu aberto e devolvê-lo ao acionador após o fechament
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -866,7 +866,7 @@ Impedir a rolagem de fundo enquanto o menu móvel estiver ativo e restaurar o co
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -898,7 +898,7 @@ Organizar identificação do produto, contexto do projeto, links de navegação 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -930,7 +930,7 @@ Criar a navegação entre dashboard e catálogo na área demonstrativa, adaptand
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -962,15 +962,15 @@ Reposicionar a experiência ao abrir uma página e direcionar o foco para o cont
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-031] Validar o banner institucional da página inicial
+# [GC-KB-031] Validar o banner de automação interna de backoffice
 
 <!-- gestao-de-custos-kanban:GC-KB-031 -->
 
-Revisar o destaque de abertura como banner profissional sobre automação e conexão das ferramentas principais.
+Revisar o destaque de abertura como banner profissional do projeto de backoffice interno.
 
 ## Informações do cartão
 
@@ -988,13 +988,13 @@ Revisar o destaque de abertura como banner profissional sobre automação e cone
 
 ## Critérios de aceite
 
-- [ ] Apresentar mensagem principal clara e ações visíveis.
+- [ ] Explicar o foco nas rotinas administrativas da equipe e manter ações visíveis.
 - [ ] Manter composição equilibrada em desktop e celular.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1026,7 +1026,7 @@ Conferir a remoção do resumo da operação e das prévias financeiras do desta
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1034,7 +1034,7 @@ Este cartão trata exclusivamente do front-end do projeto. Revisar a interface d
 
 <!-- gestao-de-custos-kanban:GC-KB-033 -->
 
-Explicar a automação das rotinas e a proposta de consulta futura por chatbot com linguagem empresarial direta.
+Explicar a automação de RH, Financeiro, documentos e comunicação internos, com o chatbot externo como canal de consulta a integrar.
 
 ## Informações do cartão
 
@@ -1058,7 +1058,7 @@ Explicar a automação das rotinas e a proposta de consulta futura por chatbot c
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1090,15 +1090,15 @@ Revisar o destino, a legibilidade e o comportamento da chamada principal do bann
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-035] Preservar o botão futuro do chatbot no banner
+# [GC-KB-035] Preservar o botão do chatbot externo no banner
 
 <!-- gestao-de-custos-kanban:GC-KB-035 -->
 
-Conferir o componente compartilhado que indica o acesso ao chatbot a ser criado posteriormente.
+Conferir o botão reservado ao chatbot desenvolvido externamente, cuja integração a este front-end está pendente.
 
 ## Informações do cartão
 
@@ -1122,7 +1122,7 @@ Conferir o componente compartilhado que indica o acesso ao chatbot a ser criado 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1154,7 +1154,7 @@ Validar o fundo realmente claro e o contraste do banner após a troca de tema.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1186,7 +1186,7 @@ Revisar a composição azul escura do banner no tema noturno.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1218,7 +1218,7 @@ Revisar tamanhos fluidos, margens e ações nas larguras entre os pontos de queb
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1250,7 +1250,7 @@ Conferir os exemplos financeiros abaixo do destaque sem devolver o resumo operac
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1282,15 +1282,15 @@ Revisar a continuidade da leitura entre banner, projeto, benefícios, demonstra�
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-041] Alinhar a página Sobre ao objetivo de automação
+# [GC-KB-041] Alinhar a página Sobre à automação de backoffice interno
 
 <!-- gestao-de-custos-kanban:GC-KB-041 -->
 
-Revisar a apresentação no contexto 2RPnet/Inovanet Tech e das rotinas informadas pela equipe.
+Revisar a apresentação do backoffice interno no contexto 2RPnet/Inovanet Tech e das rotinas administrativas informadas.
 
 ## Informações do cartão
 
@@ -1308,13 +1308,13 @@ Revisar a apresentação no contexto 2RPnet/Inovanet Tech e das rotinas informad
 
 ## Critérios de aceite
 
-- [ ] Explicar a conexão das ferramentas principais ao chatbot futuro.
+- [ ] Distinguir a automação interna da integração de acesso ao chatbot externo.
 - [ ] Não inventar tecnologias internas ou integrações em produção.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1322,7 +1322,7 @@ Este cartão trata exclusivamente do front-end do projeto. Revisar a interface d
 
 <!-- gestao-de-custos-kanban:GC-KB-042 -->
 
-Conferir a narrativa que posiciona custos por colaborador como exemplo da proposta mais ampla de automação.
+Conferir a narrativa que posiciona custos por colaborador como um caso de uso da automação interna de backoffice.
 
 ## Informações do cartão
 
@@ -1346,7 +1346,7 @@ Conferir a narrativa que posiciona custos por colaborador como exemplo da propos
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1354,7 +1354,7 @@ Este cartão trata exclusivamente do front-end do projeto. Revisar a interface d
 
 <!-- gestao-de-custos-kanban:GC-KB-043 -->
 
-Apresentar os benefícios esperados de visibilidade, redução de tarefas manuais e consulta de informações.
+Apresentar os benefícios esperados para a equipe interna: redução de tarefas administrativas manuais, informações consistentes e apoio às consultas.
 
 ## Informações do cartão
 
@@ -1378,7 +1378,7 @@ Apresentar os benefícios esperados de visibilidade, redução de tarefas manuai
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1410,7 +1410,7 @@ Conferir a apresentação da proposta, do vídeo pendente e do exemplo estrutura
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1442,7 +1442,7 @@ Apresentar um placeholder profissional até o recebimento do vídeo real da equi
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1474,7 +1474,7 @@ Revisar a explicação de entrada, processamento, análise e resultado como prop
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1482,7 +1482,7 @@ Este cartão trata exclusivamente do front-end do projeto. Revisar a interface d
 
 <!-- gestao-de-custos-kanban:GC-KB-047 -->
 
-Revisar o diagrama e os textos sobre ecossistema, automações e arquitetura conceitual.
+Revisar o diagrama e os textos sobre as ferramentas do backoffice, automações e o papel do chatbot externo.
 
 ## Informações do cartão
 
@@ -1501,12 +1501,12 @@ Revisar o diagrama e os textos sobre ecossistema, automações e arquitetura con
 ## Critérios de aceite
 
 - [ ] Distinguir a interface implementada das integrações propostas.
-- [ ] Relacionar o mapa de RH ao objetivo de consulta futura por chatbot.
+- [ ] Relacionar o mapa de RH à automação interna e identificar a integração de acesso ao chatbot como pendente.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1538,7 +1538,7 @@ Conferir verbos, legendas e situações usados para falar das ferramentas citada
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1546,7 +1546,7 @@ Este cartão trata exclusivamente do front-end do projeto. Revisar a interface d
 
 <!-- gestao-de-custos-kanban:GC-KB-049 -->
 
-Revisar textos institucionais para uma comunicação direta sobre as rotinas mapeadas e o objetivo do projeto.
+Revisar a apresentação para uma comunicação direta com a equipe interna sobre as rotinas de backoffice mapeadas.
 
 ## Informações do cartão
 
@@ -1570,7 +1570,7 @@ Revisar textos institucionais para uma comunicação direta sobre as rotinas map
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1602,7 +1602,7 @@ Comparar componentes, espaçamentos e páginas com o Figma quando o acesso ao ar
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1634,7 +1634,7 @@ Organizar a consulta dos colaboradores demonstrativos com cabeçalho, aviso de s
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1666,7 +1666,7 @@ Implementar uma única estrutura de card renderizada a partir dos registros tipa
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1698,7 +1698,7 @@ Apresentar título legível com o nome fictício e o identificador de negócio d
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1730,7 +1730,7 @@ Conferir as linhas de salário, benefícios e despesas de cada card.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1762,7 +1762,7 @@ Revisar custo, competência, variação percentual e sinalização visual dos ca
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1794,7 +1794,7 @@ Conferir os 120 registros fictícios do site, separados das 120 tarefas externas
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1826,7 +1826,7 @@ Conferir o destino e o nome acessível da ação de detalhes de cada card.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1858,7 +1858,7 @@ Revisar nome fictício, identificador, cargo, departamento e competência nos de
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1890,7 +1890,7 @@ Conferir benefícios, lançamentos variáveis, origens e subtotais nos detalhes.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1922,7 +1922,7 @@ Revisar a série individual e o tratamento de um identificador desconhecido nos 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1954,7 +1954,7 @@ Permitir localizar registros pelo nome, cargo, descrição ou identificador exib
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -1986,7 +1986,7 @@ Permitir consultas equivalentes com ou sem acentos e sem diferença entre maiús
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2018,7 +2018,7 @@ Disponibilizar opções de TI, Financeiro, Operações e RH a partir dos departa
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2050,7 +2050,7 @@ Permitir restringir os resultados pelos status financeiros demonstrativos.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2082,7 +2082,7 @@ Permitir organizar os resultados pelo maior ou menor custo mensal consolidado.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2114,7 +2114,7 @@ Disponibilizar a organização dos colaboradores pelo nome, respeitando a ordena
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2146,7 +2146,7 @@ Organizar os resultados em páginas e disponibilizar controles para avançar, vo
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2178,7 +2178,7 @@ Permitir escolher os tamanhos previstos e visualizar todos os registros da base 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2210,7 +2210,7 @@ Registrar busca, filtros, ordenação, limite e página nos parâmetros de naveg
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2242,7 +2242,7 @@ Permitir restaurar o catálogo e anunciar a quantidade encontrada de forma clara
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2274,7 +2274,7 @@ Conferir o cabeçalho, período e identificação dos dados fictícios no dashbo
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2306,7 +2306,7 @@ Apresentar a soma dos custos dos colaboradores incluídos no recorte atual.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2338,7 +2338,7 @@ Apresentar a quantidade de pessoas e departamentos existentes no conjunto analis
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2370,7 +2370,7 @@ Revisar o indicador de aumento de custos, distinguindo-o dos possíveis alertas 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2402,7 +2402,7 @@ Permitir selecionar um departamento e atualizar os indicadores e visualizações
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2434,7 +2434,7 @@ Apresentar a série histórica consolidada a partir dos custos mensais das mesma
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2466,7 +2466,7 @@ Apresentar a participação de salários, benefícios fixos e despesas variávei
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2498,7 +2498,7 @@ Apresentar o custo dos departamentos em setembro e outubro no gráfico comparati
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2530,7 +2530,7 @@ Apresentar os colaboradores com maiores valores e acesso ao detalhamento individ
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2562,7 +2562,7 @@ Conferir a reorganização dos KPIs antes de os valores financeiros ficarem comp
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2570,7 +2570,7 @@ Este cartão trata exclusivamente do front-end do projeto. Revisar a interface d
 
 <!-- gestao-de-custos-kanban:GC-KB-081 -->
 
-Revisar as ferramentas e seus encaminhamentos segundo as observações mais recentes da equipe.
+Revisar as ferramentas de RH e seus encaminhamentos dentro do projeto de automação interna de backoffice.
 
 ## Informações do cartão
 
@@ -2594,7 +2594,7 @@ Revisar as ferramentas e seus encaminhamentos segundo as observações mais rece
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2626,7 +2626,7 @@ Conferir o agrupamento SulAmérica/Wellhub e o escopo exclusivo de vida da Porto
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2658,7 +2658,7 @@ Revisar os textos sobre automatizar cadastros manuais de RH na Flash e na Clude.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2690,7 +2690,7 @@ Conferir a automação proposta de cadastros Vixting e a relação prevista de p
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2722,7 +2722,7 @@ Revisar o fluxo Alura por e-mail à administração e a hipótese de avisar a In
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2754,7 +2754,7 @@ Conferir o registro dos formulários de matrícula SENAI e a necessidade de estu
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2786,7 +2786,7 @@ Revisar a relação prevista de backup do Autentique e armazenamento de relatór
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2818,7 +2818,7 @@ Conferir a descrição da automação proposta de e-mails ao Sindpd.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2850,7 +2850,7 @@ Revisar os serviços e a direção da relação proposta para informações rece
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2882,22 +2882,22 @@ Conferir a apresentação do Jurídico como arquivo documental nesta etapa.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-091] Preservar apenas o botão de acesso futuro ao chatbot
+# [GC-KB-091] Preservar o botão até integrar o chatbot externo
 
 <!-- gestao-de-custos-kanban:GC-KB-091 -->
 
-Conferir o botão compartilhado conforme a orientação de criar o chatbot somente depois.
+Conferir o botão compartilhado enquanto a integração de acesso ao chatbot desenvolvido externamente não estiver configurada.
 
 ## Informações do cartão
 
 | Campo                     | Informação                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Identificador do backlog  | GC-KB-091                                                                                                                  |
-| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Área                      | Demonstração e integração do chatbot                                                                                       |
 | Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
 | Prioridade proposta       | Alta                                                                                                                       |
 | Situação inicial proposta | A validar                                                                                                                  |
@@ -2914,54 +2914,54 @@ Conferir o botão compartilhado conforme a orientação de criar o chatbot somen
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-092] Manter ausente a implementação demonstrativa de conversa
+# [GC-KB-092] Definir a integração de acesso ao chatbot externo
 
 <!-- gestao-de-custos-kanban:GC-KB-092 -->
 
-Revisar a aplicação para evitar reintrodução de chat local ou integração antecipada do agente.
+Alinhar com a equipe externa a forma de integrar o chatbot existente ao front-end, sem desenvolver um novo agente.
 
 ## Informações do cartão
 
 | Campo                     | Informação                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Identificador do backlog  | GC-KB-092                                                                                                                  |
-| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Área                      | Demonstração e integração do chatbot                                                                                       |
 | Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
 | Prioridade proposta       | Alta                                                                                                                       |
-| Situação inicial proposta | A validar                                                                                                                  |
-| Referência de execução    | Revisão da interface existente; aceite da equipe pendente                                                                  |
+| Situação inicial proposta | A fazer                                                                                                                    |
+| Referência de execução    | Dependente das informações da equipe externa; integração de acesso pendente                                                |
 | Fonte                     | src/components/ui/ChatbotButton.tsx, src/components/AgentVideo.tsx, src/components/ConsolidationDemo.tsx e docs/CHATBOT.md |
 | Responsável               | A definir pela equipe                                                                                                      |
 | Prazo                     | Não definido                                                                                                               |
 
 ## Critérios de aceite
 
-- [ ] Não manter campo de perguntas, histórico ou respostas simuladas.
-- [ ] Não adicionar gateway de chat, adaptador de agente ou backend nesta etapa.
+- [ ] Registrar o endereço de acesso ou contrato de integração fornecido pela equipe responsável.
+- [ ] Manter somente o botão reservado até a integração ser configurada e validada, sem inventar endpoints ou simular respostas.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-093] Revisar os textos de disponibilidade futura do chatbot
+# [GC-KB-093] Revisar a comunicação da integração do chatbot externo
 
 <!-- gestao-de-custos-kanban:GC-KB-093 -->
 
-Conferir os rótulos e explicações que relacionam o chatbot às ferramentas principais.
+Conferir os rótulos que distinguem o desenvolvimento externo do chatbot e a integração pendente neste front-end.
 
 ## Informações do cartão
 
 | Campo                     | Informação                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Identificador do backlog  | GC-KB-093                                                                                                                  |
-| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Área                      | Demonstração e integração do chatbot                                                                                       |
 | Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
 | Prioridade proposta       | Alta                                                                                                                       |
 | Situação inicial proposta | A validar                                                                                                                  |
@@ -2972,13 +2972,13 @@ Conferir os rótulos e explicações que relacionam o chatbot às ferramentas pr
 
 ## Critérios de aceite
 
-- [ ] Indicar que o acesso será implementado futuramente.
+- [ ] Informar que falta integrar o acesso, sem dizer que o chatbot ainda precisa ser criado.
 - [ ] Não afirmar consulta em tempo real ou execução de automações.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -2993,7 +2993,7 @@ Revisar o estado visual do espaço do vídeo nas páginas onde o componente é u
 | Campo                     | Informação                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Identificador do backlog  | GC-KB-094                                                                                                                  |
-| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Área                      | Demonstração e integração do chatbot                                                                                       |
 | Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
 | Prioridade proposta       | Alta                                                                                                                       |
 | Situação inicial proposta | A validar                                                                                                                  |
@@ -3010,7 +3010,7 @@ Revisar o estado visual do espaço do vídeo nas páginas onde o componente é u
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3025,7 +3025,7 @@ Conferir a consulta estruturada por colaborador e competência sem experiência 
 | Campo                     | Informação                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Identificador do backlog  | GC-KB-095                                                                                                                  |
-| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Área                      | Demonstração e integração do chatbot                                                                                       |
 | Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
 | Prioridade proposta       | Alta                                                                                                                       |
 | Situação inicial proposta | A validar                                                                                                                  |
@@ -3042,7 +3042,7 @@ Conferir a consulta estruturada por colaborador e competência sem experiência 
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3057,7 +3057,7 @@ Revisar a soma local de salário, benefícios fixos e despesas variáveis por CP
 | Campo                     | Informação                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Identificador do backlog  | GC-KB-096                                                                                                                  |
-| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Área                      | Demonstração e integração do chatbot                                                                                       |
 | Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
 | Prioridade proposta       | Alta                                                                                                                       |
 | Situação inicial proposta | A validar                                                                                                                  |
@@ -3074,7 +3074,7 @@ Revisar a soma local de salário, benefícios fixos e despesas variáveis por CP
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3089,7 +3089,7 @@ Conferir Ana Beatriz Souza, colaboradora 101, em outubro de 2026 como referênci
 | Campo                     | Informação                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Identificador do backlog  | GC-KB-097                                                                                                                  |
-| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Área                      | Demonstração e integração do chatbot                                                                                       |
 | Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
 | Prioridade proposta       | Alta                                                                                                                       |
 | Situação inicial proposta | A validar                                                                                                                  |
@@ -3106,7 +3106,7 @@ Conferir Ana Beatriz Souza, colaboradora 101, em outubro de 2026 como referênci
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3121,7 +3121,7 @@ Revisar os blocos Sólides/RH de custos fixos e Omie/Financeiro de despesas vari
 | Campo                     | Informação                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Identificador do backlog  | GC-KB-098                                                                                                                  |
-| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Área                      | Demonstração e integração do chatbot                                                                                       |
 | Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
 | Prioridade proposta       | Alta                                                                                                                       |
 | Situação inicial proposta | A validar                                                                                                                  |
@@ -3138,7 +3138,7 @@ Revisar os blocos Sólides/RH de custos fixos e Omie/Financeiro de despesas vari
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3153,7 +3153,7 @@ Conferir seletores, parcelas, tabela e total do exemplo estruturado no celular.
 | Campo                     | Informação                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Identificador do backlog  | GC-KB-099                                                                                                                  |
-| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Área                      | Demonstração e integração do chatbot                                                                                       |
 | Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
 | Prioridade proposta       | Alta                                                                                                                       |
 | Situação inicial proposta | A validar                                                                                                                  |
@@ -3170,7 +3170,7 @@ Conferir seletores, parcelas, tabela e total do exemplo estruturado no celular.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3185,7 +3185,7 @@ Revisar a identificação e o anúncio do resultado ao alterar os seletores.
 | Campo                     | Informação                                                                                                                 |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Identificador do backlog  | GC-KB-100                                                                                                                  |
-| Área                      | Demonstração e chatbot futuro                                                                                              |
+| Área                      | Demonstração e integração do chatbot                                                                                       |
 | Fase                      | 2 — Revisar a apresentação institucional                                                                                   |
 | Prioridade proposta       | Alta                                                                                                                       |
 | Situação inicial proposta | A validar                                                                                                                  |
@@ -3202,7 +3202,7 @@ Revisar a identificação e o anúncio do resultado ao alterar os seletores.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3234,7 +3234,7 @@ Revisar todas as rotas em celular, tablet, desktop e nos intervalos entre pontos
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3266,7 +3266,7 @@ Conferir medidas fluidas para evitar saltos de conteúdo ao redimensionar a jane
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3298,7 +3298,7 @@ Revisar as cores calculadas de banner, páginas, tabelas e gráficos após alter
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3330,7 +3330,7 @@ Conferir preferência do sistema, escolha manual, persistência e sincronizaçã
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3362,7 +3362,7 @@ Revisar textos secundários, status, links, botões e campos nos dois temas.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3394,7 +3394,7 @@ Percorrer navegação, filtros, seletores, paginação e ações sem mouse.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3426,7 +3426,7 @@ Conferir HTML semântico e identificação de elementos para tecnologias assisti
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3458,7 +3458,7 @@ Revisar o conteúdo financeiro amplo sem quebrar o layout da página.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3490,7 +3490,7 @@ Conferir botões, tema, menu e paginação em celular e orientação horizontal.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3522,7 +3522,7 @@ Revisar transições e rolagem quando o usuário solicitar menos movimento.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3554,7 +3554,7 @@ Conferir identificadores, títulos, parcelas e histórico dos registros demonstr
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3586,7 +3586,7 @@ Verificar cálculo, associação por identificador normalizado e recorte de comp
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3618,7 +3618,7 @@ Percorrer as páginas previstas e os estados de rota inexistente no navegador de
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3650,7 +3650,7 @@ Executar cenários de busca, filtros combinados, ordenação, alteração de lim
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3682,15 +3682,15 @@ Conferir indicadores e totais compartilhados entre dashboard e detalhes.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
-# [GC-KB-116] Testar o acesso futuro ao chatbot sem conversa
+# [GC-KB-116] Testar o botão enquanto a integração do chatbot estiver pendente
 
 <!-- gestao-de-custos-kanban:GC-KB-116 -->
 
-Conferir o requisito de manter somente o botão desabilitado e o exemplo estruturado por seletores.
+Conferir o botão desabilitado do chatbot externo e o exemplo estruturado por seletores enquanto não houver integração configurada.
 
 ## Informações do cartão
 
@@ -3714,7 +3714,7 @@ Conferir o requisito de manter somente o botão desabilitado e o exemplo estrutu
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3746,7 +3746,7 @@ Revisar a cobertura dos defeitos relatados de responsividade e troca para o modo
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3778,7 +3778,7 @@ Rodar lint, build e testes apropriados às mudanças, corrigindo falhas antes da
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3805,12 +3805,12 @@ Revisar README, escopo, chatbot e ecossistema para refletir a interface atual.
 ## Critérios de aceite
 
 - [ ] Documentar instalação, comandos, fixtures e rotas disponíveis.
-- [ ] Explicitar o chatbot futuro, integrações propostas e Figma ainda não acessado.
+- [ ] Explicitar o objetivo de backoffice interno, o chatbot externo com integração pendente e o Figma ainda não acessado.
 - [ ] Anexar evidência de revisão ou entrega antes de concluir o cartão.
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
 
 ---
 
@@ -3842,4 +3842,4 @@ Conferir a entrega e organizar mudanças em commits focados sem publicar o códi
 
 ## Observação
 
-Este cartão trata exclusivamente do front-end do projeto. Revisar a interface de apresentação da automação e das ferramentas principais, reservando o chatbot para uma etapa futura e preservando custos como caso de uso demonstrativo. Não inclui criar conversa, respostas simuladas, backend ou integrações reais. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.
+Este cartão trata exclusivamente do front-end do projeto. Alinhar o front-end ao projeto de automação interna de backoffice, voltado às rotinas administrativas de RH, Financeiro, documentos e comunicação da equipe. Preservar custos como caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência deste front-end é integrar seu acesso, mantendo apenas o botão reservado até a integração ser validada. Não inclui recriar o agente externo, simular respostas ou implementar backend. A integração de acesso depende das informações da equipe externa. Uma função existente não comprova a conclusão desta revisão. Prioridade, responsável, prazo e situação no quadro devem ser validados pela equipe; esta atualização preserva o andamento existente.

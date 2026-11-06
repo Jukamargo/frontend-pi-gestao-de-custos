@@ -23,7 +23,7 @@ O backlog contém 12 áreas com 10 tarefas cada:
 7. Filtros e paginação.
 8. Dashboard financeiro.
 9. Ecossistema de RH.
-10. Demonstração e chatbot futuro.
+10. Demonstração e integração do chatbot.
 11. Responsividade e acessibilidade.
 12. Qualidade e documentação.
 
@@ -33,14 +33,14 @@ Cada cartão possui título em português no infinitivo, descrição, tabela de 
 
 Revisão de **5 de novembro de 2026**, baseada nas orientações mais recentes e no código existente:
 
-- Apresentar a automação das rotinas e a conexão das ferramentas principais como objetivo geral. A gestão de custos por colaborador permanece como um caso de uso demonstrativo.
+- Apresentar o projeto como **automação interna de backoffice**, voltado à equipe e às rotinas administrativas de RH, Financeiro, documentos e comunicação. Conectar as ferramentas principais para reduzir tarefas manuais. A gestão de custos por colaborador permanece como um caso de uso demonstrativo. O chatbot é desenvolvido externamente; a pendência neste front-end é integrar seu acesso.
 - Validar o banner institucional sem resumo operacional, KPIs ou gráficos no destaque inicial.
 - Priorizar a revisão dos temas claro e escuro, da persistência da preferência e da responsividade, incluindo larguras intermediárias e cortes de textos ou valores.
-- Manter somente o botão **Chatbot — em breve**, desabilitado. Não criar conversa, respostas simuladas, adaptador de agente ou backend nesta etapa.
+- Manter somente o botão **Chatbot — em breve**, desabilitado enquanto a integração estiver pendente. A tarefa GC-KB-092 registra a necessidade de obter a forma de acesso da equipe externa antes de configurar e validar a integração. Não recriar o agente nem simular respostas.
 - Revisar o mapa de RH: SulAmérica/Wellhub, Porto Seguro apenas vida, propostas Flash/Clude e Vixting/Sólides, restrição Alura, SENAI em análise, SharePoint, Sindpd e entradas por e-mail na Sólides. Jurídico permanece arquivo, fora das automações atuais.
 - Preservar a base financeira local, seus cálculos e a navegação de dashboard, catálogo e detalhes, sem inventar dados para novos serviços.
 
-Os cartões de arquitetura, apresentação institucional, ecossistema de RH, chatbot futuro, acessibilidade e qualidade receberam prioridade **Alta proposta**. O caso financeiro existente recebeu prioridade **Média proposta**. A equipe pode revisar essas prioridades. A validação visual do Figma continua dependente de acesso ao arquivo, sem alegação de análise do protótipo.
+Os cartões de arquitetura, apresentação do backoffice, ecossistema de RH, integração do chatbot, acessibilidade e qualidade receberam prioridade **Alta proposta**. O caso financeiro existente recebeu prioridade **Média proposta**. A equipe pode revisar essas prioridades. A validação visual do Figma continua dependente de acesso ao arquivo, sem alegação de análise do protótipo. A integração do chatbot depende do endereço de acesso ou contrato a fornecer pela equipe externa.
 
 Esta atualização altera o conteúdo das mesmas 120 issues e seus rótulos gerenciados de área e prioridade. Não cria issues adicionais, não muda colunas, não encerra tarefas e não atribui responsáveis ou datas. As situações sugeridas nos arquivos são referências de planejamento, não substituições do Status real do Project.
 

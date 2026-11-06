@@ -210,6 +210,7 @@ if (mode === '--issues' || mode === '--update') {
           `A issue existente de ${card.id} não foi localizada; nenhuma nova issue será criada neste modo.`,
         )
       const legacyAreas = [
+        'Demonstração e chatbot futuro',
         'Cards de custos',
         'Detalhes do colaborador',
         'Consulta demonstrativa',
@@ -575,7 +576,7 @@ Revisão: ${backlog.revision}.
 
 ${backlog.objective}
 
-O alinhamento contempla o banner sem resumo operacional, os temas e a responsividade, as decisões do ecossistema de RH e somente o botão desabilitado do chatbot futuro. Consulte os detalhes do escopo no [guia do Kanban](README.md#alinhamento-ao-escopo-atual).
+O alinhamento apresenta o projeto como automação interna de backoffice e preserva o banner sem resumo operacional, os temas, a responsividade e as decisões do ecossistema de RH. O chatbot é desenvolvido externamente; sua integração a este front-end está pendente, mantendo somente o botão reservado. Consulte os detalhes no [guia do Kanban](README.md#alinhamento-ao-escopo-atual).
 
 ${state.project ? `Project: [${backlog.projectTitle}](${state.project.url}). Visualização Kanban e 120 itens confirmados pela API.` : 'Project: criação pendente da autorização específica de GitHub Projects.'}
 
