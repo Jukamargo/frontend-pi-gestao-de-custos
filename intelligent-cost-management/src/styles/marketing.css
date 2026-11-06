@@ -343,6 +343,9 @@
   min-width: 0;
   color: var(--text-secondary);
 }
+.flow-step > div {
+  min-width: 0;
+}
 .flow-number {
   font-size: 12px;
   color: var(--text-muted);
@@ -776,6 +779,9 @@
   .video-placeholder {
     min-height: 280px;
   }
+  .agent-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .flow-step {
     gap: 8px;
   }
@@ -1005,6 +1011,7 @@
   }
   .agent-flow {
     gap: 24px 12px;
+    grid-template-columns: 1fr;
   }
   .flow-step {
     gap: 7px;

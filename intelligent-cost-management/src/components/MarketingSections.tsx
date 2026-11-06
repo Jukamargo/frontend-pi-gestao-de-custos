@@ -170,27 +170,27 @@ export function AgentSection({ full = false }: { full?: boolean }) {
         </div>
         {full && (
           <>
-            <div className="agent-flow" aria-label="Fluxo conceitual do agente">
+            <div className="agent-flow" aria-label="Fluxo do agente externo">
               {[
                 {
                   icon: FileInput,
-                  title: 'Pergunta',
-                  sub: 'Dúvida da equipe',
+                  title: 'Manual Trigger',
+                  sub: 'Início da solicitação',
                 },
                 {
                   icon: Workflow,
-                  title: 'Consulta às fontes',
-                  sub: 'Ferramentas principais',
+                  title: 'Consulta RH (Sólides)',
+                  sub: 'Requisição aos dados de RH',
                 },
                 {
                   icon: Search,
-                  title: 'Organização',
-                  sub: 'Informações relevantes',
+                  title: 'Consulta Financeiro (Omie)',
+                  sub: 'Requisição aos dados financeiros',
                 },
                 {
                   icon: ChartNoAxesCombined,
-                  title: 'Resposta',
-                  sub: 'Conteúdo e origem',
+                  title: 'Consolidação',
+                  sub: 'Nó separado para reunir os resultados',
                 },
               ].map(({ icon: Icon, title, sub }, i) => (
                 <div className="flow-step" key={title}>
@@ -207,10 +207,12 @@ export function AgentSection({ full = false }: { full?: boolean }) {
             <div className="info-note">
               <Info size={20} />
               <p>
-                <strong>Chatbot em etapa futura.</strong> O botão indica o
-                acesso previsto. A consulta de custos abaixo usa seletores e
-                dados fictícios, sem conexão ao agente ou às ferramentas
-                externas.
+                <strong>Consultas separadas, com consolidação ao final.</strong>{' '}
+                O agente externo faz requisições distintas a Sólides e Omie e
+                reúne os resultados em um nó próprio. Conforme informado pela
+                equipe, as respostas têm como referência a documentação oficial
+                dessas plataformas. A integração com esta interface está
+                pendente; o exemplo abaixo usa apenas dados fictícios locais.
               </p>
             </div>
             <ConsolidationDemo />
@@ -299,9 +301,11 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
               <p>
                 Priorizar as ferramentas principais, confirmar seus contratos de
                 acesso e integrar o acesso ao chatbot externo. O contexto
-                técnico registra um workflow Gemini Enterprise para a consulta
-                de custos; sua conexão à interface e a evolução para BigQuery
-                permanecem etapas futuras.
+                técnico registra um workflow Gemini Enterprise. O fluxo atual
+                informado pela equipe é Manual Trigger, Consulta RH (Sólides),
+                Consulta Financeiro (Omie) e Consolidação em nó separado, com
+                requisições distintas para RH e Financeiro. Sua conexão à
+                interface e a evolução para BigQuery permanecem etapas futuras.
               </p>
             </article>
           </div>
