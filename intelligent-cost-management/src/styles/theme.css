@@ -31,6 +31,12 @@
   --chart-series-5: #9aabbc;
   --chart-previous: #b9c9da;
   --chart-fill: #3976af;
+  --banner-background: #102a45;
+  --banner-end: #18436c;
+  --banner-text: #f3f7fc;
+  --banner-muted: #c1d0df;
+  --banner-accent: #a3c7ec;
+  --banner-line: #ffffff26;
   --muted: var(--text-muted);
   --line: var(--border);
   --blue: var(--accent);
@@ -66,4 +72,6 @@
   --chart-series-4: #79b8a2;
   --chart-previous: #405b7c;
   --chart-fill: #8ab8ec;
+  --banner-background: #0b1829;
+  --banner-end: #142e4a;
 }

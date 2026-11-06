@@ -1,7 +1,6 @@
 import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { ChatbotButton } from '../../components/ui/ChatbotButton'
-import { DashboardPreview } from '../../components/DashboardPreview'
 import {
   AboutSection,
   AgentSection,
@@ -18,72 +17,40 @@ const featured = [records[0], records[32], records[81]]
 export default function Home() {
   return (
     <>
-      <section className="hero-section">
-        <div className="container hero-grid">
+      <section className="hero-section" aria-labelledby="hero-heading">
+        <div className="container hero-banner-inner">
           <div className="hero-content">
             <span className="hero-kicker">
               <span />
-              Conexões, automação e chatbot
+              Gestão de custos · Inovanet Tech
             </span>
-            <h1>
+            <h1 id="hero-heading">
               Automatizar rotinas.
               <br />
               <span>Responder dúvidas.</span>
             </h1>
             <p>
-              O objetivo é conectar as ferramentas principais da empresa a um
-              chatbot para responder às dúvidas da equipe. O projeto reúne
-              automações de cadastros, troca de dados e comunicação, com
-              consultas sobre RH, processos e custos.
+              Uma proposta para conectar as ferramentas da empresa, automatizar
+              processos e reunir as informações em um chatbot para as dúvidas da
+              equipe.
             </p>
             <div className="hero-buttons">
+              <a className="button hero-primary" href="#sobre">
+                Conheça a solução <ArrowDown size={17} aria-hidden="true" />
+              </a>
               <ChatbotButton />
-              <Link className="hero-secondary" to="/tecnologias">
-                Ver ferramentas <ArrowUpRight size={17} />
-              </Link>
             </div>
             <div className="hero-footnote">
               <span />
-              Chatbot e integrações previstos para uma próxima etapa.
+              Chatbot previsto para uma próxima etapa.
             </div>
           </div>
-          <DashboardPreview />
         </div>
         <div className="container hero-bottom">
-          <a href="#sobre">
-            Conheça o projeto <ArrowDown size={15} />
-          </a>
-          <span>
-            2RPnet <span className="slash">/</span> Inovanet Tech
-          </span>
+          <span>Integração de ferramentas · Automação de rotinas</span>
+          <span>Projeto no contexto 2RPnet / Inovanet Tech</span>
         </div>
       </section>
-      <div className="project-facts">
-        <div className="container facts-inner">
-          <p>
-            Objetivo do projeto
-            <br />
-            <strong>Automação e consultas centralizadas</strong>
-          </p>
-          <div>
-            <strong>01</strong>
-            <span>Conectar ferramentas</span>
-          </div>
-          <div>
-            <strong>02</strong>
-            <span>Automatizar rotinas</span>
-          </div>
-          <div>
-            <strong>03</strong>
-            <span>Responder dúvidas</span>
-          </div>
-          <span className="facts-note">
-            Escopo em desenvolvimento
-            <br />
-            2RPnet / Inovanet Tech
-          </span>
-        </div>
-      </div>
       <AboutSection />
       <BenefitsSection />
       <section className="section catalog-showcase">

@@ -25,8 +25,7 @@ export function AboutSection() {
         <div className="about-intro">
           <span className="eyebrow">Sobre o projeto</span>
           <h2>
-            Ferramentas integradas,
-            <br />
+            Ferramentas integradas, <br />
             consultas pelo chatbot.
           </h2>
           <span className="section-index">Projeto Inovanet Tech</span>
