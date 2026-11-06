@@ -157,7 +157,7 @@ docs/ESCOPO_FRONTEND.md       # Correspondência com o contexto fornecido
 
 [Protótipo Figma fornecido](https://www.figma.com/design/Q6pYa2PRIZKpCFZ2L3BZuX/Untitled?node-id=0-1). O arquivo não pôde ser acessado durante a implementação; não se afirma fidelidade ao protótipo. Não foram encontrados logos oficiais.
 
-O visual mantém uma apresentação sóbria, com Inter e temas claro e escuro. A página inicial apresenta o objetivo de automação e consulta pelo chatbot futuro; dashboard, catálogo e composição de custos aparecem como um caso de uso da solução.
+O visual mantém uma apresentação sóbria, com Inter e temas claro e escuro. A página inicial abre com um banner institucional em azul-marinho, sem resumo operacional ou indicadores financeiros. O destaque apresenta o objetivo de automação e o botão futuro do chatbot; dashboard, catálogo e composição de custos aparecem como um caso de uso da solução.
 
 Os testes verificam o caso 101 de R$ 12.025,50, associação por CPF normalizado, isolamento por competência, integridade dos 120 cards, reconciliação dos gráficos, filtros, paginação e ausência de CPF completo na tela. Os fluxos são executados em **1440 × 1000**, **768 × 1024** e **390 × 844**. Capturas ficam em `artifacts/` e traces de falha em `test-results/`, pastas ignoradas pelo Git.
 
