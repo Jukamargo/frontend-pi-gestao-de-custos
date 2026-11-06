@@ -151,6 +151,19 @@ const liveIssues = await listIssues()
 reconcile(liveIssues)
 
 if (mode === '--issues' || mode === '--update') {
+  if (mode === '--update') {
+    // Validar todos os destinos antes de qualquer alteração, inclusive rótulos.
+    for (const card of backlog.cards)
+      if (
+        !liveIssues.some((issue) =>
+          issue.body?.includes(`<!-- gestao-de-custos-kanban:${card.id} -->`),
+        )
+      )
+        throw new Error(`A issue existente de ${card.id} não foi localizada.`)
+    const backupPath = `${root}artifacts/issues-antes-atualizacao-${Date.now()}.json`
+    writeFileSync(backupPath, JSON.stringify(liveIssues, null, 2))
+    console.log(`Backup das issues salvo em ${backupPath}`)
+  }
   const labels = await request(`/repos/${repository}/labels?per_page=100`)
   const areaLabels = [...new Set(backlog.cards.map((card) => card.area))].map(
     (area, index) => ({
@@ -196,10 +209,10 @@ if (mode === '--issues' || mode === '--update') {
         throw new Error(
           `A issue existente de ${card.id} não foi localizada; nenhuma nova issue será criada neste modo.`,
         )
-      const backupPath = `${root}artifacts/issues-antes-da-correcao-frontend.json`
-      if (!existsSync(backupPath))
-        writeFileSync(backupPath, JSON.stringify(liveIssues, null, 2))
       const legacyAreas = [
+        'Cards de custos',
+        'Detalhes do colaborador',
+        'Consulta demonstrativa',
         'Escopo e governança',
         'Mapeamento de RH e Sólides',
         'Mapeamento financeiro e ecossistema',
@@ -257,7 +270,7 @@ if (mode === '--issues' || mode === '--update') {
       }
       if ((index + 1) % 10 === 0)
         console.log(
-          `${index + 1}/120 issues corrigidas para front-end. Última: ${issue.html_url}`,
+          `${index + 1}/120 issues alinhadas ao escopo atual. Última: ${issue.html_url}`,
         )
       continue
     }
@@ -475,6 +488,14 @@ if (mode === '--verify') {
         issue.body?.replaceAll('\r\n', '\n').trim() ===
           card.body.replaceAll('\r\n', '\n').trim() &&
         issue.labels.some((label) => label.name === 'escopo: frontend') &&
+        issue.labels.some((label) => label.name === `área: ${card.area}`) &&
+        issue.labels.some(
+          (label) =>
+            label.name ===
+            `prioridade: ${card.priority.toLocaleLowerCase('pt-BR')}`,
+        ) &&
+        issue.labels.filter((label) => label.name.startsWith('área: '))
+          .length === 1 &&
         issue.body.includes('| Campo |') &&
         issue.body.includes('## Critérios de aceite'),
     ),
@@ -544,6 +565,25 @@ if (mode === '--verify') {
       )
   }
   save()
-  const report = `# Publicação das tarefas de front-end no GitHub\n\nRepositório: [${repository}](https://github.com/${repository}).\n\n**120 issues exclusivas de front-end verificadas pela API**, com título, descrição, tabela de informações e critérios de aceite.\n\n${state.project ? `Project: [${backlog.projectTitle}](${state.project.url}). Visualização Kanban e 120 itens confirmados pela API.\n` : 'Project: criação pendente da autorização específica de GitHub Projects. As issues já estão cadastradas.\n'}\nNenhuma issue foi encerrada automaticamente. Responsáveis e prazos permanecem sem atribuição; prioridades são propostas para revisão.\n\n| Identificador do backlog | Issue | Título |\n| --- | --- | --- |\n${backlog.cards.map((card) => `| ${card.id} | [#${state.issues[card.id].number}](${state.issues[card.id].url}) | ${card.title.replace(/^\[[^\]]+\] /, '')} |`).join('\n')}\n`
+  const report = `# Publicação das tarefas de front-end no GitHub
+
+Repositório: [${repository}](https://github.com/${repository}).
+
+**120 issues exclusivas de front-end verificadas pela API**, com títulos, descrições, tabelas de informações, critérios de aceite e rótulos de área e prioridade correspondentes ao backlog local.
+
+Revisão: ${backlog.revision}.
+
+${backlog.objective}
+
+O alinhamento contempla o banner sem resumo operacional, os temas e a responsividade, as decisões do ecossistema de RH e somente o botão desabilitado do chatbot futuro. Consulte os detalhes do escopo no [guia do Kanban](README.md#alinhamento-ao-escopo-atual).
+
+${state.project ? `Project: [${backlog.projectTitle}](${state.project.url}). Visualização Kanban e 120 itens confirmados pela API.` : 'Project: criação pendente da autorização específica de GitHub Projects.'}
+
+A atualização reutiliza as mesmas issues. Não encerra tarefas, muda colunas ou atribui responsáveis e datas. Prioridades são propostas para revisão pela equipe.
+
+| Identificador do backlog | Issue | Título |
+| --- | --- | --- |
+${backlog.cards.map((card) => `| ${card.id} | [#${state.issues[card.id].number}](${state.issues[card.id].url}) | ${card.title.replace(/^\[[^\]]+\] /, '')} |`).join('\n')}
+`
   writeFileSync(new URL('./publicacao.md', import.meta.url), report)
 }
