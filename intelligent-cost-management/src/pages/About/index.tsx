@@ -7,10 +7,10 @@ export default function About() {
         <SectionHeading
           level={1}
           eyebrow="SOBRE O PROJETO"
-          title="Automação de rotinas e consultas por chatbot"
+          title="Automação interna de backoffice"
         >
-          Conheça a proposta da plataforma Gestão de custos, desenvolvida no
-          contexto da 2RPnet / Inovanet Tech.
+          Conheça o projeto Gestão de custos, voltado às rotinas administrativas
+          internas no contexto da 2RPnet / Inovanet Tech.
         </SectionHeading>
       </div>
       <AboutSection />
@@ -27,13 +27,14 @@ export default function About() {
         </article>
         <article>
           <span className="eyebrow">A PROPOSTA</span>
-          <h2>Ferramentas conectadas a um ponto de consulta</h2>
+          <h2>Rotinas internas com ferramentas conectadas</h2>
           <p>
-            O objetivo é automatizar os processos mapeados e conectar as
-            ferramentas principais a um chatbot que responda às dúvidas da
-            equipe. A consulta de custos por colaborador é um dos casos de uso,
-            com informações de RH e Financeiro. As prioridades de conexão e os
-            contratos de acesso precisam ser definidos para cada ferramenta.
+            O objetivo é automatizar o backoffice interno, conectando as
+            ferramentas dos processos mapeados. O chatbot será um canal de apoio
+            às dúvidas da equipe. A consulta de custos por colaborador é um dos
+            casos de uso, com informações de RH e Financeiro. As prioridades de
+            conexão e os contratos de acesso precisam ser definidos para cada
+            ferramenta.
           </p>
         </article>
       </section>

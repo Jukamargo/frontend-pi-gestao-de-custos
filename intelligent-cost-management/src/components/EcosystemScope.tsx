@@ -16,8 +16,8 @@ export function EcosystemScope() {
         <span className="eyebrow">Mapeamento de RH</span>
         <h2 id="ecosystem-heading">Serviços e oportunidades de automação</h2>
         <p>
-          O objetivo é automatizar as rotinas mapeadas e conectar as ferramentas
-          principais ao chatbot para responder às dúvidas da equipe. As
+          O mapeamento reúne as rotinas de RH do projeto de automação interna de
+          backoffice. O chatbot será um canal de consulta para a equipe. As
           situações abaixo indicam o encaminhamento de cada serviço; não
           representam integrações ativas nesta demonstração.
         </p>

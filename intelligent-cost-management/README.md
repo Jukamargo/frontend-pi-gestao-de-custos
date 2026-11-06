@@ -1,12 +1,12 @@
 # Gestão de custos — Inovanet
 
-Front-end institucional e demonstrativo do projeto de **automação de rotinas e integração das ferramentas principais a um chatbot**, no contexto 2RPnet / Inovanet Tech. O objetivo é responder às dúvidas da equipe com informações dos sistemas e processos mapeados. A **gestão de custos por colaborador é um dos casos de uso**, com dados de RH e Financeiro.
+Front-end de apresentação e demonstração do projeto de **automação interna de backoffice**, no contexto 2RPnet / Inovanet Tech. O objetivo é conectar ferramentas e reduzir tarefas manuais nas rotinas administrativas de RH, Financeiro, documentos e comunicação. O chatbot é desenvolvido externamente e sua integração a esta interface está pendente. A **gestão de custos por colaborador é um dos casos de uso**, com dados de RH e Financeiro.
 
 O escopo foi alinhado ao documento `CONTEXTO_GERAL_PROJETO.md` fornecido pelo responsável. Consulte o [mapeamento de escopo](docs/ESCOPO_FRONTEND.md) para distinguir o projeto de referência das funcionalidades executadas nesta interface.
 
 As observações posteriores sobre fornecedores e rotinas estão no [mapeamento do ecossistema de RH](docs/ECOSSISTEMA_RH.md) e na página **Tecnologias**. O registro distingue propostas de automação, restrições, processos em análise e atividades fora do escopo atual.
 
-O [chatbot será implementado futuramente](docs/CHATBOT.md). Nesta versão, há apenas o botão **Chatbot — em breve**, desabilitado até a disponibilização do serviço. A rota `/demonstracao` apresenta a proposta, o espaço reservado para o vídeo e o exemplo de custos por seletores.
+A pendência é [integrar o acesso ao chatbot externo](docs/CHATBOT.md). Nesta versão, há apenas o botão **Chatbot — em breve**, desabilitado até a configuração e validação dessa integração. O agente não será recriado neste repositório. A rota `/demonstracao` apresenta o contexto, o espaço reservado para o vídeo e o exemplo de custos por seletores.
 
 Os **120 cartões solicitados são tarefas exclusivamente de front-end para o [Kanban externo no GitHub](https://github.com/users/Jukamargo/projects/2)**, com título e descrição, e não registros do dashboard financeiro nem tarefas de backend ou infraestrutura. O backlog e a publicação estão documentados em [docs/kanban](docs/kanban/README.md). A base fictícia de colaboradores da aplicação é independente desse quadro de tarefas.
 

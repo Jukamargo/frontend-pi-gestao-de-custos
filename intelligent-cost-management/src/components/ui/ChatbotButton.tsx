@@ -6,7 +6,7 @@ export function ChatbotButton() {
       type="button"
       className="button chatbot-button"
       disabled
-      title="O chatbot será disponibilizado em uma próxima etapa"
+      title="O acesso ao chatbot externo será disponibilizado após a integração"
     >
       <MessageSquare size={17} aria-hidden="true" />
       Chatbot — em breve

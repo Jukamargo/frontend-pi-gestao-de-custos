@@ -4,7 +4,7 @@ Referência: observações e diagrama enviados pelo responsável pelo projeto ne
 
 O mapeamento registra o escopo de negócio e os encaminhamentos propostos. Não comprova disponibilidade de APIs, contratação, integração em produção ou automação já implementada. Os rótulos “API” e “MANUAL” do diagrama não foram tratados como contratos técnicos validados.
 
-O objetivo da solução é automatizar essas rotinas e conectar as ferramentas principais a um chatbot para responder às dúvidas da equipe. A lista abaixo não define, por si só, quais sistemas serão conectados primeiro; essa prioridade e os meios técnicos precisam ser confirmados. O chatbot será implementado futuramente; nesta interface existe apenas o botão de acesso previsto.
+O objetivo da solução é automatizar o backoffice interno, conectando as ferramentas principais para apoiar as rotinas administrativas da equipe. O chatbot é desenvolvido externamente e será um canal de consulta sobre esses processos. A lista abaixo não define, por si só, quais sistemas serão conectados primeiro; essa prioridade e os meios técnicos precisam ser confirmados. A integração de acesso ao chatbot está pendente neste front-end, que mantém apenas o botão reservado.
 
 ## Serviços e decisões
 

@@ -9,9 +9,9 @@ export function Footer() {
           <div>
             <Brand />
             <p>
-              Projeto de integração de ferramentas e automação de rotinas.
+              Projeto de automação interna de backoffice.
               <br />
-              Consultas de RH, processos e custos por chatbot.
+              Ferramentas conectadas e apoio às rotinas administrativas.
             </p>
           </div>
           <div>

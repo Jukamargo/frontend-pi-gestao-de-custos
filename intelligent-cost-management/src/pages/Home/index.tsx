@@ -25,13 +25,14 @@ export default function Home() {
               Gestão de custos · Inovanet Tech
             </span>
             <h1 id="hero-heading">
-              Automatizar rotinas.
+              Automação interna.
               <br />
-              <span>Responder dúvidas.</span>
+              <span>Rotinas conectadas.</span>
             </h1>
             <p>
-              Uma proposta para conectar as ferramentas da empresa, automatizar
-              processos e reunir as informações em um chatbot para as dúvidas da
+              Um projeto de automação de backoffice para conectar as ferramentas
+              da empresa e reduzir tarefas manuais em RH, Financeiro, documentos
+              e comunicação. O chatbot externo será o ponto de consulta da
               equipe.
             </p>
             <div className="hero-buttons">
@@ -42,12 +43,12 @@ export default function Home() {
             </div>
             <div className="hero-footnote">
               <span />
-              Chatbot previsto para uma próxima etapa.
+              Integração do chatbot externo pendente.
             </div>
           </div>
         </div>
         <div className="container hero-bottom">
-          <span>Integração de ferramentas · Automação de rotinas</span>
+          <span>Backoffice interno · Integração de ferramentas</span>
           <span>Projeto no contexto 2RPnet / Inovanet Tech</span>
         </div>
       </section>

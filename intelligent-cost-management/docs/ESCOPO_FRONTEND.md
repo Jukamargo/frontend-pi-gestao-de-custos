@@ -4,7 +4,9 @@ Referências de negócio: `CONTEXTO_GERAL_PROJETO.md`, o mapeamento de fornecedo
 
 ## Objetivo central
 
-Automatizar as rotinas mapeadas e conectar as ferramentas principais a um chatbot que responda às dúvidas da equipe. O escopo abrange consultas sobre RH, processos, benefícios, documentos e custos, conforme a disponibilidade e a priorização dos sistemas.
+O projeto é de **automação interna de backoffice**. Seu objetivo é conectar as ferramentas principais e reduzir tarefas manuais nos processos administrativos de RH, Financeiro, benefícios, documentos e comunicação. O público é a equipe interna da empresa.
+
+O chatbot é desenvolvido externamente como canal de consulta às informações desses processos. A pendência deste front-end é integrar o acesso a esse serviço; não desenvolver um novo chatbot. A forma de acesso e os dados disponíveis dependem de confirmação com a equipe responsável.
 
 A gestão de custos por colaborador é um caso de uso dessa proposta. Sua consolidação considera salário base, benefícios fixos e despesas variáveis, cruzando CPF e competência. Os cálculos e dados fictícios existentes foram preservados.
 
@@ -42,7 +44,7 @@ Esse complemento é uma apresentação de escopo, sem executar integrações ou 
 
 Os modelos locais são normalizados para a interface, e não uma declaração de compatibilidade integral com todos os campos das APIs externas. Nenhum endpoint externo é chamado nesta versão. O texto não apresenta o workflow documentado como se estivesse conectado ao navegador.
 
-O [chatbot permanece como etapa futura](CHATBOT.md). A interface mantém somente seu botão de acesso desabilitado, sem conversa, respostas locais ou adaptador de agente. A consulta por seletores continua disponível como exemplo de custos.
+A [integração do chatbot externo permanece pendente](CHATBOT.md). A interface mantém somente seu botão de acesso desabilitado, sem conversa, respostas locais ou adaptador de agente. A consulta por seletores continua disponível como exemplo de custos.
 
 Os status Atenção/Redução/Regular derivam da variação dos valores simulados e são uma convenção adicional do front-end. Não representam status contratual, avaliação de IA ou resultado financeiro comprovado. Encargos e outras parcelas fora da fórmula fornecida não são estimados.
 

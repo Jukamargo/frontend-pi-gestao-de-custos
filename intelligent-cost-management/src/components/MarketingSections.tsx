@@ -25,16 +25,16 @@ export function AboutSection() {
         <div className="about-intro">
           <span className="eyebrow">Sobre o projeto</span>
           <h2>
-            Ferramentas integradas, <br />
-            consultas pelo chatbot.
+            Automação de backoffice, <br />
+            para a rotina da equipe.
           </h2>
           <span className="section-index">Projeto Inovanet Tech</span>
         </div>
         <div className="about-copy">
           <p className="lead-copy">
-            O objetivo é automatizar as rotinas da empresa e reunir as
-            informações das ferramentas principais em um chatbot que responda às
-            dúvidas da equipe.
+            O projeto é voltado à automação interna de backoffice: conectar as
+            ferramentas principais e reduzir tarefas manuais nas rotinas
+            administrativas da empresa.
           </p>
           <p>
             O mapeamento contempla cadastros de RH, benefícios, ponto,
@@ -44,8 +44,9 @@ export function AboutSection() {
           </p>
           <p>
             Desenvolvida no contexto da 2RPnet / Inovanet Tech, esta versão
-            apresenta a proposta de integração e um caso de consulta de custos.
-            O chatbot será implementado em uma próxima etapa.
+            apresenta os processos mapeados e um caso de consulta de custos. O
+            chatbot é desenvolvido externamente e será integrado a esta
+            interface para apoiar as dúvidas da equipe.
           </p>
           <Link to="/sobre" className="text-link">
             Entender a proposta <ArrowUpRight size={17} />
@@ -79,7 +80,7 @@ const benefits = [
     title: 'Consultar em uma conversa',
     text: 'Usar o chatbot como ponto de consulta para dúvidas sobre processos, ferramentas e custos.',
     detail:
-      'O chatbot será implementado futuramente. Nesta versão, a consulta de custos está disponível no dashboard, no catálogo e nos seletores demonstrativos.',
+      'O chatbot é desenvolvido externamente; sua integração a esta interface está pendente. A consulta de custos já pode ser explorada no dashboard, no catálogo e nos seletores demonstrativos.',
   },
   {
     icon: Gauge,
@@ -87,7 +88,7 @@ const benefits = [
     title: 'Identificar a fonte da resposta',
     text: 'Apresentar a origem das informações e distinguir dados demonstrativos de processos ainda em análise.',
     detail:
-      'O chatbot futuro deverá indicar a origem das informações. O mapeamento atual preserva as restrições da Alura, do SENAI e do Jurídico.',
+      'A integração ao chatbot externo deve preservar a indicação das fontes. O mapeamento atual registra as restrições da Alura, do SENAI e do Jurídico.',
   },
 ]
 export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
@@ -98,10 +99,11 @@ export function BenefitsSection({ expanded = false }: { expanded?: boolean }) {
           <SectionHeading
             level={expanded ? 1 : 2}
             eyebrow="Objetivos da solução"
-            title="Automação com um ponto de consulta"
+            title="Automação para o backoffice interno"
           >
-            Conectar os sistemas principais, automatizar os processos mapeados e
-            disponibilizar as informações para consulta pelo chatbot.
+            Conectar os sistemas usados pela equipe e automatizar cadastros,
+            trocas de dados, documentos e comunicação. O chatbot será um canal
+            de consulta às informações dessas rotinas.
           </SectionHeading>
           {!expanded && (
             <Link to="/beneficios" className="text-link">
@@ -135,12 +137,12 @@ export function AgentSection({ full = false }: { full?: boolean }) {
           <div>
             <SectionHeading
               level={full ? 1 : 2}
-              eyebrow="Chatbot · próxima etapa"
+              eyebrow="Chatbot externo · integração pendente"
               title="Perguntas sobre processos, ferramentas e custos"
             >
-              O chatbot será o ponto de consulta às informações das ferramentas
-              principais. Seu acesso será disponibilizado após a implementação e
-              a definição das integrações do projeto.
+              O chatbot é desenvolvido externamente para consultar as
+              informações das ferramentas principais. Falta integrar seu acesso
+              a esta interface para disponibilizá-lo à equipe.
             </SectionHeading>
             <div className="agent-points">
               <span>
@@ -229,10 +231,10 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
             eyebrow="Estrutura do projeto"
             title="Ferramentas, automações e chatbot"
           >
-            O objetivo é conectar as ferramentas principais para automatizar
-            rotinas e disponibilizar suas informações em um chatbot. As conexões
-            devem respeitar a disponibilidade de cada serviço e as restrições
-            registradas no mapeamento de RH.
+            O projeto de backoffice interno prevê conectar ferramentas para
+            automatizar rotinas administrativas e apoiar as consultas da equipe.
+            As conexões devem respeitar a disponibilidade de cada serviço e as
+            restrições registradas no mapeamento de RH.
           </SectionHeading>
           {full ? (
             <a className="text-link" href="#ecossistema-rh">
@@ -269,7 +271,7 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
             <h3>Chatbot</h3>
             <p>Respostas às dúvidas da equipe, com indicação das fontes.</p>
             <span className="architecture-status">
-              Objetivo central · implementação futura
+              Desenvolvimento externo · integração pendente
             </span>
           </div>
         </div>
@@ -279,7 +281,7 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
               <h3>Nesta interface</h3>
               <p>
                 React, TypeScript, Vite e React Router. A interface apresenta o
-                escopo e o botão de acesso futuro ao chatbot. O dashboard e os
+                escopo e o botão reservado ao chatbot externo. O dashboard e os
                 seletores de custos utilizam dados fictícios locais.
               </p>
             </article>
@@ -296,10 +298,10 @@ export function TechnologiesSection({ full = false }: { full?: boolean }) {
               <h3>Próximas etapas do projeto</h3>
               <p>
                 Priorizar as ferramentas principais, confirmar seus contratos de
-                acesso e integrar o chatbot. O contexto técnico registra um
-                workflow Gemini Enterprise para a consulta de custos; sua
-                conexão à interface e a evolução para BigQuery permanecem etapas
-                futuras.
+                acesso e integrar o acesso ao chatbot externo. O contexto
+                técnico registra um workflow Gemini Enterprise para a consulta
+                de custos; sua conexão à interface e a evolução para BigQuery
+                permanecem etapas futuras.
               </p>
             </article>
           </div>
@@ -317,8 +319,8 @@ export function CallToAction() {
           <span className="eyebrow">Próxima etapa do projeto</span>
           <h2>Chatbot para as dúvidas da equipe</h2>
           <p>
-            O acesso será disponibilizado após a implementação do chatbot e das
-            integrações com as ferramentas principais.
+            O chatbot é desenvolvido externamente. A integração de seu acesso a
+            esta interface é a próxima etapa para disponibilizá-lo à equipe.
           </p>
         </div>
         <div className="cta-actions">
