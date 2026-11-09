@@ -17,6 +17,9 @@ import { SectionHeading } from './ui/SectionHeading'
 import { ChatbotButton } from './ui/ChatbotButton'
 import { ConsolidationDemo } from './ConsolidationDemo'
 import { AgentVideo } from './AgentVideo'
+import { agentWorkflow } from '../data/agentWorkflow'
+
+const workflowIcons = [FileInput, Workflow, Search, ChartNoAxesCombined]
 
 export function AboutSection() {
   return (
@@ -171,38 +174,20 @@ export function AgentSection({ full = false }: { full?: boolean }) {
         {full && (
           <>
             <div className="agent-flow" aria-label="Fluxo do agente externo">
-              {[
-                {
-                  icon: FileInput,
-                  title: 'Manual Trigger',
-                  sub: 'Início da solicitação',
-                },
-                {
-                  icon: Workflow,
-                  title: 'Consulta RH (Sólides)',
-                  sub: 'Requisição aos dados de RH',
-                },
-                {
-                  icon: Search,
-                  title: 'Consulta Financeiro (Omie)',
-                  sub: 'Requisição aos dados financeiros',
-                },
-                {
-                  icon: ChartNoAxesCombined,
-                  title: 'Consolidação',
-                  sub: 'Nó separado para reunir os resultados',
-                },
-              ].map(({ icon: Icon, title, sub }, i) => (
-                <div className="flow-step" key={title}>
-                  <span className="flow-number">0{i + 1}</span>
-                  <Icon size={21} />
-                  <div>
-                    <strong>{title}</strong>
-                    <small>{sub}</small>
+              {agentWorkflow.map(({ title, description }, i) => {
+                const Icon = workflowIcons[i]
+                return (
+                  <div className="flow-step" key={title}>
+                    <span className="flow-number">0{i + 1}</span>
+                    <Icon size={21} />
+                    <div>
+                      <strong>{title}</strong>
+                      <small>{description}</small>
+                    </div>
+                    {i < 3 && <ArrowRight className="flow-arrow" size={17} />}
                   </div>
-                  {i < 3 && <ArrowRight className="flow-arrow" size={17} />}
-                </div>
-              ))}
+                )
+              })}
             </div>
             <div className="info-note">
               <Info size={20} />

@@ -10,6 +10,7 @@ const navigation = [
   { to: '/tecnologias', label: 'Tecnologias' },
   { to: '/dashboard', label: 'Dashboard' },
   { to: '/custos', label: 'Catálogo de custos' },
+  { to: '/monitoramento', label: 'Monitoramento' },
 ]
 export function MobileMenu({ onClose }: { onClose: () => void }) {
   const dialog = useRef<HTMLDialogElement>(null)

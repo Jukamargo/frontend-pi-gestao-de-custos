@@ -22,6 +22,9 @@
   --success: #217154;
   --success-surface: #eff8f3;
   --success-border: #cee5d8;
+  --danger: #a33337;
+  --danger-surface: #fff1f0;
+  --danger-border: #edc6c4;
   --chart-grid: #e6ebf1;
   --chart-axis: var(--text-muted);
   --chart-series-1: #2d6197;
@@ -65,6 +68,9 @@
   --success: #79c4a3;
   --success-surface: #17332d;
   --success-border: #2c5548;
+  --danger: #f0a5a7;
+  --danger-surface: #342126;
+  --danger-border: #684047;
   --chart-grid: #293b51;
   --chart-series-1: #8ab8ec;
   --chart-series-2: #607fa5;

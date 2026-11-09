@@ -1,12 +1,14 @@
-import { Link, NavLink, Outlet } from 'react-router-dom'
+import { Link, NavLink, Outlet, useLocation } from 'react-router-dom'
 import {
   LayoutDashboard,
   Layers3,
   ArrowLeft,
   BookOpen,
   CircleHelp,
+  Activity,
 } from 'lucide-react'
 export function AppLayout() {
+  const monitoring = useLocation().pathname === '/monitoramento'
   return (
     <div className="app-layout container">
       <aside className="app-sidebar">
@@ -18,6 +20,10 @@ export function AppLayout() {
         <NavLink to="/custos">
           <Layers3 size={18} />
           Catálogo de custos
+        </NavLink>
+        <NavLink to="/monitoramento">
+          <Activity size={18} />
+          Monitoramento
         </NavLink>
         <div className="sidebar-note">
           <BookOpen size={20} />
@@ -35,10 +41,14 @@ export function AppLayout() {
       <div className="app-content">
         <div className="workspace-bar">
           <span>
-            <span className="live-dot" />
-            Ambiente demonstrativo
+            {monitoring ? (
+              <Activity size={14} aria-hidden="true" />
+            ) : (
+              <span className="live-dot" />
+            )}
+            {monitoring ? 'Consulta de telemetria' : 'Ambiente demonstrativo'}
           </span>
-          <span>RH e Financeiro</span>
+          <span>{monitoring ? 'Backoffice interno' : 'RH e Financeiro'}</span>
         </div>
         <Outlet />
       </div>

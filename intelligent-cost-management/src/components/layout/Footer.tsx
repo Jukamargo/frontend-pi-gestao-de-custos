@@ -29,6 +29,7 @@ export function Footer() {
               Catálogo de custos <ArrowUpRight size={13} />
             </Link>
             <Link to="/demonstracao">Demonstração do projeto</Link>
+            <Link to="/monitoramento">Monitoramento do backoffice</Link>
           </div>
         </div>
         <div className="footer-bottom">

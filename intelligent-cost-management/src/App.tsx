@@ -13,6 +13,7 @@ import NotFound from './pages/NotFound'
 const Dashboard = lazy(() => import('./pages/Dashboard'))
 const CostCatalog = lazy(() => import('./pages/CostCatalog'))
 const CostDetails = lazy(() => import('./pages/CostDetails'))
+const Monitoring = lazy(() => import('./pages/Monitoring'))
 const titles: Record<string, string> = {
   '/': 'Automação e chatbot',
   '/sobre': 'Sobre o projeto',
@@ -21,6 +22,7 @@ const titles: Record<string, string> = {
   '/tecnologias': 'Tecnologias',
   '/dashboard': 'Dashboard',
   '/custos': 'Catálogo de custos',
+  '/monitoramento': 'Monitoramento do backoffice',
 }
 function RouteEffects() {
   const { pathname } = useLocation()
@@ -57,6 +59,7 @@ export default function App() {
             </Route>
             <Route element={<AppLayout />}>
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/monitoramento" element={<Monitoring />} />
               <Route path="/custos" element={<CostCatalog />} />
               <Route path="/custos/:id" element={<CostDetails />} />
             </Route>
