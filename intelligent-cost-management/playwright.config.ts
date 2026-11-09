@@ -6,14 +6,27 @@ export default defineConfig({
   reporter: 'list',
   use: { baseURL: 'http://127.0.0.1:4173', trace: 'retain-on-failure' },
   projects: [
-    { name: 'data', testMatch: 'data.spec.ts' },
+    { name: 'data', testMatch: ['data.spec.ts', 'monitoring.spec.ts'] },
+    ...(process.env.VITE_MONITORING_API_URL
+      ? [
+          {
+            name: 'monitoring-api',
+            testMatch: 'monitoring-api.spec.ts',
+            use: {
+              browserName: 'chromium' as const,
+              channel: 'chrome',
+              viewport: { width: 1440, height: 1000 },
+            },
+          },
+        ]
+      : []),
     ...[
       { name: 'desktop', width: 1440, height: 1000 },
       { name: 'tablet', width: 768, height: 1024 },
       { name: 'mobile', width: 390, height: 844 },
     ].map(({ name, width, height }) => ({
       name,
-      testMatch: 'app.spec.ts',
+      testMatch: ['app.spec.ts', 'monitoring-ui.spec.ts'],
       use: {
         browserName: 'chromium' as const,
         channel: 'chrome',
