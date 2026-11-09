@@ -10,7 +10,7 @@ A pendência é [integrar o acesso ao chatbot externo](docs/CHATBOT.md). Nesta v
 
 O fluxo informado pela equipe é **Manual Trigger → Consulta RH (Sólides) → Consulta Financeiro (Omie) → Consolidação**, com requisições separadas para RH e Financeiro e um nó próprio de consolidação após a Omie. As respostas têm como referência a documentação oficial dessas plataformas, conforme informado pelo responsável. Essa confirmação atualiza o agrupamento de nós descrito no documento original. Consulte o [registro do chatbot](docs/CHATBOT.md#fluxo-informado-do-agente-externo).
 
-O [plano de monitoramento do backoffice](docs/MONITORAMENTO_BACKOFFICE.md) define a arquitetura proposta, a cobertura por sistema, as métricas e o contrato de leitura para uma integração futura. A etapa atual é de definição com a Infra e a equipe do agente externo; não há coleta de telemetria ou painel operacional implementado neste repositório.
+O [plano de monitoramento do backoffice](docs/MONITORAMENTO_BACKOFFICE.md) define arquitetura, cobertura e métricas. A primeira [interface de monitoramento](docs/MONITORAMENTO_FRONTEND.md) está em **`/monitoramento`**, com inventário sem telemetria por padrão, cenário fictício opcional, filtros e visão dos quatro nós do agente. O adaptador de leitura pode ser configurado por `VITE_MONITORING_API_URL`; coleta, armazenamento e alertas reais dependem dos serviços externos.
 
 Os **120 cartões solicitados são tarefas exclusivamente de front-end para o [Kanban externo no GitHub](https://github.com/users/Jukamargo/projects/2)**, com título e descrição, e não registros do dashboard financeiro nem tarefas de backend ou infraestrutura. O backlog e a publicação estão documentados em [docs/kanban](docs/kanban/README.md). A base fictícia de colaboradores da aplicação é independente desse quadro de tarefas.
 
@@ -72,6 +72,7 @@ Os testes usam Google Chrome instalado no computador. Sem Chrome, instale-o ou c
 - Busca por nome, cargo, descrição e ID; filtros por departamento e variação; ordenação por nome e valor; páginas de 12, 24, 48 ou todos os cards.
 - Filtros e paginação na URL, contagem de resultados e estado vazio.
 - Dashboard com custo mensal consolidado, número de colaboradores, departamentos e alertas demonstrativos.
+- Monitoramento do backoffice com saúde dos alvos, estado das integrações, métricas com janela e validade, filtro e telemetria por nó do agente. Dados reais só são apresentados quando recebidos pela API agregada configurada; simulação é um modo separado.
 - Evolução de seis meses, composição entre salários/benefícios/despesas e comparativo entre departamentos.
 - Detalhes por pessoa com benefícios discriminados, subtotal fixo, lançamentos variáveis com origem e valor, histórico e cadastro fictício.
 - **Consulta demonstrativa local por colaborador e competência**, disponível por seletores, com cálculo e discriminação das fontes.
@@ -119,16 +120,17 @@ Essas regras não vêm do agente e não comprovam eficiência ou economia. O sta
 
 ## Rotas
 
-| Rota            | Conteúdo                                                               |
-| --------------- | ---------------------------------------------------------------------- |
-| `/`             | Objetivo de automação, botão futuro do chatbot e caso de uso de custos |
-| `/sobre`        | Integração das ferramentas e atendimento às dúvidas da equipe          |
-| `/beneficios`   | Conexões, automações, consulta por conversa e origem das respostas     |
-| `/demonstracao` | Proposta do chatbot, exemplo de custos, fluxo e placeholder do vídeo   |
-| `/tecnologias`  | Ferramentas, automações, chatbot e mapeamento dos serviços de RH       |
-| `/dashboard`    | Indicadores e gráficos consolidados                                    |
-| `/custos`       | Catálogo de 120 colaboradores                                          |
-| `/custos/:id`   | Composição e lançamentos de uma pessoa                                 |
+| Rota             | Conteúdo                                                               |
+| ---------------- | ---------------------------------------------------------------------- |
+| `/`              | Objetivo de automação, botão futuro do chatbot e caso de uso de custos |
+| `/sobre`         | Integração das ferramentas e atendimento às dúvidas da equipe          |
+| `/beneficios`    | Conexões, automações, consulta por conversa e origem das respostas     |
+| `/demonstracao`  | Proposta do chatbot, exemplo de custos, fluxo e placeholder do vídeo   |
+| `/tecnologias`   | Ferramentas, automações, chatbot e mapeamento dos serviços de RH       |
+| `/dashboard`     | Indicadores e gráficos consolidados                                    |
+| `/monitoramento` | Inventário do backoffice, saúde, integrações e telemetria do agente    |
+| `/custos`        | Catálogo de 120 colaboradores                                          |
+| `/custos/:id`    | Composição e lançamentos de uma pessoa                                 |
 
 Na hospedagem estática, configure fallback de SPA para `index.html`, preservando os arquivos estáticos. Assim, atualizar uma rota interna não produz 404 do servidor.
 
@@ -139,6 +141,7 @@ src/
   components/
     layout/                  # Navegação, páginas institucionais e workspace
     ui/                      # Botões, títulos, badges e estado vazio
+    monitoring/              # Cards de saúde, estados e telemetria do agente
     cards/                   # Cards de colaboradores e indicadores
     charts/                  # Gráficos compartilhados
     ConsolidationDemo.tsx    # Consulta local por pessoa e competência

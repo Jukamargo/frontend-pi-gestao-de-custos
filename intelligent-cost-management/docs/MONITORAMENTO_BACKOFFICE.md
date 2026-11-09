@@ -2,7 +2,7 @@
 
 Proposta de observabilidade para o projeto Gestão de custos. O contexto fornecido cita Grafana e Prometheus; isso não confirma sua implantação, seus acessos ou sua conexão a este front-end.
 
-O responsável escolheu definir primeiro a arquitetura, as métricas e os sistemas monitoráveis. Este documento não implanta coleta, altera fornecedores, cria alertas ou adiciona uma tela ao site.
+A arquitetura, as métricas e os sistemas monitoráveis foram definidos antes da implementação. A primeira etapa de consulta no front-end está descrita no [guia da interface](MONITORAMENTO_FRONTEND.md): inventário, cenário demonstrativo e adaptador HTTP opcional. Coleta real, armazenamento e alertas continuam sendo responsabilidades externas.
 
 ## O que acompanhar
 
