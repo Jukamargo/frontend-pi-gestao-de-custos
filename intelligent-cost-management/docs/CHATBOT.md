@@ -10,6 +10,8 @@ O nome do projeto permanece **Gestão de custos**, conforme a orientação do re
 
 O chatbot é desenvolvido fora deste repositório. A pendência aqui é **integrar seu acesso ao front-end**. O endereço e o contrato de acesso ainda não estão disponíveis, conforme informado pelo responsável.
 
+Atualização informada pelo responsável: o agente está no **Gemini Enterprise**, ainda não publicado, e consulta **duas APIs mock** baseadas na documentação das plataformas reais. O próprio responsável acompanha essa configuração. Histórico e exportação ainda não foram confirmados nesse ambiente; a publicação não deve ser tratada como garantia de telemetria configurada. Consulte o [guia de integração e verificação dos mocks](INTEGRACAO_APIS_MOCK.md).
+
 O site mantém apenas o botão **Chatbot — em breve**, desabilitado enquanto a integração não estiver configurada. O botão está em `src/components/ui/ChatbotButton.tsx` e não abre conversa, modal, janela externa ou serviço.
 
 A rota `/demonstracao` apresenta a proposta, o vídeo ainda pendente e o caso de custos por seletores. Não há implementação de chatbot, histórico, campo de pergunta, respostas simuladas, serviço de mensagens ou adaptador de agente neste repositório.

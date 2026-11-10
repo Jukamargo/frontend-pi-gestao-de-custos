@@ -2,6 +2,8 @@
 
 Primeira implementação funcional da [arquitetura do backoffice](MONITORAMENTO_BACKOFFICE.md). A rota **`/monitoramento`** está acessível pela navegação da aplicação, pelo menu mobile e pelo rodapé.
 
+As APIs de RH e Financeiro informadas são **mocks no Render**. O agente está no Gemini Enterprise e ainda não foi publicado. O [guia das APIs mock](INTEGRACAO_APIS_MOCK.md) registra os endpoints e o coletor pontual disponível, que pode alimentar o painel local. Uma medição verdadeira desses mocks não confirma a saúde dos fornecedores reais.
+
 ## Comportamento disponível
 
 - Inventário de alvos do backoffice, derivado do mapa de RH e acrescido de Sólides, Omie, agente externo, portal interno e Autentique. Jurídico permanece fora das automações atuais.
@@ -40,6 +42,8 @@ As variáveis [`VITE_` são públicas no navegador](https://vite.dev/guide/env-a
 O front-end não presume o endereço de Grafana, Prometheus ou do chatbot. O contrato agregado evita expor as credenciais dos fornecedores e mantém a coleta fora do navegador.
 
 ## Contrato implementado: versão 1
+
+Os campos opcionais `lastCheckDurationMs` (número finito não negativo ou `null`) e `lastHttpStatus` (inteiro de 100 a 599 ou `null`) permitem exibir uma verificação pontual sem preencher p95, taxas ou disponibilidade histórica. São ocultados quando a observação perde a validade; respostas sem esses campos continuam aceitas.
 
 Tipos: `src/types/monitoring.ts`. Validação de resposta: `parseMonitoringSnapshot` em `src/services/monitoringService.ts`.
 

@@ -12,6 +12,8 @@ O fluxo informado pela equipe é **Manual Trigger → Consulta RH (Sólides) →
 
 O [plano de monitoramento do backoffice](docs/MONITORAMENTO_BACKOFFICE.md) define arquitetura, cobertura e métricas. A primeira [interface de monitoramento](docs/MONITORAMENTO_FRONTEND.md) está em **`/monitoramento`**, com inventário sem telemetria por padrão, cenário fictício opcional, filtros e visão dos quatro nós do agente. O adaptador de leitura pode ser configurado por `VITE_MONITORING_API_URL`; coleta, armazenamento e alertas reais dependem dos serviços externos.
 
+Para as duas APIs mock fornecidas, `npm.cmd run monitor:collect` gera uma verificação pontual sanitizada que o painel pode ler localmente. Veja os [comandos e limites da coleta dos mocks](docs/INTEGRACAO_APIS_MOCK.md). O comando não dispara o agente nem monitora as plataformas reais Sólides e Omie.
+
 Os **120 cartões solicitados são tarefas exclusivamente de front-end para o [Kanban externo no GitHub](https://github.com/users/Jukamargo/projects/2)**, com título e descrição, e não registros do dashboard financeiro nem tarefas de backend ou infraestrutura. O backlog e a publicação estão documentados em [docs/kanban](docs/kanban/README.md). A base fictícia de colaboradores da aplicação é independente desse quadro de tarefas.
 
 ## Caso de uso: custos por colaborador
