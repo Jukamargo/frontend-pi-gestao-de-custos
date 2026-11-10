@@ -30,6 +30,9 @@ export function SystemMonitorCard({
         <HealthBadge value={system.health} />
       </div>
       <h3 id={`monitor-${system.id}`}>{system.name}</h3>
+      {system.scopeLabel && (
+        <p className="monitor-target-label">{system.scopeLabel}</p>
+      )}
       <dl className="monitor-connection">
         <div>
           <dt>Integração</dt>
@@ -43,6 +46,18 @@ export function SystemMonitorCard({
           Métricas {demo ? 'fictícias' : 'observadas'} · {period}
         </caption>
         <tbody>
+          {system.lastCheckDurationMs != null && (
+            <tr>
+              <th scope="row">Última verificação pontual</th>
+              <td>{monitoringNumber(system.lastCheckDurationMs, 'ms')}</td>
+            </tr>
+          )}
+          {system.lastHttpStatus != null && (
+            <tr>
+              <th scope="row">HTTP da última verificação</th>
+              <td>{system.lastHttpStatus}</td>
+            </tr>
+          )}
           <tr>
             <th scope="row">Disponibilidade do alvo</th>
             <td>{monitoringNumber(system.metrics.availabilityPercent, '%')}</td>

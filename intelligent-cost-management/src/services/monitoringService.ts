@@ -69,6 +69,18 @@ function parseObservation(value: unknown): SystemObservation {
     !nullableDate(value.observedAt) ||
     !nullableDate(value.expiresAt) ||
     !(
+      value.lastCheckDurationMs === undefined ||
+      numeric(value.lastCheckDurationMs)
+    ) ||
+    !(
+      value.lastHttpStatus === undefined ||
+      value.lastHttpStatus === null ||
+      (typeof value.lastHttpStatus === 'number' &&
+        Number.isInteger(value.lastHttpStatus) &&
+        value.lastHttpStatus >= 100 &&
+        value.lastHttpStatus <= 599)
+    ) ||
+    !(
       value.windowSeconds === null ||
       (Number.isInteger(value.windowSeconds) &&
         typeof value.windowSeconds === 'number' &&
@@ -92,6 +104,9 @@ function parseObservation(value: unknown): SystemObservation {
     observedAt,
     expiresAt,
     windowSeconds: value.windowSeconds as number | null,
+    lastCheckDurationMs:
+      (value.lastCheckDurationMs as number | null | undefined) ?? null,
+    lastHttpStatus: (value.lastHttpStatus as number | null | undefined) ?? null,
     metrics: parseMetrics(value.metrics),
   }
 }
@@ -184,6 +199,8 @@ export function normalizeObservation(
     health: 'unknown' as const,
     reason,
     metrics: emptyMetrics(),
+    lastCheckDurationMs: null,
+    lastHttpStatus: null,
   })
   if (!observation.observedAt || !observation.expiresAt)
     return unknown(observation.reason || 'not_observed')

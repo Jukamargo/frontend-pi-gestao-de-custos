@@ -39,6 +39,7 @@ export interface MonitoredSystem {
   name: string
   area: string
   target: string
+  scopeLabel?: string
 }
 export interface MonitoringMetrics {
   availabilityPercent: number | null
@@ -46,6 +47,8 @@ export interface MonitoringMetrics {
   errorRatePercent: number | null
 }
 export interface SystemObservation {
+  lastCheckDurationMs?: number | null
+  lastHttpStatus?: number | null
   systemId: string
   health: Health
   integrationState: IntegrationState

@@ -13,6 +13,12 @@
 .monitor-card-top {
   justify-content: space-between;
 }
+.system-monitor-card .monitor-target-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: -7px;
+  margin-bottom: 16px;
+}
 .monitor-mode-bar {
   margin-bottom: 18px;
 }

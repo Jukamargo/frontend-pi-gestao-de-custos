@@ -16,19 +16,24 @@ export const monitoredSystems: readonly MonitoredSystem[] = [
     id: 'solides',
     name: 'Sólides',
     area: 'RH',
-    target: 'Consulta RH do agente externo',
+    target:
+      'API mock de RH baseada na documentação da Sólides. A verificação não mede o serviço real do fornecedor.',
+    scopeLabel: 'API mock · dados de negócio simulados',
   },
   {
     id: 'omie',
     name: 'Omie',
     area: 'Financeiro',
-    target: 'Consulta Financeiro do agente externo',
+    target:
+      'API mock financeira baseada na documentação da Omie. A verificação não mede o serviço real do fornecedor.',
+    scopeLabel: 'API mock · dados de negócio simulados',
   },
   {
     id: 'agent',
     name: 'Agente externo',
     area: 'Automação',
     target: 'Execuções e quatro nós do workflow',
+    scopeLabel: 'Gemini Enterprise · publicação pendente',
   },
   {
     id: 'frontend',
