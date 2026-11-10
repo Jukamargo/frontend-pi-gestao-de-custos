@@ -14,6 +14,8 @@ function responseAt(now: number) {
       {
         ...snapshot.observations.find((s) => s.systemId === 'solides')!,
         source: 'Coletor de teste',
+        lastCheckDurationMs: 185,
+        lastHttpStatus: 200,
         observedAt,
         expiresAt: new Date(now + 60_000).toISOString(),
       },
@@ -35,6 +37,12 @@ test('ler API agregada e expirar estados sem transformar falha de coleta em qued
   await page.goto('/monitoramento')
   const solides = page.getByRole('article', { name: 'Sólides', exact: true })
   await expect(solides).toContainText('Disponível')
+  await expect(
+    solides.getByRole('row', { name: 'Última verificação pontual 185 ms' }),
+  ).toBeVisible()
+  await expect(
+    solides.getByRole('row', { name: 'HTTP da última verificação 200' }),
+  ).toBeVisible()
   await expect(solides).not.toContainText('Dados fictícios')
   await solides.getByText('Origem e alvo observado').click()
   await expect(solides).toContainText('Coletor de teste')

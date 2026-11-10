@@ -6,7 +6,14 @@ export default defineConfig({
   reporter: 'list',
   use: { baseURL: 'http://127.0.0.1:4173', trace: 'retain-on-failure' },
   projects: [
-    { name: 'data', testMatch: ['data.spec.ts', 'monitoring.spec.ts'] },
+    {
+      name: 'data',
+      testMatch: [
+        'data.spec.ts',
+        'monitoring.spec.ts',
+        'mock-collector.spec.ts',
+      ],
+    },
     ...(process.env.VITE_MONITORING_API_URL
       ? [
           {
