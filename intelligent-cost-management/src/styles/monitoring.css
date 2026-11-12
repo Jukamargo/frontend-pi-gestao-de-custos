@@ -1,0 +1,412 @@
+.monitor-mode-bar,
+.monitor-section-heading,
+.monitor-mode-switch,
+.monitor-card-top,
+.monitor-execution-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.monitor-mode-bar,
+.monitor-section-heading,
+.monitor-card-top {
+  justify-content: space-between;
+}
+.system-monitor-card .monitor-target-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: -7px;
+  margin-bottom: 16px;
+}
+.monitor-mode-bar {
+  margin-bottom: 18px;
+}
+.monitor-mode-switch {
+  gap: 4px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  padding: 4px;
+  border-radius: 9px;
+}
+.monitor-mode-switch button {
+  border: 0;
+  padding: 11px 14px;
+  border-radius: 6px;
+  min-height: 44px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+.monitor-mode-switch button[aria-pressed='true'] {
+  background: var(--surface-accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+.monitor-mode-switch button:hover {
+  background: var(--surface-hover);
+}
+.monitor-notice {
+  align-items: flex-start;
+}
+.monitor-notice > svg {
+  margin-top: 4px;
+  color: var(--accent);
+}
+.monitor-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--danger-border);
+  background: var(--danger-surface);
+  color: var(--danger);
+  border-radius: 8px;
+  margin: 18px 0;
+  flex-wrap: wrap;
+}
+.monitor-error > div {
+  flex: 1;
+  min-width: min(100%, 220px);
+}
+.monitor-error p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin-top: 5px;
+}
+.monitor-summary {
+  margin-block: 24px 36px;
+}
+.monitor-systems {
+  margin-bottom: 34px;
+}
+.monitor-section-heading {
+  margin-bottom: 14px;
+}
+.monitor-section-heading h2 {
+  font-size: 21px;
+  letter-spacing: -0.45px;
+}
+.monitor-section-heading .eyebrow {
+  margin-bottom: 9px;
+}
+.monitor-results {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+.monitor-reading-note {
+  font-size: 12px;
+  max-width: 780px;
+  margin-bottom: 20px;
+}
+.monitor-filters {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.4fr) 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+  margin-bottom: 22px;
+}
+.monitor-filters > label {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+.monitor-filters select,
+.monitor-search {
+  min-width: 0;
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--border-strong);
+  border-radius: 7px;
+  background: var(--surface);
+  color: var(--text-primary);
+}
+.monitor-filters select {
+  padding-inline: 10px;
+}
+.monitor-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 12px;
+}
+.monitor-search:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.monitor-search input {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  border: 0;
+  color: var(--text-primary);
+}
+.monitor-search input:focus-visible {
+  outline: none;
+}
+.monitor-filters .button {
+  min-height: 44px;
+  font-size: 12px;
+  padding-inline: 14px;
+}
+.monitor-system-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.system-monitor-card {
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+.monitor-card-top {
+  gap: 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+.system-monitor-card h3 {
+  font-size: 17px;
+  letter-spacing: -0.3px;
+  margin-bottom: 16px;
+  overflow-wrap: anywhere;
+}
+.monitor-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  font-weight: 500;
+  border: 1px solid var(--border);
+  background: var(--surface-muted);
+  color: var(--text-secondary);
+}
+.monitor-badge > span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+}
+.monitor-badge--available {
+  color: var(--success);
+  border-color: var(--success-border);
+  background: var(--success-surface);
+}
+.monitor-badge--degraded,
+.monitor-badge--maintenance {
+  color: var(--warning);
+  border-color: var(--warning-border);
+  background: var(--warning-surface);
+}
+.monitor-badge--unavailable {
+  color: var(--danger);
+  border-color: var(--danger-border);
+  background: var(--danger-surface);
+}
+.monitor-connection {
+  margin: 0 0 18px;
+}
+.monitor-connection > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+}
+.monitor-connection dt {
+  color: var(--text-muted);
+}
+.monitor-connection dd {
+  margin: 0;
+  text-align: right;
+  color: var(--text-primary);
+}
+.monitor-integration-state {
+  font-weight: 500;
+}
+.monitor-metrics-table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  font-size: 12px;
+}
+.monitor-metrics-table caption {
+  text-align: left;
+  color: var(--text-muted);
+  font-size: 11px;
+  padding-bottom: 8px;
+}
+.monitor-metrics-table th,
+.monitor-metrics-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 10px 0;
+  vertical-align: top;
+}
+.monitor-metrics-table th {
+  font-weight: 400;
+  text-align: left;
+  color: var(--text-secondary);
+  width: 65%;
+  padding-right: 10px;
+}
+.monitor-metrics-table td {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
+  overflow-wrap: anywhere;
+}
+.monitor-observed {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--text-muted);
+  font-size: 11px;
+  margin-block: 16px;
+}
+.monitor-source {
+  border-top: 1px solid var(--border);
+  padding-top: 13px;
+  font-size: 12px;
+}
+.monitor-source summary {
+  cursor: pointer;
+  color: var(--accent);
+  min-height: 32px;
+  padding-block: 5px;
+}
+.monitor-source p {
+  font-size: 12px;
+  margin-top: 8px;
+  overflow-wrap: anywhere;
+}
+.monitor-source p svg {
+  vertical-align: middle;
+}
+.agent-telemetry {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  padding: 26px;
+}
+.agent-telemetry > p {
+  font-size: 13px;
+}
+.monitor-execution-meta {
+  margin-block: 18px;
+  font-size: 12px;
+  color: var(--text-muted);
+  overflow-wrap: anywhere;
+}
+.monitor-workflow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 22px 0;
+  border-block: 1px solid var(--border);
+}
+.monitor-workflow li {
+  min-width: 0;
+  padding: 18px 14px;
+  border-right: 1px solid var(--border);
+}
+.monitor-workflow li:first-child {
+  padding-left: 0;
+}
+.monitor-workflow li:last-child {
+  border-right: 0;
+}
+.monitor-step-index {
+  color: var(--text-muted);
+  font-size: 11px;
+}
+.monitor-workflow h3 {
+  min-height: 44px;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-block: 9px 12px;
+  overflow-wrap: anywhere;
+}
+.monitor-step-duration {
+  display: block;
+  margin-top: 12px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+.agent-telemetry > .monitor-execution-note {
+  font-size: 12px;
+}
+.monitor-scope-note {
+  padding-top: 24px;
+  font-size: 12px;
+}
+.monitor-scope-note > strong {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+.monitor-scope-note p {
+  font-size: 12px;
+  margin-top: 8px;
+}
+@media (min-width: 1400px) {
+  .monitor-system-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 1100px) {
+  .monitor-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .monitor-workflow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .monitor-workflow li:nth-child(2) {
+    border-right: 0;
+  }
+  .monitor-workflow li:nth-child(3) {
+    padding-left: 0;
+  }
+}
+@media (max-width: 650px) {
+  .monitor-system-grid {
+    grid-template-columns: 1fr;
+  }
+  .monitor-filters {
+    grid-template-columns: 1fr;
+  }
+  .monitor-mode-switch {
+    width: 100%;
+  }
+  .monitor-mode-switch button {
+    flex: 1;
+    padding-inline: 8px;
+  }
+  .agent-telemetry {
+    padding: 20px;
+  }
+  .monitor-error .button {
+    width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .monitor-workflow {
+    grid-template-columns: 1fr;
+  }
+  .monitor-workflow li,
+  .monitor-workflow li:nth-child(3) {
+    border-right: 0;
+    padding-inline: 0;
+  }
+  .monitor-workflow h3 {
+    min-height: 0;
+  }
+}
