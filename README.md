@@ -1,20 +1,37 @@
 # Gestão de custos — Inovanet
 
+## Links do projeto
+
+| Recurso             | Link                                                                          | Situação                        |
+| ------------------- | ----------------------------------------------------------------------------- | ------------------------------- |
+| Repositório         | [Código no GitHub](https://github.com/Jukamargo/frontend-pi-gestao-de-custos) | Código-fonte                    |
+| Kanban              | [GitHub Projects](https://github.com/users/Jukamargo/projects/2)              | Tarefas e impedimentos          |
+| Front-end na Vercel | [Acessar na Vercel](https://frontend-pi-gestao-de-custos.vercel.app/)         | Publicado                       |
+| Front-end no Render | [Acessar no Render](https://frontend-pi-gestao-de-custos.onrender.com)        | Publicado                       |
+| Sólides — API mock  | [Contrato OpenAPI](https://inovanet-mock-solides.onrender.com/openapi.json)   | Serviço externo de demonstração |
+| Omie — API mock     | [Contrato OpenAPI](https://inovanet-mock-omie.onrender.com/openapi.json)      | Serviço externo de demonstração |
+
+Use os links da Vercel e do Render para acessar o front-end. As APIs mock são serviços separados do site.
+
+Atalhos: [Instalação](#instalação-e-execução) · [Deploy](#deploy-na-vercel-e-no-render) · [Rotas](#rotas) · [Estrutura](#estrutura).
+
+## Sobre o projeto
+
 Front-end de apresentação e demonstração do projeto de **automação interna de backoffice**, no contexto 2RPnet / Inovanet Tech. O objetivo é conectar ferramentas e reduzir tarefas manuais nas rotinas administrativas de RH, Financeiro, documentos e comunicação. O chatbot é desenvolvido externamente e sua integração a esta interface está pendente. A **gestão de custos por colaborador é um dos casos de uso**, com dados de RH e Financeiro.
 
-O escopo foi alinhado ao documento `CONTEXTO_GERAL_PROJETO.md` fornecido pelo responsável. Consulte o [mapeamento de escopo](docs/ESCOPO_FRONTEND.md) para distinguir o projeto de referência das funcionalidades executadas nesta interface.
+O escopo foi alinhado ao documento `CONTEXTO_GERAL_PROJETO.md` fornecido pelo responsável. Consulte o [mapeamento de escopo](intelligent-cost-management/docs/ESCOPO_FRONTEND.md) para distinguir o projeto de referência das funcionalidades executadas nesta interface.
 
-As observações posteriores sobre fornecedores e rotinas estão no [mapeamento do ecossistema de RH](docs/ECOSSISTEMA_RH.md) e na página **Tecnologias**. O registro distingue propostas de automação, restrições, processos em análise e atividades fora do escopo atual.
+As observações posteriores sobre fornecedores e rotinas estão no [mapeamento do ecossistema de RH](intelligent-cost-management/docs/ECOSSISTEMA_RH.md) e na página **Tecnologias**. O registro distingue propostas de automação, restrições, processos em análise e atividades fora do escopo atual.
 
-A pendência é [integrar o acesso ao chatbot externo](docs/CHATBOT.md). Nesta versão, há apenas o botão **Chatbot — em breve**, desabilitado até a configuração e validação dessa integração. O agente não será recriado neste repositório. A rota `/demonstracao` apresenta o contexto, o espaço reservado para o vídeo e o exemplo de custos por seletores.
+A pendência é [integrar o acesso ao chatbot externo](intelligent-cost-management/docs/CHATBOT.md). Nesta versão, há apenas o botão **Chatbot — em breve**, desabilitado até a configuração e validação dessa integração. O agente não será recriado neste repositório. A rota `/demonstracao` apresenta o contexto, o espaço reservado para o vídeo e o exemplo de custos por seletores.
 
-O fluxo informado pela equipe é **Manual Trigger → Consulta RH (Sólides) → Consulta Financeiro (Omie) → Consolidação**, com requisições separadas para RH e Financeiro e um nó próprio de consolidação após a Omie. As respostas têm como referência a documentação oficial dessas plataformas, conforme informado pelo responsável. Essa confirmação atualiza o agrupamento de nós descrito no documento original. Consulte o [registro do chatbot](docs/CHATBOT.md#fluxo-informado-do-agente-externo).
+O fluxo informado pela equipe é **Manual Trigger → Consulta RH (Sólides) → Consulta Financeiro (Omie) → Consolidação**, com requisições separadas para RH e Financeiro e um nó próprio de consolidação após a Omie. As respostas têm como referência a documentação oficial dessas plataformas, conforme informado pelo responsável. Essa confirmação atualiza o agrupamento de nós descrito no documento original. Consulte o [registro do chatbot](intelligent-cost-management/docs/CHATBOT.md#fluxo-informado-do-agente-externo).
 
-O [plano de monitoramento do backoffice](docs/MONITORAMENTO_BACKOFFICE.md) define arquitetura, cobertura e métricas. A primeira [interface de monitoramento](docs/MONITORAMENTO_FRONTEND.md) está em **`/monitoramento`**, com inventário sem telemetria por padrão, cenário fictício opcional, filtros e visão dos quatro nós do agente. O adaptador de leitura pode ser configurado por `VITE_MONITORING_API_URL`; coleta, armazenamento e alertas reais dependem dos serviços externos.
+O [plano de monitoramento do backoffice](intelligent-cost-management/docs/MONITORAMENTO_BACKOFFICE.md) define arquitetura, cobertura e métricas. A primeira [interface de monitoramento](intelligent-cost-management/docs/MONITORAMENTO_FRONTEND.md) está em **`/monitoramento`**, com inventário sem telemetria por padrão, cenário fictício opcional, filtros e visão dos quatro nós do agente. O adaptador de leitura pode ser configurado por `VITE_MONITORING_API_URL`; coleta, armazenamento e alertas reais dependem dos serviços externos.
 
-Para as duas APIs mock fornecidas, `npm.cmd run monitor:collect` gera uma verificação pontual sanitizada que o painel pode ler localmente. Veja os [comandos e limites da coleta dos mocks](docs/INTEGRACAO_APIS_MOCK.md). O comando não dispara o agente nem monitora as plataformas reais Sólides e Omie.
+Para as duas APIs mock fornecidas, `npm.cmd run monitor:collect` gera uma verificação pontual sanitizada que o painel pode ler localmente. Veja os [comandos e limites da coleta dos mocks](intelligent-cost-management/docs/INTEGRACAO_APIS_MOCK.md). O comando não dispara o agente nem monitora as plataformas reais Sólides e Omie.
 
-Os **120 cartões solicitados são tarefas exclusivamente de front-end para o [Kanban externo no GitHub](https://github.com/users/Jukamargo/projects/2)**, com título e descrição, e não registros do dashboard financeiro nem tarefas de backend ou infraestrutura. O backlog e a publicação estão documentados em [docs/kanban](docs/kanban/README.md). A base fictícia de colaboradores da aplicação é independente desse quadro de tarefas.
+Os **120 cartões originais são tarefas exclusivamente de front-end para o [Kanban externo no GitHub](https://github.com/users/Jukamargo/projects/2)**, com título e descrição, e não registros do dashboard financeiro nem tarefas de backend ou infraestrutura. O backlog original e sua publicação estão documentados em [docs/kanban](intelligent-cost-management/docs/kanban/README.md). O quadro também recebeu as solicitações de telemetria **GC-TEL-001 a GC-TEL-011**, nas issues **#121 a #131**, com impedimentos e dependências externas; a integração do chatbot continua na [issue #92](https://github.com/Jukamargo/frontend-pi-gestao-de-custos/issues/92). A base fictícia de colaboradores da aplicação é independente desse quadro de tarefas.
 
 ## Caso de uso: custos por colaborador
 
@@ -36,15 +53,16 @@ O documento descreve APIs mock FastAPI para Sólides e Omie, serviços no Render
 - Recharts 3, Lucide React e Inter hospedada localmente.
 - Oxlint, Prettier e Playwright.
 
-As versões instaladas estão registradas em `package-lock.json`. As transições usam CSS e respeitam `prefers-reduced-motion`.
+As versões instaladas estão registradas em [package-lock.json](intelligent-cost-management/package-lock.json). As transições usam CSS e respeitam `prefers-reduced-motion`.
 
 ## Instalação e execução
 
 Pré-requisito: Node.js 22.12+ ou versão compatível com o Vite instalado e npm. Ambiente validado com Node.js 26.7.0.
 
-Execute dentro da pasta existente `intelligent-cost-management/`:
+Na raiz do repositório, entre na pasta da aplicação e execute:
 
 ```bash
+cd intelligent-cost-management
 npm ci
 npm run dev
 ```
@@ -61,6 +79,65 @@ npm run format       # Formatação do código e documentação
 ```
 
 Os testes usam Google Chrome instalado no computador. Sem Chrome, instale-o ou configure um navegador disponível em `playwright.config.ts`. O Playwright utiliza a porta 4173 para seu servidor de testes.
+
+## Deploy na Vercel e no Render
+
+O projeto gera um site estático em `intelligent-cost-management/dist/`. Use **Node.js 24.x** nas duas plataformas. A pasta da aplicação é **`intelligent-cost-management`**, mesmo com este README na raiz.
+
+### Antes de publicar
+
+1. Execute `npm ci` e `npm run build` dentro de `intelligent-cost-management/`.
+2. Registre as configurações de deploy em um commit e envie a branch escolhida ao GitHub. As plataformas importam o código remoto, não as alterações locais.
+3. Selecione a branch que contém a aplicação completa. O trabalho atual está em `feat/intelligent-cost-management`; não selecione `main` antes de integrar as mudanças nela.
+
+### Vercel
+
+1. Acesse [New Project](https://vercel.com/new), conecte o GitHub e importe `Jukamargo/frontend-pi-gestao-de-custos`.
+2. Configure os campos abaixo. Confirme a [branch de produção](https://vercel.com/docs/git) em **Settings → Environments → Production → Branch Tracking**, conforme a branch enviada ao GitHub.
+3. Clique em **Deploy** e copie a URL de produção para a tabela [Links do projeto](#links-do-projeto).
+
+| Campo            | Valor                         |
+| ---------------- | ----------------------------- |
+| Framework Preset | `Vite`                        |
+| Root Directory   | `intelligent-cost-management` |
+| Install Command  | `npm ci`                      |
+| Build Command    | `npm run build`               |
+| Output Directory | `dist`                        |
+| Node.js Version  | `24.x`                        |
+
+O arquivo [vercel.json](intelligent-cost-management/vercel.json) já define instalação, build, saída e a reescrita para `index.html`. Essa regra permite abrir ou atualizar rotas como `/dashboard`, `/monitoramento` e `/custos/ICM-001`. Consulte os guias oficiais de [Vite na Vercel](https://vercel.com/docs/frameworks/frontend/vite) e de [versão do Node.js](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions).
+
+### Render
+
+1. No [painel do Render](https://dashboard.render.com/), escolha **New → Static Site**, conecte o GitHub e selecione o mesmo repositório.
+2. Selecione a branch com a aplicação completa e preencha os campos abaixo.
+3. Em **Redirects/Rewrites**, adicione a regra: Source `/*`, Destination `/index.html`, Action **Rewrite**.
+4. Crie o site e copie a URL de produção para a tabela [Links do projeto](#links-do-projeto).
+
+| Campo                | Valor                                                |
+| -------------------- | ---------------------------------------------------- |
+| Name                 | `gestao-de-custos-frontend` ou outro nome disponível |
+| Root Directory       | `intelligent-cost-management`                        |
+| Build Command        | `npm ci && npm run build`                            |
+| Publish Directory    | `dist`                                               |
+| Environment Variable | `NODE_VERSION=24`                                    |
+
+Como alternativa ao cadastro manual, escolha **New → Blueprint**, selecione o repositório e a branch e use o [render.yaml](render.yaml) da raiz. Ele já contém a configuração do site estático e das rotas; escolha apenas um dos métodos para criar o serviço. Referências: [primeiro deploy](https://render.com/docs/your-first-deploy), [Blueprints](https://render.com/docs/blueprint-spec), [diretórios em monorepos](https://render.com/docs/monorepo-support) e [reescrita de rotas](https://render.com/docs/redirects-rewrites).
+
+### Monitoramento no ambiente publicado
+
+O site funciona sem variáveis de ambiente; o painel permanece **Sem telemetria**. Quando a API agregada estiver disponível, configure `VITE_MONITORING_API_URL` com sua URL HTTPS autorizada no projeto de cada plataforma e gere um novo deploy. O endereço deve apontar para o contrato agregado descrito no [guia de monitoramento](intelligent-cost-management/docs/MONITORAMENTO_FRONTEND.md), com autorização e CORS compatíveis com a origem publicada.
+
+Variáveis `VITE_` são incorporadas ao JavaScript durante o build e ficam públicas: não inclua tokens, senhas ou credenciais. Alterar essas variáveis exige novo build. Veja a [documentação de variáveis do Vite](https://vite.dev/guide/env-and-mode).
+
+O arquivo `/mock-monitoring.json` é uma ponte local de desenvolvimento; uma publicação estática não executa `monitor:collect` nem renova medições. Coleta contínua, credenciais dos fornecedores e histórico dependem dos serviços externos.
+
+### Conferência após o deploy
+
+- Abrir `/`, `/dashboard`, `/monitoramento` e `/custos/ICM-001` diretamente e atualizar a página.
+- Conferir carregamento de gráficos, fontes e estilos nos temas claro e escuro, no celular e no desktop.
+- Sem API configurada, confirmar **Sem telemetria**; com API configurada, conferir origem, horário e expiração da observação.
+- Registrar as URLs finais na tabela de links deste README.
 
 ## Funcionalidades
 
@@ -139,6 +216,15 @@ Na hospedagem estática, configure fallback de SPA para `index.html`, preservand
 ## Estrutura
 
 ```text
+README.md                    # Documentação e links do projeto
+render.yaml                  # Blueprint do site estático no Render
+intelligent-cost-management/ # Raiz da aplicação; estrutura abaixo
+```
+
+Dentro de `intelligent-cost-management/`:
+
+```text
+vercel.json                  # Build e fallback das rotas na Vercel
 src/
   components/
     layout/                  # Navegação, páginas institucionais e workspace
@@ -178,7 +264,7 @@ Os testes verificam o caso 101 de R$ 12.025,50, associação por CPF normalizado
 4. Acompanhar a liberação do dataset BigQuery prevista no roadmap e a evolução dos prompts/bases do projeto.
 5. Receber vídeo, logos oficiais e acesso ao Figma.
 
-Nenhum backend, banco de dados, autenticação ou publicação foi adicionado neste front-end.
+Nenhum backend, banco de dados ou autenticação foi adicionado neste front-end. Os endereços de publicação na Vercel e no Render estão na tabela [Links do projeto](#links-do-projeto).
 
 ## Git
 
